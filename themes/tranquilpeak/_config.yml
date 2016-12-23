@@ -31,38 +31,52 @@ image_dir: assets/images
 #                               # Go to http://fontawesome.io/icons/ to find class name of icon
 sidebar:
     menu:
-        home:
-            title: global.home
-            url: /
-            icon: home
-        categories:
-            title: global.categories
-            url: /all-categories
-            icon: bookmark
-        tags:
-            title: global.tags
-            url: /all-tags
-            icon: tags
-        archives:
-            title: global.archives
-            url: /all-archives
-            icon: archive
-        search:
-            title: global.search
-            url: /#search
-            icon: search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
+        # home:
+        #     title: global.home
+        #     url: /
+        #     icon: home
+        # categories:
+        #     title: global.categories
+        #     url: /all-categories
+        #     icon: bookmark
+        # tags:
+        #     title: global.tags
+        #     url: /all-tags
+        #     icon: tags
+        # archives:
+        #     title: global.archives
+        #     url: /all-archives
+        #     icon: archive
+        # search:
+        #     title: global.search
+        #     url: /#search
+        #     icon: search
+        #     # `open-algolia-search` classes are used to open algolia search modal
+        #     class: open-algolia-search
         about:
             title: global.about
             url: /#about
             icon: question
-    author_links:
+    code:
+        habrahabr:
+            title: Habrahabr
+            url: https://habrahabr.ru/users/kvaps/
+            icon: pencil-square-o
+        geektimes:
+           title: Geektimes
+           url: https://geektimes.ru/users/kvaps/
+           icon: pencil-square-o
+    articles:
         github:
             title: global.github
             url: https://github.com/kvaps/
             icon: github
-        # stack_overflow:
+        dockerhub:
+           title: Docker Hub
+           url: https://hub.docker.com/u/kvaps/
+           icon: ship 
+
+       # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
         #     icon: stack-overflow
@@ -82,6 +96,7 @@ sidebar:
         #     title: global.linkedin
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
+    mail:
         mail:
             title: global.mail
             url: mailto:kvapss@gmail.com
@@ -142,7 +157,7 @@ author:
 # large sidebar is swiped on all lower screens
 # 5: Display header bar on all screens and large sidebar is swiped on large screen
 # 6: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 1
+sidebar_behavior: 2
 # Hide sidebar on all article page to let article take full width to improve reading, and
 # enjoy wide images and cover images. (true: enable, false: disable)
 clear_reading: true
