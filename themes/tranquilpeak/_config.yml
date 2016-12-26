@@ -31,10 +31,10 @@ image_dir: assets/images
 #                               # Go to http://fontawesome.io/icons/ to find class name of icon
 sidebar:
     menu:
-        # home:
-        #     title: global.home
-        #     url: /
-        #     icon: home
+        home:
+            title: global.home
+            url: /
+            icon: home
         # categories:
         #     title: global.categories
         #     url: /all-categories
@@ -47,17 +47,17 @@ sidebar:
         #     title: global.archives
         #     url: /all-archives
         #     icon: archive
-        # search:
-        #     title: global.search
-        #     url: /#search
-        #     icon: search
-        #     # `open-algolia-search` classes are used to open algolia search modal
-        #     class: open-algolia-search
+        search:
+            title: global.search
+            url: /#search
+            icon: search
+            # `open-algolia-search` classes are used to open algolia search modal
+            class: open-algolia-search
         about:
             title: global.about
             url: /#about
             icon: question
-    code:
+    articles:
         habrahabr:
             title: Habrahabr
             url: https://habrahabr.ru/users/kvaps/
@@ -66,7 +66,7 @@ sidebar:
            title: Geektimes
            url: https://geektimes.ru/users/kvaps/
            icon: pencil-square-o
-    articles:
+    code:
         github:
             title: global.github
             url: https://github.com/kvaps/
@@ -75,6 +75,11 @@ sidebar:
            title: Docker Hub
            url: https://hub.docker.com/u/kvaps/
            icon: ship 
+    mahjong:
+        mahjong:
+           title: Riichi Mahjong
+           url: /riichi-mahjong/
+           icon: book
 
        # stack_overflow:
         #     title: global.stack_overflow
