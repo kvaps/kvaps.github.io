@@ -1,0 +1,12 @@
+--- node_modules/hexo-generator-index/lib/generator.js 2015-11-01 09:43:11.000000000 +0300
++++ node_modules/hexo-generator-index/lib/generator.js 2016-12-27 14:58:32.034573200 +0300
+@@ -4,7 +4,8 @@
+ 
+ module.exports = function(locals) {
+   var config = this.config;
+-  var posts = locals.posts.sort(config.index_generator.order_by);
++  //var posts = locals.posts.sort(config.index_generator.order_by);
++  var posts = locals.posts.filter(function(post) { return post.index !== false ; }).sort(config.index_generator.order_by);
+   var paginationDir = config.pagination_dir || 'page';
+ 
+   return pagination('', posts, {
