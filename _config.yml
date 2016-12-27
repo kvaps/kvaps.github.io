@@ -79,10 +79,8 @@ algolia:
   chunkSize: 5000
   indexName: "kvaps.ru"
   fields:
-    - title
-    - tags
-    - slug
-    - excerpt
-    - excerpt:strip
-    - photos
-    - gallery
+  - title
+  - excerpt:strip
+  - path
+  - content:strip
+  - permalink
