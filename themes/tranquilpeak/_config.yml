@@ -110,11 +110,16 @@ sidebar:
             title: global.mail
             url: mailto:kvapss@gmail.com
             icon: envelope-o
-    rss:
+    options:
         rss:
             title: global.rss
             url: /atom.xml
             icon: rss
+        english:
+            title: English Only
+            url: /tags/en/
+            icon: language
+
 
 
 # Header configuration
