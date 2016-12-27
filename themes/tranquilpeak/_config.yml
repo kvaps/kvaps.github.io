@@ -75,7 +75,11 @@ sidebar:
            title: Docker Hub
            url: https://hub.docker.com/u/kvaps/
            icon: ship 
-    mahjong:
+    projects:
+        projects:
+           title: Projects (Archive)
+           url: /projects-archive/
+           icon: link
         mahjong:
            title: Riichi Mahjong
            url: /riichi-mahjong/
