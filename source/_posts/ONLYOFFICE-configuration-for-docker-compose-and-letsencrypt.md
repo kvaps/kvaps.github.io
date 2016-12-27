@@ -1,7 +1,7 @@
 ---
 title: ONLYOFFICE configuration for docker-compose (and letsencrypt).
 date: 2016-12-14 03:55:37
-tags:
+tags: en
 link: https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a
 ---
 
