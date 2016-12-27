@@ -57,16 +57,20 @@ sidebar:
             title: global.about
             url: /#about
             icon: question
-    articles:
-        habrahabr:
-            title: Habrahabr
-            url: https://habrahabr.ru/users/kvaps/
-            icon: pencil-square-o
-        geektimes:
-           title: Geektimes
-           url: https://geektimes.ru/users/kvaps/
-           icon: pencil-square-o
-    code:
+        mail:
+            title: global.mail
+            url: mailto:kvapss@gmail.com
+            icon: envelope-o
+    # articles:
+    #     habrahabr:
+    #         title: Habrahabr
+    #         url: https://habrahabr.ru/users/kvaps/
+    #         icon: pencil-square-o
+    #     geektimes:
+    #        title: Geektimes
+    #        url: https://geektimes.ru/users/kvaps/
+    #        icon: pencil-square-o
+    projects:
         github:
             title: global.github
             url: https://github.com/kvaps/
@@ -75,15 +79,10 @@ sidebar:
            title: Docker Hub
            url: https://hub.docker.com/u/kvaps/
            icon: ship 
-    projects:
         projects:
            title: Projects (Archive)
            url: /projects-archive/
            icon: link
-        mahjong:
-           title: Riichi Mahjong
-           url: /riichi-mahjong/
-           icon: book
 
        # stack_overflow:
         #     title: global.stack_overflow
@@ -106,10 +105,12 @@ sidebar:
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
     mail:
-        mail:
-            title: global.mail
-            url: mailto:kvapss@gmail.com
-            icon: envelope-o
+    mahjong:
+        mahjong:
+           title: Riichi Mahjong
+           url: /riichi-mahjong/
+           icon: book
+
     options:
         rss:
             title: global.rss
