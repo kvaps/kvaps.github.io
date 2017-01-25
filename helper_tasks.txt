@@ -1,0 +1,15 @@
+# Hexo installation
+npm install
+
+# Tranquilpeak installation
+pushd themes/tranquilpeak/
+npm install
+bower install
+npm run
+popd
+
+
+# Deploy site
+hexo generate
+hexo deploy
+hexo algolia
