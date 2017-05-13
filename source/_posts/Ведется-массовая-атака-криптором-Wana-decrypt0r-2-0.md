@@ -9,7 +9,7 @@ link: https://geektimes.ru/post/289115/#habracut
 Атака наблюдается в разных сетях совершенно никак не связанных между ссобой.
 
 ![](https://pbs.twimg.com/media/C_n2dzcW0AAsnG-.jpg:large)
-*картинка нагло потырена [отсюда](https://twitter.com/dodicin/status/862991818904002565/photo/1)*
+*A ransomware spreading in the lab at the university ([отсюда](https://twitter.com/dodicin/status/862991818904002565/photo/1))*
 
 Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций.
 <!-- more -->
