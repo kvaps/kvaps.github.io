@@ -1,5 +1,5 @@
 # Tranquilpeak
-# Version : 1.9.1
+# Version : 1.11.0
 # Author : Louis Barranqueiro
 
 # I STRONGLY recommend you to use a CDN to speed up loading of pages.
@@ -17,7 +17,10 @@
 image_dir: assets/images
 
 
+# ---------------------
 # Sidebar Configuration
+# ---------------------
+
 #    You can add groups of links and links much as you want
 #    You just have to respect the indentation : `groups of links` -> `link` -> `title, link, icon`
 #    E.g:
@@ -123,7 +126,10 @@ sidebar:
 
 
 
+# --------------------
 # Header configuration
+# --------------------
+
 # The link at the right of the header is customizable
 # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
 # By default, author's gravatar or author's picture is displayed if `icon` is empty
@@ -139,7 +145,10 @@ header:
         class:
 
 
+# ------
 # Author
+# ------
+
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
     email: kvapss@gmail.com
@@ -159,7 +168,10 @@ author:
     google_plus_business:
 
 
+# -------------
 # Customization
+# -------------
+
 # Define the behavior of the sidebar
 # 1: Display extra large sidebar on extra large screen, large sidebar on large screen,
 # medium sidebar on medium screen and header bar on small screen and
@@ -204,14 +216,30 @@ archive_pagination: true
 category_pagination: true
 tag_pagination: true
 
+# ---------------
+# Comment systems
+# ---------------
 
-# Integrated services
-# You can't use Disqus and Duoshuo together
-# then fill the right shortname
 # Your Disqus shortname
 disqus_shortname: kvaps
-# Your Duoshuo shortname
-duoshuo_shortname:
+# Your Gitment information
+# Read https://github.com/imsun/gitment#get-started to setup Gitment
+gitment:
+    # Switch
+    enable: false
+    # Your Github ID (Github username):
+    github_id:
+    # The repo to store comments:
+    repo:
+    # Your client ID:
+    client_id:
+    # Your client secret:
+    client_secret:
+
+# -------------------
+# Integrated services
+# -------------------
+
 # Your Google analystics web property ID : UA-XXXXX-X
 google_analytics_id: UA-53837210-1
 # Your Baidu analystics web property ID : 9505a5af654a2478f93fd6c0ae4f687d
@@ -222,3 +250,48 @@ gravatar_email: kvapss@gmail.com
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
 fb_app_id:
+
+
+# ---------------
+# Sharing options
+# ---------------
+
+# Comment and uncomment to enable or disable sharing options
+# If you wanna add a sharing option, read user documentation :
+# Tranquilpeak configuration > Theme configuration > sharing-options
+sharing_options:
+    facebook:
+        icon: "fa-facebook-official"
+        url: "https://www.facebook.com/sharer/sharer.php?u={{post.permalink}}"
+    twitter:
+        icon: "fa-twitter"
+        url: "https://twitter.com/intent/tweet?text={{post.permalink}}"
+    google_plus:
+        icon: "fa-google-plus"
+        url: "https://plus.google.com/share?url={{post.permalink}}"
+    # Asian social networks
+    # weibo:
+    #     title: "Weibo"
+    #     icon: "fa-weibo"
+    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    # qq:
+    #     title: "QQ"
+    #     icon: "fa-qq"
+    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
+    # qzone:
+    #     title: "Qzone"
+    #     icon: "fa-star"
+    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
+    # renren:
+    #     title: "Renren"
+    #     icon: "fa-renren"
+    #     url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
+    # Russian social networks
+    # vk:
+    #     title: "VK"
+    #     icon: "fa-vk"
+    #     url: "https://vk.com/share.php?url={{post.permalink}}"
+    # odnoklassniki:
+    #     title: "Odnoklassniki"
+    #     icon: "fa-odnoklassniki"
+    #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"

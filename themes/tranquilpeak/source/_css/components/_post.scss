@@ -38,6 +38,7 @@
         @include prefix('hypens', 'auto', 'webkit' 'moz');
 
         img {
+            display:   block;
             width:     auto;
             max-width: 100%;
         }
