@@ -1,0 +1,870 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="kvaps">
+    <title>Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему - kvaps</title>
+    <meta name="author" content="kvaps">
+    
+    
+        <link rel="icon" href="http://kvaps.ru/assets/images/favicon.ico">
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"},"articleBody":"Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.Всего за десять простых шагов:\nИ так, приступим:\nЧасть 1: Установка самого Photoshop’а1. Удаляем старые версии wine\nsudo aptitude purge wine\n2. Устанавливаем новый wine\nЕсли ubuntu то:\nsudo add-apt-repository ppa:ubuntu-wine/ppa  \n sudo apt-get update  \n sudo apt-get install wine1.5\nЕсли debian\nARCH=`uname -m | sed -e s/x86_64/amd64/ -e s/i.86/i386/`  \n wget -r -A &quot;*_$ARCH.deb&quot; http://dev.carbon-project.org/debian/wine-unstable/  \n sudo dpkg -i dev.carbon-project.org/debian/wine-unstable/*.deb  \n sudo apt-get install -f\n3. Качаем winetricks и даем ему права на выполнение\nwget http://winetricks.org/winetricks  \n chmod +x winetricks\nПроверим\n./winetricks\nЕсли у вас debian, winetricks скорее всего не запустится выдаст такую ошибку:  \n\n_wineserver not found_\n  \nрешение: укажем ему где у нас находится wineserver\nsudo ln -s /usr/lib/wine-unstable/wineserver /usr/local/bin/wineserver\n4. Начинаем установку нужных библиотек:\n./winetricks msxml3\nЖмем “Download now”, качаем, устанавливаем.Установим остальные, необходимые нам, библиотеки:\n./winetricks gdiplus msxml6 vcrun2005 vcrun2008 vcrun2010 atmlib ie6 fontsmooth-rgb allfonts\n5. Качаем подходящий Photoshop упакованный в paf  \nСначала я скачал cs6, но там был какой-то баг с текстовыми полями. [link]Поэтому я скачал cs5.1 [link]\n6. Запускаем инсталлер и устанавливаем, я установил в Program Files(если директория не выберается, можно установить в другое место потом просто перенести куда хотим)\nВсе теперь Photoshop установлен и нормально работает.\n7. Что бы полноценно работать с хоткеями Photoshop’a, давайте перенаправим все “окно-управляющие” функции кнопки &lt;alt&gt; на кнопку &lt;win&gt;, и отключим меню окна по Alt+Click\ngconftool-2 --set /apps/metacity/general/mouse_button_modifier --type string &apos;&lt;super&gt;&apos;  \ngconftool-2 --set /apps/metacity/window_keybindings/activate_window_menu --type string &apos;disabled&apos;\n&nbsp;\nЧасть 2: Инегрируем Photoshop в систему8. Сначала скачаем и установим иконку\nwget http://upload.wikimedia.org/wikipedia/commons/5/58/Adobe_Photoshop_logo.svg  \n sudo mv Adobe_Photoshop_logo.svg /usr/share/app-install/icons/\n9. Теперь создадим кнопку запуска и ассоциируем Photoshop с .PSD файлами\nsudo nano ~/.local/share/applications/Photoshop.desktop\nс вот таким содержимым:\n[Desktop Entry]  \n Type=Application  \n Name=Adobe Photoshop CS5  \n MimeType=image/psd;  \n Exec=env WINEPREFIX=&quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine&quot; &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot; %f  \n NoDisplay=false  \n StartupNotify=true  \n Icon=/usr/share/app-install/icons/Adobe_Photoshop_logo.svg  \n Categories=Graphics;\n10. Ну и создадим небольшой скриптик который будет конвертировать нашим файлам имена и пути\nnano &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;\nс таким содержимым:\n#!/bin/sh  \n QUICKPARLOCATION=&quot;C:\\Program Files\\AdobePSPortable\\AdobePSPortable.exe&quot;  \n PARAM=`winepath -w &quot;$*&quot;`  \n wine &quot;$QUICKPARLOCATION&quot; &quot;$PARAM&quot;  \n exit 0\nсделаем его исполняемым\nchmod +x &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;\nТеперь все готово, Photoshop есть у нас в меню программ, и в диалоге “Открыть с помощью”\n","dateCreated":"2012-09-19T14:31:00+02:00","dateModified":"2018-05-11T20:41:47+02:00","datePublished":"2012-09-19T14:31:00+02:00","description":"Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.Всего за десять простых шагов:","headline":"Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/"},"publisher":{"@type":"Organization","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"}},"url":"http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/"}</script>
+    <meta name="description" content="Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.О том как создать кнопку запуска, и как правильно установить последнюю версию wi">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему">
+<meta property="og:url" content="http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/index.html">
+<meta property="og:site_name" content="kvaps">
+<meta property="og:description" content="Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.О том как создать кнопку запуска, и как правильно установить последнюю версию wi">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-05-11T18:41:47.790Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему">
+<meta name="twitter:description" content="Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.О том как создать кнопку запуска, и как правильно установить последнюю версию wi">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=640"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/thumbs.css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+    <!--STYLES END-->
+    
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53837210-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+    
+
+<header id="header" data-behavior="5">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">kvaps</a>
+    </div>
+    
+        
+            <a  class="header-right-picture "
+                href="#about">
+        
+        
+            <img class="header-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=90" alt="Author&#39;s picture"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+    
+
+<nav id="sidebar" data-behavior="5">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">kvaps</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>Cloud Architect</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                            title="Home"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link open-algolia-search"
+                             href="#search"
+                            
+                            title="Search"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                            title="About"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="mailto:kvapss@gmail.com" target="_blank" rel="noopener" title="Mail">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/kvaps/" target="_blank" rel="noopener" title="GitHub">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://hub.docker.com/u/kvaps/" target="_blank" rel="noopener" title="Docker Hub">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-ship" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Docker Hub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/projects-archive/"
+                            
+                            title="Projects (Archive)"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-link" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Projects (Archive)</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/riichi-mahjong/"
+                            
+                            title="Riichi Mahjong"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-book" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Riichi Mahjong</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                            title="RSS"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/tags/en/"
+                            
+                            title="English Only"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-language" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">English Only</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="5"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2012-09-19T14:31:00+02:00">
+	
+		    Sep 19, 2012
+    	
+    </time>
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <p>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.<br>О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.<br>И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br>Всего за десять простых шагов:<br><a id="more"></a></p>
+<p>И так, приступим:</p>
+<h2 id="Часть-1-Установка-самого-Photoshop’а"><a href="#Часть-1-Установка-самого-Photoshop’а" class="headerlink" title="Часть 1: Установка самого Photoshop’а"></a><strong>Часть 1: Установка самого Photoshop’а</strong></h2><p><strong>1. Удаляем старые версии wine</strong></p>
+<pre><code>sudo aptitude purge wine
+</code></pre><p><strong>2. Устанавливаем новый wine</strong></p>
+<p><em>Если ubuntu то:</em></p>
+<pre><code>sudo add-apt-repository ppa:ubuntu-wine/ppa  
+ sudo apt-get update  
+ sudo apt-get install wine1.5
+</code></pre><p><em>Если debian</em></p>
+<pre><code>ARCH=`uname -m | sed -e s/x86_64/amd64/ -e s/i.86/i386/`  
+ wget -r -A &quot;*_$ARCH.deb&quot; http://dev.carbon-project.org/debian/wine-unstable/  
+ sudo dpkg -i dev.carbon-project.org/debian/wine-unstable/*.deb  
+ sudo apt-get install -f
+</code></pre><p><strong>3. Качаем winetricks и даем ему права на выполнение</strong></p>
+<pre><code>wget http://winetricks.org/winetricks  
+ chmod +x winetricks
+</code></pre><p><em>Проверим</em></p>
+<pre><code>./winetricks
+</code></pre><p><em>Если у вас debian, winetricks скорее всего не запустится выдаст такую ошибку:</em><br><em>  
+</em></p>
+<pre><code>_wineserver not found_
+</code></pre><p><em>  
+</em><br><em>решение: укажем ему где у нас находится wineserver</em></p>
+<pre><code>sudo ln -s /usr/lib/wine-unstable/wineserver /usr/local/bin/wineserver
+</code></pre><p><strong>4. Начинаем установку нужных библиотек:</strong></p>
+<pre><code>./winetricks msxml3
+</code></pre><p><em>Жмем “Download now”, качаем, устанавливаем.</em><br><em>Установим остальные, необходимые нам, библиотеки:</em></p>
+<pre><code>./winetricks gdiplus msxml6 vcrun2005 vcrun2008 vcrun2010 atmlib ie6 fontsmooth-rgb allfonts
+</code></pre><p><strong>5. Качаем подходящий Photoshop упакованный в paf</strong><br><strong>  
+</strong><br><em>Сначала я скачал cs6, но там был какой-то баг с текстовыми полями. <a href="http://thepiratebay.se/torrent/7266185" target="_blank" rel="noopener">[link]</a></em><br><em>Поэтому я скачал cs5.1 <a href="http://thepiratebay.se/torrent/6908484/Adobe_Photoshop_CS5.1_Portable_Multilingual_%28PAF%29" target="_blank" rel="noopener">[link]</a></em></p>
+<p><strong>6. Запускаем инсталлер и устанавливаем, я установил в Program Files</strong><br><em>(если директория не выберается, можно установить в другое место потом просто перенести куда хотим)</em></p>
+<p>Все теперь Photoshop установлен и нормально работает.</p>
+<p><strong>7. Что бы полноценно работать с хоткеями Photoshop’a, давайте перенаправим все “окно-управляющие” функции кнопки <code>&lt;alt&gt;</code> на кнопку <code>&lt;win&gt;</code>, и отключим меню окна по Alt+Click</strong></p>
+<pre><code>gconftool-2 --set /apps/metacity/general/mouse_button_modifier --type string &apos;&lt;super&gt;&apos;  
+gconftool-2 --set /apps/metacity/window_keybindings/activate_window_menu --type string &apos;disabled&apos;
+</code></pre><p>&nbsp;</p>
+<h2 id="Часть-2-Инегрируем-Photoshop-в-систему"><a href="#Часть-2-Инегрируем-Photoshop-в-систему" class="headerlink" title="Часть 2: Инегрируем Photoshop в систему"></a><strong>Часть 2: Инегрируем Photoshop в систему</strong></h2><p><strong>8. Сначала скачаем и установим иконку</strong></p>
+<pre><code>wget http://upload.wikimedia.org/wikipedia/commons/5/58/Adobe_Photoshop_logo.svg  
+ sudo mv Adobe_Photoshop_logo.svg /usr/share/app-install/icons/
+</code></pre><p><strong>9. Теперь создадим кнопку запуска и ассоциируем Photoshop с .PSD файлами</strong></p>
+<pre><code>sudo nano ~/.local/share/applications/Photoshop.desktop
+</code></pre><p><em>с вот таким содержимым:</em></p>
+<pre><code>[Desktop Entry]  
+ Type=Application  
+ Name=Adobe Photoshop CS5  
+ MimeType=image/psd;  
+ Exec=env WINEPREFIX=&quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine&quot; &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot; %f  
+ NoDisplay=false  
+ StartupNotify=true  
+ Icon=/usr/share/app-install/icons/Adobe_Photoshop_logo.svg  
+ Categories=Graphics;
+</code></pre><p><strong>10. Ну и создадим небольшой скриптик который будет конвертировать нашим файлам имена и пути</strong></p>
+<pre><code>nano &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;
+</code></pre><p><em>с таким содержимым:</em></p>
+<pre><code>#!/bin/sh  
+ QUICKPARLOCATION=&quot;C:\Program Files\AdobePSPortable\AdobePSPortable.exe&quot;  
+ PARAM=`winepath -w &quot;$*&quot;`  
+ wine &quot;$QUICKPARLOCATION&quot; &quot;$PARAM&quot;  
+ exit 0
+</code></pre><p><em>сделаем его исполняемым</em></p>
+<pre><code>chmod +x &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;
+</code></pre><p>Теперь все готово, Photoshop есть у нас в меню программ, и в диалоге “Открыть с помощью”</p>
+
+            
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2012/10/01/Звуки-Pidgin-в-qutIM/" data-tooltip="Звуки Pidgin в qutIM" aria-label="PREVIOUS: Звуки Pidgin в qutIM">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2012/04/12/Прошивка-Art-Of-Honeycomb-для-TS1004T/" data-tooltip="Прошивка Art Of Honeycomb для TS1004T" aria-label="NEXT: Прошивка Art Of Honeycomb для TS1004T">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+        
+            
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 kvaps. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2012/10/01/Звуки-Pidgin-в-qutIM/" data-tooltip="Звуки Pidgin в qutIM" aria-label="PREVIOUS: Звуки Pidgin в qutIM">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2012/04/12/Прошивка-Art-Of-Honeycomb-для-TS1004T/" data-tooltip="Прошивка Art Of Honeycomb для TS1004T" aria-label="NEXT: Прошивка Art Of Honeycomb для TS1004T">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+    <i id="btn-close-shareoptions" class="fa fa-close"></i>
+    <ul class="share-options">
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                </a>
+            </li>
+        
+    </ul>
+</div>
+
+            
+        </div>
+        
+
+
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="Author&#39;s picture"/>
+        
+            <h4 id="about-card-name">kvaps</h4>
+        
+            <div id="about-card-bio"><p>Cloud Architect</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>WEDOS Internet, a.s.</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Hluboká nad Vltavou
+            </div>
+        
+    </div>
+</div>
+
+        
+            <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    />
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=327297&amp;view=findpost&amp;p=12780968">
+                            <h3 class="media-heading">Прошивка Art Of Honeycomb для TS1004T</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Apr 12, 2012
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><img src="http://cs5-1.4pda.to/1649543.jpg" alt=""></p>
+<p>Так, добрались до релиз-кандидата, тестим, радуемся.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/">
+                            <h3 class="media-heading">Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Sep 19, 2012
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.<br>О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.<br>И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br>Всего за десять простых шагов:<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2012/10/01/Звуки-Pidgin-в-qutIM/">
+                            <h3 class="media-heading">Звуки Pidgin в qutIM</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Oct 1, 2012
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Понравились тут звуки в&nbsp;Pidgin, решил их прикрутить в&nbsp;qutIM 0.3<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://www.psjailbreak.ru/2012/11/03/proshivka-rebug-421.html">
+                            <h3 class="media-heading">Прошивка Rebug 4.21</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Nov 3, 2012
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><img src="http://www.psjailbreak.ru/uploads/posts/2012-11/thumbs/1351956551_red_scorpion_3_sml.png" alt=""></p>
+<p>Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой <a href="http://rebug.me/rebug-3-55-3-and-4-21-1-rex-editions-and-999-downgrader/" target="_blank" rel="noopener">теме</a>.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://habr.com/post/216101/">
+                            <h3 class="media-heading">Поднимаем VPN-туннель из мира домой в обход NAT</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 18, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
+<p>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://developers-club.com/posts/216101/">
+                            <h3 class="media-heading">we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 18, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
+<p>I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2014/08/15/Риичи-маджонг-Что-нужно-для-игры/">
+                            <h3 class="media-heading">Риичи-маджонг: Что нужно для игры</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 15, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><strong>Для игры необходимо:</strong></p>
+<ul>
+<li><strong>Набор тайлов</strong>. Адаптированный или нет – разницы никакой (адаптированный – где значение тайла в добавок подписано арабской цифрой, или буквой в случае Драконов и Ветров). Из набора нужно убрать Цветы и Сезоны (если они там были).  </li>
+<li><strong>Пара шестигранных игральных кубиков</strong>. Они используются для определения дилера, места разлома стены и т.д. – об этом будет дальше.  </li>
+<li><p><strong>Указатели Ветров</strong>. Выглядят от набора к набору совершенно по-разному. В любом случае, смысл указателя такой:<br>1. Он кладется перед тем игроком, который в данной раздаче является дилером (восточным ветром).2. Иероглиф, видимый на указателе, означает текущий раунд – Восточный или Южный (соответственно<img src="/riichi-mahjong/index/mahjong/tile/w.jpg" alt="">или <img src="/riichi-mahjong/index/mahjong/tile/s.jpg" alt="">)  </p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2014/08/15/Риичи-маджонг-Подготовка-к-игре/">
+                            <h3 class="media-heading">Риичи-маджонг: Подготовка к игре</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 15, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.<br>Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).</p>
+<p><strong>Перед каждой игрой определяется:</strong></p>
+<ul>
+<li><strong>Положение игроков</strong> относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север)</li>
+<li>Кто является <strong>дилером</strong> вначале игры.</li>
+</ul></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2014/08/15/Риичи-маджонг-Игровые-комбинации/">
+                            <h3 class="media-heading">Риичи-маджонг: Игровые комбинации</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 15, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>На этой странице представлен полный перечень игровых комбинаций. Для того, чтобы рука была выигрышная, необходимо чтобы в ней присутствовала минимум одна комбинация из этого списка (иначе игрок обязан заплатить штраф за неправильное объявление победы).<br>Яку – это стоимость руки, измеряется в ханах (см. словарик).<br>Условно, 1 яку=1 хан.</p>
+<p>Например, имея в руке комбинацию “Терминалы и Достоинства”, стоимость руки будет составлять 1 хан (поскольку эта комбинация на 1 яку), а если рука при этом закрытая (см. словарик), то стоимость руки будет составлять 2 хан (поскольку +1 за закрытую руку).<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://kvaps.ru/2014/08/15/Риичи-маджонг-Процесс-игры/">
+                            <h3 class="media-heading">Риичи-маджонг: Процесс игры</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 15, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.<br>Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).</p>
+<p><strong>Перед каждой игрой определяется:</strong></p>
+<ul>
+<li><strong>Положение игроков</strong> относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север)</li>
+<li>Кто является <strong>дилером</strong> вначале игры.</div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                44 posts found
+            </p>
+        </div>
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/background.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/thumbs.js"></script>
+<script src="/assets/js/tranquilpeak.js"></script>
+<!--SCRIPTS END-->
+
+    
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'http://kvaps.ru/2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/';
+                 
+                    this.page.identifier = '2012/09/19/Установка-Photoshop-на-Debian-или-Ubuntu-и-последующая-интеграция-его-в-систему/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'kvaps';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('DE8NJRMCBE', '3feb640197fa9b818efbffe86e522a65');
+        var algoliaIndex = algoliaClient.initIndex('kvaps.ru');
+    </script>
+
+
+    </body>
+</html>
