@@ -2,7 +2,7 @@
 title: Ведется массовая атака криптором Wana decrypt0r 2.0
 date: 2017-05-11 18:32:00
 tags:
-link: https://geektimes.ru/post/289115/#habracut
+link: https://habr.com/post/403837/#habracut
 ---
 
 В настоящий момент можно наблюдать масштабную атаку трояном-декриптором "Wana decrypt0r 2.0"

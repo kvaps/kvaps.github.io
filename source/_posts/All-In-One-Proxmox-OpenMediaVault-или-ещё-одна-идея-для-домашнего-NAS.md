@@ -2,7 +2,7 @@
 title: 'All-In-One: Proxmox + OpenMediaVault или ещё одна идея для домашнего NAS'
 date: 2017-05-06 16:46:00
 tags:
-link: https://habrahabr.ru/post/328048/
+link: https://habr.com/post/328048/
 ---
 
 ![](https://habrastorage.org/web/f0a/592/3de/f0a5923dec20422e952394a6d0473355.png)

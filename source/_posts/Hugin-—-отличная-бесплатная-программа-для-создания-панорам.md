@@ -2,7 +2,7 @@
 title: Hugin — отличная бесплатная программа для создания панорам
 date: 2016-12-22 13:25:00
 tags:
-link: https://geektimes.ru/post/283874/
+link: https://habr.com/post/369995/
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png)

@@ -2,7 +2,7 @@
 title: Проброс USB в виртуалку по сети средствами UsbRedir и QEMU
 date: 2015-08-20 11:55:00
 tags:
-link: https://habrahabr.ru/post/265065/
+link: https://habr.com/post/265065/
 ---
 
 ![](https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png)

@@ -2,7 +2,7 @@
 title: 'Metronome IM и Jappix: многофункциональный Jabber, без сложностей в настройке'
 date: 2016-02-24 08:27:00
 tags:
-link: https://habrahabr.ru/post/270207/
+link: https://habr.com/post/270207/
 ---
 
 ![](https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png)

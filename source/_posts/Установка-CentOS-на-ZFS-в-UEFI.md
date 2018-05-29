@@ -2,7 +2,7 @@
 title: Установка CentOS на ZFS в UEFI
 date: 2015-10-13 15:37:00
 tags:
-link: https://habrahabr.ru/post/268711/
+link: https://habr.com/post/268711/
 ---
 
 ![](https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png)

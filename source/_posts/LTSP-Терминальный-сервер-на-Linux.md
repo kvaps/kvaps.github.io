@@ -2,7 +2,7 @@
 title: 'LTSP: Терминальный сервер на Linux'
 date: 2016-03-22 07:51:00
 tags:
-link: https://habrahabr.ru/post/277783/
+link: https://habr.com/post/277783/
 ---
 
 ![](https://habrastorage.org/getpro/habr/post_images/91f/ec4/76d/91fec476de2d7f6764aa8755a366e5f6.png)

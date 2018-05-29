@@ -2,7 +2,7 @@
 title: Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
 date: 2017-01-25 08:52:00
 tags:
-link: https://habrahabr.ru/post/319550/
+link: https://habr.com/post/319550/
 ---
 
 ![](https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png)

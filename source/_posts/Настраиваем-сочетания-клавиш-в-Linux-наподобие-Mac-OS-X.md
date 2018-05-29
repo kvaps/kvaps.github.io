@@ -2,7 +2,7 @@
 title: Настраиваем сочетания клавиш в Linux наподобие Mac OS X
 date: 2015-09-09 16:30:00
 tags:
-link: https://habrahabr.ru/post/266375/
+link: https://habr.com/post/266375/
 ---
 
 ![](https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png)

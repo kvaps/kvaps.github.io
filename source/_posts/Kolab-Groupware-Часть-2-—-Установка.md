@@ -2,7 +2,7 @@
 title: Kolab Groupware (Часть 2 — Установка)
 date: 2015-07-18 14:17:00
 tags:
-link: https://habrahabr.ru/post/260527/
+link: https://habr.com/post/260527/
 ---
 
 ![](https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png)

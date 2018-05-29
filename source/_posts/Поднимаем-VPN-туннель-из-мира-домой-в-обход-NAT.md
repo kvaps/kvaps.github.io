@@ -2,7 +2,7 @@
 title: Поднимаем VPN-туннель из мира домой в обход NAT
 date: 2014-03-18 14:51:00
 tags:
-link: https://habrahabr.ru/post/216101/
+link: https://habr.com/post/216101/
 ---
 
 ![](https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png)

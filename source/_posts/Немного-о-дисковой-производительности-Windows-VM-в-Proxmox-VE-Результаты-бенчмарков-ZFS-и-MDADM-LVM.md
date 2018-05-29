@@ -2,7 +2,7 @@
 title: Немного о дисковой производительности Windows VM в Proxmox VE. Результаты бенчмарков ZFS и MDADM+LVM
 date: 2016-11-15 14:53:00
 tags:
-link: https://habrahabr.ru/post/315334/
+link: https://habr.com/post/315334/
 ---
 
 ![image](https://habrastorage.org/files/25d/8c0/9c1/25d8c09c109b4386935f99576c54f5a0.png)

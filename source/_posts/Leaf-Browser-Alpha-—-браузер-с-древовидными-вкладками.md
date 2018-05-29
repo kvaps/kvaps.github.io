@@ -2,7 +2,7 @@
 title: Leaf Browser Alpha — браузер с древовидными вкладками
 date: 2016-12-23 13:26:00
 tags:
-link: https://geektimes.ru/post/283972/
+link: https://habr.com/post/400137/
 ---
 
 ![image](https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png)

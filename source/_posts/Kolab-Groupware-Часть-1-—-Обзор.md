@@ -2,7 +2,7 @@
 title: Kolab Groupware (Часть 1 — Обзор)
 date: 2015-07-17 15:17:00
 tags:
-link: https://habrahabr.ru/post/260469/
+link: https://habr.com/post/260469/
 ---
 
 ![](https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png)
