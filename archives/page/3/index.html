@@ -256,15 +256,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/266375/">
-                            Настраиваем сочетания клавиш в Linux наподобие Mac OS X
+                        <a class="link-unstyled" href="https://habr.com/post/268711/">
+                            Установка CentOS на ZFS в UEFI
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time datetime="2015-09-09T15:30:00+02:00">
+    <time datetime="2015-10-13T14:37:00+02:00">
 	
-		    Sep 09, 2015
+		    Oct 13, 2015
     	
     </time>
     
@@ -273,10 +273,49 @@
             </div>
             
                 <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
-<p>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.<br>После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.<br>В один прекрасный момент меня это достало и я решил, что пора что-то менять…<br>
+                    <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
+<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
+<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">фишками</a>.<br>
                     
-                        <a href="https://habr.com/post/266375/" target="new" class="postShorten-excerpt_link link">
+                        <a href="https://habr.com/post/268711/" target="new" class="postShorten-excerpt_link link">
+                            Go to website
+                        </a>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a class="link-unstyled" href="http://developers-club.com/posts/268711/">
+                            The CentOS installation on ZFS in UEFI [Translation]
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2015-10-13T14:37:00+02:00">
+	
+		    Oct 13, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt">
+                    <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
+<p>Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.</p>
+<p>ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">counters</a>.<br>
+                    
+                        <a href="http://developers-club.com/posts/268711/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -314,6 +353,43 @@
 <p>Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser.<br>After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.<br>Once it has got me and I have decided that it is time to change something…<br>
                     
                         <a href="http://developers-club.com/posts/266375/" target="new" class="postShorten-excerpt_link link">
+                            Go to website
+                        </a>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a class="link-unstyled" href="https://habr.com/post/266375/">
+                            Настраиваем сочетания клавиш в Linux наподобие Mac OS X
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2015-09-09T15:30:00+02:00">
+	
+		    Sep 09, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt">
+                    <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
+<p>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.<br>После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.<br>В один прекрасный момент меня это достало и я решил, что пора что-то менять…<br>
+                    
+                        <a href="https://habr.com/post/266375/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -368,43 +444,6 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/260527/">
-                            Kolab Groupware (Часть 2 — Установка)
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2015-07-18T13:17:00+02:00">
-	
-		    Jul 18, 2015
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt=""></p>
-<p>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.<br>На этот раз мы будем его устанавливать.<br>
-                    
-                        <a href="https://habr.com/post/260527/" target="new" class="postShorten-excerpt_link link">
-                            Go to website
-                        </a>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
                         <a class="link-unstyled" href="http://developers-club.com/posts/260527/">
                             Kolab Groupware (Part 2 — Installation) [Translation]
                         </a>
@@ -442,15 +481,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/260469/">
-                            Kolab Groupware (Часть 1 — Обзор)
+                        <a class="link-unstyled" href="https://habr.com/post/260527/">
+                            Kolab Groupware (Часть 2 — Установка)
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time datetime="2015-07-17T14:17:00+02:00">
+    <time datetime="2015-07-18T13:17:00+02:00">
 	
-		    Jul 17, 2015
+		    Jul 18, 2015
     	
     </time>
     
@@ -459,11 +498,10 @@
             </div>
             
                 <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
-<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
-<p><em>Осторожно, в посте много картинок…</em><br>
+                    <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt=""></p>
+<p>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.<br>На этот раз мы будем его устанавливать.<br>
                     
-                        <a href="https://habr.com/post/260469/" target="new" class="postShorten-excerpt_link link">
+                        <a href="https://habr.com/post/260527/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -518,6 +556,44 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="https://habr.com/post/260469/">
+                            Kolab Groupware (Часть 1 — Обзор)
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2015-07-17T14:17:00+02:00">
+	
+		    Jul 17, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt">
+                    <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
+<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
+<p><em>Осторожно, в посте много картинок…</em><br>
+                    
+                        <a href="https://habr.com/post/260469/" target="new" class="postShorten-excerpt_link link">
+                            Go to website
+                        </a>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="/2014/08/18/Риичи-маджонг-Шпаргалки/">
                             Риичи-маджонг: Шпаргалки
                         </a>
@@ -539,85 +615,6 @@
 <p>Наверняка они пригодятся и вам :)</p>
                     
                         <a href="/2014/08/18/Риичи-маджонг-Шпаргалки/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2014/08/15/Риичи-маджонг-Игровые-комбинации-для-троих-игроков/">
-                            Риичи-маджонг: Игровые комбинации для троих игроков
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2014-08-15T12:49:00+02:00">
-	
-		    Aug 15, 2014
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <h2 id="ОДИН-ЯКУ"><a href="#ОДИН-ЯКУ" class="headerlink" title="ОДИН ЯКУ"></a>ОДИН ЯКУ</h2><h4 id="Риичи-Riichi"><a href="#Риичи-Riichi" class="headerlink" title="Риичи / Riichi"></a>Риичи / Riichi</h4><p>Ожидание выигрышного тайла при депозите 1000 очков. После объявления риичи руку модифицировать нельзя. Рука должна быть закрытой.</p>
-<p><strong>+1 Выигрыш в течение одного раунда.</strong> Иппацу/Ippatsu.</p>
-<p><strong>+1 Объявление Риичи на первом дискарде.</strong> Дабл риичи/Daburu Riichi.</p>
-<p>Пример:</p>
-<p><img src="/riichi-mahjong/index/mahjong/tileset/T3.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T4.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T5.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T14.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T15.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T18.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T19.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T20.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T23.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T23.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T23.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T29.gif" alt=""><img src="/riichi-mahjong/index/mahjong/tileset/T29.gif" alt=""> + <img src="/riichi-mahjong/index/mahjong/tileset/T13.gif" alt=""></p>
-                    
-                        <a href="/2014/08/15/Риичи-маджонг-Игровые-комбинации-для-троих-игроков/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="/2014/08/15/Риичи-маджонг-Подсчет-очков-в-маджонге-для-троих-игроков/">
-                            Риичи-маджонг: Подсчет очков в маджонге для троих игроков
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2014-08-15T12:49:00+02:00">
-	
-		    Aug 15, 2014
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <p><strong>Основная таблица расчетов</strong></p>
-<p>В риичи-маджонге для троих игроков не используются минипоинты, т.е. очки за состав руки. Весь подсчет очков ведется на основе комбинаций в руке игрока (и количества Дор).<br>
-                    
-                        <a href="/2014/08/15/Риичи-маджонг-Подсчет-очков-в-маджонге-для-троих-игроков/" class="postShorten-excerpt_link link">
                             Continue reading
                         </a>
                         
@@ -800,26 +797,6 @@
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="https://habr.com/post/216101/">
-                            <h3 class="media-heading">Поднимаем VPN-туннель из мира домой в обход NAT</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Mar 18, 2014
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"><p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
-<p>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы.<br></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
                         <a class="link-unstyled" href="http://developers-club.com/posts/216101/">
                             <h3 class="media-heading">we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]</h3>
                         </a>
@@ -832,6 +809,26 @@
                         </span>
                         <div class="media-content hide-xs font-merryweather"><p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
 <p>I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://habr.com/post/216101/">
+                            <h3 class="media-heading">Поднимаем VPN-туннель из мира домой в обход NAT</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 18, 2014
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
+<p>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы.<br></div>
                     </div>
                     <div style="clear:both;"></div>
                     <hr>
@@ -934,7 +931,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                44 posts found
+                46 posts found
             </p>
         </div>
     </div>

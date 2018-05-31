@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kvaps.ru/"/>
-  <updated>2018-05-29T07:54:08.974Z</updated>
+  <updated>2018-05-31T22:37:12.996Z</updated>
   <id>http://kvaps.ru/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Блочные устройства QEMU</title>
+    <link href="http://kvaps.ru/2018/05/31/%D0%91%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-QEMU/"/>
+    <id>http://kvaps.ru/2018/05/31/Блочные-устройства-QEMU/</id>
+    <published>2018-05-31T21:01:19.000Z</published>
+    <updated>2018-05-31T22:37:12.996Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png" alt=""></p><p>В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:</p><pre><code>-hda /dev/sda1</code></pre><p>Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки<a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-hda /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Sheepdog</title>
+    <link href="http://kvaps.ru/2018/05/31/Sheepdog/"/>
+    <id>http://kvaps.ru/2018/05/31/Sheepdog/</id>
+    <published>2018-05-31T10:52:00.000Z</published>
+    <updated>2018-05-31T22:37:11.939Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg" alt=""></p><p><strong>Sheepdog</strong> - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японских компаний <em>Nippon Telegraph</em> и <em>Telephone Corporation</em>. <strong>Sheepdog</strong> - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования<sup><a href="#cite_note-1">1</a><anchor>cite_ref-1</anchor></sup>. <em>(<a href="https://www.opennet.ru/opennews/art.shtml?num=24095" target="_blank" rel="noopener">уже стала</a> — прим.пер.)</em></p><blockquote><p>Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog была включена в основную ветку разработки QEMU. Первые испытания над sheepdog я провел в ноябре 2011 года<sup><a href="#cite_note-2">2</a><anchor>cite_ref-2</anchor></sup> и результаты были неплохими для операций ввода-вывода. Однако тогда еще система <strong>Sheepdog</strong> имела проблемы с восстановлением упавшей ноды. Вероятно эта проблема вскоре была устранена, так как разработка приложения довольно живая, но на тот момент я использовал другое решение.</p></blockquote><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sheepdog&lt;/strong&gt; - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японских компаний &lt;em&gt;Nippon Telegraph&lt;/em&gt; и &lt;em&gt;Telephone Corporation&lt;/em&gt;. &lt;strong&gt;Sheepdog&lt;/strong&gt; - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования&lt;sup&gt;&lt;a href=&quot;#cite_note-1&quot;&gt;1&lt;/a&gt;&lt;anchor&gt;cite_ref-1&lt;/anchor&gt;&lt;/sup&gt;. &lt;em&gt;(&lt;a href=&quot;https://www.opennet.ru/opennews/art.shtml?num=24095&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;уже стала&lt;/a&gt; — прим.пер.)&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog была включена в основную ветку разработки QEMU. Первые испытания над sheepdog я провел в ноябре 2011 года&lt;sup&gt;&lt;a href=&quot;#cite_note-2&quot;&gt;2&lt;/a&gt;&lt;anchor&gt;cite_ref-2&lt;/anchor&gt;&lt;/sup&gt; и результаты были неплохими для операций ввода-вывода. Однако тогда еще система &lt;strong&gt;Sheepdog&lt;/strong&gt; имела проблемы с восстановлением упавшей ноды. Вероятно эта проблема вскоре была устранена, так как разработка приложения довольно живая, но на тот момент я использовал другое решение.&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Pritunl — VPN-сервер для себя и друзей за 10 минут</title>
@@ -207,7 +250,7 @@
     <link href="http://kvaps.ru/2016/12/22/Hugin-%E2%80%94-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC/"/>
     <id>http://kvaps.ru/2016/12/22/Hugin-—-отличная-бесплатная-программа-для-создания-панорам/</id>
     <published>2016-12-22T10:25:00.000Z</published>
-    <updated>2018-05-29T07:42:44.493Z</updated>
+    <updated>2018-05-31T22:35:25.488Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png" alt=""></p><p>Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы.<br>Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.</p><p>Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.</p><p>Наконец все построение панорамы, вместо сложной и муторной работы, сведется к игре найди 5 <s>отличий</s> схожестей, а то и вовсе к нажатию всего трех кнопок.<br><a id="more"></a></p>]]></content>
     
@@ -356,37 +399,6 @@
   </entry>
   
   <entry>
-    <title>We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]</title>
-    <link href="http://kvaps.ru/2015/11/16/We-build-an-own-fault-tolerant-cloud-based-on-OpenNebula-with-Ceph-MariaDB-Galera-Cluster-and-OpenvSwitch-Translation/"/>
-    <id>http://kvaps.ru/2015/11/16/We-build-an-own-fault-tolerant-cloud-based-on-OpenNebula-with-Ceph-MariaDB-Galera-Cluster-and-OpenvSwitch-Translation/</id>
-    <published>2015-11-16T13:45:00.000Z</published>
-    <updated>2018-05-29T07:47:21.343Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""><br>This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p><ul><li><strong><a href="http://habr.com/post/270187/#ceph" target="_blank" rel="noopener">The Ceph installation, the distributed storage</a></strong>. <em>(I will describe installation of two-level storage with the caching pool from SSD disks)</em></li><li><strong><a href="http://habr.com/post/270187/#galera" target="_blank" rel="noopener">The installation MySQL, Galera of a cluster with the master master replication</a></strong></li><li><strong><a href="http://habr.com/post/270187/#openvswitch" target="_blank" rel="noopener">Installation software switch of OpenvSwitch</a></strong></li><li><strong><a href="http://habr.com/post/270187/#opennebula" target="_blank" rel="noopener">Installation directly OpenNebula</a></strong></li><li><strong><a href="http://habr.com/post/270187/#pacemaker" target="_blank" rel="noopener">Setup of failover cluster</a></strong></li><li><strong><a href="http://habr.com/post/270187/#configuration" target="_blank" rel="noopener">Initial configuration</a></strong></li></ul><p>Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.<br><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#ceph&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Ceph installation, the distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe installation of two-level storage with the caching pool from SSD disks)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#galera&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The installation MySQL, Galera of a cluster with the master master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#openvswitch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Installation software switch of OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#opennebula&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Installation directly OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#pacemaker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Setup of failover cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#configuration&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="en" scheme="http://kvaps.ru/tags/en/"/>
-    
-      <category term="translation" scheme="http://kvaps.ru/tags/translation/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch</title>
     <link href="http://kvaps.ru/2015/11/16/%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-OpenNebula-%D1%81-Ceph-MariaDB-Galera-Cluster-%D0%B8-OpenvSwitch/"/>
     <id>http://kvaps.ru/2015/11/16/Строим-свое-собственное-отказоустойчивое-облако-на-базе-OpenNebula-с-Ceph-MariaDB-Galera-Cluster-и-OpenvSwitch/</id>
@@ -414,19 +426,26 @@
   </entry>
   
   <entry>
-    <title>The CentOS installation on ZFS in UEFI [Translation]</title>
-    <link href="http://kvaps.ru/2015/10/13/The-CentOS-installation-on-ZFS-in-UEFI/"/>
-    <id>http://kvaps.ru/2015/10/13/The-CentOS-installation-on-ZFS-in-UEFI/</id>
-    <published>2015-10-13T12:37:00.000Z</published>
-    <updated>2018-05-11T18:41:47.783Z</updated>
+    <title>We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]</title>
+    <link href="http://kvaps.ru/2015/11/16/We-build-an-own-fault-tolerant-cloud-based-on-OpenNebula-with-Ceph-MariaDB-Galera-Cluster-and-OpenvSwitch-Translation/"/>
+    <id>http://kvaps.ru/2015/11/16/We-build-an-own-fault-tolerant-cloud-based-on-OpenNebula-with-Ceph-MariaDB-Galera-Cluster-and-OpenvSwitch-Translation/</id>
+    <published>2015-11-16T13:45:00.000Z</published>
+    <updated>2018-05-29T07:47:21.343Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p><p>Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.</p><p>ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">counters</a>.<br><a id="more"></a></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""><br>This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p><ul><li><strong><a href="http://habr.com/post/270187/#ceph" target="_blank" rel="noopener">The Ceph installation, the distributed storage</a></strong>. <em>(I will describe installation of two-level storage with the caching pool from SSD disks)</em></li><li><strong><a href="http://habr.com/post/270187/#galera" target="_blank" rel="noopener">The installation MySQL, Galera of a cluster with the master master replication</a></strong></li><li><strong><a href="http://habr.com/post/270187/#openvswitch" target="_blank" rel="noopener">Installation software switch of OpenvSwitch</a></strong></li><li><strong><a href="http://habr.com/post/270187/#opennebula" target="_blank" rel="noopener">Installation directly OpenNebula</a></strong></li><li><strong><a href="http://habr.com/post/270187/#pacemaker" target="_blank" rel="noopener">Setup of failover cluster</a></strong></li><li><strong><a href="http://habr.com/post/270187/#configuration" target="_blank" rel="noopener">Initial configuration</a></strong></li></ul><p>Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.<br><a id="more"></a></p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.&lt;/p&gt;
-&lt;p&gt;ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its &lt;a href=&quot;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;counters&lt;/a&gt;.&lt;br&gt;
+      &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#ceph&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Ceph installation, the distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe installation of two-level storage with the caching pool from SSD disks)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#galera&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The installation MySQL, Galera of a cluster with the master master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#openvswitch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Installation software switch of OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#opennebula&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Installation directly OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#pacemaker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Setup of failover cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#configuration&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.&lt;br&gt;
     
     </summary>
     
@@ -434,26 +453,6 @@
       <category term="en" scheme="http://kvaps.ru/tags/en/"/>
     
       <category term="translation" scheme="http://kvaps.ru/tags/translation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Установка CentOS на ZFS в UEFI</title>
-    <link href="http://kvaps.ru/2015/10/13/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-CentOS-%D0%BD%D0%B0-ZFS-%D0%B2-UEFI/"/>
-    <id>http://kvaps.ru/2015/10/13/Установка-CentOS-на-ZFS-в-UEFI/</id>
-    <published>2015-10-13T12:37:00.000Z</published>
-    <updated>2018-05-29T07:47:21.347Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p><p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p><p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">фишками</a>.<br><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.&lt;/p&gt;
-&lt;p&gt;ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее &lt;a href=&quot;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;фишками&lt;/a&gt;.&lt;br&gt;
-    
-    </summary>
-    
     
   </entry>
   
