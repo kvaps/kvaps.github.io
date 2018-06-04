@@ -255,6 +255,48 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="https://habr.com/post/319550/">
+                            Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2017-01-25T06:52:00+01:00">
+	
+		    Jan 25, 2017
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt">
+                    <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
+<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.<br>Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
+<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
+<ul>
+<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой. </li>
+<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
+<li><p><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд.</p>
+                    
+                        <a href="https://habr.com/post/319550/" target="new" class="postShorten-excerpt_link link">
+                            Go to website
+                        </a>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="https://habr.com/post/400137/">
                             Leaf Browser Alpha — браузер с древовидными вкладками
                         </a>
@@ -608,44 +650,6 @@
         
     </article>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a class="link-unstyled" href="https://habr.com/post/268711/">
-                            Установка CentOS на ZFS в UEFI
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2015-10-13T14:37:00+02:00">
-	
-		    Oct 13, 2015
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
-<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
-<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">фишками</a>.<br>
-                    
-                        <a href="https://habr.com/post/268711/" target="new" class="postShorten-excerpt_link link">
-                            Go to website
-                        </a>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
     <div class="pagination-bar">
     <ul class="pagination">
         
@@ -951,7 +955,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                46 posts found
+                47 posts found
             </p>
         </div>
     </div>

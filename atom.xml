@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kvaps.ru/"/>
-  <updated>2018-05-31T22:37:12.996Z</updated>
+  <updated>2018-06-04T17:02:06.787Z</updated>
   <id>http://kvaps.ru/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Google&#39;s Shell Style Guide (на русском)</title>
+    <link href="http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/"/>
+    <id>http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/</id>
+    <published>2018-06-04T16:43:00.000Z</published>
+    <updated>2018-06-04T17:02:06.787Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Предисловие"><a href="#Предисловие" class="headerlink" title="Предисловие"></a>Предисловие</h1><h3 id="Какой-Shell-использовать"><a href="#Какой-Shell-использовать" class="headerlink" title="Какой Shell использовать"></a>Какой Shell использовать</h3><p><code>Bash</code> единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.</p><p>Скрипты должны начинаться с <code>#!/bin/bash</code> с минимальным набором флагов. Используйте <code>set</code> для установки опций shell, что бы вызов вашего скрипта как <code>bash &lt;script_name&gt;</code> не нарушило его функциональности.</p><p>Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.</p><p>Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.</p><h3 id="Когда-использовать-Shell"><a href="#Когда-использовать-Shell" class="headerlink" title="Когда использовать Shell"></a>Когда использовать Shell</h3><p>Shell следует использовать только для небольших утилит или простых скрптов-оберток.</p><p>Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Предисловие&quot;&gt;&lt;a href=&quot;#Предисловие&quot; class=&quot;headerlink&quot; title=&quot;Предисловие&quot;&gt;&lt;/a&gt;Предисловие&lt;/h1&gt;&lt;h3 id=&quot;Какой-Shell-использовать&quot;&gt;&lt;a href=&quot;#Какой-Shell-использовать&quot; class=&quot;headerlink&quot; title=&quot;Какой Shell использовать&quot;&gt;&lt;/a&gt;Какой Shell использовать&lt;/h3&gt;&lt;p&gt;&lt;code&gt;Bash&lt;/code&gt; единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.&lt;/p&gt;
+&lt;p&gt;Скрипты должны начинаться с &lt;code&gt;#!/bin/bash&lt;/code&gt; с минимальным набором флагов. Используйте &lt;code&gt;set&lt;/code&gt; для установки опций shell, что бы вызов вашего скрипта как &lt;code&gt;bash &amp;lt;script_name&amp;gt;&lt;/code&gt; не нарушило его функциональности.&lt;/p&gt;
+&lt;p&gt;Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.&lt;/p&gt;
+&lt;p&gt;Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.&lt;/p&gt;
+&lt;h3 id=&quot;Когда-использовать-Shell&quot;&gt;&lt;a href=&quot;#Когда-использовать-Shell&quot; class=&quot;headerlink&quot; title=&quot;Когда использовать Shell&quot;&gt;&lt;/a&gt;Когда использовать Shell&lt;/h3&gt;&lt;p&gt;Shell следует использовать только для небольших утилит или простых скрптов-оберток.&lt;/p&gt;
+&lt;p&gt;Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Блочные устройства QEMU</title>
@@ -42,14 +65,14 @@
     <link href="http://kvaps.ru/2018/05/31/Sheepdog/"/>
     <id>http://kvaps.ru/2018/05/31/Sheepdog/</id>
     <published>2018-05-31T10:52:00.000Z</published>
-    <updated>2018-06-01T05:39:06.010Z</updated>
+    <updated>2018-06-04T17:01:04.267Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg" alt=""></p><p><strong>Sheepdog</strong> - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японских компаний <em>Nippon Telegraph</em> и <em>Telephone Corporation</em>. <strong>Sheepdog</strong> - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования<sup><a href="#cite_note-1">1</a><anchor>cite_ref-1</anchor></sup>. <em>(уже стала — прим.пер.)</em></p><blockquote><p>Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEMU.</p></blockquote><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg" alt=""></p><p><strong>Sheepdog</strong> - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании <em>Nippon Telegraph and Telephone Corporation</em>. <strong>Sheepdog</strong> - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования<sup><a href="#cite_note-1">1</a><anchor>cite_ref-1</anchor></sup>. <em>(уже стала — прим.пер.)</em></p><blockquote><p>Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEMU.</p></blockquote><a id="more"></a>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Sheepdog&lt;/strong&gt; - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японских компаний &lt;em&gt;Nippon Telegraph&lt;/em&gt; и &lt;em&gt;Telephone Corporation&lt;/em&gt;. &lt;strong&gt;Sheepdog&lt;/strong&gt; - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования&lt;sup&gt;&lt;a href=&quot;#cite_note-1&quot;&gt;1&lt;/a&gt;&lt;anchor&gt;cite_ref-1&lt;/anchor&gt;&lt;/sup&gt;. &lt;em&gt;(уже стала — прим.пер.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sheepdog&lt;/strong&gt; - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании &lt;em&gt;Nippon Telegraph and Telephone Corporation&lt;/em&gt;. &lt;strong&gt;Sheepdog&lt;/strong&gt; - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования&lt;sup&gt;&lt;a href=&quot;#cite_note-1&quot;&gt;1&lt;/a&gt;&lt;anchor&gt;cite_ref-1&lt;/anchor&gt;&lt;/sup&gt;. &lt;em&gt;(уже стала — прим.пер.)&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEMU.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -392,33 +415,6 @@
       &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое…&lt;br&gt;Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера.&lt;br&gt;То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.&lt;/p&gt;
 &lt;p&gt;Речь пойдет об &lt;strong&gt;Metronome IM&lt;/strong&gt; и &lt;strong&gt;Jappix&lt;/strong&gt;.&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch</title>
-    <link href="http://kvaps.ru/2015/11/16/%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-OpenNebula-%D1%81-Ceph-MariaDB-Galera-Cluster-%D0%B8-OpenvSwitch/"/>
-    <id>http://kvaps.ru/2015/11/16/Строим-свое-собственное-отказоустойчивое-облако-на-базе-OpenNebula-с-Ceph-MariaDB-Galera-Cluster-и-OpenvSwitch/</id>
-    <published>2015-11-16T13:45:00.000Z</published>
-    <updated>2018-05-29T07:47:21.347Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p><ul><li><strong><a href="http://habr.com/post/270187/#ceph" target="_blank" rel="noopener">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li><li><strong><a href="http://habr.com/post/270187/#galera" target="_blank" rel="noopener">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li><li><strong><a href="http://habr.com/post/270187/#openvswitch" target="_blank" rel="noopener">Установка софт-свича OpenvSwitch</a></strong></li><li><strong><a href="http://habr.com/post/270187/#opennebula" target="_blank" rel="noopener">Установка непосредственно самой OpenNebula</a></strong></li><li><strong><a href="http://habr.com/post/270187/#pacemaker" target="_blank" rel="noopener">Настройка отказоустойчивого кластера</a></strong></li><li><strong><a href="http://habr.com/post/270187/#configuration" target="_blank" rel="noopener">Первоначальная конфигурация</a></strong></li></ul><p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.<br><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&quot; alt=&quot;&quot;&gt; На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#ceph&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Установка Ceph, распределенного хранилища&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#galera&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Установка MySQL, Galera кластера с мастер-мастер репликацией&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#openvswitch&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Установка софт-свича OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#opennebula&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Установка непосредственно самой OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#pacemaker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Настройка отказоустойчивого кластера&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://habr.com/post/270187/#configuration&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Первоначальная конфигурация&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.&lt;br&gt;
     
     </summary>
     

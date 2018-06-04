@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="kvaps">
-    <title>Kolab Groupware (Часть 1 — Обзор) - kvaps</title>
+    <title>Google&#39;s Shell Style Guide (на русском) - kvaps</title>
     <meta name="author" content="kvaps">
     
     
@@ -15,20 +15,18 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"},"articleBody":"\nПривет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.\nОсторожно, в посте много картинок…\n","dateCreated":"2015-07-17T14:17:00+02:00","dateModified":"2018-05-29T09:47:21+02:00","datePublished":"2015-07-17T14:17:00+02:00","description":"\nПривет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.\nОсторожно, в посте много картинок…","headline":"Kolab Groupware (Часть 1 — Обзор)","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/"},"publisher":{"@type":"Organization","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"}},"url":"http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/"}</script>
-    <meta name="description" content="Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сер">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"},"articleBody":"ПредисловиеКакой Shell использоватьBash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.\nСкрипты должны начинаться с #!/bin/bash с минимальным набором флагов. Используйте set для установки опций shell, что бы вызов вашего скрипта как bash &lt;script_name&gt; не нарушило его функциональности.\nОграничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.\nЕдинственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.\nКогда использовать ShellShell следует использовать только для небольших утилит или простых скрптов-оберток.\nХотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.\n\n","dateCreated":"2018-06-04T18:43:00+02:00","dateModified":"2018-06-04T19:02:06+02:00","datePublished":"2018-06-04T18:43:00+02:00","description":"ПредисловиеКакой Shell использоватьBash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.\nСкрипты должны начинаться с #!/bin/bash с минимальным набором флагов. Используйте set для установки опций shell, что бы вызов вашего скрипта как bash &lt;script_name&gt; не нарушило его функциональности.\nОграничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.\nЕдинственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.\nКогда использовать ShellShell следует использовать только для небольших утилит или простых скрптов-оберток.\nХотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.","headline":"Google's Shell Style Guide (на русском)","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/"},"publisher":{"@type":"Organization","name":"kvaps","sameAs":[],"image":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2"}},"url":"http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/"}</script>
+    <meta name="description" content="ПредисловиеКакой Shell использоватьBash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов. Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов.">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Kolab Groupware (Часть 1 — Обзор)">
-<meta property="og:url" content="http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/index.html">
+<meta property="og:title" content="Google&#39;s Shell Style Guide (на русском)">
+<meta property="og:url" content="http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/index.html">
 <meta property="og:site_name" content="kvaps">
-<meta property="og:description" content="Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сер">
+<meta property="og:description" content="ПредисловиеКакой Shell использоватьBash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов. Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png">
-<meta property="og:updated_time" content="2018-05-29T07:47:21.343Z">
+<meta property="og:updated_time" content="2018-06-04T17:02:06.787Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kolab Groupware (Часть 1 — Обзор)">
-<meta name="twitter:description" content="Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сер">
-<meta name="twitter:image" content="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png">
+<meta name="twitter:title" content="Google&#39;s Shell Style Guide (на русском)">
+<meta name="twitter:description" content="ПредисловиеКакой Shell использоватьBash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов. Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов.">
     
     
         
@@ -259,16 +257,16 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1>
-            <a class="link" href="https://habr.com/post/260469/" target="_blank" rel="noopener">
-                Kolab Groupware (Часть 1 — Обзор)
+            <a class="link" href="https://habr.com/post/413155/" target="_blank" rel="noopener">
+                Google&#39;s Shell Style Guide (на русском)
             </a>
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2015-07-17T14:17:00+02:00">
+    <time datetime="2018-06-04T18:43:00+02:00">
 	
-		    Jul 17, 2015
+		    Jun 04, 2018
     	
     </time>
     
@@ -280,9 +278,13 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
-<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
-<p><em>Осторожно, в посте много картинок…</em><br><a id="more"></a></p>
+            <h1 id="Предисловие"><a href="#Предисловие" class="headerlink" title="Предисловие"></a>Предисловие</h1><h3 id="Какой-Shell-использовать"><a href="#Какой-Shell-использовать" class="headerlink" title="Какой Shell использовать"></a>Какой Shell использовать</h3><p><code>Bash</code> единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.</p>
+<p>Скрипты должны начинаться с <code>#!/bin/bash</code> с минимальным набором флагов. Используйте <code>set</code> для установки опций shell, что бы вызов вашего скрипта как <code>bash &lt;script_name&gt;</code> не нарушило его функциональности.</p>
+<p>Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.</p>
+<p>Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.</p>
+<h3 id="Когда-использовать-Shell"><a href="#Когда-использовать-Shell" class="headerlink" title="Когда использовать Shell"></a>Когда использовать Shell</h3><p>Shell следует использовать только для небольших утилит или простых скрптов-оберток.</p>
+<p>Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.</p>
+<a id="more"></a>
 
             
 
@@ -296,8 +298,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/17/Kolab-Groupware-Part-1-—-the-Overview/" data-tooltip="Kolab Groupware (Part 1 — the Overview) [Translation]" aria-label="PREVIOUS: Kolab Groupware (Part 1 — the Overview) [Translation]">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -306,7 +307,7 @@
             <li class="post-action">
                 
                     
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2014/08/18/Риичи-маджонг-Шпаргалки/" data-tooltip="Риичи-маджонг: Шпаргалки" aria-label="NEXT: Риичи-маджонг: Шпаргалки">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/31/Блочные-устройства-QEMU/" data-tooltip="Блочные устройства QEMU" aria-label="NEXT: Блочные устройства QEMU">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -324,7 +325,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -332,7 +333,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -340,7 +341,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -392,8 +393,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/17/Kolab-Groupware-Part-1-—-the-Overview/" data-tooltip="Kolab Groupware (Part 1 — the Overview) [Translation]" aria-label="PREVIOUS: Kolab Groupware (Part 1 — the Overview) [Translation]">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -402,7 +402,7 @@
             <li class="post-action">
                 
                     
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2014/08/18/Риичи-маджонг-Шпаргалки/" data-tooltip="Риичи-маджонг: Шпаргалки" aria-label="NEXT: Риичи-маджонг: Шпаргалки">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/31/Блочные-устройства-QEMU/" data-tooltip="Блочные устройства QEMU" aria-label="NEXT: Блочные устройства QEMU">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -420,7 +420,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Facebook">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Facebook">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
@@ -428,7 +428,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Twitter">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Twitter">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
@@ -436,7 +436,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/" title="Share on Google+">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/" title="Share on Google+">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
@@ -469,7 +469,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/">
                     <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -477,7 +477,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/">
                     <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -485,7 +485,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/">
                     <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
                 </a>
             </li>
@@ -785,9 +785,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'http://kvaps.ru/2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/';
+                 this.page.url = 'http://kvaps.ru/2018/06/04/Google-s-Shell-Style-Guide-на-русском/';
                  
-                    this.page.identifier = '2015/07/17/Kolab-Groupware-Часть-1-—-Обзор/';
+                    this.page.identifier = '2018/06/04/Google-s-Shell-Style-Guide-на-русском/';
                  
              };
             (function() {

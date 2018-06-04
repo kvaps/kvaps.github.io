@@ -256,51 +256,6 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/270187/">
-                            Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2015-11-16T14:45:00+01:00">
-	
-		    Nov 16, 2015
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
-<ul>
-<li><strong><a href="http://habr.com/post/270187/#ceph" target="_blank" rel="noopener">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
-<li><strong><a href="http://habr.com/post/270187/#galera" target="_blank" rel="noopener">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#openvswitch" target="_blank" rel="noopener">Установка софт-свича OpenvSwitch</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#opennebula" target="_blank" rel="noopener">Установка непосредственно самой OpenNebula</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#pacemaker" target="_blank" rel="noopener">Настройка отказоустойчивого кластера</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#configuration" target="_blank" rel="noopener">Первоначальная конфигурация</a></strong></li>
-</ul>
-<p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.<br>
-                    
-                        <a href="https://habr.com/post/270187/" target="new" class="postShorten-excerpt_link link">
-                            Go to website
-                        </a>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
                         <a class="link-unstyled" href="http://developers-club.com/posts/270187/">
                             We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]
                         </a>
@@ -346,15 +301,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/268711/">
-                            Установка CentOS на ZFS в UEFI
+                        <a class="link-unstyled" href="https://habr.com/post/270187/">
+                            Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time datetime="2015-10-13T14:37:00+02:00">
+    <time datetime="2015-11-16T14:45:00+01:00">
 	
-		    Oct 13, 2015
+		    Nov 16, 2015
     	
     </time>
     
@@ -363,11 +318,18 @@
             </div>
             
                 <div class="postShorten-excerpt">
-                    <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
-<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
-<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">фишками</a>.<br>
+                    <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
+<ul>
+<li><strong><a href="http://habr.com/post/270187/#ceph" target="_blank" rel="noopener">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
+<li><strong><a href="http://habr.com/post/270187/#galera" target="_blank" rel="noopener">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#openvswitch" target="_blank" rel="noopener">Установка софт-свича OpenvSwitch</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#opennebula" target="_blank" rel="noopener">Установка непосредственно самой OpenNebula</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#pacemaker" target="_blank" rel="noopener">Настройка отказоустойчивого кластера</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#configuration" target="_blank" rel="noopener">Первоначальная конфигурация</a></strong></li>
+</ul>
+<p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.<br>
                     
-                        <a href="https://habr.com/post/268711/" target="new" class="postShorten-excerpt_link link">
+                        <a href="https://habr.com/post/270187/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -406,6 +368,44 @@
 <p>ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">counters</a>.<br>
                     
                         <a href="http://developers-club.com/posts/268711/" target="new" class="postShorten-excerpt_link link">
+                            Go to website
+                        </a>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-right">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a class="link-unstyled" href="https://habr.com/post/268711/">
+                            Установка CentOS на ZFS в UEFI
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2015-10-13T14:37:00+02:00">
+	
+		    Oct 13, 2015
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-excerpt">
+                    <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
+<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
+<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS" target="_blank" rel="noopener">фишками</a>.<br>
+                    
+                        <a href="https://habr.com/post/268711/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -608,8 +608,8 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
-                        <a class="link-unstyled" href="https://habr.com/post/260469/">
-                            Kolab Groupware (Часть 1 — Обзор)
+                        <a class="link-unstyled" href="http://developers-club.com/posts/260469/">
+                            Kolab Groupware (Part 1 — the Overview) [Translation]
                         </a>
                     
                 </h1>
@@ -626,10 +626,10 @@
             
                 <div class="postShorten-excerpt">
                     <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
-<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
-<p><em>Осторожно, в посте много картинок…</em><br>
+<p>Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.</p>
+<p><em>Carefully, in post there are a lot of pictures…</em><br>
                     
-                        <a href="https://habr.com/post/260469/" target="new" class="postShorten-excerpt_link link">
+                        <a href="http://developers-club.com/posts/260469/" target="new" class="postShorten-excerpt_link link">
                             Go to website
                         </a>
                     
@@ -938,7 +938,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                46 posts found
+                47 posts found
             </p>
         </div>
     </div>
