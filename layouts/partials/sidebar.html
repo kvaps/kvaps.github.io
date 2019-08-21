@@ -1,0 +1,44 @@
+<nav id="sidebar" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}">
+  <div class="sidebar-container">
+    {{ with ($.Scratch.Get "authorPicture") }}
+      <div class="sidebar-profile">
+        <a href="{{ if $.Site.Params.sidebar.profile.url }}{{ $.Site.Params.sidebar.profile.url }}{{ else }}{{ "/#about" }}{{ end }}">
+          <img class="sidebar-profile-picture" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
+        </a>
+        <h4 class="sidebar-profile-name">{{ $.Site.Author.name }}</h4>
+        {{ with $.Site.Author.bio }}
+          <h5 class="sidebar-profile-bio">{{ . | markdownify }}</h5>
+        {{ end }}
+      </div>
+    {{ end }}
+    <ul class="sidebar-buttons">
+      {{ if index .Site.Menus (printf "main_%s" .Section) }}
+        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "main_%s" .Section)) "root" $) }}
+      {{ else }}
+        {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
+      {{ end }}
+    </ul>
+    <ul class="sidebar-buttons">
+      {{ if index .Site.Menus (printf "contact_%s" .Section) }}
+        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "contact_%s" .Section)) "root" $) }}
+      {{ else }}
+        {{ partial "menu.html" (dict "menu" .Site.Menus.contact "root" $) }}
+      {{ end }}
+    </ul>
+    <ul class="sidebar-buttons">
+      {{ if index .Site.Menus (printf "links_%s" .Section) }}
+        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "links_%s" .Section)) "root" $) }}
+      {{ else }}
+        {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
+      {{ end }}
+    </ul>
+    <ul class="sidebar-buttons">
+      {{ if index .Site.Menus (printf "misc_%s" .Section) }}
+        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "misc_%s" .Section)) "root" $) }}
+      {{ else }}
+        {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
+      {{ end }}
+    </ul>
+
+  </div>
+</nav>
