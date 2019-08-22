@@ -13,7 +13,7 @@
 # use grunt task `build` to synchronize assets
 
 baseURL: 'https://kvaps.github.io/'
-defaultContentLanguage: en
+defaultContentLanguage: en-us
 title: kvaps
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
@@ -42,9 +42,9 @@ author:
   gravatarEmail: kvapss@gmail.com
 
 languages:
-  en:
+  en-us:
     contentDir: content/en
-    languageCode: en
+    languageCode: en-us
     languageName: English
     weight: 1
 
@@ -129,6 +129,7 @@ languages:
     contentDir: content/ru
     languageCode: ru
     languageName: Russian
+    dateFormat: "2 January 2006"
     weight: 2
     menu:
       main:
@@ -208,7 +209,6 @@ languages:
           url: ../
 
 params:
-  #dateFormat: "2 January 2006"
   #keywords: ["development", "next-gen"]
   syntaxHighlighter: highlight.js
   clearReading: false
