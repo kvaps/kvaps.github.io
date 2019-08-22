@@ -185,7 +185,7 @@ languages:
           identifier: mahjong
           name: Риичи Маджонг
           pre: <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-          url: '/риичи-маджонг/'
+          url: '/riichi-mahjong/'
       misc:
         - weight: 1
           identifier: telegram
