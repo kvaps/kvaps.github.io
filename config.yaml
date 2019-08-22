@@ -14,7 +14,7 @@
 
 baseURL: 'https://kvaps.github.io/'
 defaultContentLanguage: en-us
-title: kvaps
+title: kvaps | personal blog
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
 googleAnalytics: "UA-53837210-1"
@@ -129,6 +129,7 @@ languages:
     contentDir: content/ru
     languageCode: ru
     languageName: Russian
+    title: kvaps | личный блог
     dateFormat: "2 January 2006"
     weight: 2
     menu:
