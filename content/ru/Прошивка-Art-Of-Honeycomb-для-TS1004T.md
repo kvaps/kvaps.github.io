@@ -7,4 +7,5 @@ link: http://4pda.ru/forum/index.php?s=&showtopic=327297&view=findpost&p=1278096
 ![](http://cs5-1.4pda.to/1649543.jpg)
 
 Так, добрались до релиз-кандидата, тестим, радуемся.
-<!-- more -->
+
+<!--more-->

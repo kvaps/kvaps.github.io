@@ -12,4 +12,4 @@ sudo docker exec -i -t communityserver /bin/bash -c 'cat /etc/nginx/sites-enable
 sudo docker rm -fv communityserver
 ```
 
-<!-- more -->
+<!--more-->

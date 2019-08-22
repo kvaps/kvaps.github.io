@@ -11,4 +11,5 @@ link: https://habr.com/post/400137/
 Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.
 
 Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из [Chrome Web Store](https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe) прямо в ваш браузер.
-<!-- more -->
+
+<!--more-->

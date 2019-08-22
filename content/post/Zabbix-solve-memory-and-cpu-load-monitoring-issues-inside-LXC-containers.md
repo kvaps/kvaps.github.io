@@ -8,4 +8,4 @@ Zabbix have some problems with memory collecting from cgroups limited containers
 If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory.
 Zabbix have [bug report](https://medium.com/r/?url=https%3A%2F%2Fsupport.zabbix.com%2Fbrowse%2FZBX-12164), but it seems that no one don’t want to fix it soon.
 So let’s fix it together byself.
-<!-- more -->
+<!--more-->

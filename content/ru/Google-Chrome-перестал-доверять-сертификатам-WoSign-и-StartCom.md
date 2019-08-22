@@ -10,4 +10,5 @@ link: https://habr.com/post/400953/
 Как [сообщалось ранее](https://habr.com/post/398161/) Google Chrome заблокировал сертификаты WoSign и StartCom.
 
 Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее `October 21, 2016 00:00:00 UTC`.
-<!-- more -->
+
+<!--more-->

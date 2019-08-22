@@ -10,4 +10,5 @@ index: false
 Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.
 
 *Carefully, in post there are a lot of pictures...*
-<!-- more -->
+
+<!--more-->

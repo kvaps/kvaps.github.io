@@ -9,4 +9,5 @@ index: false
 
 If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle.
 This time we will set it.
-<!-- more -->
+
+<!--more-->

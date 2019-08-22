@@ -17,4 +17,4 @@ This time I would like to tell how to configure this subject, in a particular ea
 
 
 Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.
-<!-- more -->
+<!--more-->

@@ -5,4 +5,4 @@ link: https://medium.com/@kvapss/easy-way-for-install-mikrotiks-cloud-hosted-rou
 ---
 
 Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps.
-<!-- more -->
+<!--more-->

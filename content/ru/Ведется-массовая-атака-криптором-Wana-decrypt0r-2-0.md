@@ -11,4 +11,5 @@ link: https://habr.com/post/403837/#habracut
 *A ransomware spreading in the lab at the university ([отсюда](https://twitter.com/dodicin/status/862991818904002565/photo/1))*
 
 Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций.
-<!-- more -->
+
+<!--more-->
