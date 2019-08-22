@@ -12,32 +12,16 @@
       </div>
     {{ end }}
     <ul class="sidebar-buttons">
-      {{ if index .Site.Menus (printf "main_%s" .Section) }}
-        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "main_%s" .Section)) "root" $) }}
-      {{ else }}
-        {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
-      {{ end }}
+      {{ partial "menu.html" (dict "menu" .Site.Menus.main "root" $) }}
     </ul>
     <ul class="sidebar-buttons">
-      {{ if index .Site.Menus (printf "contact_%s" .Section) }}
-        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "contact_%s" .Section)) "root" $) }}
-      {{ else }}
-        {{ partial "menu.html" (dict "menu" .Site.Menus.contact "root" $) }}
-      {{ end }}
+      {{ partial "menu.html" (dict "menu" .Site.Menus.contact "root" $) }}
     </ul>
     <ul class="sidebar-buttons">
-      {{ if index .Site.Menus (printf "links_%s" .Section) }}
-        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "links_%s" .Section)) "root" $) }}
-      {{ else }}
-        {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
-      {{ end }}
+      {{ partial "menu.html" (dict "menu" .Site.Menus.links "root" $) }}
     </ul>
     <ul class="sidebar-buttons">
-      {{ if index .Site.Menus (printf "misc_%s" .Section) }}
-        {{ partial "menu.html" (dict "menu" (index .Site.Menus (printf "misc_%s" .Section)) "root" $) }}
-      {{ else }}
-        {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
-      {{ end }}
+      {{ partial "menu.html" (dict "menu" .Site.Menus.misc "root" $) }}
     </ul>
 
   </div>

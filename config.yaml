@@ -13,8 +13,7 @@
 # use grunt task `build` to synchronize assets
 
 baseURL: 'https://kvaps.github.io/'
-languageCode: en-us
-defaultContentLanguage: en-us
+defaultContentLanguage: en
 title: kvaps
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
@@ -42,151 +41,171 @@ author:
   location: Czech republic, EU
   gravatarEmail: kvapss@gmail.com
 
-menu:
-  main:
-    - weight: 1
-      identifier: home
-      name: Home
-      pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-      url: /
-    #- weight: 2
-    #  identifier: search
-    #  name: Search
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-    #  url: '/#search'
-    #- weight: 3
-    #  identifier: categories
-    #  name: Categories
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-    #  url: /categories
-    #- weight: 4
-    #  identifier: tags
-    #  name: Tags
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-    #  url: /tags
-    #- weight: 5
-    #  identifier: archives
-    #  name: Archives
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-    #  url: /archives
-    - weight: 6
-      identifier: about
-      name: About
-      pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      url: '/#about'
+languages:
+  en:
+    contentDir: content/en
+    languageCode: en
+    languageName: English
+    weight: 1
 
-  main_ru:
-    - weight: 1
-      identifier: home_ru
-      name: Главная
-      pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-      url: /
-    #- weight: 2
-    #  identifier: search_ru
-    #  name: Поиск
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-    #  url: '/#search'
-    #- weight: 3
-    #  identifier: categories_ru
-    #  name: Категории
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-    #  url: /categories
-    #- weight: 4
-    #  identifier: tags_ru
-    #  name: Тэги
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-    #  url: /tags
-    #- weight: 5
-    #  identifier: archives_ru
-    #  name: Архив
-    #  pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-    #  url: /archives
-    - weight: 6
-      identifier: about_ru
-      name: Обо мне
-      pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      url: '/#about'
+    menu:
+      main:
+        - weight: 1
+          identifier: home
+          name: Home
+          pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+          url: /
+        - weight: 2
+          identifier: about
+          name: About
+          pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+          url: '/#about'
+        #- weight: 3
+        #  identifier: search
+        #  name: Search
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+        #  url: '/#search'
+        #- weight: 4
+        #  identifier: categories
+        #  name: Categories
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+        #  url: /categories
+        #- weight: 5
+        #  identifier: tags
+        #  name: Tags
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+        #  url: /tags
+        - weight: 6
+          identifier: archives
+          name: Archives
+          pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+          url: /archives
 
+      contact:
+        - weight: 1
+          identifier: github
+          name: GitHub
+          pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+          url: 'https://github.com/kvaps'
+        - weight: 2
+          identifier: dockerhub
+          name: Docker Hub
+          pre: <i class="sidebar-button-icon fa fa-lg fa-ship"></i>
+          url: 'https://hub.docker.com/u/kvaps/'
+        - weight: 3
+          identifier: stackoverflow
+          name: Stack Overflow
+          pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+          url: 'https://stackoverflow.com/users/2931267/kvaps'
+      links:
+        - weight: 4
+          identifier: projects-archive
+          name: Projects Archive
+          pre: <i class="sidebar-button-icon fa fa-lg fa-link"></i>
+          url: '/projects-archive/'
+      misc:
+        - weight: 1
+          identifier: telegram
+          name: Telegram
+          pre: <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
+          url: 'https://t.me/kvaps'
+        - weight: 2
+          identifier: mail
+          name: Mail
+          pre: <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
+          url: 'mailto:kvapss@gmail.com'
+        - weight: 3
+          identifier: rss
+          name: RSS
+          pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+          url: /index.xml
+        - weight: 4
+          identifier: russian
+          name: Русский
+          pre: <i class="sidebar-button-icon fa fa-lg fa-language"></i>
+          url: /ru/
 
-  contact:
-    - weight: 1
-      identifier: github
-      name: GitHub
-      pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-      url: 'https://github.com/kvaps'
-    - weight: 2
-      identifier: dockerhub
-      name: Docker Hub
-      pre: <i class="sidebar-button-icon fa fa-lg fa-ship"></i>
-      url: 'https://hub.docker.com/u/kvaps/'
-    - weight: 3
-      identifier: stackoverflow
-      name: Stack Overflow
-      pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
-      url: 'https://stackoverflow.com/users/2931267/kvaps'
+  ru:
+    contentDir: content/ru
+    languageCode: ru
+    languageName: Russian
+    weight: 2
+    menu:
+      main:
+        - weight: 1
+          identifier: home
+          name: Главная
+          pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+          url: /
+        - weight: 2
+          identifier: about
+          name: Об авторе
+          pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+          url: '/#about'
+        #- weight: 3
+        #  identifier: search
+        #  name: Поиск
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+        #  url: '/#search'
+        #- weight: 4
+        #  identifier: categories
+        #  name: Категории
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+        #  url: /categories
+        #- weight: 5
+        #  identifier: tags
+        #  name: Тэги
+        #  pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+        #  url: /tags
+        - weight: 6
+          identifier: archives
+          name: Архив
+          pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+          url: /archives
 
-  links:
-    - weight: 4
-      identifier: projects-archive
-      name: Projects Archive
-      pre: <i class="sidebar-button-icon fa fa-lg fa-link"></i>
-      url: '/projects-archive/'
-
-  links_ru:
-    - weight: 4
-      identifier: projects-archive
-      name: Архив проектов
-      pre: <i class="sidebar-button-icon fa fa-lg fa-link"></i>
-      url: '/projects-archive/'
-    - weight: 5
-      identifier: mahjong
-      name: Риичи Маджонг
-      pre: <i class="sidebar-button-icon fa fa-lg fa-book"></i>
-      url: '/ru/риичи-маджонг/'
-
-  misc:
-    - weight: 1
-      identifier: telegram
-      name: Telegram
-      pre: <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
-      url: 'https://t.me/kvaps'
-    - weight: 2
-      identifier: mail
-      name: Mail
-      pre: <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
-      url: 'mailto:kvapss@gmail.com'
-    - weight: 3
-      identifier: rss
-      name: RSS
-      pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-      url: /index.xml
-    - weight: 4
-      identifier: russian
-      name: На русском
-      pre: <i class="sidebar-button-icon fa fa-lg fa-language"></i>
-      url: /ru/
-
-  misc_ru:
-    - weight: 1
-      identifier: telegram
-      name: Telegram
-      pre: <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
-      url: 'https://t.me/kvaps'
-    - weight: 2
-      identifier: mail
-      name: Mail
-      pre: <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
-      url: 'mailto:kvapss@gmail.com'
-    - weight: 3
-      identifier: rss
-      name: RSS
-      pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-      url: /index.xml
-    - weight: 4
-      identifier: english
-      name: English
-      pre: <i class="sidebar-button-icon fa fa-lg fa-language"></i>
-      url: /
+      contact:
+        - weight: 1
+          identifier: github
+          name: GitHub
+          pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+          url: 'https://github.com/kvaps'
+        - weight: 2
+          identifier: habrahabr
+          name: Habrahabr
+          pre: <i class="sidebar-button-icon fa fa-lg fa-h-square"></i>
+          url: 'https://habr.com/users/kvaps/'
+      links:
+        - weight: 4
+          identifier: projects-archive
+          name: Архив проектов
+          pre: <i class="sidebar-button-icon fa fa-lg fa-link"></i>
+          url: '/projects-archive/'
+        - weight: 5
+          identifier: mahjong
+          name: Риичи Маджонг
+          pre: <i class="sidebar-button-icon fa fa-lg fa-book"></i>
+          url: '/риичи-маджонг/'
+      misc:
+        - weight: 1
+          identifier: telegram
+          name: Telegram
+          pre: <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
+          url: 'https://t.me/kvaps'
+        - weight: 2
+          identifier: mail
+          name: Mail
+          pre: <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
+          url: 'mailto:kvapss@gmail.com'
+        - weight: 3
+          identifier: rss
+          name: RSS
+          pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+          url: /index.xml
+        - weight: 4
+          identifier: english
+          name: English
+          pre: <i class="sidebar-button-icon fa fa-lg fa-language"></i>
+          url: ../
 
 params:
   #dateFormat: "2 January 2006"
@@ -204,7 +223,7 @@ params:
   #favicon: "/favicon.png"
   #swapPaginator: true
   customCSS:
-  - href: "css/style.css"
+  - href: "../css/style.css"
   #customJS:
   #- src: "js/myscript.js"
   sharingOptions:
