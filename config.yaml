@@ -220,7 +220,7 @@ params:
   thumbnailImage: true
   thumbnailImagePosition: bottom
   autoThumbnailImage: true
-  #favicon: "/favicon.png"
+  favicon: "/favicon.ico"
   #swapPaginator: true
   customCSS:
   - href: "../css/style.css"
