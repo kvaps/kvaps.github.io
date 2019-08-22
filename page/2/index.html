@@ -273,17 +273,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://developers-club.com/posts/268711/" target="_blank">
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2018/10/02/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/" target="_blank">
       
-          The CentOS installation on ZFS in UEFI [Translation]
+          Building a Network Bootable Server Farm for Kubernetes with LTSP
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-10-13T15:37:00Z">
+      <time itemprop="datePublished" datetime="2018-10-02T21:35:07Z">
         
-  October 13, 2015
+  October 2, 2018
 
       </time>
     
@@ -293,11 +293,19 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.
+        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt="" /></p>
+
+<p>In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.</p>
+
+<p>You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!</p>
+
+<p>You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!</p>
+
+<p>Intrigued? Let me walk you through how it works.</p>
       
       <p>
         
-          <a href="http://developers-club.com/posts/268711/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://kubernetes.io/blog/2018/10/02/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -325,17 +333,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://developers-club.com/posts/266375/" target="_blank">
+        <a class="link-unstyled" href="https://medium.com/@kvapss/deploying-linstor-with-proxmox-91c746b4035d" target="_blank">
       
-          We configure the keyboard shortcuts in Linux like Mac OS X [Translation]
+          Deploying LINSTOR storage for Proxmox
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-09-09T16:30:00Z">
+      <time itemprop="datePublished" datetime="2018-09-12T21:36:59Z">
         
-  September 9, 2015
+  September 12, 2018
 
       </time>
     
@@ -345,11 +353,19 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser. After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.
+        <p><img src="https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png" alt="" /></p>
+
+<p>Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.</p>
+
+<p>For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.</p>
+
+<p>LINSTOR supports thin-provisioning, snapshots and many other interesting things.</p>
+
+<p>This solution is good suitable for virtual machines and containers.</p>
       
       <p>
         
-          <a href="http://developers-club.com/posts/266375/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://medium.com/@kvapss/deploying-linstor-with-proxmox-91c746b4035d" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -377,17 +393,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://developers-club.com/posts/260527/" target="_blank">
+        <a class="link-unstyled" href="https://medium.com/@kvapss/run-kubernetes-in-lxc-container-f04aa94b6c9c" target="_blank">
       
-          Kolab Groupware (Part 2 — Installation) [Translation]
+          Run kubernetes inside LXC container
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-07-18T14:17:00Z">
+      <time itemprop="datePublished" datetime="2018-08-22T21:36:47Z">
         
-  July 18, 2015
+  August 22, 2018
 
       </time>
     
@@ -397,11 +413,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle. This time we will set it. 
+        <p><img src="https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png" alt="" /></p>
+
+<p>I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.
+In this case you can have only one master, and still have all the features of multimater.</p>
       
       <p>
         
-          <a href="http://developers-club.com/posts/260527/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://medium.com/@kvapss/run-kubernetes-in-lxc-container-f04aa94b6c9c" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -429,17 +448,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://developers-club.com/posts/260469/" target="_blank">
+        <a class="link-unstyled" href="https://medium.com/@kvapss/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm-fb1cf7302b85" target="_blank">
       
-          Kolab Groupware (Part 1 — the Overview) [Translation]
+          Easy way for install Mikrotik’s Cloud Hosted Router on any Cloud VM
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-07-17T15:17:00Z">
+      <time itemprop="datePublished" datetime="2018-02-06T12:53:35Z">
         
-  July 17, 2015
+  February 6, 2018
 
       </time>
     
@@ -449,12 +468,11 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.
-Carefully, in post there are a lot of pictures&hellip; 
+        <p>Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps.</p>
       
       <p>
         
-          <a href="http://developers-club.com/posts/260469/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://medium.com/@kvapss/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm-fb1cf7302b85" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -482,17 +500,17 @@ Carefully, in post there are a lot of pictures&hellip;
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://developers-club.com/posts/216101/" target="_blank">
+        <a class="link-unstyled" href="https://medium.com/@kvapss/zabbix-solve-memory-monitoring-issue-inside-lxc-containers-98ddf191051c" target="_blank">
       
-          we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]
+          Zabbix: solve memory and cpu load monitoring issues inside LXC containers
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-03-18T14:51:00Z">
+      <time itemprop="datePublished" datetime="2017-11-29T12:53:18Z">
         
-  March 18, 2014
+  November 29, 2017
 
       </time>
     
@@ -502,11 +520,138 @@ Carefully, in post there are a lot of pictures&hellip;
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services. 
+        <p>Zabbix have some problems with memory collecting from cgroups limited containers.
+If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory.
+Zabbix have <a href="https://medium.com/r/?url=https%3A%2F%2Fsupport.zabbix.com%2Fbrowse%2FZBX-12164">bug report</a>, but it seems that no one don’t want to fix it soon.
+So let’s fix it together byself.</p>
       
       <p>
         
-          <a href="http://developers-club.com/posts/216101/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://medium.com/@kvapss/zabbix-solve-memory-monitoring-issue-inside-lxc-containers-98ddf191051c" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
+      
+          ONLYOFFICE configuration for docker-compose (and letsencrypt).
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
+        
+  December 14, 2016
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <ul>
+<li><p>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</p>
+
+<pre><code class="language-bash">docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c 'cat /etc/nginx/sites-enabled/onlyoffice' &gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+</code></pre></li>
+</ul>
+      
+      <p>
+        
+          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="http://developers-club.com/posts/270187/" target="_blank">
+      
+          We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
+        
+  November 16, 2015
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="" />
+This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p>
+
+<ul>
+<li><strong><a href="http://habr.com/post/270187/#ceph">The Ceph installation, the distributed storage</a></strong>. <em>(I will describe installation of two-level storage with the caching pool from SSD disks)</em></li>
+<li><strong><a href="http://habr.com/post/270187/#galera">The installation MySQL, Galera of a cluster with the master master replication</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#openvswitch">Installation software switch of OpenvSwitch</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#opennebula">Installation directly OpenNebula</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#pacemaker">Setup of failover cluster</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#configuration">Initial configuration</a></strong></li>
+</ul>
+
+<p>Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.</p>
+      
+      <p>
+        
+          <a href="http://developers-club.com/posts/270187/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -529,8 +674,15 @@ Carefully, in post there are a lot of pictures&hellip;
           </li>
         
         
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://kvaps.github.io/page/3/">
+              <span>OLDER POSTS</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
       
-      <li class="pagination-number">page 2 of 2</li>
+      <li class="pagination-number">page 2 of 3</li>
     </ul>
   </div>
 

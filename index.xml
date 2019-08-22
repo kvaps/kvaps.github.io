@@ -6,10 +6,202 @@
     <description>Recent content on kvaps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Oct 2018 22:14:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Про DevOps</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE-devops/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE-devops/</guid>
+      <description>Вот ядро Которое построил Линус.
+А это системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+А это суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот под, Что часто пинает контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.</description>
+    </item>
+    
+    <item>
+      <title>Храним SSH-ключи безопасно</title>
+      <link>https://kvaps.github.io/ru/%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BC-ssh-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8-%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE/</link>
+      <pubDate>Wed, 15 May 2019 09:05:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BC-ssh-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8-%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/up/j1/kl/upj1kliwm70ton2ocnhvuf_kywm.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Хочу рассказать как безопасно хранить SSH-ключи на локальной машине, не боясь того, что какое-то приложение может украсть или расшифровать их.&lt;/p&gt;
+
+&lt;p&gt;Статья будет полезна тем, кто так и не нашел элегантного решения после &lt;a href=&#34;https://www.opennet.ru/opennews/art.shtml?num=49082&#34;&gt;паранои&lt;/a&gt; в 2018 и продолжает хранить ключи в &lt;code&gt;$HOME/.ssh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для решения данной проблемы предлагаю использовать &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;, который является одним из лучших менеджеров паролей, он использует сильные алгоритмы шифрования, а также имеет встроенный SSH-агент.&lt;/p&gt;
+
+&lt;p&gt;Это дает возможность безопасно хранить все ключи прямо в базе паролей и автоматически добавлять их в систему при её открытии. Как только база будет закрыта, использование SSH-ключей также станет невозможным&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Store SSH Keys Securely</title>
+      <link>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*JlXp6Hsyfcvk7LSi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let me tell you how you can safely store SSH keys on a local machine, for not having a fear that some application can steal or decrypt them.
+This article will be especially useful to those who have not found an elegant solution after the &lt;a href=&#34;https://latacora.singles/2018/08/03/the-default-openssh.html&#34;&gt;paranoia&lt;/a&gt; in 2018 and continue storing keys in &lt;code&gt;$HOME/.ssh&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;To solve this problem, I suggest you using &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;, which is one of the best password managers, it is using strong encryption algorithms, and also it have an integrated SSH agent.&lt;/p&gt;
+
+&lt;p&gt;This allows you to safely store all the keys directly in the password database and automatically add them to the system when it is opened. Once the base is closed, the use of SSH keys will also be impossible&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Хранилище LINSTOR и его интеграция с OpenNebula</title>
+      <link>https://kvaps.github.io/ru/%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-linstor-%D0%B8-%D0%B5%D0%B3%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%81-opennebula/</link>
+      <pubDate>Mon, 13 May 2019 01:18:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-linstor-%D0%B8-%D0%B5%D0%B3%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%81-opennebula/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Не так давно ребята из LINBIT представили свое новое SDS-решение - Linstor. Это полностью свободное хранилище в основе которого используются проверенные технологии: DRBD, LVM, ZFS. Linstor сочетает в себе простоту и хорошо проработанную архитектуру, что позволяет добиться стабильности и достаточно внушительных результатов.&lt;/p&gt;
+
+&lt;p&gt;Сегодня я хотел бы рассказать про него чуть подробнее и показать насколько просто его можно интегрировать с OpenNebula используя linstor_un - новый драйвер, который я разработал специально для этой цели.&lt;/p&gt;
+
+&lt;p&gt;Linstor в сочетании с OpenNebula позволяет построить быстрое и надежное облако, которое можно без проблем развернуть на собственной инфраструктуре&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Haproxy for Kubernetes</title>
+      <link>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/619/1*HPqRvvMlCyxydro6ezCpow.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to make this scheme more safe you can add haproxy layer between keepalived and kube-apiserver.&lt;/p&gt;
+
+&lt;p&gt;Just install haproxy package into your system, and add the next configuration into &lt;code&gt;/etc/haproxy/haproxy.cfg&lt;/code&gt; file&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Screen streaming to multiple devices via network</title>
+      <link>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3701/1*2P2MvNWAEffBGR85d8nJcQ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a need to show dashboard with monitoring information on several screens in the office. There are several old Raspberry Pi Model B+ and a hypervisor with a virtually unlimited amount of resources.&lt;/p&gt;
+
+&lt;p&gt;Apparently the Raspberry Pi Model B+ does not have enough power to keep the browser running constantly and draw a large amount of graphics in it, which is why the page is partially buggy and often crashes.&lt;/p&gt;
+
+&lt;p&gt;I found a fairly simple and elegant solution, which I want to share with you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Стримим экран на несколько устройств по сети</title>
+      <link>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%B8%D0%BC%D0%B8%D0%BC-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD-%D0%BD%D0%B0-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8/</link>
+      <pubDate>Tue, 30 Apr 2019 03:09:00 +1500</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%B8%D0%BC%D0%B8%D0%BC-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD-%D0%BD%D0%B0-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ef/qk/de/efqkdemwmhhniofkklcjvayvmm0.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Возникла у меня необходимость выводить дашборд с мониторингом на несколько экранов в офисе. В распоряжении имеется несколько стареньких Raspberry Pi Model B+ и гипервизор с практически неограниченным количеством ресурсов.&lt;/p&gt;
+
+&lt;p&gt;По видимому Raspberry Pi Model B+ не обладает достаточной произвольностью чтобы держать постоянно запущенным браузер и отрисовывать большое количество графики в нем, из-за чего бывает, что страница частично глючит и часто вылетает.&lt;/p&gt;
+
+&lt;p&gt;Нашлось достаточно простое и элегантное решение, которым я и хочу с вами поделиться&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Всё о Kubernetes на Bare Metal</title>
+      <link>https://kvaps.github.io/ru/%D0%B2%D1%81%D1%91-%D0%BE-kubernetes-%D0%BD%D0%B0-bare-metal/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B2%D1%81%D1%91-%D0%BE-kubernetes-%D0%BD%D0%B0-bare-metal/</guid>
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/yGKI5JoKMUY&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Видеозапись выступления «Всё, что нужно знать о Kubernetes на Bare Metal» (Андрей Квапил, WEDOS Internet a.s., Cloud Architect / DevOps)&lt;/p&gt;
+
+&lt;p&gt;Андрей Квапил делится своим опытом архитектуры облачных решений и девопса в крупнейшем чешском хостинге WEDOS, где Kubernetes активно используется для деплоя сервисов и серверов – уже сейчас для более чем 500 нод и с планируемым расширением до нескольких тысяч.&lt;/p&gt;
+
+&lt;p&gt;Отдельное внимание уделяется организации фермы серверов с загрузкой по сети и выбору хранилища. Докладчик протестировал большое количество свободных SDS-решений, прежде чем остановить свой выбор на Linstor – достаточно молодом проекте, который, тем не менее, уже отлично показал себя в продакшене.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Adding LDAP authentication to Kubernetes</title>
+      <link>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/848/0*ZKnEqwk9W9lREHxf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Short guide how to setup Keycloak for connect Kubernetes with your LDAP-server and import users and groups. It will allow you to configure RBAC and use auth-proxy to secure Kubernetes Dasboard and another applications, which have no authentification from begining.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Прикручиваем LDAP-авторизацию к Kubernetes</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%B8%D0%BA%D1%80%D1%83%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-ldap-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8E-%D0%BA-kubernetes/</link>
+      <pubDate>Thu, 21 Feb 2019 03:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%B8%D0%BA%D1%80%D1%83%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-ldap-%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8E-%D0%BA-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/kj/60/vi/kj60vi6ugv7bunlqdts2nlr2vja.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Небольшая инструкция о том, как используя Keycloak можно связать Kubernetes с вашим LDAP-сервером и настроить импорт пользователей и групп. Это позволит настраивать RBAC для ваших пользователей и использовать auth-proxy чтобы защитить Kubernetes Dashboard и другие приложения, которые не умеют производить авторизацию самостоятельно.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (More Simple Guide)</title>
+      <link>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</guid>
+      <description>&lt;p&gt;This guide is updated version of my previous article &lt;a href=&#34;https://medium.com/@kvapss/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca&#34;&gt;Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (Simple Guide)&lt;/a&gt;
+Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and more logical. Note that this article is my personal interpretation of official Creating Highly &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt; plus few more steps for Keepalived.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Разворачиваем Kubernetes HA-кластер на Baremetal с помощью Kubeadm и Keepalived (простое руководство)</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-kubernetes-ha-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D0%BD%D0%B0-baremetal-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-kubeadm-%D0%B8-keepalived-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE/</link>
+      <pubDate>Sat, 27 Oct 2018 14:38:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-kubernetes-ha-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D0%BD%D0%B0-baremetal-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-kubeadm-%D0%B8-keepalived-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE/</guid>
+      <description>&lt;p&gt;Эта статья является свободной интерпретацей официального руководства &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Creating Highly Available Clusters with kubeadm&lt;/a&gt; для &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt;. Мне не нравятся сложный язык и примеры использованные в нем, поэтому я написал свое руководство.&lt;/p&gt;
+
+&lt;p&gt;Если у вас появятся какие-либо вопросы или вам будет что-то неясно, обратитесь к официальной документации или спросите &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. Все этапы описаны здесь в максимально простой и сдержанной форме.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating Baremethal Kubernetes HA cluster with Kubeadm and Keepalived (Simple Guide)</title>
+      <link>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</guid>
+      <description>&lt;p&gt;This guide is a free interpretation of official &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Creating Highly Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt;. I don’t like this difficult form which used there, so I wrote this article.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Kolab and integrate it with FreeIPA</title>
+      <link>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is written steps for install &lt;a href=&#34;https://kolab.org/&#34;&gt;Kolab Groupware&lt;/a&gt; server and integrate it with &lt;a href=&#34;https://www.freeipa.org/page/Main_Page&#34;&gt;FreeIPA&lt;/a&gt; server.&lt;/p&gt;
+
+&lt;p&gt;Most of actions requires basic understanding in LDAP mechanism.
+FreeIPA should be already installed before preparing Kolab installation.
+We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.&lt;/p&gt;
+
+&lt;p&gt;In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Строим загружаемую по сети ферму серверов для Kubernetes с помощью LTSP</title>
@@ -123,8 +315,21 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Sun, 19 Aug 2018 11:52:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-nfs/</guid>
-      <description>Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного software-defiined хранилища рано или поздно слышал про DRBD, а может даже и имел дело с ним.
-Правда на пике популярности Ceph и GlusterFS, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со split-brain, что явно не добавило ему популярности.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://go.ahead.it/wp-content/uploads/2017/05/drbd.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного &lt;strong&gt;software-defiined хранилища&lt;/strong&gt; рано или поздно слышал про &lt;strong&gt;DRBD&lt;/strong&gt;, а может даже и имел дело с ним.&lt;/p&gt;
+
+&lt;p&gt;Правда на пике популярности &lt;strong&gt;Ceph&lt;/strong&gt; и &lt;strong&gt;GlusterFS&lt;/strong&gt;, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со &lt;strong&gt;split-brain&lt;/strong&gt;, что явно не добавило ему популярности.&lt;/p&gt;
+
+&lt;p&gt;Решение и правда не новое, но вполне конкурентоспособное. При относительно небольших затратах на CPU и RAM, &lt;strong&gt;DRBD&lt;/strong&gt; предоставляет реально быструю и безопасную синхронизацию на уровне &lt;strong&gt;блочного устройства&lt;/strong&gt;. За все это время LINBIT - разработчики DRBD не стоят на месте и постоянно дорабатывают его. Начиная с версии &lt;strong&gt;DRBD9&lt;/strong&gt; перестает быть просто сетевым зеркалом и становится чем-то бОльшим.&lt;/p&gt;
+
+&lt;p&gt;Во первых, идея создания одного &lt;strong&gt;распределенного блочного устройства&lt;/strong&gt; для нескольких серверов отошла на задний план, и теперь LINBIT старается предоставить инструменты оркестрации и управления множеством drbd-устройств в кластере, которые создаются поверх &lt;strong&gt;LVM&lt;/strong&gt; и &lt;strong&gt;ZFS-разделов&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Например DRBD9 поддерживает до 32 реплик, RDMA, diskless-ноды, а новые инструменты оркестрации позволяют использовать снапшоты, online-миграцию и много чего другого.&lt;/p&gt;
+
+&lt;p&gt;Несмотря на то что &lt;strong&gt;DRBD9&lt;/strong&gt; имеет инструменты интеграции с &lt;strong&gt;Proxmox&lt;/strong&gt;, &lt;strong&gt;Kubernetes&lt;/strong&gt;, &lt;strong&gt;OpenStack&lt;/strong&gt; и &lt;strong&gt;OpenNebula&lt;/strong&gt;, на данный момент они находится в некотором переходном режиме, когда новые инструменты еще не везде поддерживаются, а старые уже очень скоро будут объявлены как &lt;em&gt;deprecated&lt;/em&gt;. Речь идет о &lt;strong&gt;DRBDmanage&lt;/strong&gt; и &lt;strong&gt;Linstor&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Я воспользуюсь этим моментом что бы не сильно вдаваться в подробности каждого из них, но более подробно рассмотреть настройку и принципы работы с самим &lt;strong&gt;DRBD9&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,10 +338,23 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Mon, 04 Jun 2018 19:43:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/google-s-shell-style-guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/</guid>
-      <description>Предисловие Какой Shell использовать Bash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.
-Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов. Используйте set для установки опций shell, что бы вызов вашего скрипта как bash &amp;lt;script_name&amp;gt; не нарушило его функциональности.
-Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.
-Единственное исключение составляет если вы ограничены условиями того под что вы программируете.</description>
+      <description>&lt;h1 id=&#34;предисловие&#34;&gt;Предисловие&lt;/h1&gt;
+
+&lt;h3 id=&#34;какой-shell-использовать&#34;&gt;Какой Shell использовать&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;Bash&lt;/code&gt; единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.&lt;/p&gt;
+
+&lt;p&gt;Скрипты должны начинаться с &lt;code&gt;#!/bin/bash&lt;/code&gt; с минимальным набором флагов. Используйте &lt;code&gt;set&lt;/code&gt; для установки опций shell, что бы вызов вашего скрипта как &lt;code&gt;bash &amp;lt;script_name&amp;gt;&lt;/code&gt; не нарушило его функциональности.&lt;/p&gt;
+
+&lt;p&gt;Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.&lt;/p&gt;
+
+&lt;p&gt;Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.&lt;/p&gt;
+
+&lt;h3 id=&#34;когда-использовать-shell&#34;&gt;Когда использовать Shell&lt;/h3&gt;
+
+&lt;p&gt;Shell следует использовать только для небольших утилит или простых скрптов-оберток.&lt;/p&gt;
+
+&lt;p&gt;Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -161,8 +379,13 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Thu, 31 May 2018 13:52:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/sheepdog/</guid>
-      <description>Sheepdog - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании Nippon Telegraph and Telephone Corporation. Sheepdog - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования1cite_ref-1. (уже стала — прим.пер.)
- Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEMU.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sheepdog&lt;/strong&gt; - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании &lt;em&gt;Nippon Telegraph and Telephone Corporation&lt;/em&gt;. &lt;strong&gt;Sheepdog&lt;/strong&gt; - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования. &lt;em&gt;(уже стала — прим.пер.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEM&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -171,9 +394,13 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Fri, 11 May 2018 12:33:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/pritunl-vpn-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F-%D0%B8-%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0-10-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/</guid>
-      <description>В связи с последними событиями в России хочу рассказать вам о классном self-hosted VPN-сервере. После простой установки, без особого труда и углубленных знаний вы сможете создавать пользователей, генерировать VPN-профили и смотреть графики использования сети.
-А обеспечив VPN-подключением себя и ваших близких, вы можете попробовать разделить траты за виртуальный сервер с вашими друзьями и знакомыми.
-В результате чего пятидоллоравая VPS&amp;rsquo;ка может превратится в мощный инструмент обхода блокировок </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://files.readme.io/VrFcaFRleaC8nYnHZp4Q_logo_full2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В связи с последними событиями в России хочу рассказать вам о классном self-hosted VPN-сервере. После простой установки, без особого труда и углубленных знаний вы сможете создавать пользователей, генерировать VPN-профили и смотреть графики использования сети.&lt;/p&gt;
+
+&lt;p&gt;А обеспечив VPN-подключением себя и ваших близких, вы можете попробовать разделить траты за виртуальный сервер с вашими друзьями и знакомыми.&lt;/p&gt;
+
+&lt;p&gt;В результате чего пятидоллоравая VPS&amp;rsquo;ка может превратится в мощный инструмент обхода блокировок&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -182,8 +409,9 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Sun, 01 Apr 2018 14:57:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-mikrotik-routeros-%D0%B2-%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B5/</guid>
-      <description>Многие облачные провайдеры не позволяют загружать ISO-файлы и не предоставляют никакой возможности для установки ОС отличных от тех что предусмотрены самим облаком.
-В этой статье я расскажу вам как избежать данное ограничение и как просто в 5 шагов можно установить Mikrotik Cloud Hosted Router на любой облачной виртуалке. </description>
+      <description>&lt;p&gt;Многие облачные провайдеры не позволяют загружать ISO-файлы и не предоставляют никакой возможности для установки ОС отличных от тех что предусмотрены самим облаком.&lt;/p&gt;
+
+&lt;p&gt;В этой статье я расскажу вам как избежать данное ограничение и как просто в 5 шагов можно установить Mikrotik Cloud Hosted Router на любой облачной виртуалке.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -192,7 +420,7 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Tue, 06 Feb 2018 12:53:35 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</guid>
-      <description>Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps. </description>
+      <description>&lt;p&gt;Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -201,7 +429,10 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Wed, 29 Nov 2017 12:53:18 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</guid>
-      <description>Zabbix have some problems with memory collecting from cgroups limited containers. If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory. Zabbix have bug report, but it seems that no one don’t want to fix it soon. So let’s fix it together byself. </description>
+      <description>&lt;p&gt;Zabbix have some problems with memory collecting from cgroups limited containers.
+If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory.
+Zabbix have &lt;a href=&#34;https://medium.com/r/?url=https%3A%2F%2Fsupport.zabbix.com%2Fbrowse%2FZBX-12164&#34;&gt;bug report&lt;/a&gt;, but it seems that no one don’t want to fix it soon.
+So let’s fix it together byself.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -210,9 +441,13 @@ In this case you can have only one master, and still have all the features of mu
       <pubDate>Thu, 11 May 2017 18:32:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%B2%D0%B5%D0%B4%D0%B5%D1%82%D1%81%D1%8F-%D0%BC%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%BC-wana-decrypt0r-2-0/</guid>
-      <description>В настоящий момент можно наблюдать масштабную атаку трояном-декриптором &amp;ldquo;Wana decrypt0r 2.0&amp;rdquo; Атака наблюдается в разных сетях совершенно никак не связанных между ссобой.
-A ransomware spreading in the lab at the university (отсюда)
-Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций. </description>
+      <description>&lt;p&gt;В настоящий момент можно наблюдать масштабную атаку трояном-декриптором &amp;ldquo;Wana decrypt0r 2.0&amp;rdquo;
+Атака наблюдается в разных сетях совершенно никак не связанных между ссобой.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/C_n2dzcW0AAsnG-.jpg:large&#34; alt=&#34;&#34; /&gt;
+&lt;em&gt;A ransomware spreading in the lab at the university (&lt;a href=&#34;https://twitter.com/dodicin/status/862991818904002565/photo/1&#34;&gt;отсюда&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -221,8 +456,17 @@ A ransomware spreading in the lab at the university (отсюда)
       <pubDate>Sat, 06 May 2017 16:46:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/all-in-one-proxmox-openmediavault-%D0%B8%D0%BB%D0%B8-%D0%B5%D1%89%D1%91-%D0%BE%D0%B4%D0%BD%D0%B0-%D0%B8%D0%B4%D0%B5%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B3%D0%BE-nas/</guid>
-      <description>Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&amp;hellip;
-Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое. Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/web/f0a/592/3de/f0a5923dec20422e952394a6d0473355.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое.
+Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.&lt;/p&gt;
+
+&lt;p&gt;Но к сожалению не все было так гладко как хотелось бы и, к тому же, флешка с установленной системой приказала долго жить, так что настало время для новых экспериментов!
+На этот раз я задумал реализовать что-то похожее, но только лучше и целиком на Linux.&lt;/p&gt;
+
+&lt;p&gt;В статье так же будет немного рассказано про Docker и автоматический прокси с автоматическим получением сертификатов Letsencrypt.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -231,8 +475,11 @@ A ransomware spreading in the lab at the university (отсюда)
       <pubDate>Thu, 26 Jan 2017 11:19:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/google-chrome-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0%D0%BC-wosign-%D0%B8-startcom/</guid>
-      <description>Как сообщалось ранее Google Chrome заблокировал сертификаты WoSign и StartCom.
-Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее October 21, 2016 00:00:00 UTC. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1ff/c49/9de/1ffc499debe24e1989f3c1608255917c.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Как &lt;a href=&#34;https://habr.com/post/398161/&#34;&gt;сообщалось ранее&lt;/a&gt; Google Chrome заблокировал сертификаты WoSign и StartCom.&lt;/p&gt;
+
+&lt;p&gt;Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее &lt;code&gt;October 21, 2016 00:00:00 UTC&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -241,8 +488,15 @@ A ransomware spreading in the lab at the university (отсюда)
       <pubDate>Wed, 25 Jan 2017 08:52:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81-pacemaker-%D0%B8-ipaddr-active-active-cluster/</guid>
-      <description>Хочу рассказать вам еще об одном способе балансировки нагрузки. Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.
-Для начала расскажу подробнее чем такой метод балансировки примечателен: * Отсутсвие внешнего балансировщика - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Хочу рассказать вам еще об одном способе балансировки нагрузки.
+Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.&lt;/p&gt;
+
+&lt;p&gt;Для начала расскажу подробнее чем такой метод балансировки примечателен:
+* &lt;strong&gt;Отсутсвие внешнего балансировщика&lt;/strong&gt; - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.
+* &lt;strong&gt;Высокая доступность&lt;/strong&gt; - Если одна нода падает ее обязаности подхватывает другая.
+* &lt;strong&gt;Простота настройки&lt;/strong&gt; - Настройка осуществляется всего в 3-5 команд&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -261,8 +515,12 @@ ArtPredel.ru  The most unusual art from the web (abandoned)</description>
       <pubDate>Fri, 23 Dec 2016 13:26:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/leaf-browser-alpha-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80-%D1%81-%D0%B4%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC%D0%B8/</guid>
-      <description>Поклонникам расширения Tree Style Tab (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser. Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.
-Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из Chrome Web Store прямо в ваш браузер. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Поклонникам расширения &lt;a href=&#34;https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/&#34;&gt;Tree Style Tab&lt;/a&gt; (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser.
+Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.&lt;/p&gt;
+
+&lt;p&gt;Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из &lt;a href=&#34;https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe&#34;&gt;Chrome Web Store&lt;/a&gt; прямо в ваш браузер.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -271,8 +529,14 @@ ArtPredel.ru  The most unusual art from the web (abandoned)</description>
       <pubDate>Thu, 22 Dec 2016 13:25:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/hugin-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC/</guid>
-      <description>Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы. Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.
-Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы.
+Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.&lt;/p&gt;
+
+&lt;p&gt;Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.&lt;/p&gt;
+
+&lt;p&gt;Наконец все построение панорамы, вместо сложной и муторной работы, сведется к игре найди 5 &lt;s&gt;отличий&lt;/s&gt; схожестей, а то и вовсе к нажатию всего трех кнопок.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -281,8 +545,15 @@ ArtPredel.ru  The most unusual art from the web (abandoned)</description>
       <pubDate>Wed, 14 Dec 2016 03:55:37 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</guid>
-      <description> Run communityserver container, and get onlyoffice.conf from it:
-docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &amp;gt; onlyoffice.conf` sudo docker rm -fv communityserver   </description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &amp;gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -291,7 +562,9 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2
       <pubDate>Fri, 18 Nov 2016 04:00:14 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%81-gopro-%D0%B8-%D0%BA%D0%BE%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-raw-%D0%B2-jpg/</guid>
-      <description>Расскажу как круто можно ужимать видео с гопрошки без потери качества. Видео как правило жмется очень хорошо, мне удавалось сжимать ролики до 70% безо всяких на то проблем. Для windows-пользователей приложу инструкцию, linux-пользователи и так разберутся, все скрипты приведены ниже. </description>
+      <description>&lt;p&gt;Расскажу как круто можно ужимать видео с гопрошки без потери качества.
+Видео как правило жмется очень хорошо, мне удавалось сжимать ролики до 70% безо всяких на то проблем.
+Для windows-пользователей приложу инструкцию, linux-пользователи и так разберутся, все скрипты приведены ниже.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -300,10 +573,17 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2
       <pubDate>Tue, 15 Nov 2016 14:53:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-windows-vm-%D0%B2-proxmox-ve-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2-zfs-%D0%B8-mdadm-lvm/</guid>
-      <description>Если кому интересно, мы тут недавно потестили производительность чтение/запись внутри windows машины на ноде с Proxmox 4.3.
-Хостовая система была установленна на raid10 реализованный двумя разными способами (zfs и mdadm+lvm)
-Тесты проводились на Windows-госте, так-как в первую очередь интересовала производительность именно этой ОС.
-Должен признать, это вторая версия статьи, в первой была допущена фатальная ошибка: zfs тестировался на local storage, а не на zvol, т.к. я до последнего думал, что proxmox не поддерживает zvol.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/25d/8c0/9c1/25d8c09c109b4386935f99576c54f5a0.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Если кому интересно, мы тут недавно потестили производительность чтение/запись внутри windows машины на ноде с Proxmox 4.3.&lt;/p&gt;
+
+&lt;p&gt;Хостовая система была установленна на raid10 реализованный двумя разными способами (zfs и mdadm+lvm)&lt;/p&gt;
+
+&lt;p&gt;Тесты проводились на Windows-госте, так-как в первую очередь интересовала производительность именно этой ОС.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Должен признать, это вторая версия статьи, в первой была допущена фатальная ошибка:
+zfs тестировался на local storage, а не на zvol, т.к. я до последнего думал, что proxmox не поддерживает zvol.
+Огромное спасибо @winduzoid за то, что заметил данное недоразумение.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -312,8 +592,19 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2
       <pubDate>Mon, 23 May 2016 07:49:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-url-overrides-%D0%B2-keepass2/</guid>
-      <description>Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.
-По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь Keepass2 - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/346/b1c/039/346b1c0395f843f18a1e2666598efd4f.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.&lt;/p&gt;
+
+&lt;p&gt;По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь &lt;a href=&#34;http://keepass.info/index.html&#34;&gt;Keepass2&lt;/a&gt; - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз. Если кто хочет познакомиться подробнее, вот несколько ссылок: &lt;a href=&#34;https://ru.wikipedia.org/wiki/KeePass&#34;&gt;wiki&lt;/a&gt;, &lt;a href=&#34;https://habr.com/post/10523/&#34;&gt;обзорная статья&lt;/a&gt;, сравнения с другими: &lt;a href=&#34;https://habr.com/post/125248/&#34;&gt;1&lt;/a&gt; &lt;a href=&#34;https://habr.com/post/225053/&#34;&gt;2&lt;/a&gt;.
+Вместо этого я хотел бы рассказать об одной его интересной функции:&lt;/p&gt;
+
+&lt;p&gt;Функция называется &amp;ldquo;URL Overrides&amp;rdquo;, и представляет ссобой возможность запускать ассоциированные с записями программы и передавать им данные для аутентификации прямо из Keepass&amp;rsquo;а.&lt;/p&gt;
+
+&lt;p&gt;Например, вы можете хранить в keepass&amp;rsquo;е список учеток для подключения к  удаленному серверу, а в определенный момент выбрать нужную и простым нажатием Ctrl+U, запустить клиент удаленного подключения, и моментально получить доступ к вашему серверу.
+Это очень удобно, так как все логины и пароли не хранятся абы где, а надежно зашифрованны в вашей базе keepass и передаются программе-клиенту только в момент подключения.&lt;/p&gt;
+
+&lt;p&gt;Идея состоит в том, что бы использовать Keepass как единую точку входа на все удаленные сервера.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -322,8 +613,20 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2
       <pubDate>Tue, 22 Mar 2016 07:51:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/ltsp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-linux/</guid>
-      <description>Сейчас я расскажу вам о том, как можно сэкономить немалое количество времени и денег на вашей IT-инфраструктуре. Как централизованно админить большое количество linux рабочих станций не разводя при этом хаос в вашей экосистеме. И так, что же такое LTSP?
-LTSP - Это терминальное решение на Linux. Говоря &amp;ldquo;терминальное&amp;rdquo;, я в первую очередь имею в виду не подключение к удаленному рабочему столу как в Windows. Я подразумеваю гораздо более гибкую и продвинутую систему доставки ПО, конфигов, домашенего каталога, да и самой операционной системы на клиентские рабочие станции с вашего терминального сервера.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/91f/ec4/76d/91fec476de2d7f6764aa8755a366e5f6.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Сейчас я расскажу вам о том, как можно сэкономить немалое количество времени и денег на вашей IT-инфраструктуре.
+Как централизованно админить большое количество linux рабочих станций не разводя при этом хаос в вашей экосистеме.
+И так, что же такое LTSP?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LTSP&lt;/strong&gt; - Это терминальное решение на Linux.
+Говоря &amp;ldquo;терминальное&amp;rdquo;, я в первую очередь имею в виду не подключение к удаленному рабочему столу как в Windows. Я подразумеваю гораздо более гибкую и продвинутую систему доставки ПО, конфигов, домашенего каталога, да и самой операционной системы на клиентские рабочие станции с вашего терминального сервера.&lt;/p&gt;
+
+&lt;p&gt;В частности, LTSP - это совокупность преднастроенных программ и скриптов которые позволят вам без особого труда превратить вашу свежеустановленную Ubuntu, или другой дистрибутив, в полностью готовое к работе терминальное окружение. Которое будет загружаться на любых компьютерах в вашей сети и предоставлять пользователю полноценный интерфейс.&lt;/p&gt;
+
+&lt;p&gt;У LTSP есть несколько режимов работы:
+* тонкий клиент
+* толстый клиент&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -332,7 +635,13 @@ LTSP - Это терминальное решение на Linux. Говоря &
       <pubDate>Wed, 24 Feb 2016 08:27:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/metronome-im-%D0%B8-jappix-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-jabber-%D0%B1%D0%B5%D0%B7-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B2-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B5/</guid>
-      <description>Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое… Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера. То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое…
+Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера.
+То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.&lt;/p&gt;
+
+&lt;p&gt;Речь пойдет об &lt;strong&gt;Metronome IM&lt;/strong&gt; и &lt;strong&gt;Jappix&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -341,8 +650,19 @@ LTSP - Это терминальное решение на Linux. Говоря &
       <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</guid>
-      <description>This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:
- The Ceph installation, the distributed storage. (I will describe installation of two-level storage with the caching pool from SSD disks) The installation MySQL, Galera of a cluster with the master master replication Installation software switch of OpenvSwitch Installation directly OpenNebula Setup of failover cluster Initial configuration  Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34; /&gt;
+This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#ceph&#34;&gt;The Ceph installation, the distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe installation of two-level storage with the caching pool from SSD disks)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#galera&#34;&gt;The installation MySQL, Galera of a cluster with the master master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#openvswitch&#34;&gt;Installation software switch of OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#opennebula&#34;&gt;Installation directly OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#pacemaker&#34;&gt;Setup of failover cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -351,8 +671,18 @@ LTSP - Это терминальное решение на Linux. Говоря &
       <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-opennebula-%D1%81-ceph-mariadb-galera-cluster-%D0%B8-openvswitch/</guid>
-      <description>На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:
- Установка Ceph, распределенного хранилища. (Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков) Установка MySQL, Galera кластера с мастер-мастер репликацией Установка софт-свича OpenvSwitch Установка непосредственно самой OpenNebula Настройка отказоустойчивого кластера Первоначальная конфигурация  Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34; /&gt; На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#ceph&#34;&gt;Установка Ceph, распределенного хранилища&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#galera&#34;&gt;Установка MySQL, Galera кластера с мастер-мастер репликацией&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#openvswitch&#34;&gt;Установка софт-свича OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#opennebula&#34;&gt;Установка непосредственно самой OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#pacemaker&#34;&gt;Настройка отказоустойчивого кластера&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#configuration&#34;&gt;Первоначальная конфигурация&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -361,7 +691,11 @@ LTSP - Это терминальное решение на Linux. Говоря &
       <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</guid>
-      <description>Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.&lt;/p&gt;
+
+&lt;p&gt;ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&#34;&gt;counters&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -370,8 +704,11 @@ LTSP - Это терминальное решение на Linux. Говоря &
       <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-centos-%D0%BD%D0%B0-zfs-%D0%B2-uefi/</guid>
-      <description>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.
-ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.&lt;/p&gt;
+
+&lt;p&gt;ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее &lt;a href=&#34;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&#34;&gt;фишками&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -380,7 +717,11 @@ ZFS был выбран тоже не случайно, так как на эт�
       <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</guid>
-      <description>Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser. After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser.
+After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.
+Once it has got me and I have decided that it is time to change something&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -389,7 +730,11 @@ ZFS был выбран тоже не случайно, так как на эт�
       <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88-%D0%B2-linux-%D0%BD%D0%B0%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5-mac-os-x/</guid>
-      <description>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере. После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер. В один прекрасный момент меня это достало и я решил, что пора что-то менять… </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.
+После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.
+В один прекрасный момент меня это достало и я решил, что пора что-то менять…&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -398,8 +743,14 @@ ZFS был выбран тоже не случайно, так как на эт�
       <pubDate>Thu, 20 Aug 2015 11:55:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D0%B1%D1%80%D0%BE%D1%81-usb-%D0%B2-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%BA%D1%83-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8-usbredir-%D0%B8-qemu/</guid>
-      <description>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети. Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP. Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU. Он так же является частью проекта spice, официально поддерживаемым RedHat.
-UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети.
+Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP.
+Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU.
+Он так же является частью проекта spice, официально поддерживаемым RedHat.&lt;/p&gt;
+
+&lt;p&gt;UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice. Но как оказалось им можно вполне успешно пользоваться и без spice. В роли сервера выступает usbredirserver, который шарит usb-устройство на определенный порт, а в качестве клиента сам QEMU, который эмулирует подключение экспортированного usb-устройства в определенный usb-контроллер вашей виртуальной машины. Благодаря такому подходу в качестве гостевой системы может использоваться абсолютно любая ОС, так как она даже не знает, что устройство является проброшенным удаленно, а вся логика ложится на QEMU.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -408,7 +759,10 @@ UsbRedir, это открытый протокол для проброса usb-�
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</guid>
-      <description>If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle. This time we will set it. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle.
+This time we will set it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -417,7 +771,10 @@ UsbRedir, это открытый протокол для проброса usb-�
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0/</guid>
-      <description>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой. На этот раз мы будем его устанавливать. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.
+На этот раз мы будем его устанавливать.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -426,8 +783,11 @@ UsbRedir, это открытый протокол для проброса usb-�
       <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</guid>
-      <description>Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.
-Carefully, in post there are a lot of pictures&amp;hellip; </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Carefully, in post there are a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -436,8 +796,11 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</guid>
-      <description>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.
-Осторожно, в посте много картинок&amp;hellip; </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Осторожно, в посте много картинок&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -446,17 +809,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Mon, 18 Aug 2014 17:03:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/</guid>
-      <description>Выложу тут свои шпаргалки, которые я делал для своего комплекта маджонга.
-Наверняка они пригодятся и вам :)
-4 игрока:
-Комбинации (ч/б)
-Комбинации (цветные)
-Подсчет очков
-3 игрока:
-Комбинации (ч/б)
-Комбинации (цветные)
-Подсчет очков
-&amp;nbsp; Достаточно распечатать с двух сторон на листе A4</description>
+      <description>&lt;p&gt;Выложу тут свои шпаргалки, которые я делал для своего комплекта маджонга.&lt;/p&gt;
+
+&lt;p&gt;Наверняка они пригодятся и вам :)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -465,12 +820,19 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:49:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
-      <description>ОДИН ЯКУ Риичи / Riichi Ожидание выигрышного тайла при депозите 1000 очков. После объявления риичи руку модифицировать нельзя. Рука должна быть закрытой.
-+1 Выигрыш в течение одного раунда. Иппацу/Ippatsu.
-+1 Объявление Риичи на первом дискарде. Дабл риичи/Daburu Riichi.
-Пример:
-+ В примере в составе руки нет никаких комбинаций. Чтобы она стоила хотя бы 1 хан, игрок объявил риичи.
-Полностью закрытая рука / Menzen Tsumo / Цумо. Выигрыш взятием тайла из стены при полностю закрытой руке.</description>
+      <description>&lt;h2 id=&#34;один-яку&#34;&gt;ОДИН ЯКУ&lt;/h2&gt;
+
+&lt;h4 id=&#34;риичи-riichi&#34;&gt;Риичи / Riichi&lt;/h4&gt;
+
+&lt;p&gt;Ожидание выигрышного тайла при депозите 1000 очков. После объявления риичи руку модифицировать нельзя. Рука должна быть закрытой.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+1 Выигрыш в течение одного раунда.&lt;/strong&gt; Иппацу/Ippatsu.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;+1 Объявление Риичи на первом дискарде.&lt;/strong&gt; Дабл риичи/Daburu Riichi.&lt;/p&gt;
+
+&lt;p&gt;Пример:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T3.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T4.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T5.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T14.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T15.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T18.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T19.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T20.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T23.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T23.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T23.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T29.gif&#34; alt=&#34;&#34; /&gt;&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T29.gif&#34; alt=&#34;&#34; /&gt; + &lt;img src=&#34;https://kvaps.github.io/images/mahjong/tileset/T13.gif&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -479,11 +841,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:49:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
-      <description>Основная таблица расчетов
-В риичи-маджонге для троих игроков не используются минипоинты, т.е. очки за состав руки. Весь подсчет очков ведется на основе комбинаций в руке игрока (и количества Дор).
-| Кол-во Хан | Платеж не-дилеру, Рон | Платеж дилеру, Рон | Платеж не-дилеру, Цумо (не-дилер/дилер) | Платеж дилеру, Цумо (с каждого игрока) |
-| &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | | 3 | 1000 | 1500 | 300&amp;frasl;500 | 500 |
-| 4 | 2000 | 3000 | 500&amp;frasl;1000 | 1000 |</description>
+      <description>&lt;p&gt;&lt;strong&gt;Основная таблица расчетов&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;В риичи-маджонге для троих игроков не используются минипоинты, т.е. очки за состав руки. Весь подсчет очков ведется на основе комбинаций в руке игрока (и количества Дор).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -492,10 +852,11 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:46:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
-      <description>Общая информация
-Риичи-маджонг для троих игроков является вариацией &amp;ldquo;классического&amp;rdquo; риичи-маджонга для четверых игроков.
-Процесс игры в маджонге для троих почти не отличается от классического, отличаются игровые комбинации и изначальный состав тайлов.
-В этом гайде будут описываться только моменты, которые отличаются от &amp;ldquo;классического&amp;rdquo; риичи. Если какая-то информация упускается, значит этот момент в игре не отличается от основных правил и можно воспользоваться руководством по &amp;ldquo;классическому&amp;rdquo; риичи.  Используется 108 игровых тайлов: отсутствуют Цветы и Сезоны, также отсутствуют тайлы масти Знаков с &amp;ldquo;2&amp;rdquo; по &amp;ldquo;8&amp;rdquo;.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Общая информация&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Риичи-маджонг для троих игроков&lt;/strong&gt; является вариацией &amp;ldquo;классического&amp;rdquo; риичи-маджонга для четверых игроков.&lt;br /&gt;
+Процесс игры в маджонге для троих почти не отличается от классического, отличаются игровые комбинации и изначальный состав тайлов.&lt;br /&gt;
+В этом гайде будут описываться только моменты, которые отличаются от &amp;ldquo;классического&amp;rdquo; риичи. Если какая-то информация упускается, значит этот момент в игре не отличается от основных правил и можно воспользоваться руководством по &amp;ldquo;классическому&amp;rdquo; риичи.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -504,7 +865,7 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:35:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/</guid>
-      <description>Еще один раздел, при взгляде на который дыбом встают волосы - &#34;Это ж сколько всяких нерусских слов!!!&#34; :) Но всё гораздо проще - бОльшую часть этих слов необязательно использовать и необязательно знать, есть лишь несколько слов, без некоторых поиграть не получится. Японское написание представлено исключительно просто так :) Для правильного отображения иероглифов возможно потребуется установить японский языковой пакет.  Ниже представлена общая информация и условные обозначения, используемые в материалах на сайте.</description>
+      <description>Еще один раздел, при взгляде на который дыбом встают волосы - &#34;Это ж сколько всяких нерусских слов!!!&#34; :) Но всё гораздо проще - бОльшую часть этих слов необязательно использовать и необязательно знать, есть лишь несколько слов, без некоторых поиграть не получится. Японское написание представлено исключительно просто так :) Для правильного отображения иероглифов возможно потребуется установить японский языковой пакет.  HUGOMORE42  Ниже представлена общая информация и условные обозначения, используемые в материалах на сайте.</description>
     </item>
     
     <item>
@@ -513,11 +874,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:16:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/</guid>
-      <description>Нарушения в игре (чомбо) наказываются штрафами в пользу остальных игроков.
-Если нарушил правила дилер, то он платит по 4000 каждому игроку.
-Если нарушил обычный игрок, он платит по 2000 обычным игрокам и 4000 дилеру. Фуритен
-Правило фуритен, также известное как упущенный дискард, запрещает объявлять Рон, если один из тайлов, на который игрок ждет, уже есть в его дискарде. При этом по Цумо он выиграть имеет право.
-Например, игрок ждет на 2пин и 5пин, но 2пин в его дискарде.</description>
+      <description>&lt;p&gt;Нарушения в игре (чомбо) наказываются штрафами в пользу остальных игроков.&lt;br /&gt;
+Если нарушил правила дилер, то он платит по 4000 каждому игроку.&lt;br /&gt;
+Если нарушил обычный игрок, он платит по 2000 обычным игрокам и 4000 дилеру.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -526,11 +885,14 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:14:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/</guid>
-      <description>Методика расчета стоимости выигрыша следующая: вначале подсчитывается стоимость руки (количество хан). Если хан 5 и больше, тогда по таблице (1) определяем выигрыш, если 4 и меньше, тогда считаем количество минипоинтов, и определяем выигрыш по таблицам (3).
-1. Считаем количество хан.
-1.1 Суммируем стоимость всех комбинаций в руке (стоимость показана на странице Игровые комбинации).
-1.2 Прибавляем количество Дор в руке.
-Если получившееся значение – 4 и меньше, тогда переходим к п.2, если 5 и больше – тогда определяем стоимость выигрыша по таблице:</description>
+      <description>&lt;p&gt;Методика расчета стоимости выигрыша следующая: вначале подсчитывается стоимость руки (количество хан). Если хан 5 и больше, тогда по таблице (1) определяем выигрыш, если 4 и меньше, тогда считаем количество минипоинтов, и определяем выигрыш по таблицам (3).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Считаем количество хан.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.1 Суммируем стоимость всех комбинаций в руке (стоимость показана на странице Игровые комбинации).&lt;br /&gt;
+1.2 Прибавляем количество Дор в руке.&lt;/p&gt;
+
+&lt;p&gt;Если получившееся значение – 4 и меньше, тогда переходим к п.2, если 5 и больше – тогда определяем стоимость выигрыша по таблице:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -539,11 +901,15 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 14:12:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/</guid>
-      <description>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.
-Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).
-Перед каждой игрой определяется:
- Положение игроков относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север) Кто является дилером вначале игры.   Перед каждой раздачей:
- Строится стена Определяется место **разлома стены **и обозначается Дора Происходит раздача тайлов игрокам  1.</description>
+      <description>&lt;p&gt;Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.&lt;br /&gt;
+Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Перед каждой игрой определяется:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Положение игроков&lt;/strong&gt; относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север)&lt;/li&gt;
+&lt;li&gt;Кто является &lt;strong&gt;дилером&lt;/strong&gt; вначале игры.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -552,10 +918,11 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 13:45:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8/</guid>
-      <description>На этой странице представлен полный перечень игровых комбинаций. Для того, чтобы рука была выигрышная, необходимо чтобы в ней присутствовала минимум одна комбинация из этого списка (иначе игрок обязан заплатить штраф за неправильное объявление победы).
-Яку – это стоимость руки, измеряется в ханах (см. словарик).
-Условно, 1 яку=1 хан.
-Например, имея в руке комбинацию &amp;ldquo;Терминалы и Достоинства&amp;rdquo;, стоимость руки будет составлять 1 хан (поскольку эта комбинация на 1 яку), а если рука при этом закрытая (см.</description>
+      <description>&lt;p&gt;На этой странице представлен полный перечень игровых комбинаций. Для того, чтобы рука была выигрышная, необходимо чтобы в ней присутствовала минимум одна комбинация из этого списка (иначе игрок обязан заплатить штраф за неправильное объявление победы).&lt;br /&gt;
+Яку – это стоимость руки, измеряется в ханах (см. словарик).&lt;br /&gt;
+Условно, 1 яку=1 хан.&lt;/p&gt;
+
+&lt;p&gt;Например, имея в руке комбинацию &amp;ldquo;Терминалы и Достоинства&amp;rdquo;, стоимость руки будет составлять 1 хан (поскольку эта комбинация на 1 яку), а если рука при этом закрытая (см. словарик), то стоимость руки будет составлять 2 хан (поскольку +1 за закрытую руку).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -564,11 +931,15 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 13:42:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%B8%D0%B3%D1%80%D0%B5/</guid>
-      <description>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.
-Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).
-Перед каждой игрой определяется:
- Положение игроков относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север) Кто является дилером вначале игры.  Перед каждой раздачей:
- Строится стена Определяется место **разлома стены **и обозначается Дора Происходит раздача тайлов игрокам  1.</description>
+      <description>&lt;p&gt;Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.&lt;br /&gt;
+Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Перед каждой игрой определяется:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Положение игроков&lt;/strong&gt; относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север)&lt;/li&gt;
+&lt;li&gt;Кто является &lt;strong&gt;дилером&lt;/strong&gt; вначале игры.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -577,10 +948,14 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Fri, 15 Aug 2014 12:27:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%87%D1%82%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B/</guid>
-      <description>Для игры необходимо:
- Набор тайлов. Адаптированный или нет – разницы никакой (адаптированный – где значение тайла в добавок подписано арабской цифрой, или буквой в случае Драконов и Ветров). Из набора нужно убрать Цветы и Сезоны (если они там были).
- Пара шестигранных игральных кубиков. Они используются для определения дилера, места разлома стены и т.д. – об этом будет дальше.
- Указатели Ветров. Выглядят от набора к набору совершенно по-разному. В любом случае, смысл указателя такой:</description>
+      <description>&lt;p&gt;&lt;strong&gt;Для игры необходимо:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Набор тайлов&lt;/strong&gt;. Адаптированный или нет – разницы никакой (адаптированный – где значение тайла в добавок подписано арабской цифрой, или буквой в случае Драконов и Ветров). Из набора нужно убрать Цветы и Сезоны (если они там были).&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Пара шестигранных игральных кубиков&lt;/strong&gt;. Они используются для определения дилера, места разлома стены и т.д. – об этом будет дальше.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Указатели Ветров&lt;/strong&gt;. Выглядят от набора к набору совершенно по-разному. В любом случае, смысл указателя такой:&lt;br /&gt;
+1. Он кладется перед тем игроком, который в данной раздаче является дилером (восточным ветром).2. Иероглиф, видимый на указателе, означает текущий раунд – Восточный или Южный (соответственно&lt;img src=&#34;https://kvaps.github.io/images/mahjong/tile/w.jpg&#34; alt=&#34;&#34; /&gt;или &lt;img src=&#34;https://kvaps.github.io/images/mahjong/tile/s.jpg&#34; alt=&#34;&#34; /&gt;)&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -600,7 +975,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</guid>
-      <description>I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -609,7 +986,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-vpn-%D1%82%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%B7-%D0%BC%D0%B8%D1%80%D0%B0-%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9-%D0%B2-%D0%BE%D0%B1%D1%85%D0%BE%D0%B4-nat/</guid>
-      <description>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -618,7 +997,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Sat, 03 Nov 2012 14:39:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-rebug-4-21/</guid>
-      <description>Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой теме. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.psjailbreak.ru/uploads/posts/2012-11/thumbs/1351956551_red_scorpion_3_sml.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой &lt;a href=&#34;http://rebug.me/rebug-3-55-3-and-4-21-1-rex-editions-and-999-downgrader/&#34;&gt;теме&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -627,11 +1008,10 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Wed, 19 Sep 2012 16:31:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/</guid>
-      <description>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.
-О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.
-И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.
-Всего за десять простых шагов: И так, приступим:
-Часть 1: Установка самого Photoshop&amp;rsquo;а 1.</description>
+      <description>&lt;p&gt;Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.&lt;br /&gt;
+О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.&lt;br /&gt;
+И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.&lt;br /&gt;
+Всего за десять простых шагов:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -640,7 +1020,9 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Thu, 12 Apr 2012 05:57:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-art-of-honeycomb-%D0%B4%D0%BB%D1%8F-ts1004t/</guid>
-      <description>Так, добрались до релиз-кандидата, тестим, радуемся. </description>
+      <description>&lt;p&gt;&lt;img src=&#34;http://cs5-1.4pda.to/1649543.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Так, добрались до релиз-кандидата, тестим, радуемся.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -649,14 +1031,7 @@ Carefully, in post there are a lot of pictures&amp;hellip; </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/</guid>
-      <description>Понравились тут звуки в&amp;nbsp;Pidgin, решил их прикрутить в&amp;nbsp;qutIM 0.3 Установка:
-Скачать архив со звуками&amp;nbsp;[линк]
-распаковать его в
-~/.local/share/qutim/sounds  А еще в&amp;nbsp;qutIM 0.3 можно запихнуть смайлики&amp;nbsp;Колобки, они доступны на официальном сайте колобков.
-Установка:
-Скачать архив со смайлами&amp;nbsp;[линк]
-распаковать его в
-~/.local/share/qutim/emoticons  </description>
+      <description>&lt;p&gt;Понравились тут звуки в&amp;nbsp;Pidgin, решил их прикрутить в&amp;nbsp;qutIM 0.3&lt;/p&gt;</description>
     </item>
     
   </channel>

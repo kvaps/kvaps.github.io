@@ -284,17 +284,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/">
+        <a class="link-unstyled" href="https://habr.com/post/270187/" target="_blank">
       
-          Риичи-маджонг: Игровые комбинации для троих игроков
+          Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:49:00Z">
+      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
         
-  August 15, 2014
+  November 16, 2015
 
       </time>
     
@@ -304,16 +304,22 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        ОДИН ЯКУ Риичи / Riichi Ожидание выигрышного тайла при депозите 1000 очков. После объявления риичи руку модифицировать нельзя. Рука должна быть закрытой.
-+1 Выигрыш в течение одного раунда. Иппацу/Ippatsu.
-+1 Объявление Риичи на первом дискарде. Дабл риичи/Daburu Riichi.
-Пример:
-+ В примере в составе руки нет никаких комбинаций. Чтобы она стоила хотя бы 1 хан, игрок объявил риичи.
-Полностью закрытая рука / Menzen Tsumo / Цумо. Выигрыш взятием тайла из стены при полностю закрытой руке.
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="" /> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
+
+<ul>
+<li><strong><a href="http://habr.com/post/270187/#ceph">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
+<li><strong><a href="http://habr.com/post/270187/#galera">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#openvswitch">Установка софт-свича OpenvSwitch</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#opennebula">Установка непосредственно самой OpenNebula</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#pacemaker">Настройка отказоустойчивого кластера</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#configuration">Первоначальная конфигурация</a></strong></li>
+</ul>
+
+<p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/270187/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -341,17 +347,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/">
+        <a class="link-unstyled" href="https://habr.com/post/268711/" target="_blank">
       
-          Риичи-маджонг: Подсчет очков в маджонге для троих игроков
+          Установка CentOS на ZFS в UEFI
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:49:00Z">
+      <time itemprop="datePublished" datetime="2015-10-13T15:37:00Z">
         
-  August 15, 2014
+  October 13, 2015
 
       </time>
     
@@ -361,15 +367,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Основная таблица расчетов
-В риичи-маджонге для троих игроков не используются минипоинты, т.е. очки за состав руки. Весь подсчет очков ведется на основе комбинаций в руке игрока (и количества Дор).
-| Кол-во Хан | Платеж не-дилеру, Рон | Платеж дилеру, Рон | Платеж не-дилеру, Цумо (не-дилер/дилер) | Платеж дилеру, Цумо (с каждого игрока) |
-| &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash; | | 3 | 1000 | 1500 | 300&frasl;500 | 500 |
-| 4 | 2000 | 3000 | 500&frasl;1000 | 1000 |
+        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt="" /></p>
+
+<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
+
+<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS">фишками</a>.</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/268711/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -397,17 +403,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/">
+        <a class="link-unstyled" href="https://habr.com/post/266375/" target="_blank">
       
-          Риичи-маджонг: Особенности игры для троих игроков
+          Настраиваем сочетания клавиш в Linux наподобие Mac OS X
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:46:00Z">
+      <time itemprop="datePublished" datetime="2015-09-09T16:30:00Z">
         
-  August 15, 2014
+  September 9, 2015
 
       </time>
     
@@ -417,14 +423,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Общая информация
-Риичи-маджонг для троих игроков является вариацией &ldquo;классического&rdquo; риичи-маджонга для четверых игроков.
-Процесс игры в маджонге для троих почти не отличается от классического, отличаются игровые комбинации и изначальный состав тайлов.
-В этом гайде будут описываться только моменты, которые отличаются от &ldquo;классического&rdquo; риичи. Если какая-то информация упускается, значит этот момент в игре не отличается от основных правил и можно воспользоваться руководством по &ldquo;классическому&rdquo; риичи.  Используется 108 игровых тайлов: отсутствуют Цветы и Сезоны, также отсутствуют тайлы масти Знаков с &ldquo;2&rdquo; по &ldquo;8&rdquo;.
+        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt="" /></p>
+
+<p>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.
+После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.
+В один прекрасный момент меня это достало и я решил, что пора что-то менять…</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/266375/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -452,17 +459,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/">
+        <a class="link-unstyled" href="https://habr.com/post/265065/" target="_blank">
       
-          Риичи-маджонг: Словарик
+          Проброс USB в виртуалку по сети средствами UsbRedir и QEMU
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:35:00Z">
+      <time itemprop="datePublished" datetime="2015-08-20T11:55:00Z">
         
-  August 15, 2014
+  August 20, 2015
 
       </time>
     
@@ -472,11 +479,18 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Еще один раздел, при взгляде на который дыбом встают волосы - "Это ж сколько всяких нерусских слов!!!" :) Но всё гораздо проще - бОльшую часть этих слов необязательно использовать и необязательно знать, есть лишь несколько слов, без некоторых поиграть не получится. Японское написание представлено исключительно просто так :) Для правильного отображения иероглифов возможно потребуется установить японский языковой пакет.  Ниже представлена общая информация и условные обозначения, используемые в материалах на сайте.
+        <p><img src="https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png" alt="" /></p>
+
+<p>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети.
+Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP.
+Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU.
+Он так же является частью проекта spice, официально поддерживаемым RedHat.</p>
+
+<p>UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice. Но как оказалось им можно вполне успешно пользоваться и без spice. В роли сервера выступает usbredirserver, который шарит usb-устройство на определенный порт, а в качестве клиента сам QEMU, который эмулирует подключение экспортированного usb-устройства в определенный usb-контроллер вашей виртуальной машины. Благодаря такому подходу в качестве гостевой системы может использоваться абсолютно любая ОС, так как она даже не знает, что устройство является проброшенным удаленно, а вся логика ложится на QEMU.</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/265065/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -504,17 +518,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/">
+        <a class="link-unstyled" href="https://habr.com/post/260527/" target="_blank">
       
-          Риичи-маджонг: Ограничения и штрафы
+          Kolab Groupware (Часть 2 — Установка)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:16:00Z">
+      <time itemprop="datePublished" datetime="2015-07-18T14:17:00Z">
         
-  August 15, 2014
+  July 18, 2015
 
       </time>
     
@@ -524,15 +538,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Нарушения в игре (чомбо) наказываются штрафами в пользу остальных игроков.
-Если нарушил правила дилер, то он платит по 4000 каждому игроку.
-Если нарушил обычный игрок, он платит по 2000 обычным игрокам и 4000 дилеру. Фуритен
-Правило фуритен, также известное как упущенный дискард, запрещает объявлять Рон, если один из тайлов, на который игрок ждет, уже есть в его дискарде. При этом по Цумо он выиграть имеет право.
-Например, игрок ждет на 2пин и 5пин, но 2пин в его дискарде.
+        <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt="" /></p>
+
+<p>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.
+На этот раз мы будем его устанавливать.</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/260527/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -560,17 +573,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/">
+        <a class="link-unstyled" href="https://habr.com/post/260469/" target="_blank">
       
-          Риичи-маджонг: Подсчет очков
+          Kolab Groupware (Часть 1 — Обзор)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:14:00Z">
+      <time itemprop="datePublished" datetime="2015-07-17T15:17:00Z">
         
-  August 15, 2014
+  July 17, 2015
 
       </time>
     
@@ -580,15 +593,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Методика расчета стоимости выигрыша следующая: вначале подсчитывается стоимость руки (количество хан). Если хан 5 и больше, тогда по таблице (1) определяем выигрыш, если 4 и меньше, тогда считаем количество минипоинтов, и определяем выигрыш по таблицам (3).
-1. Считаем количество хан.
-1.1 Суммируем стоимость всех комбинаций в руке (стоимость показана на странице Игровые комбинации).
-1.2 Прибавляем количество Дор в руке.
-Если получившееся значение – 4 и меньше, тогда переходим к п.2, если 5 и больше – тогда определяем стоимость выигрыша по таблице:
+        <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt="" /></p>
+
+<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
+
+<p><em>Осторожно, в посте много картинок&hellip;</em></p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://habr.com/post/260469/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -616,17 +629,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/">
+        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/">
       
-          Риичи-маджонг: Процесс игры
+          Риичи-маджонг: Шпаргалки
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2014-08-15T14:12:00Z">
+      <time itemprop="datePublished" datetime="2014-08-18T17:03:00Z">
         
-  August 15, 2014
+  August 18, 2014
 
       </time>
     
@@ -636,15 +649,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.
-Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).
-Перед каждой игрой определяется:
- Положение игроков относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север) Кто является дилером вначале игры.   Перед каждой раздачей:
- Строится стена Определяется место **разлома стены **и обозначается Дора Происходит раздача тайлов игрокам  1.
+        <p>Выложу тут свои шпаргалки, которые я делал для своего комплекта маджонга.</p>
+
+<p>Наверняка они пригодятся и вам :)</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/" class="postShorten-excerpt_link link">Continue reading</a>
+          <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/" class="postShorten-excerpt_link link">Continue reading</a>
         
         
       </p>
@@ -675,7 +686,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">page 5 of 7</li>
+      <li class="pagination-number">page 5 of 8</li>
     </ul>
   </div>
 

@@ -8,22 +8,50 @@
 <meta name="generator" content="Hugo 0.54.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
-<meta name="description" content=" Run communityserver container, and get onlyoffice.conf from it:
-docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf` sudo docker rm -fv communityserver   ">
+<meta name="description" content="
+Run communityserver container, and get onlyoffice.conf from it:
+
+docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+
+">
 
 
-<meta property="og:description" content=" Run communityserver container, and get onlyoffice.conf from it:
-docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf` sudo docker rm -fv communityserver   ">
+<meta property="og:description" content="
+Run communityserver container, and get onlyoffice.conf from it:
+
+docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+
+">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ONLYOFFICE configuration for docker-compose (and letsencrypt).">
 <meta name="twitter:title" content="ONLYOFFICE configuration for docker-compose (and letsencrypt).">
 <meta property="og:url" content="https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./">
 <meta property="twitter:url" content="https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./">
 <meta property="og:site_name" content="kvaps">
-<meta property="og:description" content=" Run communityserver container, and get onlyoffice.conf from it:
-docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf` sudo docker rm -fv communityserver   ">
-<meta name="twitter:description" content=" Run communityserver container, and get onlyoffice.conf from it:
-docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf` sudo docker rm -fv communityserver   ">
+<meta property="og:description" content="
+Run communityserver container, and get onlyoffice.conf from it:
+
+docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+
+">
+<meta name="twitter:description" content="
+Run communityserver container, and get onlyoffice.conf from it:
+
+docker run -name communityserver -i -t -d onlyoffice/communityserver`
+# wait 1-2 minutes.
+sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
+sudo docker rm -fv communityserver
+
+">
 <meta property="og:locale" content="en-us">
 
   
@@ -300,9 +328,6 @@ sudo docker exec -i -t communityserver /bin/bash -c 'cat /etc/nginx/sites-enable
 sudo docker rm -fv communityserver
 </code></pre></li>
 </ul>
-
-<!-- more -->
-
               
             </div>
           </div>

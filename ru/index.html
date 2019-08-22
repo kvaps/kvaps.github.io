@@ -284,17 +284,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/423785/" target="_blank">
+        <a class="link-unstyled" href="https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE-devops/">
       
-          Строим загружаемую по сети ферму серверов для Kubernetes с помощью LTSP
+          Про DevOps
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-10-03T22:14:00Z">
+      <time itemprop="datePublished" datetime="2019-05-18T00:00:00Z">
         
-  October 3, 2018
+  May 18, 2019
 
       </time>
     
@@ -304,19 +304,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt="" /></p>
-
-<p>В этой статье, я хотел бы показать вам одну крутую технологию, я успешно использую ее для Kubernetes. Она может быть реально полезна для построения больших кластеров.</p>
-
-<p>С этого момента вам больше не придется думать об установке ОС и отдельных пакетов на каждую ноду. Зачем? Вы можете сделать все это автоматически через Dockerfile!</p>
-
-<p>Тот факт что вы можете купить сотню новых серверов, добавить их в рабочее окружение и почти моментально получить их готовыми к использованию - это действительно потрясающе!</p>
-
-<p>Заинтриговал? Теперь давайте обо всем по порядку.</p>
+        Вот ядро Которое построил Линус.
+А это системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+А это суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот под, Что часто пинает контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
       
       <p>
         
-          <a href="https://habr.com/post/423785/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE-devops/" class="postShorten-excerpt_link link">Continue reading</a>
         
         
       </p>
@@ -344,17 +340,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/423101/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/435270/" target="_blank">
       
-          Разворачиваем хранилище LINSTOR для Proxmox
+          Храним SSH-ключи безопасно
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-09-13T00:40:00Z">
+      <time itemprop="datePublished" datetime="2019-05-15T09:05:00&#43;03:00">
         
-  September 13, 2018
+  May 15, 2019
 
       </time>
     
@@ -364,18 +360,19 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/getpro/habr/post_images/e47/594/c07/e47594c0721332fb46493d20339bb1be.png" alt="image" /></p>
+        <p><img src="https://habrastorage.org/webt/up/j1/kl/upj1kliwm70ton2ocnhvuf_kywm.png" alt="" /></p>
 
-<p>Недавно LINBIT выпустили свое новое решение для оркестрации и управления множеством DRBD-массивов.</p>
+<p>Хочу рассказать как безопасно хранить SSH-ключи на локальной машине, не боясь того, что какое-то приложение может украсть или расшифровать их.</p>
 
-<p>К примеру у вас может быть несколько нод и у каждой будет собственный LVM или ZFS пул в котором LINSTOR будет автоматически создавать новые тома и реплицировать их между нодами используя DRBD-протокол.</p>
+<p>Статья будет полезна тем, кто так и не нашел элегантного решения после <a href="https://www.opennet.ru/opennews/art.shtml?num=49082">паранои</a> в 2018 и продолжает хранить ключи в <code>$HOME/.ssh</code>.</p>
 
-<p>LINSTOR поддерживает thin-provisioning, снапшоты и много других интересных штук.
-Это решение хорошо подойдет для виртуальных машин и контейнеров.</p>
+<p>Для решения данной проблемы предлагаю использовать <a href="https://keepassxc.org/">KeePassXC</a>, который является одним из лучших менеджеров паролей, он использует сильные алгоритмы шифрования, а также имеет встроенный SSH-агент.</p>
+
+<p>Это дает возможность безопасно хранить все ключи прямо в базе паролей и автоматически добавлять их в систему при её открытии. Как только база будет закрыта, использование SSH-ключей также станет невозможным</p>
       
       <p>
         
-          <a href="https://habr.com/post/423101/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://habr.com/post/435270/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -403,17 +400,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/417597/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/451186/" target="_blank">
       
-          Надежное хранилище с DRBD9 и Proxmox (Часть 2: iSCSI&#43;LVM)
+          Хранилище LINSTOR и его интеграция с OpenNebula
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-08-22T18:58:00Z">
+      <time itemprop="datePublished" datetime="2019-05-13T01:18:00&#43;03:00">
         
-  August 22, 2018
+  May 13, 2019
 
       </time>
     
@@ -423,17 +420,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/getpro/habr/post_images/101/70c/524/10170c52443d67bd757a09ef22ba39e2.jpg" alt="" /></p>
+        <p><img src="https://habrastorage.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png" alt="" /></p>
 
-<p>В <a href="https://habr.com/post/417473/">предыдущей статье</a> я рассмотрел возможность создания отказоустойчивого NFS-сервера с помощью DRBD и Proxmox. Получилось довольно неплохо, но не будем останавливаться на достигнутом и теперь постараемся &ldquo;выжать все соки&rdquo; из нашей хранилки.</p>
+<p>Не так давно ребята из LINBIT представили свое новое SDS-решение - Linstor. Это полностью свободное хранилище в основе которого используются проверенные технологии: DRBD, LVM, ZFS. Linstor сочетает в себе простоту и хорошо проработанную архитектуру, что позволяет добиться стабильности и достаточно внушительных результатов.</p>
 
-<p>В этой статье я расскажу как подобным образом создать отказоустойчивый iSCSI-таргет, который при помощи LVM мы будем нарезать на маленькие кусочки и использовать под виртуальные машины.</p>
+<p>Сегодня я хотел бы рассказать про него чуть подробнее и показать насколько просто его можно интегрировать с OpenNebula используя linstor_un - новый драйвер, который я разработал специально для этой цели.</p>
 
-<p>Именно такой подход позволят снизить нагрузку и повысить скорость доступа к данным в несколько раз, это бывает особенно выгодно когда не требуется конкурентный доступ к данным, например в случае когда вам нужно организовать хранилище под виртуальные машины.</p>
+<p>Linstor в сочетании с OpenNebula позволяет построить быстрое и надежное облако, которое можно без проблем развернуть на собственной инфраструктуре</p>
       
       <p>
         
-          <a href="https://habr.com/post/417597/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://habr.com/post/451186/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -461,17 +458,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/420913/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/450118/" target="_blank">
       
-          Запускаем kubernetes внутри LXC
+          Стримим экран на несколько устройств по сети
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-08-22T12:18:00Z">
+      <time itemprop="datePublished" datetime="2019-04-30T03:09:00&#43;15:00">
         
-  August 22, 2018
+  April 30, 2019
 
       </time>
     
@@ -481,14 +478,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/ku/7d/fb/ku7dfbo93q4kk2a53rvhv-9p2qy.png" alt="" /></p>
+        <p><img src="https://habrastorage.org/webt/ef/qk/de/efqkdemwmhhniofkklcjvayvmm0.png" alt="" /></p>
 
-<p>В этой статье я расскажу как можно запустить kubernetes master внутри LXC-контейнера.
-Этод метод работает вполне неплохо с Proxmox и может быть рассмотрен как альтернатива классическому развертыванию kubernetes с несколькими мастерами.</p>
+<p>Возникла у меня необходимость выводить дашборд с мониторингом на несколько экранов в офисе. В распоряжении имеется несколько стареньких Raspberry Pi Model B+ и гипервизор с практически неограниченным количеством ресурсов.</p>
+
+<p>По видимому Raspberry Pi Model B+ не обладает достаточной произвольностью чтобы держать постоянно запущенным браузер и отрисовывать большое количество графики в нем, из-за чего бывает, что страница частично глючит и часто вылетает.</p>
+
+<p>Нашлось достаточно простое и элегантное решение, которым я и хочу с вами поделиться</p>
       
       <p>
         
-          <a href="https://habr.com/post/420913/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://habr.com/post/450118/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -516,17 +516,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/417473/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/yGKI5JoKMUY" target="_blank">
       
-          Надежное хранилище с DRBD9 и Proxmox (Часть 1: NFS)
+          Всё о Kubernetes на Bare Metal
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-08-19T11:52:00Z">
+      <time itemprop="datePublished" datetime="2019-02-27T00:00:00Z">
         
-  August 19, 2018
+  February 27, 2019
 
       </time>
     
@@ -536,12 +536,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного software-defiined хранилища рано или поздно слышал про DRBD, а может даже и имел дело с ним.
-Правда на пике популярности Ceph и GlusterFS, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со split-brain, что явно не добавило ему популярности.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yGKI5JoKMUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Видеозапись выступления «Всё, что нужно знать о Kubernetes на Bare Metal» (Андрей Квапил, WEDOS Internet a.s., Cloud Architect / DevOps)</p>
+
+<p>Андрей Квапил делится своим опытом архитектуры облачных решений и девопса в крупнейшем чешском хостинге WEDOS, где Kubernetes активно используется для деплоя сервисов и серверов – уже сейчас для более чем 500 нод и с планируемым расширением до нескольких тысяч.</p>
+
+<p>Отдельное внимание уделяется организации фермы серверов с загрузкой по сети и выбору хранилища. Докладчик протестировал большое количество свободных SDS-решений, прежде чем остановить свой выбор на Linstor – достаточно молодом проекте, который, тем не менее, уже отлично показал себя в продакшене.</p>
       
       <p>
         
-          <a href="https://habr.com/post/417473/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://youtu.be/yGKI5JoKMUY" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -569,17 +574,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/413155/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/441112/" target="_blank">
       
-          Google&#39;s Shell Style Guide (на русском)
+          Прикручиваем LDAP-авторизацию к Kubernetes
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-06-04T19:43:00Z">
+      <time itemprop="datePublished" datetime="2019-02-21T03:17:00Z">
         
-  June 4, 2018
+  February 21, 2019
 
       </time>
     
@@ -589,14 +594,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Предисловие Какой Shell использовать Bash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.
-Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов. Используйте set для установки опций shell, что бы вызов вашего скрипта как bash &lt;script_name&gt; не нарушило его функциональности.
-Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.
-Единственное исключение составляет если вы ограничены условиями того под что вы программируете.
+        <p><img src="https://habrastorage.org/webt/kj/60/vi/kj60vi6ugv7bunlqdts2nlr2vja.png" alt="" /></p>
+
+<p>Небольшая инструкция о том, как используя Keycloak можно связать Kubernetes с вашим LDAP-сервером и настроить импорт пользователей и групп. Это позволит настраивать RBAC для ваших пользователей и использовать auth-proxy чтобы защитить Kubernetes Dashboard и другие приложения, которые не умеют производить авторизацию самостоятельно.</p>
       
       <p>
         
-          <a href="https://habr.com/post/413155/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://habr.com/post/441112/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -624,17 +628,17 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/412825/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/427941/" target="_blank">
       
-          Блочные устройства QEMU
+          Разворачиваем Kubernetes HA-кластер на Baremetal с помощью Kubeadm и Keepalived (простое руководство)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-06-01T00:01:19Z">
+      <time itemprop="datePublished" datetime="2018-10-27T14:38:00&#43;03:00">
         
-  June 1, 2018
+  October 27, 2018
 
       </time>
     
@@ -644,18 +648,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png" alt="" /></p>
+        <p>Эта статья является свободной интерпретацей официального руководства <a href="https://kubernetes.io/docs/setup/independent/high-availability/">Creating Highly Available Clusters with kubeadm</a> для <a href="https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes">Stacked control plane nodes</a>. Мне не нравятся сложный язык и примеры использованные в нем, поэтому я написал свое руководство.</p>
 
-<p>В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:</p>
-
-<pre><code>-hda /dev/sda1
-</code></pre>
-
-<p>Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки</p>
+<p>Если у вас появятся какие-либо вопросы или вам будет что-то неясно, обратитесь к официальной документации или спросите <a href="https://www.google.com/">Google</a>. Все этапы описаны здесь в максимально простой и сдержанной форме.</p>
       
       <p>
         
-          <a href="https://habr.com/post/412825/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+          <a href="https://habr.com/post/427941/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
@@ -679,7 +678,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">page 1 of 7</li>
+      <li class="pagination-number">page 1 of 8</li>
     </ul>
   </div>
 
