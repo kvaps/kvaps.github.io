@@ -5,11 +5,26 @@
     <link>https://kvaps.github.io/</link>
     <description>Recent content on kvaps</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>“linstor_un” — New storage driver for OpenNebula</title>
+      <link>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.&lt;/p&gt;
+
+&lt;p&gt;Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.&lt;/p&gt;
+
+&lt;p&gt;Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Store SSH Keys Securely</title>

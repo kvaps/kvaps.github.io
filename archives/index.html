@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="kvaps">
 <meta property="og:description" content="">
 <meta name="twitter:description" content="">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en-us">
 
 
 <meta name="twitter:card" content="summary">
@@ -98,7 +98,7 @@ if (!doNotTrack) {
     
     
       
-        <img class="header-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=90" alt="" />
+        <img class="header-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=90" alt="Author&#39;s picture" />
       
     
     </a>
@@ -110,7 +110,7 @@ if (!doNotTrack) {
     
       <div class="sidebar-profile">
         <a href="https://kvaps.github.io/#about">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="" />
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="Author&#39;s picture" />
         </a>
         <h4 class="sidebar-profile-name">kvaps</h4>
         
@@ -254,17 +254,26 @@ if (!doNotTrack) {
                ">
         <div id="archives" class="main-content-wrap">
           <form id="filter-form" action="#">
-            <input name="date" type="text" class="form-control input--xlarge" placeholder="" autofocus="autofocus">
+            <input name="date" type="text" class="form-control input--xlarge" placeholder="Search date (YYYY/MM/DD)" autofocus="autofocus">
           </form>
-          <h5 class="archive-result text-color-base text-xlarge" data-message-zero="" data-message-one="" data-message-other=""></h5>
+          <h5 class="archive-result text-color-base text-xlarge" data-message-zero="no post found" data-message-one="1 post found" data-message-other="{n} posts found"></h5>
 <section class="boxes">
   
     
     <div class="archive archive-year box" data-date="2019">
       <h4 class="archive-title" style="text-decoration: none;">2019</h4>
       
+        <ul class="archive-posts archive-month" data-date="201907">
+          <h5 class="archive-title" style="text-decoration: none;">July</h5>
+          
+            <li class="archive-post archive-day" data-date="20190717">
+              <a class="archive-post-title" href="https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">“linstor_un” — New storage driver for OpenNebula</a>
+            </li>
+          
+        </ul>
+      
         <ul class="archive-posts archive-month" data-date="201905">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">May</h5>
           
             <li class="archive-post archive-day" data-date="20190514">
               <a class="archive-post-title" href="https://kvaps.github.io/2019/05/store-ssh-keys-securely/">Store SSH Keys Securely</a>
@@ -273,7 +282,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201904">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">April</h5>
           
             <li class="archive-post archive-day" data-date="20190430">
               <a class="archive-post-title" href="https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/">Installing Haproxy for Kubernetes</a>
@@ -286,7 +295,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201902">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">February</h5>
           
             <li class="archive-post archive-day" data-date="20190226">
               <a class="archive-post-title" href="https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/">Adding LDAP authentication to Kubernetes</a>
@@ -301,7 +310,7 @@ if (!doNotTrack) {
       <h4 class="archive-title" style="text-decoration: none;">2018</h4>
       
         <ul class="archive-posts archive-month" data-date="201812">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">December</h5>
           
             <li class="archive-post archive-day" data-date="20181209">
               <a class="archive-post-title" href="https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/">Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (More Simple Guide)</a>
@@ -310,7 +319,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201810">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">October</h5>
           
             <li class="archive-post archive-day" data-date="20181018">
               <a class="archive-post-title" href="https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/">Creating Baremethal Kubernetes HA cluster with Kubeadm and Keepalived (Simple Guide)</a>
@@ -327,7 +336,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201809">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">September</h5>
           
             <li class="archive-post archive-day" data-date="20180912">
               <a class="archive-post-title" href="https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/">Deploying LINSTOR storage for Proxmox</a>
@@ -336,7 +345,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201808">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">August</h5>
           
             <li class="archive-post archive-day" data-date="20180822">
               <a class="archive-post-title" href="https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/">Run kubernetes inside LXC container</a>
@@ -345,7 +354,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201802">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">February</h5>
           
             <li class="archive-post archive-day" data-date="20180206">
               <a class="archive-post-title" href="https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/">Easy way for install Mikrotik’s Cloud Hosted Router on any Cloud VM</a>
@@ -360,7 +369,7 @@ if (!doNotTrack) {
       <h4 class="archive-title" style="text-decoration: none;">2017</h4>
       
         <ul class="archive-posts archive-month" data-date="201711">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">November</h5>
           
             <li class="archive-post archive-day" data-date="20171129">
               <a class="archive-post-title" href="https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/">Zabbix: solve memory and cpu load monitoring issues inside LXC containers</a>
@@ -375,7 +384,7 @@ if (!doNotTrack) {
       <h4 class="archive-title" style="text-decoration: none;">2016</h4>
       
         <ul class="archive-posts archive-month" data-date="201612">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">December</h5>
           
             <li class="archive-post archive-day" data-date="20161214">
               <a class="archive-post-title" href="https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./">ONLYOFFICE configuration for docker-compose (and letsencrypt).</a>
@@ -390,7 +399,7 @@ if (!doNotTrack) {
       <h4 class="archive-title" style="text-decoration: none;">2015</h4>
       
         <ul class="archive-posts archive-month" data-date="201511">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">November</h5>
           
             <li class="archive-post archive-day" data-date="20151116">
               <a class="archive-post-title" href="https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/">We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]</a>
@@ -399,7 +408,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201510">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">October</h5>
           
             <li class="archive-post archive-day" data-date="20151013">
               <a class="archive-post-title" href="https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/">The CentOS installation on ZFS in UEFI [Translation]</a>
@@ -408,7 +417,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201509">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">September</h5>
           
             <li class="archive-post archive-day" data-date="20150909">
               <a class="archive-post-title" href="https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/">We configure the keyboard shortcuts in Linux like Mac OS X [Translation]</a>
@@ -417,7 +426,7 @@ if (!doNotTrack) {
         </ul>
       
         <ul class="archive-posts archive-month" data-date="201507">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">July</h5>
           
             <li class="archive-post archive-day" data-date="20150718">
               <a class="archive-post-title" href="https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/">Kolab Groupware (Part 2 — Installation) [Translation]</a>
@@ -436,7 +445,7 @@ if (!doNotTrack) {
       <h4 class="archive-title" style="text-decoration: none;">2014</h4>
       
         <ul class="archive-posts archive-month" data-date="201403">
-          <h5 class="archive-title" style="text-decoration: none;"></h5>
+          <h5 class="archive-title" style="text-decoration: none;">March</h5>
           
             <li class="archive-post archive-day" data-date="20140318">
               <a class="archive-post-title" href="https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/">we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]</a>
@@ -457,7 +466,7 @@ if (!doNotTrack) {
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=110" alt="Author&#39;s picture" />
     
     <h4 id="about-card-name">kvaps</h4>
     
