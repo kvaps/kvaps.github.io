@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rus on kvaps</title>
+    <link>https://kvaps.github.io/ru/</link>
+    <description>Recent content in Rus on kvaps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Oct 2018 22:14:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Строим загружаемую по сети ферму серверов для Kubernetes с помощью LTSP</title>
+      <link>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B0%D0%B5%D0%BC%D1%83%D1%8E-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D1%83-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-kubernetes-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-ltsp/</link>
+      <pubDate>Wed, 03 Oct 2018 22:14:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B0%D0%B5%D0%BC%D1%83%D1%8E-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D1%83-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-kubernetes-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-ltsp/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В этой статье, я хотел бы показать вам одну крутую технологию, я успешно использую ее для Kubernetes. Она может быть реально полезна для построения больших кластеров.&lt;/p&gt;
+
+&lt;p&gt;С этого момента вам больше не придется думать об установке ОС и отдельных пакетов на каждую ноду. Зачем? Вы можете сделать все это автоматически через Dockerfile!&lt;/p&gt;
+
+&lt;p&gt;Тот факт что вы можете купить сотню новых серверов, добавить их в рабочее окружение и почти моментально получить их готовыми к использованию - это действительно потрясающе!&lt;/p&gt;
+
+&lt;p&gt;Заинтриговал? Теперь давайте обо всем по порядку.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Разворачиваем хранилище LINSTOR для Proxmox</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-linstor-%D0%B4%D0%BB%D1%8F-proxmox/</link>
+      <pubDate>Thu, 13 Sep 2018 00:40:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-linstor-%D0%B4%D0%BB%D1%8F-proxmox/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/getpro/habr/post_images/e47/594/c07/e47594c0721332fb46493d20339bb1be.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Недавно LINBIT выпустили свое новое решение для оркестрации и управления множеством DRBD-массивов.&lt;/p&gt;
+
+&lt;p&gt;К примеру у вас может быть несколько нод и у каждой будет собственный LVM или ZFS пул в котором LINSTOR будет автоматически создавать новые тома и реплицировать их между нодами используя DRBD-протокол.&lt;/p&gt;
+
+&lt;p&gt;LINSTOR поддерживает thin-provisioning, снапшоты и много других интересных штук.
+Это решение хорошо подойдет для виртуальных машин и контейнеров.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Надежное хранилище с DRBD9 и Proxmox (Часть 2: iSCSI&#43;LVM)</title>
+      <link>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-iscsi-lvm/</link>
+      <pubDate>Wed, 22 Aug 2018 18:58:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-iscsi-lvm/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/getpro/habr/post_images/101/70c/524/10170c52443d67bd757a09ef22ba39e2.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В &lt;a href=&#34;https://habr.com/post/417473/&#34;&gt;предыдущей статье&lt;/a&gt; я рассмотрел возможность создания отказоустойчивого NFS-сервера с помощью DRBD и Proxmox. Получилось довольно неплохо, но не будем останавливаться на достигнутом и теперь постараемся &amp;ldquo;выжать все соки&amp;rdquo; из нашей хранилки.&lt;/p&gt;
+
+&lt;p&gt;В этой статье я расскажу как подобным образом создать отказоустойчивый iSCSI-таргет, который при помощи LVM мы будем нарезать на маленькие кусочки и использовать под виртуальные машины.&lt;/p&gt;
+
+&lt;p&gt;Именно такой подход позволят снизить нагрузку и повысить скорость доступа к данным в несколько раз, это бывает особенно выгодно когда не требуется конкурентный доступ к данным, например в случае когда вам нужно организовать хранилище под виртуальные машины.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Запускаем kubernetes внутри LXC</title>
+      <link>https://kvaps.github.io/ru/%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC-kubernetes-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8-lxc/</link>
+      <pubDate>Wed, 22 Aug 2018 12:18:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC-kubernetes-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8-lxc/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ku/7d/fb/ku7dfbo93q4kk2a53rvhv-9p2qy.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В этой статье я расскажу как можно запустить kubernetes master внутри LXC-контейнера.
+Этод метод работает вполне неплохо с Proxmox и может быть рассмотрен как альтернатива классическому развертыванию kubernetes с несколькими мастерами.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Надежное хранилище с DRBD9 и Proxmox (Часть 1: NFS)</title>
+      <link>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-nfs/</link>
+      <pubDate>Sun, 19 Aug 2018 11:52:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-nfs/</guid>
+      <description>Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного software-defiined хранилища рано или поздно слышал про DRBD, а может даже и имел дело с ним.
+Правда на пике популярности Ceph и GlusterFS, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со split-brain, что явно не добавило ему популярности.</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s Shell Style Guide (на русском)</title>
+      <link>https://kvaps.github.io/ru/google-s-shell-style-guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/</link>
+      <pubDate>Mon, 04 Jun 2018 19:43:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/google-s-shell-style-guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/</guid>
+      <description>Предисловие Какой Shell использовать Bash единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.
+Скрипты должны начинаться с #!/bin/bash с минимальным набором флагов. Используйте set для установки опций shell, что бы вызов вашего скрипта как bash &amp;lt;script_name&amp;gt; не нарушило его функциональности.
+Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.
+Единственное исключение составляет если вы ограничены условиями того под что вы программируете.</description>
+    </item>
+    
+    <item>
+      <title>Блочные устройства QEMU</title>
+      <link>https://kvaps.github.io/ru/%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-qemu/</link>
+      <pubDate>Fri, 01 Jun 2018 00:01:19 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-qemu/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-hda /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sheepdog</title>
+      <link>https://kvaps.github.io/ru/sheepdog/</link>
+      <pubDate>Thu, 31 May 2018 13:52:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/sheepdog/</guid>
+      <description>Sheepdog - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании Nippon Telegraph and Telephone Corporation. Sheepdog - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования1cite_ref-1. (уже стала — прим.пер.)
+ Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEMU.</description>
+    </item>
+    
+    <item>
+      <title>Pritunl — VPN-сервер для себя и друзей за 10 минут</title>
+      <link>https://kvaps.github.io/ru/pritunl-vpn-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F-%D0%B8-%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0-10-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/</link>
+      <pubDate>Fri, 11 May 2018 12:33:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/pritunl-vpn-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F-%D0%B8-%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0-10-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/</guid>
+      <description>В связи с последними событиями в России хочу рассказать вам о классном self-hosted VPN-сервере. После простой установки, без особого труда и углубленных знаний вы сможете создавать пользователей, генерировать VPN-профили и смотреть графики использования сети.
+А обеспечив VPN-подключением себя и ваших близких, вы можете попробовать разделить траты за виртуальный сервер с вашими друзьями и знакомыми.
+В результате чего пятидоллоравая VPS&amp;rsquo;ка может превратится в мощный инструмент обхода блокировок </description>
+    </item>
+    
+    <item>
+      <title>Простой способ установить Mikrotik RouterOS в любом облаке</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-mikrotik-routeros-%D0%B2-%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B5/</link>
+      <pubDate>Sun, 01 Apr 2018 14:57:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-mikrotik-routeros-%D0%B2-%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B5/</guid>
+      <description>Многие облачные провайдеры не позволяют загружать ISO-файлы и не предоставляют никакой возможности для установки ОС отличных от тех что предусмотрены самим облаком.
+В этой статье я расскажу вам как избежать данное ограничение и как просто в 5 шагов можно установить Mikrotik Cloud Hosted Router на любой облачной виртуалке. </description>
+    </item>
+    
+    <item>
+      <title>Ведется массовая атака криптором Wana decrypt0r 2.0</title>
+      <link>https://kvaps.github.io/ru/%D0%B2%D0%B5%D0%B4%D0%B5%D1%82%D1%81%D1%8F-%D0%BC%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%BC-wana-decrypt0r-2-0/</link>
+      <pubDate>Thu, 11 May 2017 18:32:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B2%D0%B5%D0%B4%D0%B5%D1%82%D1%81%D1%8F-%D0%BC%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%BC-wana-decrypt0r-2-0/</guid>
+      <description>В настоящий момент можно наблюдать масштабную атаку трояном-декриптором &amp;ldquo;Wana decrypt0r 2.0&amp;rdquo; Атака наблюдается в разных сетях совершенно никак не связанных между ссобой.
+A ransomware spreading in the lab at the university (отсюда)
+Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций. </description>
+    </item>
+    
+    <item>
+      <title>All-In-One: Proxmox &#43; OpenMediaVault или ещё одна идея для домашнего NAS</title>
+      <link>https://kvaps.github.io/ru/all-in-one-proxmox-openmediavault-%D0%B8%D0%BB%D0%B8-%D0%B5%D1%89%D1%91-%D0%BE%D0%B4%D0%BD%D0%B0-%D0%B8%D0%B4%D0%B5%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B3%D0%BE-nas/</link>
+      <pubDate>Sat, 06 May 2017 16:46:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/all-in-one-proxmox-openmediavault-%D0%B8%D0%BB%D0%B8-%D0%B5%D1%89%D1%91-%D0%BE%D0%B4%D0%BD%D0%B0-%D0%B8%D0%B4%D0%B5%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B3%D0%BE-nas/</guid>
+      <description>Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&amp;hellip;
+Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое. Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome перестал доверять сертификатам WoSign и StartCom</title>
+      <link>https://kvaps.github.io/ru/google-chrome-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0%D0%BC-wosign-%D0%B8-startcom/</link>
+      <pubDate>Thu, 26 Jan 2017 11:19:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/google-chrome-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0%D0%BC-wosign-%D0%B8-startcom/</guid>
+      <description>Как сообщалось ранее Google Chrome заблокировал сертификаты WoSign и StartCom.
+Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее October 21, 2016 00:00:00 UTC. </description>
+    </item>
+    
+    <item>
+      <title>Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)</title>
+      <link>https://kvaps.github.io/ru/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81-pacemaker-%D0%B8-ipaddr-active-active-cluster/</link>
+      <pubDate>Wed, 25 Jan 2017 08:52:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81-pacemaker-%D0%B8-ipaddr-active-active-cluster/</guid>
+      <description>Хочу рассказать вам еще об одном способе балансировки нагрузки. Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.
+Для начала расскажу подробнее чем такой метод балансировки примечателен: * Отсутсвие внешнего балансировщика - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него.</description>
+    </item>
+    
+    <item>
+      <title>Leaf Browser Alpha — браузер с древовидными вкладками</title>
+      <link>https://kvaps.github.io/ru/leaf-browser-alpha-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80-%D1%81-%D0%B4%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC%D0%B8/</link>
+      <pubDate>Fri, 23 Dec 2016 13:26:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/leaf-browser-alpha-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80-%D1%81-%D0%B4%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC%D0%B8/</guid>
+      <description>Поклонникам расширения Tree Style Tab (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser. Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.
+Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из Chrome Web Store прямо в ваш браузер. </description>
+    </item>
+    
+    <item>
+      <title>Hugin — отличная бесплатная программа для создания панорам</title>
+      <link>https://kvaps.github.io/ru/hugin-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC/</link>
+      <pubDate>Thu, 22 Dec 2016 13:25:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/hugin-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC/</guid>
+      <description>Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы. Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.
+Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.</description>
+    </item>
+    
+    <item>
+      <title>Скрипты для сжатия видео с GoPro и ковертирования RAW в JPG</title>
+      <link>https://kvaps.github.io/ru/%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%81-gopro-%D0%B8-%D0%BA%D0%BE%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-raw-%D0%B2-jpg/</link>
+      <pubDate>Fri, 18 Nov 2016 04:00:14 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%81-gopro-%D0%B8-%D0%BA%D0%BE%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-raw-%D0%B2-jpg/</guid>
+      <description>Расскажу как круто можно ужимать видео с гопрошки без потери качества. Видео как правило жмется очень хорошо, мне удавалось сжимать ролики до 70% безо всяких на то проблем. Для windows-пользователей приложу инструкцию, linux-пользователи и так разберутся, все скрипты приведены ниже. </description>
+    </item>
+    
+    <item>
+      <title>Немного о дисковой производительности Windows VM в Proxmox VE. Результаты бенчмарков ZFS и MDADM&#43;LVM</title>
+      <link>https://kvaps.github.io/ru/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-windows-vm-%D0%B2-proxmox-ve-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2-zfs-%D0%B8-mdadm-lvm/</link>
+      <pubDate>Tue, 15 Nov 2016 14:53:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-windows-vm-%D0%B2-proxmox-ve-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2-zfs-%D0%B8-mdadm-lvm/</guid>
+      <description>Если кому интересно, мы тут недавно потестили производительность чтение/запись внутри windows машины на ноде с Proxmox 4.3.
+Хостовая система была установленна на raid10 реализованный двумя разными способами (zfs и mdadm+lvm)
+Тесты проводились на Windows-госте, так-как в первую очередь интересовала производительность именно этой ОС.
+Должен признать, это вторая версия статьи, в первой была допущена фатальная ошибка: zfs тестировался на local storage, а не на zvol, т.к. я до последнего думал, что proxmox не поддерживает zvol.</description>
+    </item>
+    
+    <item>
+      <title>Настраиваем URL Overrides в Keepass2</title>
+      <link>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-url-overrides-%D0%B2-keepass2/</link>
+      <pubDate>Mon, 23 May 2016 07:49:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-url-overrides-%D0%B2-keepass2/</guid>
+      <description>Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.
+По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь Keepass2 - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз.</description>
+    </item>
+    
+    <item>
+      <title>LTSP: Терминальный сервер на Linux</title>
+      <link>https://kvaps.github.io/ru/ltsp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-linux/</link>
+      <pubDate>Tue, 22 Mar 2016 07:51:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/ltsp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-linux/</guid>
+      <description>Сейчас я расскажу вам о том, как можно сэкономить немалое количество времени и денег на вашей IT-инфраструктуре. Как централизованно админить большое количество linux рабочих станций не разводя при этом хаос в вашей экосистеме. И так, что же такое LTSP?
+LTSP - Это терминальное решение на Linux. Говоря &amp;ldquo;терминальное&amp;rdquo;, я в первую очередь имею в виду не подключение к удаленному рабочему столу как в Windows. Я подразумеваю гораздо более гибкую и продвинутую систему доставки ПО, конфигов, домашенего каталога, да и самой операционной системы на клиентские рабочие станции с вашего терминального сервера.</description>
+    </item>
+    
+    <item>
+      <title>Metronome IM и Jappix: многофункциональный Jabber, без сложностей в настройке</title>
+      <link>https://kvaps.github.io/ru/metronome-im-%D0%B8-jappix-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-jabber-%D0%B1%D0%B5%D0%B7-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B2-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B5/</link>
+      <pubDate>Wed, 24 Feb 2016 08:27:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/metronome-im-%D0%B8-jappix-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-jabber-%D0%B1%D0%B5%D0%B7-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B2-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B5/</guid>
+      <description>Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое… Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера. То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.</description>
+    </item>
+    
+    <item>
+      <title>Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch</title>
+      <link>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-opennebula-%D1%81-ceph-mariadb-galera-cluster-%D0%B8-openvswitch/</link>
+      <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-opennebula-%D1%81-ceph-mariadb-galera-cluster-%D0%B8-openvswitch/</guid>
+      <description>На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:
+ Установка Ceph, распределенного хранилища. (Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков) Установка MySQL, Galera кластера с мастер-мастер репликацией Установка софт-свича OpenvSwitch Установка непосредственно самой OpenNebula Настройка отказоустойчивого кластера Первоначальная конфигурация  Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента.</description>
+    </item>
+    
+    <item>
+      <title>Установка CentOS на ZFS в UEFI</title>
+      <link>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-centos-%D0%BD%D0%B0-zfs-%D0%B2-uefi/</link>
+      <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-centos-%D0%BD%D0%B0-zfs-%D0%B2-uefi/</guid>
+      <description>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.
+ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин.</description>
+    </item>
+    
+    <item>
+      <title>Настраиваем сочетания клавиш в Linux наподобие Mac OS X</title>
+      <link>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88-%D0%B2-linux-%D0%BD%D0%B0%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5-mac-os-x/</link>
+      <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88-%D0%B2-linux-%D0%BD%D0%B0%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5-mac-os-x/</guid>
+      <description>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере. После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер. В один прекрасный момент меня это достало и я решил, что пора что-то менять… </description>
+    </item>
+    
+    <item>
+      <title>Проброс USB в виртуалку по сети средствами UsbRedir и QEMU</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D0%B1%D1%80%D0%BE%D1%81-usb-%D0%B2-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%BA%D1%83-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8-usbredir-%D0%B8-qemu/</link>
+      <pubDate>Thu, 20 Aug 2015 11:55:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D0%B1%D1%80%D0%BE%D1%81-usb-%D0%B2-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%BA%D1%83-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8-usbredir-%D0%B8-qemu/</guid>
+      <description>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети. Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP. Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU. Он так же является частью проекта spice, официально поддерживаемым RedHat.
+UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice.</description>
+    </item>
+    
+    <item>
+      <title>Kolab Groupware (Часть 2 — Установка)</title>
+      <link>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0/</link>
+      <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0/</guid>
+      <description>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой. На этот раз мы будем его устанавливать. </description>
+    </item>
+    
+    <item>
+      <title>Kolab Groupware (Часть 1 — Обзор)</title>
+      <link>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</link>
+      <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</guid>
+      <description>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.
+Осторожно, в посте много картинок&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Шпаргалки</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/</link>
+      <pubDate>Mon, 18 Aug 2014 17:03:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/</guid>
+      <description>Выложу тут свои шпаргалки, которые я делал для своего комплекта маджонга.
+Наверняка они пригодятся и вам :)
+4 игрока:
+Комбинации (ч/б)
+Комбинации (цветные)
+Подсчет очков
+3 игрока:
+Комбинации (ч/б)
+Комбинации (цветные)
+Подсчет очков
+&amp;nbsp; Достаточно распечатать с двух сторон на листе A4</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Игровые комбинации для троих игроков</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</link>
+      <pubDate>Fri, 15 Aug 2014 14:49:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
+      <description>ОДИН ЯКУ Риичи / Riichi Ожидание выигрышного тайла при депозите 1000 очков. После объявления риичи руку модифицировать нельзя. Рука должна быть закрытой.
++1 Выигрыш в течение одного раунда. Иппацу/Ippatsu.
++1 Объявление Риичи на первом дискарде. Дабл риичи/Daburu Riichi.
+Пример:
++ В примере в составе руки нет никаких комбинаций. Чтобы она стоила хотя бы 1 хан, игрок объявил риичи.
+Полностью закрытая рука / Menzen Tsumo / Цумо. Выигрыш взятием тайла из стены при полностю закрытой руке.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Подсчет очков в маджонге для троих игроков</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</link>
+      <pubDate>Fri, 15 Aug 2014 14:49:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
+      <description>Основная таблица расчетов
+В риичи-маджонге для троих игроков не используются минипоинты, т.е. очки за состав руки. Весь подсчет очков ведется на основе комбинаций в руке игрока (и количества Дор).
+| Кол-во Хан | Платеж не-дилеру, Рон | Платеж дилеру, Рон | Платеж не-дилеру, Цумо (не-дилер/дилер) | Платеж дилеру, Цумо (с каждого игрока) |
+| &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash; | | 3 | 1000 | 1500 | 300&amp;frasl;500 | 500 |
+| 4 | 2000 | 3000 | 500&amp;frasl;1000 | 1000 |</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Особенности игры для троих игроков</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</link>
+      <pubDate>Fri, 15 Aug 2014 14:46:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</guid>
+      <description>Общая информация
+Риичи-маджонг для троих игроков является вариацией &amp;ldquo;классического&amp;rdquo; риичи-маджонга для четверых игроков.
+Процесс игры в маджонге для троих почти не отличается от классического, отличаются игровые комбинации и изначальный состав тайлов.
+В этом гайде будут описываться только моменты, которые отличаются от &amp;ldquo;классического&amp;rdquo; риичи. Если какая-то информация упускается, значит этот момент в игре не отличается от основных правил и можно воспользоваться руководством по &amp;ldquo;классическому&amp;rdquo; риичи.  Используется 108 игровых тайлов: отсутствуют Цветы и Сезоны, также отсутствуют тайлы масти Знаков с &amp;ldquo;2&amp;rdquo; по &amp;ldquo;8&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Словарик</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/</link>
+      <pubDate>Fri, 15 Aug 2014 14:35:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/</guid>
+      <description>Еще один раздел, при взгляде на который дыбом встают волосы - &#34;Это ж сколько всяких нерусских слов!!!&#34; :) Но всё гораздо проще - бОльшую часть этих слов необязательно использовать и необязательно знать, есть лишь несколько слов, без некоторых поиграть не получится. Японское написание представлено исключительно просто так :) Для правильного отображения иероглифов возможно потребуется установить японский языковой пакет.  Ниже представлена общая информация и условные обозначения, используемые в материалах на сайте.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Ограничения и штрафы</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/</link>
+      <pubDate>Fri, 15 Aug 2014 14:16:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/</guid>
+      <description>Нарушения в игре (чомбо) наказываются штрафами в пользу остальных игроков.
+Если нарушил правила дилер, то он платит по 4000 каждому игроку.
+Если нарушил обычный игрок, он платит по 2000 обычным игрокам и 4000 дилеру. Фуритен
+Правило фуритен, также известное как упущенный дискард, запрещает объявлять Рон, если один из тайлов, на который игрок ждет, уже есть в его дискарде. При этом по Цумо он выиграть имеет право.
+Например, игрок ждет на 2пин и 5пин, но 2пин в его дискарде.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Подсчет очков</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/</link>
+      <pubDate>Fri, 15 Aug 2014 14:14:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/</guid>
+      <description>Методика расчета стоимости выигрыша следующая: вначале подсчитывается стоимость руки (количество хан). Если хан 5 и больше, тогда по таблице (1) определяем выигрыш, если 4 и меньше, тогда считаем количество минипоинтов, и определяем выигрыш по таблицам (3).
+1. Считаем количество хан.
+1.1 Суммируем стоимость всех комбинаций в руке (стоимость показана на странице Игровые комбинации).
+1.2 Прибавляем количество Дор в руке.
+Если получившееся значение – 4 и меньше, тогда переходим к п.2, если 5 и больше – тогда определяем стоимость выигрыша по таблице:</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Процесс игры</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/</link>
+      <pubDate>Fri, 15 Aug 2014 14:12:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/</guid>
+      <description>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.
+Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).
+Перед каждой игрой определяется:
+ Положение игроков относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север) Кто является дилером вначале игры.   Перед каждой раздачей:
+ Строится стена Определяется место **разлома стены **и обозначается Дора Происходит раздача тайлов игрокам  1.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Игровые комбинации</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8/</link>
+      <pubDate>Fri, 15 Aug 2014 13:45:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8/</guid>
+      <description>На этой странице представлен полный перечень игровых комбинаций. Для того, чтобы рука была выигрышная, необходимо чтобы в ней присутствовала минимум одна комбинация из этого списка (иначе игрок обязан заплатить штраф за неправильное объявление победы).
+Яку – это стоимость руки, измеряется в ханах (см. словарик).
+Условно, 1 яку=1 хан.
+Например, имея в руке комбинацию &amp;ldquo;Терминалы и Достоинства&amp;rdquo;, стоимость руки будет составлять 1 хан (поскольку эта комбинация на 1 яку), а если рука при этом закрытая (см.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Подготовка к игре</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%B8%D0%B3%D1%80%D0%B5/</link>
+      <pubDate>Fri, 15 Aug 2014 13:42:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%B8%D0%B3%D1%80%D0%B5/</guid>
+      <description>Игровая сессия (ханчан) состоит из двух раундов: Восточного и Южного.
+Каждый раунд состоит из 4-х раздач (в определенных случаях больше, но об этом позже).
+Перед каждой игрой определяется:
+ Положение игроков относительно друг друга (то есть кто начинает игру на какой позиции – Восток, Юг, Запад, Север) Кто является дилером вначале игры.  Перед каждой раздачей:
+ Строится стена Определяется место **разлома стены **и обозначается Дора Происходит раздача тайлов игрокам  1.</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг: Что нужно для игры</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%87%D1%82%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B/</link>
+      <pubDate>Fri, 15 Aug 2014 12:27:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%87%D1%82%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B/</guid>
+      <description>Для игры необходимо:
+ Набор тайлов. Адаптированный или нет – разницы никакой (адаптированный – где значение тайла в добавок подписано арабской цифрой, или буквой в случае Драконов и Ветров). Из набора нужно убрать Цветы и Сезоны (если они там были).
+ Пара шестигранных игральных кубиков. Они используются для определения дилера, места разлома стены и т.д. – об этом будет дальше.
+ Указатели Ветров. Выглядят от набора к набору совершенно по-разному. В любом случае, смысл указателя такой:</description>
+    </item>
+    
+    <item>
+      <title>Риичи-маджонг</title>
+      <link>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/</link>
+      <pubDate>Fri, 15 Aug 2014 12:25:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/</guid>
+      <description> Здесь будут собраны материалы с сайта riichi.ru который, к сожалению, уже давно перестал работать.
+Риичи для четверых игроков:  Что нужно для игры Подготовка к игре Комбинации Процесс игры Подсчет очков Ограничения и штрафы Словарик  Риичи для троих игроков:  Особенности игры Комбинации Подсчет очков  Шпаргалки: Так же я подготовил удобные для печати шпаргалки, найти их можно по этой ссылке:
+ Шпаргалки  </description>
+    </item>
+    
+    <item>
+      <title>Поднимаем VPN-туннель из мира домой в обход NAT</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-vpn-%D1%82%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%B7-%D0%BC%D0%B8%D1%80%D0%B0-%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9-%D0%B2-%D0%BE%D0%B1%D1%85%D0%BE%D0%B4-nat/</link>
+      <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-vpn-%D1%82%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%B7-%D0%BC%D0%B8%D1%80%D0%B0-%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9-%D0%B2-%D0%BE%D0%B1%D1%85%D0%BE%D0%B4-nat/</guid>
+      <description>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы. </description>
+    </item>
+    
+    <item>
+      <title>Прошивка Rebug 4.21</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-rebug-4-21/</link>
+      <pubDate>Sat, 03 Nov 2012 14:39:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-rebug-4-21/</guid>
+      <description>Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой теме. </description>
+    </item>
+    
+    <item>
+      <title>Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему</title>
+      <link>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/</link>
+      <pubDate>Wed, 19 Sep 2012 16:31:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/</guid>
+      <description>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.
+О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.
+И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.
+Всего за десять простых шагов: И так, приступим:
+Часть 1: Установка самого Photoshop&amp;rsquo;а 1.</description>
+    </item>
+    
+    <item>
+      <title>Прошивка Art Of Honeycomb для TS1004T</title>
+      <link>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-art-of-honeycomb-%D0%B4%D0%BB%D1%8F-ts1004t/</link>
+      <pubDate>Thu, 12 Apr 2012 05:57:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-art-of-honeycomb-%D0%B4%D0%BB%D1%8F-ts1004t/</guid>
+      <description>Так, добрались до релиз-кандидата, тестим, радуемся. </description>
+    </item>
+    
+    <item>
+      <title>Звуки Pidgin в qutIM</title>
+      <link>https://kvaps.github.io/ru/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/</guid>
+      <description>Понравились тут звуки в&amp;nbsp;Pidgin, решил их прикрутить в&amp;nbsp;qutIM 0.3 Установка:
+Скачать архив со звуками&amp;nbsp;[линк]
+распаковать его в
+~/.local/share/qutim/sounds  А еще в&amp;nbsp;qutIM 0.3 можно запихнуть смайлики&amp;nbsp;Колобки, они доступны на официальном сайте колобков.
+Установка:
+Скачать архив со смайлами&amp;nbsp;[линк]
+распаковать его в
+~/.local/share/qutim/emoticons  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kvaps</title>
+    <link>https://kvaps.github.io/post/</link>
+    <description>Recent content in Posts on kvaps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2018 21:35:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a Network Bootable Server Farm for Kubernetes with LTSP</title>
+      <link>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</link>
+      <pubDate>Tue, 02 Oct 2018 21:35:07 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.&lt;/p&gt;
+
+&lt;p&gt;You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!&lt;/p&gt;
+
+&lt;p&gt;You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!&lt;/p&gt;
+
+&lt;p&gt;Intrigued? Let me walk you through how it works.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deploying LINSTOR storage for Proxmox</title>
+      <link>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</link>
+      <pubDate>Wed, 12 Sep 2018 21:36:59 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.&lt;/p&gt;
+
+&lt;p&gt;For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.&lt;/p&gt;
+
+&lt;p&gt;LINSTOR supports thin-provisioning, snapshots and many other interesting things.&lt;/p&gt;
+
+&lt;p&gt;This solution is good suitable for virtual machines and containers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Run kubernetes inside LXC container</title>
+      <link>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</link>
+      <pubDate>Wed, 22 Aug 2018 21:36:47 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.
+In this case you can have only one master, and still have all the features of multimater.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Easy way for install Mikrotik’s Cloud Hosted Router on any Cloud VM</title>
+      <link>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</link>
+      <pubDate>Tue, 06 Feb 2018 12:53:35 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</guid>
+      <description>Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps. </description>
+    </item>
+    
+    <item>
+      <title>Zabbix: solve memory and cpu load monitoring issues inside LXC containers</title>
+      <link>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</link>
+      <pubDate>Wed, 29 Nov 2017 12:53:18 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</guid>
+      <description>Zabbix have some problems with memory collecting from cgroups limited containers. If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory. Zabbix have bug report, but it seems that no one don’t want to fix it soon. So let’s fix it together byself. </description>
+    </item>
+    
+    <item>
+      <title>ONLYOFFICE configuration for docker-compose (and letsencrypt).</title>
+      <link>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</link>
+      <pubDate>Wed, 14 Dec 2016 03:55:37 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</guid>
+      <description> Run communityserver container, and get onlyoffice.conf from it:
+docker run -name communityserver -i -t -d onlyoffice/communityserver` # wait 1-2 minutes. sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &amp;gt; onlyoffice.conf` sudo docker rm -fv communityserver   </description>
+    </item>
+    
+    <item>
+      <title>We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]</title>
+      <link>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</link>
+      <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</guid>
+      <description>This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:
+ The Ceph installation, the distributed storage. (I will describe installation of two-level storage with the caching pool from SSD disks) The installation MySQL, Galera of a cluster with the master master replication Installation software switch of OpenvSwitch Installation directly OpenNebula Setup of failover cluster Initial configuration  Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests.</description>
+    </item>
+    
+    <item>
+      <title>The CentOS installation on ZFS in UEFI [Translation]</title>
+      <link>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</link>
+      <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</guid>
+      <description>Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.</description>
+    </item>
+    
+    <item>
+      <title>We configure the keyboard shortcuts in Linux like Mac OS X [Translation]</title>
+      <link>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</link>
+      <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</guid>
+      <description>Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser. After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.</description>
+    </item>
+    
+    <item>
+      <title>Kolab Groupware (Part 2 — Installation) [Translation]</title>
+      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</link>
+      <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</guid>
+      <description>If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle. This time we will set it. </description>
+    </item>
+    
+    <item>
+      <title>Kolab Groupware (Part 1 — the Overview) [Translation]</title>
+      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</link>
+      <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</guid>
+      <description>Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.
+Carefully, in post there are a lot of pictures&amp;hellip; </description>
+    </item>
+    
+    <item>
+      <title>we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]</title>
+      <link>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</link>
+      <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</guid>
+      <description>I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services. </description>
+    </item>
+    
+  </channel>
+</rss>

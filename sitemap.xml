@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B6%D0%B0%D0%B5%D0%BC%D1%83%D1%8E-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D1%83-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-kubernetes-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-ltsp/</loc>
+    <lastmod>2018-10-03T22:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</loc>
+    <lastmod>2018-10-02T21:35:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B0%D0%B7%D0%B2%D0%BE%D1%80%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-linstor-%D0%B4%D0%BB%D1%8F-proxmox/</loc>
+    <lastmod>2018-09-13T00:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</loc>
+    <lastmod>2018-09-12T21:36:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</loc>
+    <lastmod>2018-08-22T21:36:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-iscsi-lvm/</loc>
+    <lastmod>2018-08-22T18:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC-kubernetes-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8-lxc/</loc>
+    <lastmod>2018-08-22T12:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5-%D1%81-drbd9-%D0%B8-proxmox-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-nfs/</loc>
+    <lastmod>2018-08-19T11:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/google-s-shell-style-guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/</loc>
+    <lastmod>2018-06-04T19:43:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-qemu/</loc>
+    <lastmod>2018-06-01T00:01:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/sheepdog/</loc>
+    <lastmod>2018-05-31T13:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/pritunl-vpn-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F-%D0%B8-%D0%B4%D1%80%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0-10-%D0%BC%D0%B8%D0%BD%D1%83%D1%82/</loc>
+    <lastmod>2018-05-11T12:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-mikrotik-routeros-%D0%B2-%D0%BB%D1%8E%D0%B1%D0%BE%D0%BC-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%B5/</loc>
+    <lastmod>2018-04-01T14:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</loc>
+    <lastmod>2018-02-06T12:53:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</loc>
+    <lastmod>2017-11-29T12:53:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%B2%D0%B5%D0%B4%D0%B5%D1%82%D1%81%D1%8F-%D0%BC%D0%B0%D1%81%D1%81%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B0-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%BC-wana-decrypt0r-2-0/</loc>
+    <lastmod>2017-05-11T18:32:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/all-in-one-proxmox-openmediavault-%D0%B8%D0%BB%D0%B8-%D0%B5%D1%89%D1%91-%D0%BE%D0%B4%D0%BD%D0%B0-%D0%B8%D0%B4%D0%B5%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B3%D0%BE-nas/</loc>
+    <lastmod>2017-05-06T16:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/google-chrome-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B0%D0%BC-wosign-%D0%B8-startcom/</loc>
+    <lastmod>2017-01-26T11:19:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8-%D1%81-pacemaker-%D0%B8-ipaddr-active-active-cluster/</loc>
+    <lastmod>2017-01-25T08:52:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/projects-archive/</loc>
+    <lastmod>2016-12-27T03:10:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/leaf-browser-alpha-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80-%D1%81-%D0%B4%D1%80%D0%B5%D0%B2%D0%BE%D0%B2%D0%B8%D0%B4%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC%D0%B8/</loc>
+    <lastmod>2016-12-23T13:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/hugin-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC/</loc>
+    <lastmod>2016-12-22T13:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</loc>
+    <lastmod>2016-12-14T03:55:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D1%81-gopro-%D0%B8-%D0%BA%D0%BE%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-raw-%D0%B2-jpg/</loc>
+    <lastmod>2016-11-18T04:00:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%BE%D0%B9-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-windows-vm-%D0%B2-proxmox-ve-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2-zfs-%D0%B8-mdadm-lvm/</loc>
+    <lastmod>2016-11-15T14:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-url-overrides-%D0%B2-keepass2/</loc>
+    <lastmod>2016-05-23T07:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/ltsp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80-%D0%BD%D0%B0-linux/</loc>
+    <lastmod>2016-03-22T07:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/metronome-im-%D0%B8-jappix-%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-jabber-%D0%B1%D0%B5%D0%B7-%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B2-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B5/</loc>
+    <lastmod>2016-02-24T08:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</loc>
+    <lastmod>2015-11-16T16:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%81%D1%82%D1%80%D0%BE%D0%B8%D0%BC-%D1%81%D0%B2%D0%BE%D0%B5-%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7%D0%BE%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BB%D0%B0%D0%BA%D0%BE-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-opennebula-%D1%81-ceph-mariadb-galera-cluster-%D0%B8-openvswitch/</loc>
+    <lastmod>2015-11-16T16:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</loc>
+    <lastmod>2015-10-13T15:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-centos-%D0%BD%D0%B0-zfs-%D0%B2-uefi/</loc>
+    <lastmod>2015-10-13T15:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</loc>
+    <lastmod>2015-09-09T16:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-%D1%81%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88-%D0%B2-linux-%D0%BD%D0%B0%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5-mac-os-x/</loc>
+    <lastmod>2015-09-09T16:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D0%B1%D1%80%D0%BE%D1%81-usb-%D0%B2-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%BA%D1%83-%D0%BF%D0%BE-%D1%81%D0%B5%D1%82%D0%B8-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8-usbredir-%D0%B8-qemu/</loc>
+    <lastmod>2015-08-20T11:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</loc>
+    <lastmod>2015-07-18T14:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0/</loc>
+    <lastmod>2015-07-18T14:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</loc>
+    <lastmod>2015-07-17T15:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/kolab-groupware-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80/</loc>
+    <lastmod>2015-07-17T15:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B8/</loc>
+    <lastmod>2014-08-18T17:03:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2014-08-15T14:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2-%D0%B2-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2014-08-15T14:49:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D0%B3%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D1%80%D0%BE%D0%B8%D1%85-%D0%B8%D0%B3%D1%80%D0%BE%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2014-08-15T14:46:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8%D0%BA/</loc>
+    <lastmod>2014-08-15T14:35:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/</loc>
+    <lastmod>2014-08-15T14:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/</loc>
+    <lastmod>2014-08-15T14:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81-%D0%B8%D0%B3%D1%80%D1%8B/</loc>
+    <lastmod>2014-08-15T14:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%B8%D0%B3%D1%80%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D0%B8/</loc>
+    <lastmod>2014-08-15T13:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BA-%D0%B8%D0%B3%D1%80%D0%B5/</loc>
+    <lastmod>2014-08-15T13:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D1%87%D1%82%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%B3%D1%80%D1%8B/</loc>
+    <lastmod>2014-08-15T12:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/</loc>
+    <lastmod>2014-08-15T12:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</loc>
+    <lastmod>2014-03-18T14:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BF%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D0%BC-vpn-%D1%82%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%B7-%D0%BC%D0%B8%D1%80%D0%B0-%D0%B4%D0%BE%D0%BC%D0%BE%D0%B9-%D0%B2-%D0%BE%D0%B1%D1%85%D0%BE%D0%B4-nat/</loc>
+    <lastmod>2014-03-18T14:51:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-rebug-4-21/</loc>
+    <lastmod>2012-11-03T14:39:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/</loc>
+    <lastmod>2012-09-19T16:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%BF%D1%80%D0%BE%D1%88%D0%B8%D0%B2%D0%BA%D0%B0-art-of-honeycomb-%D0%B4%D0%BB%D1%8F-ts1004t/</loc>
+    <lastmod>2012-04-12T05:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/post/</loc>
+    <lastmod>2018-10-02T21:35:07+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/</loc>
+    <lastmod>2018-10-03T22:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/</loc>
+    <lastmod>2018-10-03T22:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/ru/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/</loc>
+  </url>
+  
+</urlset>
