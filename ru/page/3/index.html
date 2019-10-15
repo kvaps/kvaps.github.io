@@ -275,6 +275,70 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/412825/" target="_blank">
+      
+          Блочные устройства QEMU
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-06-01T00:01:19Z">
+        
+  
+  
+  
+  
+    1 Июнь 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png" alt="" /></p>
+
+<p>В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:</p>
+
+<pre><code>-hda /dev/sda1
+</code></pre>
+
+<p>Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/412825/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/412739/" target="_blank">
       
           Sheepdog
@@ -624,71 +688,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/400953/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/319550/" target="_blank">
-      
-          Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2017-01-25T08:52:00Z">
-        
-  
-  
-  
-  
-    25 Январь 2017
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt="" /></p>
-
-<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
-Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
-
-<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:
-* <strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.
-* <strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.
-* <strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/319550/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
