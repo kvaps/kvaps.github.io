@@ -4,7 +4,7 @@ date: 2019-10-04
 link: https://youtu.be/Rmnqa5dKgDA
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rmnqa5dKgDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg)](https://youtu.be/Rmnqa5dKgDA)
 
 Тезисы и презентация:
 

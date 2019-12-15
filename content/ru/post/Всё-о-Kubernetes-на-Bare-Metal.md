@@ -4,7 +4,7 @@ date: 2019-02-27
 link: https://youtu.be/yGKI5JoKMUY
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yGKI5JoKMUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![](https://img.youtube.com/vi/yGKI5JoKMUY/maxresdefault.jpg)](https://youtu.be/yGKI5JoKMUY)
 
 Видеозапись выступления «Всё, что нужно знать о Kubernetes на Bare Metal» (Андрей Квапил, WEDOS Internet a.s., Cloud Architect / DevOps)
 
