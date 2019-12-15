@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.
@@ -304,107 +304,73 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.<br />
-О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.<br />
-И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br />
+              <p>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.<br>
+О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.<br>
+И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br>
 Всего за десять простых шагов:</p>
-
 <p>И так, приступим:</p>
-
-<h2 id="часть-1-установка-самого-photoshop-а"><strong>Часть 1: Установка самого Photoshop&rsquo;а</strong></h2>
-
+<h2 id="-1---photoshop"><strong>Часть 1: Установка самого Photoshop'а</strong></h2>
 <p><strong>1. Удаляем старые версии wine</strong></p>
-
 <pre><code>sudo aptitude purge wine
 </code></pre>
-
 <p><strong>2. Устанавливаем новый wine</strong></p>
-
 <p><em>Если ubuntu то:</em></p>
-
 <pre><code>sudo add-apt-repository ppa:ubuntu-wine/ppa  
  sudo apt-get update  
  sudo apt-get install wine1.5
 </code></pre>
-
 <p><em>Если debian</em></p>
-
 <pre><code>ARCH=`uname -m | sed -e s/x86_64/amd64/ -e s/i.86/i386/`  
  wget -r -A &quot;*_$ARCH.deb&quot; http://dev.carbon-project.org/debian/wine-unstable/  
  sudo dpkg -i dev.carbon-project.org/debian/wine-unstable/*.deb  
  sudo apt-get install -f
 </code></pre>
-
 <p><strong>3. Качаем winetricks и даем ему права на выполнение</strong></p>
-
 <pre><code>wget http://winetricks.org/winetricks  
  chmod +x winetricks
 </code></pre>
-
 <p><em>Проверим</em></p>
-
 <pre><code>./winetricks
 </code></pre>
-
-<p><em>Если у вас debian, winetricks скорее всего не запустится выдаст такую ошибку:</em><br />
-_<br />
+<p><em>Если у вас debian, winetricks скорее всего не запустится выдаст такую ошибку:</em><br>
+_<br>
 _</p>
-
 <pre><code>_wineserver not found_
 </code></pre>
-
-<p>_<br />
-_<br />
+<p>_<br>
+_<br>
 <em>решение: укажем ему где у нас находится wineserver</em></p>
-
 <pre><code>sudo ln -s /usr/lib/wine-unstable/wineserver /usr/local/bin/wineserver
 </code></pre>
-
 <p><strong>4. Начинаем установку нужных библиотек:</strong></p>
-
 <pre><code>./winetricks msxml3
 </code></pre>
-
-<p><em>Жмем &ldquo;Download now&rdquo;, качаем, устанавливаем.</em><br />
+<p><em>Жмем &ldquo;Download now&rdquo;, качаем, устанавливаем.</em><br>
 <em>Установим остальные, необходимые нам, библиотеки:</em></p>
-
 <pre><code>./winetricks gdiplus msxml6 vcrun2005 vcrun2008 vcrun2010 atmlib ie6 fontsmooth-rgb allfonts
 </code></pre>
-
-<p><strong>5. Качаем подходящий Photoshop упакованный в paf</strong><br />
-**<br />
-**<br />
-<em>Сначала я скачал cs6, но там был какой-то баг с текстовыми полями. <a href="http://thepiratebay.se/torrent/7266185">[link]</a></em><br />
+<p><strong>5. Качаем подходящий Photoshop упакованный в paf</strong><br>
+**<br>
+**<br>
+<em>Сначала я скачал cs6, но там был какой-то баг с текстовыми полями. <a href="http://thepiratebay.se/torrent/7266185">[link]</a></em><br>
 <em>Поэтому я скачал cs5.1 <a href="http://thepiratebay.se/torrent/6908484/Adobe_Photoshop_CS5.1_Portable_Multilingual_%28PAF%29">[link]</a></em></p>
-
-<p><strong>6. Запускаем инсталлер и устанавливаем, я установил в Program Files</strong><br />
+<p><strong>6. Запускаем инсталлер и устанавливаем, я установил в Program Files</strong><br>
 <em>(если директория не выберается, можно установить в другое место потом просто перенести куда хотим)</em></p>
-
 <p>Все теперь Photoshop установлен и нормально работает.</p>
-
-<p><strong>7. Что бы полноценно работать с хоткеями Photoshop&rsquo;a, давайте перенаправим все &ldquo;окно-управляющие&rdquo; функции кнопки <code>&lt;alt&gt;</code> на кнопку <code>&lt;win&gt;</code>, и отключим меню окна по Alt+Click</strong></p>
-
+<p><strong>7. Что бы полноценно работать с хоткеями Photoshop'a, давайте перенаправим все &ldquo;окно-управляющие&rdquo; функции кнопки <code>&lt;alt&gt;</code> на кнопку <code>&lt;win&gt;</code>, и отключим меню окна по Alt+Click</strong></p>
 <pre><code>gconftool-2 --set /apps/metacity/general/mouse_button_modifier --type string '&lt;super&gt;'  
 gconftool-2 --set /apps/metacity/window_keybindings/activate_window_menu --type string 'disabled'
 </code></pre>
-
-<p>&nbsp;</p>
-
-<h2 id="часть-2-инегрируем-photoshop-в-систему"><strong>Часть 2: Инегрируем Photoshop в систему</strong></h2>
-
+<p> </p>
+<h2 id="-2--photoshop--"><strong>Часть 2: Инегрируем Photoshop в систему</strong></h2>
 <p><strong>8. Сначала скачаем и установим иконку</strong></p>
-
 <pre><code>wget http://upload.wikimedia.org/wikipedia/commons/5/58/Adobe_Photoshop_logo.svg  
  sudo mv Adobe_Photoshop_logo.svg /usr/share/app-install/icons/
 </code></pre>
-
 <p><strong>9. Теперь создадим кнопку запуска и ассоциируем Photoshop с .PSD файлами</strong></p>
-
 <pre><code>sudo nano ~/.local/share/applications/Photoshop.desktop
 </code></pre>
-
 <p><em>с вот таким содержимым:</em></p>
-
 <pre><code>[Desktop Entry]  
  Type=Application  
  Name=Adobe Photoshop CS5  
@@ -415,26 +381,19 @@ gconftool-2 --set /apps/metacity/window_keybindings/activate_window_menu --type 
  Icon=/usr/share/app-install/icons/Adobe_Photoshop_logo.svg  
  Categories=Graphics;
 </code></pre>
-
 <p><strong>10. Ну и создадим небольшой скриптик который будет конвертировать нашим файлам имена и пути</strong></p>
-
 <pre><code>nano &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;
 </code></pre>
-
 <p><em>с таким содержимым:</em></p>
-
 <pre><code>#!/bin/sh  
  QUICKPARLOCATION=&quot;C:\Program Files\AdobePSPortable\AdobePSPortable.exe&quot;  
  PARAM=`winepath -w &quot;$*&quot;`  
  wine &quot;$QUICKPARLOCATION&quot; &quot;$PARAM&quot;  
  exit 0
 </code></pre>
-
 <p><em>сделаем его исполняемым</em></p>
-
 <pre><code>chmod +x &quot;/home/ИМЯ_ПОЛЬЗОВАТЕЛЯ/.wine/drive_c/Program Files/AdobePSPortable/PSD&quot;
 </code></pre>
-
 <p>Теперь все готово, Photoshop есть у нас в меню программ, и в диалоге &ldquo;Открыть с помощью&rdquo;</p>
               
             </div>

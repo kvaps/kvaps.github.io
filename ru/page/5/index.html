@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -275,6 +275,70 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/303894/" target="_blank">
+      
+          Настраиваем URL Overrides в Keepass2
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-05-23T07:49:00Z">
+        
+  
+  
+  
+  
+    23 Май 2016
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/346/b1c/039/346b1c0395f843f18a1e2666598efd4f.png" alt=""></p>
+<p>Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.</p>
+<p>По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь <!-- raw HTML omitted -->Keepass2<!-- raw HTML omitted --> - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз. Если кто хочет познакомиться подробнее, вот несколько ссылок: <a href="https://ru.wikipedia.org/wiki/KeePass">wiki</a>, <a href="https://habr.com/post/10523/">обзорная статья</a>, сравнения с другими: <a href="https://habr.com/post/125248/">1</a> <a href="https://habr.com/post/225053/">2</a>.
+Вместо этого я хотел бы рассказать об одной его интересной функции:</p>
+<p>Функция называется &ldquo;URL Overrides&rdquo;, и представляет ссобой возможность запускать ассоциированные с записями программы и передавать им данные для аутентификации прямо из Keepass'а.</p>
+<p>Например, вы можете хранить в keepass'е список учеток для подключения к  удаленному серверу, а в определенный момент выбрать нужную и простым нажатием Ctrl+U, запустить клиент удаленного подключения, и моментально получить доступ к вашему серверу.
+Это очень удобно, так как все логины и пароли не хранятся абы где, а надежно зашифрованны в вашей базе keepass и передаются программе-клиенту только в момент подключения.</p>
+<p>Идея состоит в том, что бы использовать Keepass как единую точку входа на все удаленные сервера.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/303894/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/277783/" target="_blank">
       
           LTSP: Терминальный сервер на Linux
@@ -300,20 +364,18 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/91f/ec4/76d/91fec476de2d7f6764aa8755a366e5f6.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/getpro/habr/post_images/91f/ec4/76d/91fec476de2d7f6764aa8755a366e5f6.png" alt=""></p>
 <p>Сейчас я расскажу вам о том, как можно сэкономить немалое количество времени и денег на вашей IT-инфраструктуре.
 Как централизованно админить большое количество linux рабочих станций не разводя при этом хаос в вашей экосистеме.
 И так, что же такое LTSP?</p>
-
 <p><strong>LTSP</strong> - Это терминальное решение на Linux.
 Говоря &ldquo;терминальное&rdquo;, я в первую очередь имею в виду не подключение к удаленному рабочему столу как в Windows. Я подразумеваю гораздо более гибкую и продвинутую систему доставки ПО, конфигов, домашенего каталога, да и самой операционной системы на клиентские рабочие станции с вашего терминального сервера.</p>
-
 <p>В частности, LTSP - это совокупность преднастроенных программ и скриптов которые позволят вам без особого труда превратить вашу свежеустановленную Ubuntu, или другой дистрибутив, в полностью готовое к работе терминальное окружение. Которое будет загружаться на любых компьютерах в вашей сети и предоставлять пользователю полноценный интерфейс.</p>
-
-<p>У LTSP есть несколько режимов работы:
-* тонкий клиент
-* толстый клиент</p>
+<p>У LTSP есть несколько режимов работы:</p>
+<ul>
+<li>тонкий клиент</li>
+<li>толстый клиент</li>
+</ul>
       
       <p>
         
@@ -370,12 +432,10 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png" alt=""></p>
 <p>Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое…
 Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера.
 То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.</p>
-
 <p>Речь пойдет об <strong>Metronome IM</strong> и <strong>Jappix</strong>.</p>
       
       <p>
@@ -433,8 +493,7 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="" /> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
-
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
 <ul>
 <li><strong><a href="http://habr.com/post/270187/#ceph">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
 <li><strong><a href="http://habr.com/post/270187/#galera">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
@@ -443,7 +502,6 @@ if (!doNotTrack) {
 <li><strong><a href="http://habr.com/post/270187/#pacemaker">Настройка отказоустойчивого кластера</a></strong></li>
 <li><strong><a href="http://habr.com/post/270187/#configuration">Первоначальная конфигурация</a></strong></li>
 </ul>
-
 <p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.</p>
       
       <p>
@@ -501,10 +559,8 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
 <p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
-
 <p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS">фишками</a>.</p>
       
       <p>
@@ -562,8 +618,7 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
 <p>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.
 После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.
 В один прекрасный момент меня это достало и я решил, что пора что-то менять…</p>
@@ -623,78 +678,16 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png" alt=""></p>
 <p>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети.
 Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP.
 Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU.
 Он так же является частью проекта spice, официально поддерживаемым RedHat.</p>
-
 <p>UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice. Но как оказалось им можно вполне успешно пользоваться и без spice. В роли сервера выступает usbredirserver, который шарит usb-устройство на определенный порт, а в качестве клиента сам QEMU, который эмулирует подключение экспортированного usb-устройства в определенный usb-контроллер вашей виртуальной машины. Благодаря такому подходу в качестве гостевой системы может использоваться абсолютно любая ОС, так как она даже не знает, что устройство является проброшенным удаленно, а вся логика ложится на QEMU.</p>
       
       <p>
         
           <a href="https://habr.com/post/265065/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/260527/" target="_blank">
-      
-          Kolab Groupware (Часть 2 — Установка)
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2015-07-18T14:17:00Z">
-        
-  
-  
-  
-  
-    18 Июль 2015
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt="" /></p>
-
-<p>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.
-На этот раз мы будем его устанавливать.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/260527/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

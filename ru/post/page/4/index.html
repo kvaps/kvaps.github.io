@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -276,6 +276,69 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/328048/" target="_blank">
+      
+          All-In-One: Proxmox &#43; OpenMediaVault или ещё одна идея для домашнего NAS
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-05-06T16:46:00Z">
+        
+  
+  
+  
+  
+    6 Май 2017
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/web/f0a/592/3de/f0a5923dec20422e952394a6d0473355.png" alt=""></p>
+<p>Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&hellip;</p>
+<p>Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое.
+Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.</p>
+<p>Но к сожалению не все было так гладко как хотелось бы и, к тому же, флешка с установленной системой приказала долго жить, так что настало время для новых экспериментов!
+На этот раз я задумал реализовать что-то похожее, но только лучше и целиком на Linux.</p>
+<p>В статье так же будет немного рассказано про Docker и автоматический прокси с автоматическим получением сертификатов Letsencrypt.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/328048/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/400953/" target="_blank">
       
           Google Chrome перестал доверять сертификатам WoSign и StartCom
@@ -301,10 +364,8 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/1ff/c49/9de/1ffc499debe24e1989f3c1608255917c.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/1ff/c49/9de/1ffc499debe24e1989f3c1608255917c.png" alt=""></p>
 <p>Как <a href="https://habr.com/post/398161/">сообщалось ранее</a> Google Chrome заблокировал сертификаты WoSign и StartCom.</p>
-
 <p>Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее <code>October 21, 2016 00:00:00 UTC</code>.</p>
       
       <p>
@@ -362,15 +423,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
 <p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
 Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
-
-<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:
-* <strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.
-* <strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.
-* <strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</p>
+<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
+<ul>
+<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.</li>
+<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
+<li><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</li>
+</ul>
       
       <p>
         
@@ -427,11 +488,9 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png" alt="image" /></p>
-
+        <p><img src="https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png" alt="image"></p>
 <p>Поклонникам расширения <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">Tree Style Tab</a> (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser.
 Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.</p>
-
 <p>Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из <a href="https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe">Chrome Web Store</a> прямо в ваш браузер.</p>
       
       <p>
@@ -489,14 +548,11 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png" alt="" /></p>
-
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png" alt=""></p>
 <p>Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы.
 Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.</p>
-
 <p>Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.</p>
-
-<p>Наконец все построение панорамы, вместо сложной и муторной работы, сведется к игре найди 5 <s>отличий</s> схожестей, а то и вовсе к нажатию всего трех кнопок.</p>
+<p>Наконец все построение панорамы, вместо сложной и муторной работы, сведется к игре найди 5 <!-- raw HTML omitted -->отличий<!-- raw HTML omitted --> схожестей, а то и вовсе к нажатию всего трех кнопок.</p>
       
       <p>
         
@@ -612,14 +668,10 @@ Hugin - является самой популярной программой д
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/25d/8c0/9c1/25d8c09c109b4386935f99576c54f5a0.png" alt="image" /></p>
-
+        <p><img src="https://habrastorage.org/files/25d/8c0/9c1/25d8c09c109b4386935f99576c54f5a0.png" alt="image"></p>
 <p>Если кому интересно, мы тут недавно потестили производительность чтение/запись внутри windows машины на ноде с Proxmox 4.3.</p>
-
 <p>Хостовая система была установленна на raid10 реализованный двумя разными способами (zfs и mdadm+lvm)</p>
-
 <p>Тесты проводились на Windows-госте, так-как в первую очередь интересовала производительность именно этой ОС.</p>
-
 <p><em>Должен признать, это вторая версия статьи, в первой была допущена фатальная ошибка:
 zfs тестировался на local storage, а не на zvol, т.к. я до последнего думал, что proxmox не поддерживает zvol.
 Огромное спасибо @winduzoid за то, что заметил данное недоразумение.</em></p>
@@ -627,75 +679,6 @@ zfs тестировался на local storage, а не на zvol, т.к. я д
       <p>
         
           <a href="https://habr.com/post/315334/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/303894/" target="_blank">
-      
-          Настраиваем URL Overrides в Keepass2
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-05-23T07:49:00Z">
-        
-  
-  
-  
-  
-    23 Май 2016
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/346/b1c/039/346b1c0395f843f18a1e2666598efd4f.png" alt="" /></p>
-
-<p>Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.</p>
-
-<p>По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь <a href="http://keepass.info/index.html">Keepass2</a> - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз. Если кто хочет познакомиться подробнее, вот несколько ссылок: <a href="https://ru.wikipedia.org/wiki/KeePass">wiki</a>, <a href="https://habr.com/post/10523/">обзорная статья</a>, сравнения с другими: <a href="https://habr.com/post/125248/">1</a> <a href="https://habr.com/post/225053/">2</a>.
-Вместо этого я хотел бы рассказать об одной его интересной функции:</p>
-
-<p>Функция называется &ldquo;URL Overrides&rdquo;, и представляет ссобой возможность запускать ассоциированные с записями программы и передавать им данные для аутентификации прямо из Keepass&rsquo;а.</p>
-
-<p>Например, вы можете хранить в keepass&rsquo;е список учеток для подключения к  удаленному серверу, а в определенный момент выбрать нужную и простым нажатием Ctrl+U, запустить клиент удаленного подключения, и моментально получить доступ к вашему серверу.
-Это очень удобно, так как все логины и пароли не хранятся абы где, а надежно зашифрованны в вашей базе keepass и передаются программе-клиенту только в момент подключения.</p>
-
-<p>Идея состоит в том, что бы использовать Keepass как единую точку входа на все удаленные сервера.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/303894/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

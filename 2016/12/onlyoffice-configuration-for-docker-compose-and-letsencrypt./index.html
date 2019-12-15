@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="
@@ -15,7 +15,6 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver`
 # wait 1-2 minutes.
 sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
 sudo docker rm -fv communityserver
-
 ">
 
 
@@ -26,7 +25,6 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver`
 # wait 1-2 minutes.
 sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
 sudo docker rm -fv communityserver
-
 ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ONLYOFFICE configuration for docker-compose (and letsencrypt).">
@@ -41,7 +39,6 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver`
 # wait 1-2 minutes.
 sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
 sudo docker rm -fv communityserver
-
 ">
 <meta name="twitter:description" content="
 Run communityserver container, and get onlyoffice.conf from it:
@@ -50,7 +47,6 @@ docker run -name communityserver -i -t -d onlyoffice/communityserver`
 # wait 1-2 minutes.
 sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &gt; onlyoffice.conf`
 sudo docker rm -fv communityserver
-
 ">
 <meta property="og:locale" content="en-us">
 
@@ -322,14 +318,13 @@ if (!doNotTrack) {
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               <ul>
-<li><p>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</p>
-
-<pre><code class="language-bash">docker run -name communityserver -i -t -d onlyoffice/communityserver`
-# wait 1-2 minutes.
-sudo docker exec -i -t communityserver /bin/bash -c 'cat /etc/nginx/sites-enabled/onlyoffice' &gt; onlyoffice.conf`
-sudo docker rm -fv communityserver
-</code></pre></li>
+<li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
 </ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+<span style="color:#75715e"># wait 1-2 minutes.</span>
+sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
+sudo docker rm -fv communityserver
+</code></pre></div>
               
             </div>
           </div>

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[awesome] My work laptop</title>
+      <link>https://kvaps.github.io/2019/12/awesome-my-work-laptop/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2019/12/awesome-my-work-laptop/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/iyqfr4rghh441.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>“linstor_un” — New storage driver for OpenNebula</title>
@@ -17,12 +26,9 @@
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.&lt;/p&gt;
-
 &lt;p&gt;Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.&lt;/p&gt;
-
 &lt;p&gt;Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.&lt;/p&gt;</description>
     </item>
     
@@ -32,13 +38,10 @@
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*JlXp6Hsyfcvk7LSi.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*JlXp6Hsyfcvk7LSi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Let me tell you how you can safely store SSH keys on a local machine, for not having a fear that some application can steal or decrypt them.
 This article will be especially useful to those who have not found an elegant solution after the &lt;a href=&#34;https://latacora.singles/2018/08/03/the-default-openssh.html&#34;&gt;paranoia&lt;/a&gt; in 2018 and continue storing keys in &lt;code&gt;$HOME/.ssh&lt;/code&gt;.&lt;/p&gt;
-
 &lt;p&gt;To solve this problem, I suggest you using &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;, which is one of the best password managers, it is using strong encryption algorithms, and also it have an integrated SSH agent.&lt;/p&gt;
-
 &lt;p&gt;This allows you to safely store all the keys directly in the password database and automatically add them to the system when it is opened. Once the base is closed, the use of SSH keys will also be impossible&lt;/p&gt;</description>
     </item>
     
@@ -48,10 +51,8 @@ This article will be especially useful to those who have not found an elegant so
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/619/1*HPqRvvMlCyxydro6ezCpow.jpeg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/619/1*HPqRvvMlCyxydro6ezCpow.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you want to make this scheme more safe you can add haproxy layer between keepalived and kube-apiserver.&lt;/p&gt;
-
 &lt;p&gt;Just install haproxy package into your system, and add the next configuration into &lt;code&gt;/etc/haproxy/haproxy.cfg&lt;/code&gt; file&lt;/p&gt;</description>
     </item>
     
@@ -61,12 +62,9 @@ This article will be especially useful to those who have not found an elegant so
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3701/1*2P2MvNWAEffBGR85d8nJcQ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3701/1*2P2MvNWAEffBGR85d8nJcQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I had a need to show dashboard with monitoring information on several screens in the office. There are several old Raspberry Pi Model B+ and a hypervisor with a virtually unlimited amount of resources.&lt;/p&gt;
-
 &lt;p&gt;Apparently the Raspberry Pi Model B+ does not have enough power to keep the browser running constantly and draw a large amount of graphics in it, which is why the page is partially buggy and often crashes.&lt;/p&gt;
-
 &lt;p&gt;I found a fairly simple and elegant solution, which I want to share with you.&lt;/p&gt;</description>
     </item>
     
@@ -76,8 +74,7 @@ This article will be especially useful to those who have not found an elegant so
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/848/0*ZKnEqwk9W9lREHxf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/848/0*ZKnEqwk9W9lREHxf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Short guide how to setup Keycloak for connect Kubernetes with your LDAP-server and import users and groups. It will allow you to configure RBAC and use auth-proxy to secure Kubernetes Dasboard and another applications, which have no authentification from begining.&lt;/p&gt;</description>
     </item>
     
@@ -89,7 +86,6 @@ This article will be especially useful to those who have not found an elegant so
       <guid>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</guid>
       <description>&lt;p&gt;This guide is updated version of my previous article &lt;a href=&#34;https://medium.com/@kvapss/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca&#34;&gt;Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (Simple Guide)&lt;/a&gt;
 Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and more logical. Note that this article is my personal interpretation of official Creating Highly &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt; plus few more steps for Keepalived.&lt;/p&gt;
-
 &lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
     </item>
     
@@ -100,7 +96,6 @@ Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and m
       
       <guid>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</guid>
       <description>&lt;p&gt;This guide is a free interpretation of official &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Creating Highly Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt;. I don’t like this difficult form which used there, so I wrote this article.&lt;/p&gt;
-
 &lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
     </item>
     
@@ -110,14 +105,11 @@ Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and m
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here is written steps for install &lt;a href=&#34;https://kolab.org/&#34;&gt;Kolab Groupware&lt;/a&gt; server and integrate it with &lt;a href=&#34;https://www.freeipa.org/page/Main_Page&#34;&gt;FreeIPA&lt;/a&gt; server.&lt;/p&gt;
-
 &lt;p&gt;Most of actions requires basic understanding in LDAP mechanism.
 FreeIPA should be already installed before preparing Kolab installation.
 We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.&lt;/p&gt;
-
 &lt;p&gt;In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.&lt;/p&gt;</description>
     </item>
     
@@ -127,14 +119,10 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
       <pubDate>Tue, 02 Oct 2018 21:35:07 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.&lt;/p&gt;
-
 &lt;p&gt;You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!&lt;/p&gt;
-
 &lt;p&gt;You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!&lt;/p&gt;
-
 &lt;p&gt;Intrigued? Let me walk you through how it works.&lt;/p&gt;</description>
     </item>
     
@@ -144,14 +132,10 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
       <pubDate>Wed, 12 Sep 2018 21:36:59 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.&lt;/p&gt;
-
 &lt;p&gt;For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.&lt;/p&gt;
-
 &lt;p&gt;LINSTOR supports thin-provisioning, snapshots and many other interesting things.&lt;/p&gt;
-
 &lt;p&gt;This solution is good suitable for virtual machines and containers.&lt;/p&gt;</description>
     </item>
     
@@ -161,8 +145,7 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
       <pubDate>Wed, 22 Aug 2018 21:36:47 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.
 In this case you can have only one master, and still have all the features of multimater.&lt;/p&gt;</description>
     </item>
@@ -195,14 +178,13 @@ So let’s fix it together byself.&lt;/p&gt;</description>
       
       <guid>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver`
-# wait 1-2 minutes.
-sudo docker exec -i -t communityserver /bin/bash -c &#39;cat /etc/nginx/sites-enabled/onlyoffice&#39; &amp;gt; onlyoffice.conf`
+&lt;li&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# wait 1-2 minutes.&lt;/span&gt;
+sudo docker exec -i -t communityserver /bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cat /etc/nginx/sites-enabled/onlyoffice&amp;#39;&lt;/span&gt; &amp;gt; onlyoffice.conf&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 sudo docker rm -fv communityserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -211,9 +193,8 @@ sudo docker rm -fv communityserver
       <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34; /&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34;&gt;
 This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#ceph&#34;&gt;The Ceph installation, the distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe installation of two-level storage with the caching pool from SSD disks)&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#galera&#34;&gt;The installation MySQL, Galera of a cluster with the master master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
@@ -222,7 +203,6 @@ This time I would like to tell how to configure this subject, in a particular ea
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#pacemaker&#34;&gt;Setup of failover cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.&lt;/p&gt;</description>
     </item>
     
@@ -232,10 +212,8 @@ This time I would like to tell how to configure this subject, in a particular ea
       <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.&lt;/p&gt;
-
 &lt;p&gt;ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&#34;&gt;counters&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -245,8 +223,7 @@ This time I would like to tell how to configure this subject, in a particular ea
       <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser.
 After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.
 Once it has got me and I have decided that it is time to change something&amp;hellip;&lt;/p&gt;</description>
@@ -258,8 +235,7 @@ Once it has got me and I have decided that it is time to change something&amp;he
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle.
 This time we will set it.&lt;/p&gt;</description>
     </item>
@@ -270,10 +246,8 @@ This time we will set it.&lt;/p&gt;</description>
       <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;Carefully, in post there are a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -283,8 +257,7 @@ This time we will set it.&lt;/p&gt;</description>
       <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.&lt;/p&gt;</description>
     </item>
     

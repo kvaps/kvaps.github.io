@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -276,6 +276,65 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
+      
+          ONLYOFFICE configuration for docker-compose (and letsencrypt).
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
+        
+  December 14, 2016
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <ul>
+<li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+<span style="color:#75715e"># wait 1-2 minutes.</span>
+sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
+sudo docker rm -fv communityserver
+</code></pre></div>
+      
+      <p>
+        
+          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="http://developers-club.com/posts/270187/" target="_blank">
       
           We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]
@@ -296,9 +355,8 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="" />
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="">
 This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p>
-
 <ul>
 <li><strong><a href="http://habr.com/post/270187/#ceph">The Ceph installation, the distributed storage</a></strong>. <em>(I will describe installation of two-level storage with the caching pool from SSD disks)</em></li>
 <li><strong><a href="http://habr.com/post/270187/#galera">The installation MySQL, Galera of a cluster with the master master replication</a></strong></li>
@@ -307,7 +365,6 @@ This time I would like to tell how to configure this subject, in a particular ea
 <li><strong><a href="http://habr.com/post/270187/#pacemaker">Setup of failover cluster</a></strong></li>
 <li><strong><a href="http://habr.com/post/270187/#configuration">Initial configuration</a></strong></li>
 </ul>
-
 <p>Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.</p>
       
       <p>
@@ -360,10 +417,8 @@ This time I would like to tell how to configure this subject, in a particular ea
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
 <p>Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.</p>
-
 <p>ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS">counters</a></p>
       
       <p>
@@ -416,8 +471,7 @@ This time I would like to tell how to configure this subject, in a particular ea
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
 <p>Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser.
 After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.
 Once it has got me and I have decided that it is time to change something&hellip;</p>
@@ -472,8 +526,7 @@ Once it has got me and I have decided that it is time to change something&hellip
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt=""></p>
 <p>If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle.
 This time we will set it.</p>
       
@@ -527,10 +580,8 @@ This time we will set it.</p>
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
 <p>Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.</p>
-
 <p><em>Carefully, in post there are a lot of pictures&hellip;</em></p>
       
       <p>
@@ -583,8 +634,7 @@ This time we will set it.</p>
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt="" /></p>
-
+        <p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
 <p>I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.</p>
       
       <p>

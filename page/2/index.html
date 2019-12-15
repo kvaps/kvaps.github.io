@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.59.1 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.61.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -275,6 +275,59 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://medium.com/@kvaps/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca" target="_blank">
+      
+          Creating Baremethal Kubernetes HA cluster with Kubeadm and Keepalived (Simple Guide)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-18T00:00:00Z">
+        
+  October 18, 2018
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p>This guide is a free interpretation of official <a href="https://kubernetes.io/docs/setup/independent/high-availability/">Creating Highly Available Clusters with kubeadm</a> for <a href="https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes">Stacked control plane nodes</a>. I don’t like this difficult form which used there, so I wrote this article.</p>
+<p>If you have any questions, or something is not clear, please refer to the official documentation or ask the <a href="https://www.google.com/">Google</a>. All steps described here in the short and simple form</p>
+      
+      <p>
+        
+          <a href="https://medium.com/@kvaps/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://medium.com/@kvaps/install-kolab-and-integrate-it-with-freeipa-c80c3b34b7b7" target="_blank">
       
           Install Kolab and integrate it with FreeIPA
@@ -295,14 +348,11 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png" alt="" /></p>
-
+        <p><img src="https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png" alt=""></p>
 <p>Here is written steps for install <a href="https://kolab.org/">Kolab Groupware</a> server and integrate it with <a href="https://www.freeipa.org/page/Main_Page">FreeIPA</a> server.</p>
-
 <p>Most of actions requires basic understanding in LDAP mechanism.
 FreeIPA should be already installed before preparing Kolab installation.
 We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.</p>
-
 <p>In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.</p>
       
       <p>
@@ -355,14 +405,10 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt="" /></p>
-
+        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt=""></p>
 <p>In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.</p>
-
 <p>You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!</p>
-
 <p>You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!</p>
-
 <p>Intrigued? Let me walk you through how it works.</p>
       
       <p>
@@ -415,14 +461,10 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png" alt="" /></p>
-
+        <p><img src="https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png" alt=""></p>
 <p>Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.</p>
-
 <p>For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.</p>
-
 <p>LINSTOR supports thin-provisioning, snapshots and many other interesting things.</p>
-
 <p>This solution is good suitable for virtual machines and containers.</p>
       
       <p>
@@ -475,8 +517,7 @@ We will connect only users from the existing tree (which provided by FreeIPA), a
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png" alt="" /></p>
-
+        <p><img src="https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png" alt=""></p>
 <p>I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.
 In this case you can have only one master, and still have all the features of multimater.</p>
       
@@ -590,66 +631,6 @@ So let’s fix it together byself.</p>
       <p>
         
           <a href="https://medium.com/@kvapss/zabbix-solve-memory-monitoring-issue-inside-lxc-containers-98ddf191051c" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
-      
-          ONLYOFFICE configuration for docker-compose (and letsencrypt).
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
-        
-  December 14, 2016
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <ul>
-<li><p>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</p>
-
-<pre><code class="language-bash">docker run -name communityserver -i -t -d onlyoffice/communityserver`
-# wait 1-2 minutes.
-sudo docker exec -i -t communityserver /bin/bash -c 'cat /etc/nginx/sites-enabled/onlyoffice' &gt; onlyoffice.conf`
-sudo docker rm -fv communityserver
-</code></pre></li>
-</ul>
-      
-      <p>
-        
-          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
