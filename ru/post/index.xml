@@ -35,7 +35,7 @@
       <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/2019/11/%D0%BE%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D0%B0%D1%8F-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-opennebula/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/47Mht_uoX3A&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/47Mht_uoX3A/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Тезисы и презентация:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.highload.ru/moscow/2019/abstracts/5506&#34;&gt;https://www.highload.ru/moscow/2019/a...&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Контейнерная виртуализация - это отличная технология, которая принесла в наш мир множество хороших практик, но без классической виртуализации, к сожалению, пока полностью не обойтись.&lt;/p&gt;
@@ -48,7 +48,7 @@
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/2019/10/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA-ci/cd-%D0%B4%D0%BB%D1%8F-%D1%80%D0%B0%D0%B7%D0%B2%D1%91%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-baremetal-%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BE%D0%B9/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Rmnqa5dKgDA&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Тезисы и презентация:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://devopsconf.io/moscow/2019/abstracts/5505&#34;&gt;http://devopsconf.io/moscow/2019/abst...&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Мы являемся крупнейшим чешским хостингом и, поскольку мы предоставляем наши услуги на собственных серверах, нам пришлось решить достаточно большое количество задач по автоматизации развёртывания как инфраструктуры, так и новых сервисов, прежде чем выработать правильную стратегию.&lt;/p&gt;</description>
@@ -106,7 +106,7 @@
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/2019/02/%D0%B2%D1%81%D1%91-%D0%BE-kubernetes-%D0%BD%D0%B0-bare-metal/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/yGKI5JoKMUY&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/yGKI5JoKMUY/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Видеозапись выступления «Всё, что нужно знать о Kubernetes на Bare Metal» (Андрей Квапил, WEDOS Internet a.s., Cloud Architect / DevOps)&lt;/p&gt;
 &lt;p&gt;Андрей Квапил делится своим опытом архитектуры облачных решений и девопса в крупнейшем чешском хостинге WEDOS, где Kubernetes активно используется для деплоя сервисов и серверов – уже сейчас для более чем 500 нод и с планируемым расширением до нескольких тысяч.&lt;/p&gt;
 &lt;p&gt;Отдельное внимание уделяется организации фермы серверов с загрузкой по сети и выбору хранилища. Докладчик протестировал большое количество свободных SDS-решений, прежде чем остановить свой выбор на Linstor – достаточно молодом проекте, который, тем не менее, уже отлично показал себя в продакшене.&lt;/p&gt;</description>
