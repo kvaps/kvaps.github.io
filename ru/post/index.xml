@@ -6,10 +6,24 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sat, 14 Dec 2019 05:45:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 09:11:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Пробуем новые инструменты для сборки и автоматизации деплоя в Kubernetes</title>
+      <link>https://kvaps.github.io/ru/2019/12/%D0%BF%D1%80%D0%BE%D0%B1%D1%83%D0%B5%D0%BC-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-%D0%B8-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%B2-kubernetes/</link>
+      <pubDate>Thu, 26 Dec 2019 09:11:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2019/12/%D0%BF%D1%80%D0%BE%D0%B1%D1%83%D0%B5%D0%BC-%D0%BD%D0%BE%D0%B2%D1%8B%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-%D0%B8-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%B2-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/fu/wy/ia/fuwyia7huxrflvry8lzz2dbl2tw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Привет! За последнее время вышло много классных инструментов автоматизации как для сборки Docker-образов так и для деплоя в Kubernetes. В связи с этим решил поиграться с гитлабом, как следует изучить его возможности и, конечно же, настроить пайплайн.&lt;/p&gt;
+&lt;p&gt;Вдохновлением для этой работы стал сайт &lt;a href=&#34;https://kubernetes.io/&#34;&gt;kubernetes.io&lt;/a&gt;, который генерируется из &lt;a href=&#34;github.com/kubernetes/website&#34;&gt;исходных кодов&lt;/a&gt; автоматически, а на каждый присланный пул реквест робот автоматически генерирует preview-версию сайта с вашими изменениеми и предоставляет ссылку для просмотра.&lt;/p&gt;
+&lt;p&gt;Я постарался выстроить подобный процесс с нуля, но целиком построенный на Gitlab CI и свободных инструментах, которые я привык использовать для деплоя приложений в Kubernetes. Сегодня я, наконец, расскажу вам о них подробнее.&lt;/p&gt;
+&lt;p&gt;В статье будут рассмотрены такие инструменты как:
+&lt;strong&gt;Hugo&lt;/strong&gt;, &lt;strong&gt;QBEC&lt;/strong&gt;, &lt;strong&gt;Kaniko&lt;/strong&gt;, &lt;strong&gt;Git-crypt&lt;/strong&gt; и &lt;strong&gt;GitLab CI&lt;/strong&gt; с созданием динамических окружений.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Моя рабочая машинка</title>
