@@ -6,10 +6,37 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 26 Dec 2019 09:11:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 20:15:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Как описать 100 Gitlab джоб в 100 строк</title>
+      <link>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA/</link>
+      <pubDate>Thu, 26 Dec 2019 20:15:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA/</guid>
+      <description>&lt;p&gt;В продолжение &lt;a href=&#34;https://habr.com/ru/post/481662/&#34;&gt;предыдущей статьи&lt;/a&gt; про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jsonnet.org/img/isologo.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;heading&#34;&gt;Дано&lt;/h4&gt;
+&lt;p&gt;Есть монорепа, в которой:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 Dockerfiles&lt;/li&gt;
+&lt;li&gt;30 описанных деплоев&lt;/li&gt;
+&lt;li&gt;3 окружения: &lt;strong&gt;devel&lt;/strong&gt;, &lt;strong&gt;staging&lt;/strong&gt; и &lt;strong&gt;production&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;heading-1&#34;&gt;Задача&lt;/h4&gt;
+&lt;p&gt;Настроить пайплайн:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Сборка Docker-образов должна производиться по добавлении git-тэга с версией.&lt;/li&gt;
+&lt;li&gt;Каждая операция деплоя должна выполняться при пуше в ветку окружения и только по изменении файлов в конкретной директории&lt;/li&gt;
+&lt;li&gt;В каждом окружении установлен свой gitlab-runner с отдельным тэгом, который выполняет деплой только в своём окружении.&lt;/li&gt;
+&lt;li&gt;Не все приложения должны быть задеплоены в каждое из окружений, мы должны описать пайплайн так, чтобы иметь возможность делать исключения.&lt;/li&gt;
+&lt;li&gt;Некоторые деплойменты используют git submodule и должны запускаться с установленной переменной &lt;strong&gt;&lt;code&gt;GIT_SUBMODULE_STRATEGY=normal&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Как видите, описать это всё может показаться настоящим адом, но мы не отчаиваемся и вооружившись Jsonnet сделаем это легко и непринуждённо.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Пробуем новые инструменты для сборки и автоматизации деплоя в Kubernetes</title>
@@ -51,7 +78,7 @@
       <guid>https://kvaps.github.io/ru/2019/11/%D0%BE%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D0%B0%D1%8F-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B0-opennebula/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/47Mht_uoX3A&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/47Mht_uoX3A/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Тезисы и презентация:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.highload.ru/moscow/2019/abstracts/5506&#34;&gt;https://www.highload.ru/moscow/2019/a...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.highload.ru/moscow/2019/abstracts/5506&#34;&gt;https://www.highload.ru/moscow/2019/a&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Контейнерная виртуализация - это отличная технология, которая принесла в наш мир множество хороших практик, но без классической виртуализации, к сожалению, пока полностью не обойтись.&lt;/p&gt;
 &lt;p&gt;OpenNebula является облачной платформой с простым дизайном и понятной архитектурой, которая без особых затрат поможет создать вам мощное, и главное гибкое облако для ваших нужд.&lt;/p&gt;</description>
     </item>
@@ -64,7 +91,7 @@
       <guid>https://kvaps.github.io/ru/2019/10/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA-ci/cd-%D0%B4%D0%BB%D1%8F-%D1%80%D0%B0%D0%B7%D0%B2%D1%91%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-baremetal-%D0%B8%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BE%D0%B9/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Rmnqa5dKgDA&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Тезисы и презентация:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://devopsconf.io/moscow/2019/abstracts/5505&#34;&gt;http://devopsconf.io/moscow/2019/abst...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://devopsconf.io/moscow/2019/abstracts/5505&#34;&gt;http://devopsconf.io/moscow/2019/abst&amp;hellip;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Мы являемся крупнейшим чешским хостингом и, поскольку мы предоставляем наши услуги на собственных серверах, нам пришлось решить достаточно большое количество задач по автоматизации развёртывания как инфраструктуры, так и новых сервисов, прежде чем выработать правильную стратегию.&lt;/p&gt;</description>
     </item>
     
