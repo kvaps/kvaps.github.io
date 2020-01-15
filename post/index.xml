@@ -6,10 +6,25 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Trying new tools for building and automating the deployment in Kubernetes</title>
+      <link>https://kvaps.github.io/2020/01/trying-new-tools-for-building-and-automating-the-deployment-in-kubernetes/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/01/trying-new-tools-for-building-and-automating-the-deployment-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3882/0*HJu_pzhe660WFJZ2&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hi!&lt;br&gt;
+Recently, many cool automation tools have been released both for building Docker images and for deploying to Kubernetes. In this regard, I decided to play with the Gitlab a little, study its capabilities and, of course, configure the pipeline.&lt;/p&gt;
+&lt;p&gt;The source of inspiration for this work was the site &lt;a href=&#34;https://kubernetes.io/&#34;&gt;kubernetes.io&lt;/a&gt;, which is automatically generated from &lt;a href=&#34;github.com/kubernetes/website&#34;&gt;source code&lt;/a&gt;.&lt;br&gt;
+For each new pullrequest the bot generates a preview version with your changes automatically and provides a link for review.&lt;/p&gt;
+&lt;p&gt;I tried to build a similar process from scratch, but entirely built on Gitlab CI and free tools that I used to use to deploy applications in Kubernetes. Today, I finally will tell you more about them.&lt;/p&gt;
+&lt;p&gt;The article will consider such tools as: &lt;strong&gt;Hugo&lt;/strong&gt;, &lt;strong&gt;qbec&lt;/strong&gt;, &lt;strong&gt;kaniko&lt;/strong&gt;, &lt;strong&gt;git-crypt&lt;/strong&gt; and &lt;strong&gt;GitLab CI&lt;/strong&gt; with dynamic environments feature.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>[awesome] My work laptop</title>
