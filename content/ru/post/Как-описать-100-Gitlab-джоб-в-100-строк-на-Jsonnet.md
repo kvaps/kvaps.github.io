@@ -1,8 +1,8 @@
 ---
-title: Как описать 100 Gitlab джоб в 100 строк 
+title: Как описать 100 Gitlab джоб в 100 строк на Jsonnet
 date: 2019-12-26 20:15:00
 tags:
-link: https://habr.com/ru/post/483626/
+link: https://habr.com/post/483626/
 ---
 
 В продолжение [предыдущей статьи](https://habr.com/ru/post/481662/) про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем **.gitlab-ci.yml**
