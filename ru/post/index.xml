@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Как описать 100 Gitlab джоб в 100 строк</title>
-      <link>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA/</link>
+      <title>Как описать 100 Gitlab джоб в 100 строк на Jsonnet</title>
+      <link>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BD%D0%B0-jsonnet/</link>
       <pubDate>Thu, 26 Dec 2019 20:15:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA/</guid>
+      <guid>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BD%D0%B0-jsonnet/</guid>
       <description>&lt;p&gt;В продолжение &lt;a href=&#34;https://habr.com/ru/post/481662/&#34;&gt;предыдущей статьи&lt;/a&gt; про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jsonnet.org/img/isologo.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;heading&#34;&gt;Дано&lt;/h4&gt;
