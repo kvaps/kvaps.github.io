@@ -1,7 +1,7 @@
 ---
 title: Trying new tools for building and automating the deployment in Kubernetes
 date: 2020-01-15
-link: https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e58 
+link: https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580
 ---
 
 ![](https://miro.medium.com/max/3882/0*HJu_pzhe660WFJZ2)
