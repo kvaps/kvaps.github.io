@@ -1,20 +1,18 @@
 ---
-title: We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]
+title: Build your own failover cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [machine translation]
 date: 2015-11-16 16:45:00
-link: http://developers-club.com/posts/270187/
-index: false
+link: https://weekly-geekly.github.io/articles/270187/index.html
 ---
 
 ![](https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png)
 This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:
 
-*    **[The Ceph installation, the distributed storage](http://habr.com/post/270187/#ceph)**. _(I will describe installation of two-level storage with the caching pool from SSD disks)_
-*    **[The installation MySQL, Galera of a cluster with the master master replication](http://habr.com/post/270187/#galera)**
-*    **[Installation software switch of OpenvSwitch](http://habr.com/post/270187/#openvswitch)**
-*    **[Installation directly OpenNebula](http://habr.com/post/270187/#opennebula)**
-*    **[Setup of failover cluster](http://habr.com/post/270187/#pacemaker)**
-*    **[Initial configuration](http://habr.com/post/270187/#configuration)**
+*    **[Install Ceph, distributed storage](https://weekly-geekly.github.io/articles/270187/index.html#ceph)**. _(I will describe the installation of a two-tier storage with a caching pool of SSDs)_
+*    **[Install MySQL, Galera Cluster with master replication](https://weekly-geekly.github.io/articles/270187/index.html#galera)**
+*    **[Installing OpenvSwitch soft switch](https://weekly-geekly.github.io/articles/270187/index.html#openvswitch)**
+*    **[Installing directly OpenNebula itself](https://weekly-geekly.github.io/articles/270187/index.html#opennebula)**
+*    **[Configuring Failover Cluster](https://weekly-geekly.github.io/articles/270187/index.html#pacemaker)**
+*    **[Initial configuration](https://weekly-geekly.github.io/articles/270187/index.html#configuration)**
 
-
-Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.
+The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut. 
 <!--more-->

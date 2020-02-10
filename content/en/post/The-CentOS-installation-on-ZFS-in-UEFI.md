@@ -1,14 +1,13 @@
 ---
-title: The CentOS installation on ZFS in UEFI [Translation]
+title: Installing CentOS on ZFS in UEFI [machine translation]
 date: 2015-10-13 15:37:00
-link: http://developers-club.com/posts/268711/
-index: false
+link: https://weekly-geekly.github.io/articles/268711/index.html
 ---
 
 ![](https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png)
 
-Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.
 
-ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its [counters](http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS)
+I decided to try ZFS here the other day, but I did not find a detailed and simple manual on how to implement it on CentOS, I decided to correct the situation. In addition, I wanted to install all this in EFI mode. - not to stand still? And at the same time understand for yourself how [DKMS](https://ru.wikipedia.org/wiki/Dynamic_Kernel_Module_Support) works, as well as aspects of manual installation of RPM-based distributions.
+ZFS was not chosen by chance either, since it was planned to deploy a hypervisor on this machine and use zvol to store images of virtual machines. I wanted something more than a software raid + lvm or simple file storage of images, something like [ceph](https://ru.wikipedia.org/wiki/Ceph_File_System), but for one host this is too bold. Looking ahead to say that I was very pleased with this file system, its performance and all its [chips](http://xgu.ru/wiki/ZFS).
 
 <!--more-->
