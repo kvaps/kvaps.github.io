@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.62.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.64.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -303,14 +303,14 @@ if (!doNotTrack) {
       
         <p>В продолжение <a href="https://habr.com/ru/post/481662/">предыдущей статьи</a> про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем <strong>.gitlab-ci.yml</strong></p>
 <p><img src="https://jsonnet.org/img/isologo.svg" alt=""></p>
-<h4 id="heading">Дано</h4>
+<h4 id="дано">Дано</h4>
 <p>Есть монорепа, в которой:</p>
 <ul>
 <li>10 Dockerfiles</li>
 <li>30 описанных деплоев</li>
 <li>3 окружения: <strong>devel</strong>, <strong>staging</strong> и <strong>production</strong></li>
 </ul>
-<h4 id="heading-1">Задача</h4>
+<h4 id="задача">Задача</h4>
 <p>Настроить пайплайн:</p>
 <ul>
 <li>Сборка Docker-образов должна производиться по добавлении git-тэга с версией.</li>

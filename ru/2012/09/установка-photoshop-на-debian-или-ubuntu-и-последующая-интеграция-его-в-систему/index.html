@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.62.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.64.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="kvaps">
 <meta name="keywords" content="">
 <meta name="description" content="Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.
@@ -309,7 +309,7 @@ if (!doNotTrack) {
 И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br>
 Всего за десять простых шагов:</p>
 <p>И так, приступим:</p>
-<h2 id="-1---photoshop"><strong>Часть 1: Установка самого Photoshop'а</strong></h2>
+<h2 id="часть-1-установка-самого-photoshopа"><strong>Часть 1: Установка самого Photoshop'а</strong></h2>
 <p><strong>1. Удаляем старые версии wine</strong></p>
 <pre><code>sudo aptitude purge wine
 </code></pre>
@@ -357,12 +357,12 @@ _<br>
 <p><strong>6. Запускаем инсталлер и устанавливаем, я установил в Program Files</strong><br>
 <em>(если директория не выберается, можно установить в другое место потом просто перенести куда хотим)</em></p>
 <p>Все теперь Photoshop установлен и нормально работает.</p>
-<p><strong>7. Что бы полноценно работать с хоткеями Photoshop'a, давайте перенаправим все &ldquo;окно-управляющие&rdquo; функции кнопки <code>&lt;alt&gt;</code> на кнопку <code>&lt;win&gt;</code>, и отключим меню окна по Alt+Click</strong></p>
+<p><strong>7. Что бы полноценно работать с хоткеями Photoshop&rsquo;a, давайте перенаправим все &ldquo;окно-управляющие&rdquo; функции кнопки <code>&lt;alt&gt;</code> на кнопку <code>&lt;win&gt;</code>, и отключим меню окна по Alt+Click</strong></p>
 <pre><code>gconftool-2 --set /apps/metacity/general/mouse_button_modifier --type string '&lt;super&gt;'  
 gconftool-2 --set /apps/metacity/window_keybindings/activate_window_menu --type string 'disabled'
 </code></pre>
 <p> </p>
-<h2 id="-2--photoshop--"><strong>Часть 2: Инегрируем Photoshop в систему</strong></h2>
+<h2 id="часть-2-инегрируем-photoshop-в-систему"><strong>Часть 2: Инегрируем Photoshop в систему</strong></h2>
 <p><strong>8. Сначала скачаем и установим иконку</strong></p>
 <pre><code>wget http://upload.wikimedia.org/wikipedia/commons/5/58/Adobe_Photoshop_logo.svg  
  sudo mv Adobe_Photoshop_logo.svg /usr/share/app-install/icons/

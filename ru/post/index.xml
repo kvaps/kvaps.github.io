@@ -19,14 +19,14 @@
       <guid>https://kvaps.github.io/ru/2019/12/%D0%BA%D0%B0%D0%BA-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C-100-gitlab-%D0%B4%D0%B6%D0%BE%D0%B1-%D0%B2-100-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BD%D0%B0-jsonnet/</guid>
       <description>&lt;p&gt;В продолжение &lt;a href=&#34;https://habr.com/ru/post/481662/&#34;&gt;предыдущей статьи&lt;/a&gt; про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://jsonnet.org/img/isologo.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;heading&#34;&gt;Дано&lt;/h4&gt;
+&lt;h4 id=&#34;дано&#34;&gt;Дано&lt;/h4&gt;
 &lt;p&gt;Есть монорепа, в которой:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;10 Dockerfiles&lt;/li&gt;
 &lt;li&gt;30 описанных деплоев&lt;/li&gt;
 &lt;li&gt;3 окружения: &lt;strong&gt;devel&lt;/strong&gt;, &lt;strong&gt;staging&lt;/strong&gt; и &lt;strong&gt;production&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;heading-1&#34;&gt;Задача&lt;/h4&gt;
+&lt;h4 id=&#34;задача&#34;&gt;Задача&lt;/h4&gt;
 &lt;p&gt;Настроить пайплайн:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Сборка Docker-образов должна производиться по добавлении git-тэга с версией.&lt;/li&gt;
@@ -244,13 +244,13 @@
       <pubDate>Mon, 04 Jun 2018 19:43:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/2018/06/googles-shell-style-guide-%D0%BD%D0%B0-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%BC/</guid>
-      <description>&lt;h1 id=&#34;heading&#34;&gt;Предисловие&lt;/h1&gt;
-&lt;h3 id=&#34;-shell-&#34;&gt;Какой Shell использовать&lt;/h3&gt;
+      <description>&lt;h1 id=&#34;предисловие&#34;&gt;Предисловие&lt;/h1&gt;
+&lt;h3 id=&#34;какой-shell-использовать&#34;&gt;Какой Shell использовать&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;Bash&lt;/code&gt; единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.&lt;/p&gt;
 &lt;p&gt;Скрипты должны начинаться с &lt;code&gt;#!/bin/bash&lt;/code&gt; с минимальным набором флагов. Используйте &lt;code&gt;set&lt;/code&gt; для установки опций shell, что бы вызов вашего скрипта как &lt;code&gt;bash &amp;lt;script_name&amp;gt;&lt;/code&gt; не нарушило его функциональности.&lt;/p&gt;
 &lt;p&gt;Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.&lt;/p&gt;
 &lt;p&gt;Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.&lt;/p&gt;
-&lt;h3 id=&#34;--shell&#34;&gt;Когда использовать Shell&lt;/h3&gt;
+&lt;h3 id=&#34;когда-использовать-shell&#34;&gt;Когда использовать Shell&lt;/h3&gt;
 &lt;p&gt;Shell следует использовать только для небольших утилит или простых скрптов-оберток.&lt;/p&gt;
 &lt;p&gt;Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.&lt;/p&gt;</description>
     </item>

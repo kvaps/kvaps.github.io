@@ -242,77 +242,77 @@ sudo docker rm -fv communityserver
     </item>
     
     <item>
-      <title>We build an own fault-tolerant cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [Translation]</title>
-      <link>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</link>
+      <title>Build your own failover cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [machine translation]</title>
+      <link>https://kvaps.github.io/2015/11/build-your-own-failover-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-machine-translation/</link>
       <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2015/11/we-build-an-own-fault-tolerant-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-translation/</guid>
+      <guid>https://kvaps.github.io/2015/11/build-your-own-failover-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34;&gt;
 This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#ceph&#34;&gt;The Ceph installation, the distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe installation of two-level storage with the caching pool from SSD disks)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#galera&#34;&gt;The installation MySQL, Galera of a cluster with the master master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#openvswitch&#34;&gt;Installation software switch of OpenvSwitch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#opennebula&#34;&gt;Installation directly OpenNebula&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#pacemaker&#34;&gt;Setup of failover cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://habr.com/post/270187/#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#ceph&#34;&gt;Install Ceph, distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe the installation of a two-tier storage with a caching pool of SSDs)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#galera&#34;&gt;Install MySQL, Galera Cluster with master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#openvswitch&#34;&gt;Installing OpenvSwitch soft switch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#opennebula&#34;&gt;Installing directly OpenNebula itself&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#pacemaker&#34;&gt;Configuring Failover Cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Subjects in itself very interesting so even if you are not interested in an ultimate goal, but setup of some separate component interests. I ask favor under cut.&lt;/p&gt;</description>
+&lt;p&gt;The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>The CentOS installation on ZFS in UEFI [Translation]</title>
-      <link>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</link>
+      <title>Installing CentOS on ZFS in UEFI [machine translation]</title>
+      <link>https://kvaps.github.io/2015/10/installing-centos-on-zfs-in-uefi-machine-translation/</link>
       <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2015/10/the-centos-installation-on-zfs-in-uefi-translation/</guid>
+      <guid>https://kvaps.github.io/2015/10/installing-centos-on-zfs-in-uefi-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Has decided to try here the other day ZFS, and detailed and simple manual as to carry out it on CentOS has not found, has decided to correct situation. Besides there was a wish to set all this in the EFI mode. — not to stand still? And at the same time to understand for itself as DKMS, and also aspects of the manual RPM-based installation of distribution kits works.&lt;/p&gt;
-&lt;p&gt;ZFS has been selected too not accidentally as by this machine it was going to unroll hypervisor and to use zvol for storage of images of virtual computers. I wanted something bigger than program raid + lvm or simple file storage of images, something on similarity of ceph, but for one host it is too bold. Running forward I will tell that I was very pleased with this file system, its productivity and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS&#34;&gt;counters&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;I decided to try ZFS here the other day, but I did not find a detailed and simple manual on how to implement it on CentOS, I decided to correct the situation. In addition, I wanted to install all this in EFI mode. - not to stand still? And at the same time understand for yourself how &lt;a href=&#34;https://ru.wikipedia.org/wiki/Dynamic_Kernel_Module_Support&#34;&gt;DKMS&lt;/a&gt; works, as well as aspects of manual installation of RPM-based distributions.
+ZFS was not chosen by chance either, since it was planned to deploy a hypervisor on this machine and use zvol to store images of virtual machines. I wanted something more than a software raid + lvm or simple file storage of images, something like &lt;a href=&#34;https://ru.wikipedia.org/wiki/Ceph_File_System&#34;&gt;ceph&lt;/a&gt;, but for one host this is too bold. Looking ahead to say that I was very pleased with this file system, its performance and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS&#34;&gt;chips&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>We configure the keyboard shortcuts in Linux like Mac OS X [Translation]</title>
-      <link>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</link>
+      <title>Customize keyboard shortcuts in Linux like Mac OS X [machine translation]</title>
+      <link>https://kvaps.github.io/2015/09/customize-keyboard-shortcuts-in-linux-like-mac-os-x-machine-translation/</link>
       <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2015/09/we-configure-the-keyboard-shortcuts-in-linux-like-mac-os-x-translation/</guid>
+      <guid>https://kvaps.github.io/2015/09/customize-keyboard-shortcuts-in-linux-like-mac-os-x-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Earlier, I quite often had such situation when at the same time you work in the terminal and, for example, in the browser.
-After several business hours you start being confused and in the terminal instead of [Ctrl] + [Shift] + [C] you click [Ctrl] + [C], and in the browser on the contrary. As a result in the terminal you receive interruption and in the browser instead of the expected effect at you the debagger slowly progruzhatsya.
-Once it has got me and I have decided that it is time to change something&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Previously, I quite often had a situation where you simultaneously work in a terminal and, for example, in a browser.
+After several hours of work, you start to get confused and in the terminal instead of [Ctrl] + [Shift] + [C], press [Ctrl] + [C], and vice versa in the browser. As a result, in the terminal you get an interrupt and in the browser, instead of the expected effect, your debugger is slowly loaded.
+One fine moment it got me and I decided it was time to change something&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Kolab Groupware (Part 2 — Installation) [Translation]</title>
-      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</link>
+      <title>Kolab Groupware (Part 2 - Installation) [machine translation]</title>
+      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</link>
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-translation/</guid>
+      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If you do not know that such Kolab yet, you possibly want to read the first article where I did the detailed overview on this quite functional and completely free the e-mail server with beautiful web muzzle.
-This time we will set it.&lt;/p&gt;</description>
+&lt;p&gt;If you still do not know what Kolab is, then you probably want to read the &lt;a href=&#34;https://weekly-geekly.github.io/articles/260469/index.html&#34;&gt;first article&lt;/a&gt;, where I did a detailed review of this rather functional and completely free mail server with a beautiful web-muzzle.
+This time we will install it.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Kolab Groupware (Part 1 — the Overview) [Translation]</title>
-      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</link>
+      <title>Kolab Groupware (Part 1 - Overview) [machine translation]</title>
+      <link>https://kvaps.github.io/2015/07/kolab-groupware-part-1-overview-machine-translation/</link>
       <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-the-overview-translation/</guid>
+      <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-overview-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi, Habr! I want to tell you about quite interesting and functional replacement of MS Exchange, completely free and besides with beautiful web muzzle. Conversation will go about Kolab — the free e-mail server with support of collaboration, calendars, lists of affairs, WebDAV, ActiveSync synchronization and other buns which can be used both for work, and for the house.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Carefully, in post there are a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;Hi, Habr! I want to tell you about a rather interesting and functional replacement for MS Exchange, completely free and also with a beautiful web-muzzle. The conversation will be about Kolab - a free mail server with support for collaboration, calendars, to-do lists, WebDAV, ActiveSync synchronization and other goodies that can be used both for work and for home.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Carefully, in a post a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>we Lift the VPN-tunnel from the world home bypassing NAT [Transaltion]</title>
-      <link>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</link>
+      <title>We lift the VPN tunnel from the world home bypassing NAT [machine translation]</title>
+      <link>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-machine-translation/</link>
       <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
       
-      <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-transaltion/</guid>
+      <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-machine-translation/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I want to tell to you about that as having on the Internet the VPS-server it is possible to lift the tunnel in a home network. And not to pay thus for static IP to the provider, and even being for NAT, all the same to make accessible on the Internet the house services.&lt;/p&gt;</description>
+&lt;p&gt;I want to tell you about how having your VPS server on the Internet, you can raise a tunnel to your home network. And do not pay at the same time for a static IP provider, and even being behind a NAT, still make your home services available on the Internet.&lt;/p&gt;</description>
     </item>
     
   </channel>
