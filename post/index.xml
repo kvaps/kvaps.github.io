@@ -272,6 +272,20 @@ One fine moment it got me and I decided it was time to change something&amp;hell
     </item>
     
     <item>
+      <title>Forwarding USB to a virtual network via UsbRedir and QEMU [machine translation]</title>
+      <link>https://kvaps.github.io/2015/08/forwarding-usb-to-a-virtual-network-via-usbredir-and-qemu-machine-translation/</link>
+      <pubDate>Thu, 20 Aug 2015 11:55:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2015/08/forwarding-usb-to-a-virtual-network-via-usbredir-and-qemu-machine-translation/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To date, there are quite a few ways to forward a USB device to another computer or virtual machine over the network.&lt;/p&gt;
+&lt;p&gt;Of the most popular, hardware such as AnywhereUSB and purely software products, from those that I tried myself: USB Redirector and USB / IP.&lt;/p&gt;
+&lt;p&gt;I would like to tell you about another interesting method that works directly with the QEMU emulator.&lt;/p&gt;
+&lt;p&gt;It is also part of the spice project, officially supported by RedHat.&lt;/p&gt;
+&lt;p&gt;UsbRedir, is an open protocol for forwarding usb-devices via tcp to a remote virtual server, developed with the support of RedHat in the framework of the spice project. But as it turned out they can be quite successfully used without spice. The server is usbredirserver, which fumbles a usb device on a specific port, and QEMU itself as a client, which emulates the connection of an exported usb device to a specific usb controller of your virtual machine. Thanks to this approach, absolutely any OS can be used as a guest system, since it does not even know that the device is remotely forwarded, and all the logic rests on QEMU.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Kolab Groupware (Part 2 - Installation) [machine translation]</title>
       <link>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</link>
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
