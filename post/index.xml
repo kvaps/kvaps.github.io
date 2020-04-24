@@ -6,10 +6,31 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 23:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Connecting Gitlab with Harbor for automated token issuing</title>
+      <link>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</link>
+      <pubDate>Fri, 24 Apr 2020 23:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rp7sSltmrBJ0lyHCenfmrw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Gitlab CI have a nice feature to generate docker-registry tokens per each job, but this feature is working only for it’s own docker registry and does not working with an external ones, eg. Harbor, Nexus, Quay and etc.&lt;/p&gt;
+&lt;p&gt;There is an opportunity to set-up external docker registry for Gitlab, it is well described in the documentation &lt;a href=&#34;https://docs.gitlab.com/ee/administration/packages/container_registry.html#use-an-external-container-registry-with-gitlab-as-an-auth-endpoint&#34;&gt;Use an external container registry with GitLab as an auth endpoint&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Proposed to configure brand new docker-registry with token based authentication. Harbor also uses docker-registry in backend, so that we could configure it, but problem is that both Gitlab and Harbor require to set their own parameters which are actually conflicts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[awesome] My live in console</title>
+      <link>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/f6l0qbuy6rr41.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to describe 100 Gitlab jobs in 100 lines using Jsonnet</title>

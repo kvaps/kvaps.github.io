@@ -6,10 +6,21 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 26 Dec 2019 20:15:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 18:17:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Как работает дисковая подсистема в OpenNebula</title>
+      <link>https://kvaps.github.io/ru/2020/03/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BF%D0%BE%D0%B4%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B2-opennebula/</link>
+      <pubDate>Sat, 21 Mar 2020 18:17:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2020/03/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BF%D0%BE%D0%B4%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B2-opennebula/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/nr/4p/bb/nr4pbbjdpjjvghyiapezxwhgna0.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;В последнее время я получаю достаточно много вопросов по поводу организации стораджа в OpenNebula. В виду своей специфики она имеет аж три разных типа хранилища: images, system и files. Давайте разберёмся зачем нужен каждый из них и как их использовать чтобы планировать размещение данных наиболее эфективно.&lt;/p&gt;
+&lt;p&gt;Этот пост — частичная расшифровка моего &lt;a href=&#34;https://www.youtube.com/watch?v=47Mht_uoX3A&amp;amp;feature=youtu.be&#34;&gt;доклада про OpenNebula&lt;/a&gt; на &lt;a href=&#34;https://www.highload.ru/moscow/2019/abstracts/5506&#34;&gt;HighLoad++ 2019&lt;/a&gt; с упором на дисковую составляющую.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Как описать 100 Gitlab джоб в 100 строк на Jsonnet</title>

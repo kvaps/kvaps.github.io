@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kvaps.github.io/2020/01/how-to-describe-100-gitlab-jobs-in-100-lines-using-jsonnet/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <loc>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</loc>
+    <lastmod>2020-04-24T23:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-24T23:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -20,6 +20,16 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</loc>
+    <lastmod>2020-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2020/01/how-to-describe-100-gitlab-jobs-in-100-lines-using-jsonnet/</loc>
+    <lastmod>2020-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
