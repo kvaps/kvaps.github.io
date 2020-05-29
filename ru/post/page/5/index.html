@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.68.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.71.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -276,6 +276,131 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/319550/" target="_blank">
+      
+          Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-01-25T08:52:00Z">
+        
+  
+  
+  
+  
+    25 Январь 2017
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
+<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
+Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
+<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
+<ul>
+<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.</li>
+<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
+<li><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</li>
+</ul>
+      
+      <p>
+        
+          <a href="https://habr.com/post/319550/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/400137/" target="_blank">
+      
+          Leaf Browser Alpha — браузер с древовидными вкладками
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-12-23T13:26:00Z">
+        
+  
+  
+  
+  
+    23 Декабрь 2016
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png" alt="image"></p>
+<p>Поклонникам расширения <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">Tree Style Tab</a> (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser.
+Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.</p>
+<p>Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из <a href="https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe">Chrome Web Store</a> прямо в ваш браузер.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/400137/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/369995/" target="_blank">
       
           Hugin — отличная бесплатная программа для создания панорам
@@ -488,8 +613,8 @@ zfs тестировался на local storage, а не на zvol, т.к. я д
 <p>Наверное все уже и так знают, что всегда хорошо иметь большой и сложный пароль. Многие так же знают про менеждеры паролей и как удобно, а главное безопасно можно хранить в них информацию.</p>
 <p>По специфике моей работы мне часто приходится записывать и хранить большое количество паролей и другой конфиденциальной информации, поэтому я пользуюсь <!-- raw HTML omitted -->Keepass2<!-- raw HTML omitted --> - менеджером паролей со свободной лицензией. Я не стану рассказывать о его возможностях и преимуществах перед другими, все это и так уже обсуждалось не раз. Если кто хочет познакомиться подробнее, вот несколько ссылок: <a href="https://ru.wikipedia.org/wiki/KeePass">wiki</a>, <a href="https://habr.com/post/10523/">обзорная статья</a>, сравнения с другими: <a href="https://habr.com/post/125248/">1</a> <a href="https://habr.com/post/225053/">2</a>.
 Вместо этого я хотел бы рассказать об одной его интересной функции:</p>
-<p>Функция называется &ldquo;URL Overrides&rdquo;, и представляет ссобой возможность запускать ассоциированные с записями программы и передавать им данные для аутентификации прямо из Keepass'а.</p>
-<p>Например, вы можете хранить в keepass'е список учеток для подключения к  удаленному серверу, а в определенный момент выбрать нужную и простым нажатием Ctrl+U, запустить клиент удаленного подключения, и моментально получить доступ к вашему серверу.
+<p>Функция называется &ldquo;URL Overrides&rdquo;, и представляет ссобой возможность запускать ассоциированные с записями программы и передавать им данные для аутентификации прямо из Keepass&rsquo;а.</p>
+<p>Например, вы можете хранить в keepass&rsquo;е список учеток для подключения к  удаленному серверу, а в определенный момент выбрать нужную и простым нажатием Ctrl+U, запустить клиент удаленного подключения, и моментально получить доступ к вашему серверу.
 Это очень удобно, так как все логины и пароли не хранятся абы где, а надежно зашифрованны в вашей базе keepass и передаются программе-клиенту только в момент подключения.</p>
 <p>Идея состоит в том, что бы использовать Keepass как единую точку входа на все удаленные сервера.</p>
       
@@ -564,133 +689,6 @@ zfs тестировался на local storage, а не на zvol, т.к. я д
       <p>
         
           <a href="https://habr.com/post/277783/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/270207/" target="_blank">
-      
-          Metronome IM и Jappix: многофункциональный Jabber, без сложностей в настройке
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-02-24T08:27:00Z">
-        
-  
-  
-  
-  
-    24 Февраль 2016
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png" alt=""></p>
-<p>Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое…
-Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера.
-То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.</p>
-<p>Речь пойдет об <strong>Metronome IM</strong> и <strong>Jappix</strong>.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/270207/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/270187/" target="_blank">
-      
-          Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
-        
-  
-  
-  
-  
-    16 Ноябрь 2015
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
-<ul>
-<li><strong><a href="http://habr.com/post/270187/#ceph">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
-<li><strong><a href="http://habr.com/post/270187/#galera">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#openvswitch">Установка софт-свича OpenvSwitch</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#opennebula">Установка непосредственно самой OpenNebula</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#pacemaker">Настройка отказоустойчивого кластера</a></strong></li>
-<li><strong><a href="http://habr.com/post/270187/#configuration">Первоначальная конфигурация</a></strong></li>
-</ul>
-<p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/270187/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

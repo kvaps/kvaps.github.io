@@ -6,10 +6,37 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 20:06:10 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Backup storage for thousands of virtual machines using free tools</title>
+      <link>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</link>
+      <pubDate>Fri, 29 May 2020 20:06:10 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.&lt;/p&gt;
+&lt;p&gt;Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.&lt;/p&gt;
+&lt;p&gt;Let’s consider what alternatives are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html&#34;&gt;Erasure Coding&lt;/a&gt;&lt;/strong&gt; — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy &lt;a href=&#34;https://min.io/&#34;&gt;minio&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html&#34;&gt;DRAID&lt;/a&gt;&lt;/strong&gt; — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Configuring routing for MetalLB in L2 mode</title>
+      <link>https://kvaps.github.io/2020/05/configuring-routing-for-metallb-in-l2-mode/</link>
+      <pubDate>Thu, 14 May 2020 22:05:09 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/05/configuring-routing-for-metallb-in-l2-mode/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wI1GLh4MrCzuwiwB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Not so far ago, I was faced with a quite unusual task of configuring routing for MetalLB. All would be nothing, since MetalLB usually does not require any additional configuration from user side, but in our case there is a fairly large cluster with a quite simple network configuration.&lt;/p&gt;
+&lt;p&gt;In this article I will show you how to configure source-based and policy-based routing for the external network on your cluster.&lt;/p&gt;
+&lt;p&gt;I will not dwell on installing and configuring MetalLB in detail, as I assume you already have some experience. Let’s understand the essence and configure the routing. So we have four cases:&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Connecting Gitlab with Harbor for automated token issuing</title>

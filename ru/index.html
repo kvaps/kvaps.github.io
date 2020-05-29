@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.68.3 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.71.0 with theme Tranquilpeak 0.4.7-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -256,6 +256,129 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/ru/post/504152/" target="_blank">
+      
+          Бэкап-хранилище для тысяч виртуальных машин свободными инструментами
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-05-28T00:39:00Z">
+        
+  
+  
+  
+  
+    28 Май 2020
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/br/qy/_z/brqy_zs-d0ewx13ouawskifpqio.png" alt=""></p>
+<p>Привет, недавно мне попалась интересная задачка настроить хранилище для бэкапа большого количества блочных устройств.</p>
+<p>Каждую неделю мы выполняем резервное копирование всех виртуальных машин в нашем облаке, таким образом нужно уметь обслуживать тысячи резервных копий и делать это максимально быстро и эфективно.</p>
+<p>К сожалению стандартные конфигурации <strong>RAID5</strong>, <strong>RAID6</strong> в данном случае нам не подхотят в виду того что процесс восстановления на таких больших дисках как наши будет мучительно долгим и скорее всего не закончится никогда.</p>
+<p>Рассмотрим какие есть альтернативы :</p>
+<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> - Аналог RAID5, RAID6, но с настраиваемым уровнем четности. При этом резервирование выполняется не поблочно а для каждого объекта отдельно. Наиболее простой способ попробовать erasure coding - это развернуть <a href="https://min.io/">minio</a>.</p>
+<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> - это на данный момент ещё не выпущенная возможность ZFS. В отличие от RAIDZ DRAID имеет распределённый parity block и при восстановлении задействует сразу все диски массива, благодаря чему лучше переживает отказы дисков и быстрее восстанавливается после сбоя.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/post/504152/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/ru/post/501842/" target="_blank">
+      
+          Тонкая настройка маршрутизации для MetalLB в режиме L2
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-05-14T02:29:00Z">
+        
+  
+  
+  
+  
+    14 Май 2020
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/og/nl/oo/ognloookahnkbs3mwjjdogbuhq4.png" alt=""></p>
+<p>Не так давно я столкнулся с весьма нестандартной задачей настройки маршрутищации для MetalLB. Всё бы ничего, т.к. обычно для MetalLB не требуется никаких дополнительных действий, но в нашем случае имеется достаточно большой кластер с весьма нехитрой конфигурацией сети.</p>
+<p>В данной статье я расскажу как настроить source-based и policy-based routing для внешней сети вашего кластера.</p>
+<p>Я не буду подробно останавливаться на установке и настройке MetalLB, так как предполагаю вы уже имеете некоторый опыт. Предлагаю сразу перейти к делу, а именно к настройке маршрутизации. Итак мы имеем четыре кейса:</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/post/501842/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -571,123 +694,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://youtu.be/47Mht_uoX3A" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://youtu.be/Rmnqa5dKgDA" target="_blank">
-      
-          Применение Техник CI/CD Для Развёртывания И Управления BareMetal Инфраструктурой
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-10-04T00:00:00Z">
-        
-  
-  
-  
-  
-    4 Октябрь 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><a href="https://youtu.be/Rmnqa5dKgDA"><img src="https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg" alt=""></a></p>
-<p>Тезисы и презентация:</p>
-<p><a href="http://devopsconf.io/moscow/2019/abstracts/5505">http://devopsconf.io/moscow/2019/abst&hellip;</a></p>
-<p>Мы являемся крупнейшим чешским хостингом и, поскольку мы предоставляем наши услуги на собственных серверах, нам пришлось решить достаточно большое количество задач по автоматизации развёртывания как инфраструктуры, так и новых сервисов, прежде чем выработать правильную стратегию.</p>
-      
-      <p>
-        
-          <a href="https://youtu.be/Rmnqa5dKgDA" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/">
-      
-          Про DevOps
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-05-18T00:00:00Z">
-        
-  
-  
-  
-  
-    18 Май 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        Вот ядроКоторое построил Линус.А это системный процесс,Который работает без умолку,В ядре,Которое построил Линус.А это суровый cgroup,Который изолирует системный процесс,Который работает без умолку,В ядре,Которое построил Линус.Вот контейнер,Который генерит суровый cgroup,Который изолирует системный процесс,Который работает без умолку,В ядре,Которое построил Линус.Вот под,Что часто пинает контейнер,Который генерит суровый cgroup,Который изолирует системный процесс,Который работает без умолку,В ядре,Которое построил Линус.А это container engine,Который тот под создает,Что часто пинает контейнер,Который генерит суровый cgroup,Который изолирует системный процесс,Который работает без умолку,В ядре,Которое построил Линус.
-      
-      <p>
-        
-          <a href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/" class="postShorten-excerpt_link link">Читать далее</a>
         
         
       </p>
