@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.71.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.72.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -256,6 +256,61 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" target="_blank">
+      
+          Attaching an Elastic IP to EKS worker node
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-06-04T16:12:27Z">
+        
+  June 4, 2020
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png" alt=""></p>
+<p>Hi, I also faced with an interesting task to run STUN server in Kubernetes.</p>
+<p>STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes <a href="https://github.com/kubernetes/kubernetes/issues/23864">has no support for specifying port ranges in services</a>. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.</p>
+<p>The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -605,58 +660,6 @@ For each new pullrequest the bot generates a preview version with your changes a
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://www.reddit.com/r/unixporn/comments/eabvkm/awesome_my_working_laptop/" target="_blank">
-      
-          [awesome] My work laptop
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-12-14T00:00:00Z">
-        
-  December 14, 2019
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://i.redd.it/iyqfr4rghh441.png" alt=""></p>
-      
-      <p>
-        
-          <a href="https://www.reddit.com/r/unixporn/comments/eabvkm/awesome_my_working_laptop/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -671,7 +674,7 @@ For each new pullrequest the bot generates a preview version with your changes a
           </li>
         
       
-      <li class="pagination-number">page 1 of 4</li>
+      <li class="pagination-number">page 1 of 5</li>
     </ul>
   </div>
 

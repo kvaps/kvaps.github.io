@@ -6,10 +6,22 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Dec 2016 03:10:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 16:12:27 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Attaching an Elastic IP to EKS worker node</title>
+      <link>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</link>
+      <pubDate>Thu, 04 Jun 2020 16:12:27 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hi, I also faced with an interesting task to run STUN server in Kubernetes.&lt;/p&gt;
+&lt;p&gt;STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes &lt;a href=&#34;https://github.com/kubernetes/kubernetes/issues/23864&#34;&gt;has no support for specifying port ranges in services&lt;/a&gt;. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.&lt;/p&gt;
+&lt;p&gt;The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Backup storage for thousands of virtual machines using free tools</title>

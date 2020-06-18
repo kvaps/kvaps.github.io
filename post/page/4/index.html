@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.71.0 with theme Tranquilpeak 0.4.7-BETA">
+<meta name="generator" content="Hugo 0.72.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -257,6 +257,65 @@ if (!doNotTrack) {
         <section class="postShorten-group main-content-wrap">
           
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
+      
+          ONLYOFFICE configuration for docker-compose (and letsencrypt).
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
+        
+  December 14, 2016
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <ul>
+<li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+<span style="color:#75715e"># wait 1-2 minutes.</span>
+sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
+sudo docker rm -fv communityserver
+</code></pre></div>
+      
+      <p>
+        
+          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -594,59 +653,6 @@ This time we will install it.</p>
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/216101/index.html" target="_blank">
-      
-          We lift the VPN tunnel from the world home bypassing NAT [machine translation]
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2014-03-18T14:51:00Z">
-        
-  March 18, 2014
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
-<p>I want to tell you about how having your VPS server on the Internet, you can raise a tunnel to your home network. And do not pay at the same time for a static IP provider, and even being behind a NAT, still make your home services available on the Internet.</p>
-      
-      <p>
-        
-          <a href="https://weekly-geekly.github.io/articles/216101/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -660,8 +666,15 @@ This time we will install it.</p>
           </li>
         
         
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://kvaps.github.io/post/page/5/">
+              <span>OLDER POSTS</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
       
-      <li class="pagination-number">page 4 of 4</li>
+      <li class="pagination-number">page 4 of 5</li>
     </ul>
   </div>
 

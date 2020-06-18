@@ -9,36 +9,36 @@
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="
-Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.
-Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.
-Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.">
+Hi, I also faced with an interesting task to run STUN server in Kubernetes.
+STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes has no support for specifying port ranges in services. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.
+The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically">
 
 
 <meta property="og:description" content="
-Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.
-Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.
-Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.">
+Hi, I also faced with an interesting task to run STUN server in Kubernetes.
+STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes has no support for specifying port ranges in services. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.
+The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically">
 <meta property="og:type" content="article">
-<meta property="og:title" content="“linstor_un” — New storage driver for OpenNebula">
-<meta name="twitter:title" content="“linstor_un” — New storage driver for OpenNebula">
-<meta property="og:url" content="https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
-<meta property="twitter:url" content="https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+<meta property="og:title" content="Attaching an Elastic IP to EKS worker node">
+<meta name="twitter:title" content="Attaching an Elastic IP to EKS worker node">
+<meta property="og:url" content="https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
+<meta property="twitter:url" content="https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
 <meta property="og:site_name" content="kvaps | personal blog">
 <meta property="og:description" content="
-Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.
-Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.
-Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.">
+Hi, I also faced with an interesting task to run STUN server in Kubernetes.
+STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes has no support for specifying port ranges in services. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.
+The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically">
 <meta name="twitter:description" content="
-Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.
-Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.
-Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.">
+Hi, I also faced with an interesting task to run STUN server in Kubernetes.
+STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes has no support for specifying port ranges in services. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.
+The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-07-17T00:00:00">
+    <meta property="article:published_time" content="2020-06-04T16:12:27">
   
   
-    <meta property="article:modified_time" content="2019-07-17T00:00:00">
+    <meta property="article:modified_time" content="2020-06-04T16:12:27">
   
   
   
@@ -61,14 +61,14 @@ Linstor in combination with OpenNebula will allow you to build a high-performanc
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=640">
 
 
-    <title>“linstor_un” — New storage driver for OpenNebula</title>
+    <title>Attaching an Elastic IP to EKS worker node</title>
 
     <link rel="icon" href="https://kvaps.github.io/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+    <link rel="canonical" href="https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -280,17 +280,17 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 itemprop="headline"> 
-      <a class="link" href="https://opennebula.org/linstor_un-new-storage-driver-for-opennebula/" target="_blank" itemprop="url">
-        “linstor_un” — New storage driver for OpenNebula
+      <a class="link" href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" target="_blank" itemprop="url">
+        Attaching an Elastic IP to EKS worker node
       </a>
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-17T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-06-04T16:12:27Z">
         
-  July 17, 2019
+  June 4, 2020
 
       </time>
     
@@ -301,10 +301,10 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png" alt=""></p>
-<p>Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.</p>
-<p>Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.</p>
-<p>Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.</p>
+              <p><img src="https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png" alt=""></p>
+<p>Hi, I also faced with an interesting task to run STUN server in Kubernetes.</p>
+<p>STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes <a href="https://github.com/kubernetes/kubernetes/issues/23864">has no support for specifying port ranges in services</a>. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.</p>
+<p>The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically</p>
               
             </div>
           </div>
@@ -319,7 +319,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2019/12/awesome-my-work-laptop/" data-tooltip="[awesome] My work laptop">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -327,7 +327,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2019/05/store-ssh-keys-securely/" data-tooltip="Store SSH Keys Securely">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/" data-tooltip="Backup storage for thousands of virtual machines using free tools">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -345,19 +345,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -405,7 +405,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2019/12/awesome-my-work-laptop/" data-tooltip="[awesome] My work laptop">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -413,7 +413,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2019/05/store-ssh-keys-securely/" data-tooltip="Store SSH Keys Securely">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/" data-tooltip="Backup storage for thousands of virtual machines using free tools">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -431,19 +431,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -473,19 +473,19 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2019%2F07%2Flinstor_un-new-storage-driver-for-opennebula%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2020%2F06%2Fattaching-an-elastic-ip-to-eks-worker-node%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2019%2F07%2Flinstor_un-new-storage-driver-for-opennebula%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2020%2F06%2Fattaching-an-elastic-ip-to-eks-worker-node%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2019%2F07%2Flinstor_un-new-storage-driver-for-opennebula%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2020%2F06%2Fattaching-an-elastic-ip-to-eks-worker-node%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -577,9 +577,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/kvaps.github.io\/2019\/07\/linstor_un-new-storage-driver-for-opennebula\/';
+          this.page.url = 'https:\/\/kvaps.github.io\/2020\/06\/attaching-an-elastic-ip-to-eks-worker-node\/';
           
-            this.page.identifier = '\/2019\/07\/linstor_un-new-storage-driver-for-opennebula\/'
+            this.page.identifier = '\/2020\/06\/attaching-an-elastic-ip-to-eks-worker-node\/'
           
         };
         (function() {

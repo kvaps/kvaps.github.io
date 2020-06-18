@@ -3,13 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</loc>
-    <lastmod>2020-05-29T20:06:10+00:00</lastmod>
+    <loc>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</loc>
+    <lastmod>2020-06-04T16:12:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/</loc>
+    <lastmod>2020-06-04T16:12:27+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/"
+                />
   </url>
   
   <url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2020-05-29T20:06:10+00:00</lastmod>
+    <lastmod>2020-06-04T16:12:27+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -20,6 +35,11 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</loc>
+    <lastmod>2020-05-29T20:06:10+00:00</lastmod>
   </url>
   
   <url>
@@ -115,21 +135,6 @@
   <url>
     <loc>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</loc>
     <lastmod>2017-11-29T12:53:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://kvaps.github.io/</loc>
-    <lastmod>2016-12-27T03:10:52+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://kvaps.github.io/ru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://kvaps.github.io/"
-                />
   </url>
   
   <url>
