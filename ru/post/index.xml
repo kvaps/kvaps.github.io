@@ -6,10 +6,24 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 01:04:00 +0300</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Разбираемся с Custom Tooling в Argo CD</title>
+      <link>https://kvaps.github.io/ru/2020/09/%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC%D1%81%D1%8F-%D1%81-custom-tooling-%D0%B2-argo-cd/</link>
+      <pubDate>Sun, 06 Sep 2020 01:04:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2020/09/%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC%D1%81%D1%8F-%D1%81-custom-tooling-%D0%B2-argo-cd/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Спустя некоторое время после написания &lt;a href=&#34;https://habr.com/post/481662/&#34;&gt;первой статьи&lt;/a&gt;, где я ловко управлялся с jsonnet и гитлабом, я понял что пайплайны это конечно хорошо, но излишне сложно и неудобно.&lt;/p&gt;
+&lt;p&gt;В большинстве случаев требуется типовая задача: &amp;ldquo;сгенерировать YAML и положить его в Kubernetes&amp;rdquo;. Собственно, с чем Argo CD замечательно и справляется.&lt;/p&gt;
+&lt;p&gt;Argo CD позволяет подключить Git-репозиторий и синкать его состояние в Kubernetes. По умолчанию есть поддержка нескольких видов приложений: Kustomize, Helm чарты, Ksonnet, голый Jsonnet или просто директории с YAML/JSON манифестами.&lt;/p&gt;
+&lt;p&gt;Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.&lt;/p&gt;
+&lt;p&gt;В первую очередь интересует возможность добавления поддержки &lt;a href=&#34;https://habr.com/ru/post/481662/&#34;&gt;qbec&lt;/a&gt; и &lt;a href=&#34;https://habr.com/ru/post/481662/#git-crypt&#34;&gt;git-crypt&lt;/a&gt;, которые с полна были рассмотренны в предыдущей статье.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>В поисках идеального хранилища...</title>

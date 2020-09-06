@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.72.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -257,6 +257,70 @@ if (!doNotTrack) {
         <section class="postShorten-group main-content-wrap">
           
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/417473/" target="_blank">
+      
+          Надежное хранилище с DRBD9 и Proxmox (Часть 1: NFS)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-08-19T11:52:00Z">
+        
+  
+  
+  
+  
+    19 Август 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://go.ahead.it/wp-content/uploads/2017/05/drbd.jpg" alt="image"></p>
+<p>Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного <strong>software-defiined хранилища</strong> рано или поздно слышал про <strong>DRBD</strong>, а может даже и имел дело с ним.</p>
+<p>Правда на пике популярности <strong>Ceph</strong> и <strong>GlusterFS</strong>, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со <strong>split-brain</strong>, что явно не добавило ему популярности.</p>
+<p>Решение и правда не новое, но вполне конкурентоспособное. При относительно небольших затратах на CPU и RAM, <strong>DRBD</strong> предоставляет реально быструю и безопасную синхронизацию на уровне <strong>блочного устройства</strong>. За все это время LINBIT - разработчики DRBD не стоят на месте и постоянно дорабатывают его. Начиная с версии <strong>DRBD9</strong> перестает быть просто сетевым зеркалом и становится чем-то бОльшим.</p>
+<p>Во первых, идея создания одного <strong>распределенного блочного устройства</strong> для нескольких серверов отошла на задний план, и теперь LINBIT старается предоставить инструменты оркестрации и управления множеством drbd-устройств в кластере, которые создаются поверх <strong>LVM</strong> и <strong>ZFS-разделов</strong>.</p>
+<p>Например DRBD9 поддерживает до 32 реплик, RDMA, diskless-ноды, а новые инструменты оркестрации позволяют использовать снапшоты, online-миграцию и много чего другого.</p>
+<p>Несмотря на то что <strong>DRBD9</strong> имеет инструменты интеграции с <strong>Proxmox</strong>, <strong>Kubernetes</strong>, <strong>OpenStack</strong> и <strong>OpenNebula</strong>, на данный момент они находится в некотором переходном режиме, когда новые инструменты еще не везде поддерживаются, а старые уже очень скоро будут объявлены как <em>deprecated</em>. Речь идет о <strong>DRBDmanage</strong> и <strong>Linstor</strong>.</p>
+<p>Я воспользуюсь этим моментом что бы не сильно вдаваться в подробности каждого из них, но более подробно рассмотреть настройку и принципы работы с самим <strong>DRBD9</strong>.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/417473/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -615,69 +679,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/403837/#habracut" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/328048/" target="_blank">
-      
-          All-In-One: Proxmox &#43; OpenMediaVault или ещё одна идея для домашнего NAS
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2017-05-06T16:46:00Z">
-        
-  
-  
-  
-  
-    6 Май 2017
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/web/f0a/592/3de/f0a5923dec20422e952394a6d0473355.png" alt=""></p>
-<p>Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&hellip;</p>
-<p>Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое.
-Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.</p>
-<p>Но к сожалению не все было так гладко как хотелось бы и, к тому же, флешка с установленной системой приказала долго жить, так что настало время для новых экспериментов!
-На этот раз я задумал реализовать что-то похожее, но только лучше и целиком на Linux.</p>
-<p>В статье так же будет немного рассказано про Docker и автоматический прокси с автоматическим получением сертификатов Letsencrypt.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/328048/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
