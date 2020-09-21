@@ -6,10 +6,25 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 06 Sep 2020 01:04:00 +0300</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 23:06:00 +0300</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Регистратор доменов Subreg/Gransy подвергся атаке, большинство его сервисов не работают</title>
+      <link>https://kvaps.github.io/ru/2020/09/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2-subreg/gransy-%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%80%D0%B3%D1%81%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B5-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%BE-%D0%B5%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82/</link>
+      <pubDate>Tue, 15 Sep 2020 23:06:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2020/09/%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%B4%D0%BE%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2-subreg/gransy-%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%80%D0%B3%D1%81%D1%8F-%D0%B0%D1%82%D0%B0%D0%BA%D0%B5-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%BE-%D0%B5%D0%B3%D0%BE-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2-%D0%BD%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/getpro/habr/post_images/d70/6be/11c/d706be11c5df8234e102753a2d7f4627.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Регистратор доменов &lt;a href=&#34;https://subreg.cz/&#34;&gt;Subreg&lt;/a&gt; (компания Gransy) подвергается атаке на свою инфраструктуру. В настоящее время веб-сайты &lt;a href=&#34;https://subreg.cz/&#34;&gt;subreg.cz&lt;/a&gt; и &lt;a href=&#34;https://gransy.com/&#34;&gt;gransy.com&lt;/a&gt; недоступны, как и другие сервисы компании - например клиенты не имеют доступа к доменам. Компания подтвердила наличие проблемы &lt;a href=&#34;https://www.facebook.com/Subreg.CZ/posts/3496721943683231&#34;&gt;на своей странице в Facebook&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Уважаемые клиенты, мы имеем дело со сложной крупномасштабной атакой на нашу инфраструктуру, которая затрагивает большую часть предоставляемых услуг. Наберитесь терпения, мы все усиленно работаем над этой проблемой. Нет необходимости связываться с нами, мы будем держать вас в курсе здесь, мы не будем предоставлять вам дополнительную информацию по телефону в настоящее время&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;- говорится в заявлении.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Сегодня утром &lt;a href=&#34;https://twitter.com/subreg&#34;&gt;в Твиттере компании&lt;/a&gt; появился англоязычный твит, предполагающий, что это могла быть атака программы-вымогателя. Через некоторое время он исчез из этого аккаунта. Однако компания пока официально не указала конкретную причину проблемы.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Разбираемся с Custom Tooling в Argo CD</title>

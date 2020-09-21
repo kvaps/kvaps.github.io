@@ -6,10 +6,22 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2020 01:04:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tuning CNI plugins for having better performance and advanced features</title>
+      <link>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/1*542zIrU1saV6nxdyQFnStA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Thanks for the &lt;a href=&#34;https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-updated-august-2020-6e1b757b9e49&#34;&gt;benchmarks&lt;/a&gt; Alexis!&lt;/p&gt;
+&lt;p&gt;Most plugins have non-optimized defaults that work in most common situations, regardless of network topology, OS and kernel version.&lt;/p&gt;
+&lt;p&gt;I have an experience of tuning some of them, and I would like to share it with you, just briefly:&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Configure Custom Tooling in Argo CD</title>
