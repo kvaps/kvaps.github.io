@@ -6,10 +6,28 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 15 Sep 2020 23:06:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE</title>
+      <link>https://kvaps.github.io/ru/2020/10/kubernetes-in-kubernetes-%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D1%81-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE-pxe/</link>
+      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2020/10/kubernetes-in-kubernetes-%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D1%81-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE-pxe/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/FDdPProqE8g&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/FDdPProqE8g/sddefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В докладе я расскажу о двух свободных проектах: Kubernetes-in-Kubernetes и Kubefarm, которые мы используем для быстрого развёртывания Kubernetes-кластеров на собственном оборудовании.&lt;/p&gt;
+&lt;p&gt;В программе дня:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Простейший способ развернуть и поддерживать в актуальном состоянии сотни серверов on-premise.&lt;/li&gt;
+&lt;li&gt;Легко спавнить и удалять физические ноды как виртуалки.&lt;/li&gt;
+&lt;li&gt;Разделять кластера и властвовать.&lt;/li&gt;
+&lt;li&gt;Cluster API? Не, не слышали&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Деплоить Kubernetes Helm&amp;rsquo;ом, WAT?&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Регистратор доменов Subreg/Gransy подвергся атаке, большинство его сервисов не работают</title>
