@@ -5,10 +5,6 @@
     <link>https://kvaps.github.io/ru/categories/</link>
     <description>Recent content in Categories on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    
-	<atom:link href="https://kvaps.github.io/ru/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>ru</language><atom:link href="https://kvaps.github.io/ru/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

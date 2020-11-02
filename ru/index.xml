@@ -6,10 +6,16 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 23 Oct 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Case-Study: 600 Nodes on DRBD &#43; LINSTOR for Kubernetes, OpenNebula and Proxmox</title>
+      <link>https://kvaps.github.io/ru/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/kMU3JAsFXQk&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp;amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE</title>
