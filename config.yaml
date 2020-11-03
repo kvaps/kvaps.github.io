@@ -91,7 +91,7 @@ languages:
           identifier: medium
           name: Medium
           pre: <i class="sidebar-button-icon fa fa-lg fa-medium"></i>
-          url: 'https://medium.com/@kvaps'
+          url: 'https://kvaps.medium.com/'
         - weight: 3
           identifier: youtube
           name: YouTube
