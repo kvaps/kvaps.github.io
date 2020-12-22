@@ -285,6 +285,128 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/412825/" target="_blank">
+      
+          Блочные устройства QEMU
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-06-01T00:01:19Z">
+        
+  
+  
+  
+  
+    1 Июнь 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png" alt=""></p>
+<p>В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:</p>
+<pre><code>-hda /dev/sda1
+</code></pre>
+<p>Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/412825/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/412739/" target="_blank">
+      
+          Sheepdog
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-05-31T13:52:00Z">
+        
+  
+  
+  
+  
+    31 Май 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg" alt=""></p>
+<p><strong>Sheepdog</strong> - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании <em>Nippon Telegraph and Telephone Corporation</em>. <strong>Sheepdog</strong> - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования. <em>(уже стала — прим.пер.)</em></p>
+<blockquote>
+<p>Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEM</p>
+</blockquote>
+      
+      <p>
+        
+          <a href="https://habr.com/post/412739/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/412289/" target="_blank">
       
           Pritunl — VPN-сервер для себя и друзей за 10 минут
@@ -559,131 +681,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/400953/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/319550/" target="_blank">
-      
-          Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2017-01-25T08:52:00Z">
-        
-  
-  
-  
-  
-    25 Январь 2017
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
-<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
-Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
-<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
-<ul>
-<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.</li>
-<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
-<li><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</li>
-</ul>
-      
-      <p>
-        
-          <a href="https://habr.com/post/319550/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/400137/" target="_blank">
-      
-          Leaf Browser Alpha — браузер с древовидными вкладками
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-12-23T13:26:00Z">
-        
-  
-  
-  
-  
-    23 Декабрь 2016
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png" alt="image"></p>
-<p>Поклонникам расширения <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">Tree Style Tab</a> (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser.
-Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.</p>
-<p>Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из <a href="https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe">Chrome Web Store</a> прямо в ваш браузер.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/400137/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
