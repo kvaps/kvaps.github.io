@@ -6,7 +6,17 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS</title>
+      <link>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/c_TTpj5jEfI&#34;&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more about LINBIT&amp;rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[awesome] Warm and Cozy</title>
       <link>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</link>

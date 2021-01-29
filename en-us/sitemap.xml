@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kvaps.github.io/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -23,8 +18,23 @@
   </url>
   
   <url>
+    <loc>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</loc>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/"
+                />
+  </url>
+  
+  <url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -35,6 +45,11 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
