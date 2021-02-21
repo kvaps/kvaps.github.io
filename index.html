@@ -285,6 +285,59 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" target="_blank">
+      
+          Breaking down and fixing Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-02-21T12:00:00&#43;01:00">
+        
+  February 21, 2021
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png" alt=""></p>
+<p><strong>Kubernetes</strong> is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://youtu.be/c_TTpj5jEfI" target="_blank">
       
           OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS
@@ -583,64 +636,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" target="_blank">
-      
-          Backup storage for thousands of virtual machines using free tools
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-05-29T20:06:10Z">
-        
-  May 29, 2020
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png" alt=""></p>
-<p>Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.</p>
-<p>Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.</p>
-<p>Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.</p>
-<p>Let’s consider what alternatives are:</p>
-<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy <a href="https://min.io/">minio</a>.</p>
-<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
