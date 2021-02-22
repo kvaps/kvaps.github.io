@@ -658,6 +658,79 @@ if (!doNotTrack) {
 Если вч &gt; 2000, то вч = 2000.<br>
 Для дилера сумма выигрыша = округлить до 100 вверх (вч<em>6)<br>
 Для игрока сумма выигрыша = округлить до 100 вверх (вч</em>4)</p>
+<p><strong>Пример 1.</strong></p>
+<ul>
+<li>Раунд - Южный.</li>
+<li>Игрок - дилер (т.е. его ветер - Восток).</li>
+<li>Индикатор Доры - <img src="https://kvaps.github.io/images/mahjong/tileset/T12.gif" alt=""></li>
+<li>Выигрыш по Рон.</li>
+<li>Рука:<br>
+<img src="https://kvaps.github.io/images/mahjong/tileset/T20.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T20.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T20.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T24.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T24.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T13.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T13.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8x.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T31.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T31x.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T31.gif" alt=""> + <img src="https://kvaps.github.io/images/mahjong/tileset/T13.gif" alt=""></li>
+</ul>
+<p>Считаем кол-во хан:<br>
+Комбинации в руке: &ldquo;Все Поны&rdquo; (2 яку) и &ldquo;Ценные тайлы&rdquo; (1 яку). Итого - <strong>3 хан</strong>.<br>
+Индикатор Доры указывает, что Дора - 5 пин. Их в руке 3. 3+3=<strong>6 хан</strong>.<br>
+Поскольку количество хан больше 5, определяем выигрыш по таблице (1):<br>
+6 хан соответствует выигрышу &ldquo;Ханеман&rdquo;. Поскольку игрок - дилер, то воспользуемся колонкой &ldquo;Дилер&rdquo;: 6000х3 (т.к. дискардер один расплачивается за себя и остальных двоих игроков) = 18000.<br>
+Итак, в данном примере выигрыш составил <strong>18000</strong>, и заплатил его один игрок-дискардер.</p>
+<p><strong>Пример 2.</strong></p>
+<ul>
+<li>Раунд - Восточный.</li>
+<li>Игрок - Север (т.е. не дилер).</li>
+<li>Индикатор Доры - <img src="https://kvaps.github.io/images/mahjong/tileset/T33.gif" alt=""></li>
+<li>Выигрыш по Цумо.</li>
+<li>Игрок объявлял Риичи.</li>
+<li>Рука:<br>
+<img src="https://kvaps.github.io/images/mahjong/tileset/T20.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T21.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T22.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T24.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T24.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T2.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T3.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T3.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T4.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T4.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T5.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T14.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T15.gif" alt=""> + <img src="https://kvaps.github.io/images/mahjong/tileset/T16.gif" alt=""></li>
+</ul>
+<p>1. Считаем кол-во хан:<br>
+Комбинации: &ldquo;Риичи&rdquo; (1 яку), &ldquo;Все простые&rdquo; (1 яку), &ldquo;Полностью закрытая рука&rdquo; (1 яку), &ldquo;Без очков&rdquo; (1 яку). Итого - <strong>4 хан</strong>.<br>
+Индикатор Доры показывает, что Дора - Белый Дракон. У игрока Дор нет. 4+0=<strong>4 хан</strong>.<br>
+2. Поскольку количество хан - меньше 5, то придется учитывать минипоинты.<br>
+Понов/Канов нет - 0 мп.<br>
+Пара не-ценная - 0 мп.<br>
+Выигрыш по Цумо - 2 мп.<br>
+Ожидание в две стороны - 0 мп.<br>
+Рука закрыта, но выигрыш по Цумо - 0 мп.<br>
+Суммируем с базой: 20+2=22, округляем вверх и получаем <strong>30 мп</strong>.<br>
+3. Игрок не-дилер, и выиграл по Цумо. Смотрим соответствующую таблицу и находим в ней значение при 30 мп и 4 хан: 3900/2000.<br>
+В этом примере игрок за выигрыш из стены получил <strong>3900</strong> очков с дилера и по <strong>2000</strong> с остальных игроков.</p>
+<p><strong>Пример 3.</strong></p>
+<ul>
+<li>Раунд - Восточный.</li>
+<li>Игрок - Запад (т.е. не дилер).</li>
+<li>Индикатор Доры - <img src="https://kvaps.github.io/images/mahjong/tileset/T30.gif" alt=""></li>
+<li>Выигрыш по Рон.</li>
+<li>Рука:<br>
+<img src="https://kvaps.github.io/images/mahjong/tileset/T18.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T19.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T20.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T26.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T26.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T26.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T9.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T9.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T28.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T28.gif" alt=""> + <img src="https://kvaps.github.io/images/mahjong/tileset/T28.gif" alt=""></li>
+</ul>
+<p>1. Считаем кол-во хан:<br>
+Комбинации: &ldquo;Терминалы и Достоинства&rdquo;, на закрытой руке (1 яку+1 яку), в сумме - 2 хан. Индикатор указывает что Дора - Восточный Ветер. У игрока Дор нет. Итого - 2+0=<strong>2 хан</strong>.<br>
+2. Поскольку количество хан - меньше 5, то придется учитывать минипоинты.<br>
+Поны/Каны - два закрытых Пона терминалов: 8х2=<strong>16</strong>.<br>
+Пара не-ценная - 0 мп.<br>
+Выигрыш по Рон - 0 мп.<br>
+Ожидание на два Пона - 0 мп.<br>
+Рука закрыта, и выигрыш по Рон - 10 мп.<br>
+Суммируем с базой: 20+16+10=46, округляем вверх и получаем <strong>50 мп</strong>.<br>
+3. Игрок не-дилер, и выиграл по Рон. Смотрим соответствующую таблицу и находим в ней значение при 50 мп и 2 хан: 3200.<br>
+В этом примере игрок за выигрыш на дискарде получил с дискардера <strong>3200</strong> очков.</p>
+<p><strong>Пример 4.</strong></p>
+<ul>
+<li>Раунд - Южный.</li>
+<li>Игрок - Юг (т.е. не дилер).</li>
+<li>Индикатор Доры - <img src="https://kvaps.github.io/images/mahjong/tileset/T27.gif" alt=""></li>
+<li>Индикатор Кан-Доры - <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""></li>
+<li>Выигрыш по Цумо.</li>
+<li>Рука:<br>
+<img src="https://kvaps.github.io/images/mahjong/tileset/T0.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T1.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T2.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T3.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T3.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T3.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T4.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T4.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T6.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T7.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T28.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T28.gif" alt=""> <img src="https://kvaps.github.io/images/mahjong/tileset/T28x.gif" alt=""> + <img src="https://kvaps.github.io/images/mahjong/tileset/T8.gif" alt=""></li>
+</ul>
+<p>Считаем кол-во хан:<br>
+Комбинации в руке: &ldquo;Смешанная масть, открытая&rdquo; (2 яку), &ldquo;Ценные тайлы&rdquo; за Пон собственного Ветра (1 яку), &ldquo;Ценные тайлы&rdquo; за Пон Ветра раунда (1 яку). Итого - <strong>4 хан</strong>.<br>
+У игрока 3 Доры и 1 Кан-Дора, итого - <strong>4 хан</strong>. 4+4=<strong>8 хан</strong>.<br>
+Поскольку количество хан больше 5, определяем выигрыш по таблице (1):<br>
+8 хан соответствует выигрышу &ldquo;Байман&rdquo;. Поскольку игрок - не дилер, то воспользуемся колонкой &ldquo;Остальные&rdquo;, где Байману соответствует значение 8000/4000.<br>
+Соответственно, дилер платит победителю <strong>8000</strong> очков, а остальные два игрока - по <strong>4000</strong> очков.<!-- raw HTML omitted --></p>
 <p>Источник: <strong>riichi.ru</strong> (к сожаленю более недоступен)</p>
               
             </div>
@@ -673,7 +746,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/" data-tooltip="Риичи-маджонг: Ограничения и штрафы">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B2-%D1%86%D0%B5%D0%BB%D0%BE%D0%BC-%D0%B8-%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" data-tooltip="О маджонге в целом и риичи в частности">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">След.</span>
@@ -759,7 +832,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%88%D1%82%D1%80%D0%B0%D1%84%D1%8B/" data-tooltip="Риичи-маджонг: Ограничения и штрафы">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BE-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3%D0%B5-%D0%B2-%D1%86%D0%B5%D0%BB%D0%BE%D0%BC-%D0%B8-%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%B2-%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" data-tooltip="О маджонге в целом и риичи в частности">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">След.</span>
