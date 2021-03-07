@@ -6,7 +6,18 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 14:05:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Breaking down and fixing etcd cluster</title>
+      <link>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</link>
+      <pubDate>Fri, 05 Mar 2021 14:05:00 +0100</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;etcd&lt;/strong&gt; is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3&#34;&gt;previous article&lt;/a&gt;, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Breaking down and fixing Kubernetes</title>
       <link>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</link>

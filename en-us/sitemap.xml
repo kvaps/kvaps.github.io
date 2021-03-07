@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</loc>
-    <lastmod>2021-02-21T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</loc>
+    <lastmod>2021-03-05T14:05:00+01:00</lastmod>
+  </url><url>
     <loc>https://kvaps.github.io/</loc>
-    <lastmod>2021-02-21T12:00:00+01:00</lastmod>
+    <lastmod>2021-03-05T14:05:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -20,11 +17,9 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2021-02-21T12:00:00+01:00</lastmod>
+    <lastmod>2021-03-05T14:05:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -35,9 +30,10 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</loc>
+    <lastmod>2021-02-21T12:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</loc>
     <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -50,14 +46,10 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</loc>
     <lastmod>2020-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</loc>
     <lastmod>2020-11-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -70,124 +62,76 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</loc>
     <lastmod>2020-09-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/09/configure-custom-tooling-in-argo-cd/</loc>
     <lastmod>2020-09-06T01:04:00+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</loc>
     <lastmod>2020-06-04T16:12:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</loc>
     <lastmod>2020-05-29T20:06:10+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/05/configuring-routing-for-metallb-in-l2-mode/</loc>
     <lastmod>2020-05-14T22:05:09+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</loc>
     <lastmod>2020-04-24T23:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</loc>
     <lastmod>2020-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/01/how-to-describe-100-gitlab-jobs-in-100-lines-using-jsonnet/</loc>
     <lastmod>2020-01-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2020/01/trying-new-tools-for-building-and-automating-the-deployment-in-kubernetes/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/12/awesome-my-work-laptop/</loc>
     <lastmod>2019-12-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</loc>
     <lastmod>2019-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</loc>
     <lastmod>2019-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</loc>
     <lastmod>2019-02-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</loc>
     <lastmod>2018-12-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</loc>
     <lastmod>2018-10-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</loc>
     <lastmod>2018-10-02T21:35:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</loc>
     <lastmod>2018-09-12T21:36:59+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</loc>
     <lastmod>2018-08-22T21:36:47+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</loc>
     <lastmod>2018-02-06T12:53:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</loc>
     <lastmod>2017-11-29T12:53:18+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/projects-archive/</loc>
     <lastmod>2016-12-27T03:10:52+00:00</lastmod>
     <xhtml:link
@@ -200,49 +144,31 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/projects-archive/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</loc>
     <lastmod>2016-12-14T03:55:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/11/build-your-own-failover-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-machine-translation/</loc>
     <lastmod>2015-11-16T16:45:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/10/installing-centos-on-zfs-in-uefi-machine-translation/</loc>
     <lastmod>2015-10-13T15:37:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/09/customize-keyboard-shortcuts-in-linux-like-mac-os-x-machine-translation/</loc>
     <lastmod>2015-09-09T16:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/08/forwarding-usb-to-a-virtual-network-via-usbredir-and-qemu-machine-translation/</loc>
     <lastmod>2015-08-20T11:55:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</loc>
     <lastmod>2015-07-18T14:17:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2015/07/kolab-groupware-part-1-overview-machine-translation/</loc>
     <lastmod>2015-07-17T15:17:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-machine-translation/</loc>
     <lastmod>2014-03-18T14:51:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -254,9 +180,7 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/archives/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -268,9 +192,7 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://kvaps.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -283,5 +205,4 @@
                 href="https://kvaps.github.io/tags/"
                 />
   </url>
-  
 </urlset>

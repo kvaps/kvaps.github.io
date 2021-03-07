@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.80.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.81.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -266,6 +266,68 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/265065/" target="_blank">
+      
+          Проброс USB в виртуалку по сети средствами UsbRedir и QEMU
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-08-20T11:55:00Z">
+        
+  
+  
+  
+  
+    20 Август 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png" alt=""></p>
+<p>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети.
+Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP.
+Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU.
+Он так же является частью проекта spice, официально поддерживаемым RedHat.</p>
+<p>UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice. Но как оказалось им можно вполне успешно пользоваться и без spice. В роли сервера выступает usbredirserver, который шарит usb-устройство на определенный порт, а в качестве клиента сам QEMU, который эмулирует подключение экспортированного usb-устройства в определенный usb-контроллер вашей виртуальной машины. Благодаря такому подходу в качестве гостевой системы может использоваться абсолютно любая ОС, так как она даже не знает, что устройство является проброшенным удаленно, а вся логика ложится на QEMU.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/265065/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -619,63 +681,6 @@ if (!doNotTrack) {
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/1/01/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/">
-      
-          Звуки Pidgin в qutIM
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="0001-01-01T00:00:00Z">
-        
-  
-  
-  
-  
-    1 Январь 0001
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>Понравились тут звуки в Pidgin, решил их прикрутить в qutIM 0.3</p>
-      
-      <p>
-        
-          <a href="https://kvaps.github.io/ru/1/01/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/" class="postShorten-excerpt_link link">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -689,8 +694,15 @@ if (!doNotTrack) {
           </li>
         
         
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://kvaps.github.io/ru/page/9/">
+              <span>Старые статьи</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
       
-      <li class="pagination-number">Страница 8 из 8</li>
+      <li class="pagination-number">Страница 8 из 9</li>
     </ul>
   </div>
 
