@@ -6,7 +6,18 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Mar 2021 14:05:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil</title>
+      <link>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</link>
+      <pubDate>Thu, 20 May 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Andrey Kvа́pil joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;
+&lt;p&gt;Andrey breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Breaking down and fixing etcd cluster</title>
       <link>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</link>
