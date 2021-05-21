@@ -14,8 +14,7 @@
       
       <guid>https://kvaps.github.io/ru/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Andrey Kvа́pil joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;
-&lt;p&gt;Andrey breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.&lt;/p&gt;</description>
+&lt;p&gt;Поучавствовал в записи подкста Adventures in DevOps. Поговорили про Kubernetes-in-Kubernetes, Kubefarm и про то как мы готовим куб на Bare Metal.&lt;/p&gt;</description>
     </item>
     
     <item>
