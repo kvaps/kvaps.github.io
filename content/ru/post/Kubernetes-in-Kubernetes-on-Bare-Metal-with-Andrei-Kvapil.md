@@ -6,6 +6,6 @@ link: https://devchat.tv/adventures-in-devops/kubernetes-in-kubernetes-on-bare-m
 
 ![](https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg)
 
-Поучавствовал в записи подкста Adventures in DevOps. Поговорили про Kubernetes-in-Kubernetes, Kubefarm и про то как мы готовим куб на Bare Metal.
+Поучаствовал в записи подкaста Adventures in DevOps. Поговорили про Kubernetes-in-Kubernetes, Kubefarm и про то как мы готовим куб на Bare Metal.
 
 <!--more-->
