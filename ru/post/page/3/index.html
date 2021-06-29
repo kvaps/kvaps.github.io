@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.82.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.84.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -266,6 +266,65 @@ if (!doNotTrack) {
         <section class="postShorten-group main-content-wrap">
           
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/ru/post/493406/" target="_blank">
+      
+          Как работает дисковая подсистема в OpenNebula
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-03-21T18:17:00Z">
+        
+  
+  
+  
+  
+    21 Март 2020
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/nr/4p/bb/nr4pbbjdpjjvghyiapezxwhgna0.png" alt=""></p>
+<p>В последнее время я получаю достаточно много вопросов по поводу организации стораджа в OpenNebula. В виду своей специфики она имеет аж три разных типа хранилища: images, system и files. Давайте разберёмся зачем нужен каждый из них и как их использовать чтобы планировать размещение данных наиболее эфективно.</p>
+<p>Этот пост — частичная расшифровка моего <a href="https://www.youtube.com/watch?v=47Mht_uoX3A&amp;feature=youtu.be">доклада про OpenNebula</a> на <a href="https://www.highload.ru/moscow/2019/abstracts/5506">HighLoad++ 2019</a> с упором на дисковую составляющую.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/post/493406/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -639,67 +698,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/" class="postShorten-excerpt_link link">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/435270/" target="_blank">
-      
-          Храним SSH-ключи безопасно
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-05-15T09:05:00&#43;03:00">
-        
-  
-  
-  
-  
-    15 Май 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/webt/up/j1/kl/upj1kliwm70ton2ocnhvuf_kywm.png" alt=""></p>
-<p>Хочу рассказать как безопасно хранить SSH-ключи на локальной машине, не боясь того, что какое-то приложение может украсть или расшифровать их.</p>
-<p>Статья будет полезна тем, кто так и не нашел элегантного решения после <a href="https://www.opennet.ru/opennews/art.shtml?num=49082">паранои</a> в 2018 и продолжает хранить ключи в <code>$HOME/.ssh</code>.</p>
-<p>Для решения данной проблемы предлагаю использовать <a href="https://keepassxc.org/">KeePassXC</a>, который является одним из лучших менеджеров паролей, он использует сильные алгоритмы шифрования, а также имеет встроенный SSH-агент.</p>
-<p>Это дает возможность безопасно хранить все ключи прямо в базе паролей и автоматически добавлять их в систему при её открытии. Как только база будет закрыта, использование SSH-ключей также станет невозможным</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/435270/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

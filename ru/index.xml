@@ -6,7 +6,25 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 20 May 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitOps — что это такое и с чем его едят?</title>
+      <link>https://kvaps.github.io/ru/2021/06/gitops-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8-%D1%81-%D1%87%D0%B5%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B5%D0%B4%D1%8F%D1%82/</link>
+      <pubDate>Tue, 29 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/06/gitops-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8-%D1%81-%D1%87%D0%B5%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B5%D0%B4%D1%8F%D1%82/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/FpjCuslco74&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/FpjCuslco74/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;В этом докладе мы:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Разберёмся в терминах Continuous Integration, Continuous Delivery и Continuous Deployment.&lt;/li&gt;
+&lt;li&gt;Выясним наконец, что такое GitOps и какие проблемы он решает.&lt;/li&gt;
+&lt;li&gt;Рассмотрим популярные утилиты: ArgoCD, FluxCD и паттерны их использования.&lt;/li&gt;
+&lt;li&gt;Разберём практики организации Git-репозитория и настройки пайплайнов.&lt;/li&gt;
+&lt;li&gt;А также копнём чуть глубже и детально рассмотрим настройку прав доступа и кастомных плагинов в ArgoCD.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Наконец я расскажу про наш опыт использования ArgoCD для развёртывания Kubernetes-кластеров и управления приложениями в Bare Metal-среде.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil</title>
       <link>https://kvaps.github.io/ru/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</link>
