@@ -6,7 +6,28 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jul 2021 18:21:26 +0200</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Resolve Split Brain in DRBD9</title>
+      <link>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</link>
+      <pubDate>Mon, 19 Jul 2021 18:21:26 +0200</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzyx2gkmcim5hgjk5dft.png&#34; alt=&#34;split-brain&#34;&gt;&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s define what split-brain is. Each replica can be either connected or disconnected towards to the other. If the replica spontaneously goes to StandAlone. It means that it refuses to accept the state and don&amp;rsquo;t want to synchronize with the other. This is a classic split-brain situation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting DRBD9 in LINSTOR</title>
+      <link>https://kvaps.github.io/2021/07/troubleshooting-drbd9-in-linstor/</link>
+      <pubDate>Mon, 19 Jul 2021 18:15:55 +0200</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/07/troubleshooting-drbd9-in-linstor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ft/tb/2v/fttb2vkaex5-wur6zygsbkkwj2k.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Over the past few years of tight work with LINSTOR and DRBD9, I have accumulated a some amount of problems and solutions for them. I decided to collect all of them into single article. Not sure that you will face exactly the same problems, but now you could at least understand the mechanics of managing and troubleshooting the DRBD9-devices.&lt;/p&gt;
+&lt;p&gt;There is not much information on this matter on the Internet. Hope you&amp;rsquo;ll find it useful in case if you use or plan to use LINSTOR.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil</title>
       <link>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</link>

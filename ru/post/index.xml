@@ -6,7 +6,45 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 29 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Траблшутинг DRBD9 в LINSTOR</title>
+      <link>https://kvaps.github.io/ru/2021/07/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/07/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ft/tb/2v/fttb2vkaex5-wur6zygsbkkwj2k.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;За последние несколько лет плотной работы с LINSTOR и DRBD9 у меня накопилось достаточное количество проблем и рецептов решения для них, что мне захотелось оформить их в небольшую статью. Не уверен что они полностью совпадут с вашими случаями, но теперь вы хотя бы сможете понять механику работы с DRBD9, а именно, самую неприятную его часть - траблшутинг.&lt;/p&gt;
+&lt;p&gt;Информации по данному поводу в интернете немного, так что если вы используете или планируете использовать LINSTOR, уверен рано-или поздно вам эта информация может пригодиться.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>#2 DevOps Курилка. День второй. ”Инструменты деплоя и GitOps”. Андрей Квапил.</title>
+      <link>https://kvaps.github.io/ru/2021/07/#2-devops-%D0%BA%D1%83%D1%80%D0%B8%D0%BB%D0%BA%D0%B0.-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9.-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%B8-gitops.-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB./</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/07/#2-devops-%D0%BA%D1%83%D1%80%D0%B8%D0%BB%D0%BA%D0%B0.-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9.-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%B8-gitops.-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB./</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn4.telesco.pe/file/nAac-3IRGqjmIzc8oUQTJzp7XvZrxbpuSupZC3JO058pTV2MFdIbGmqTHLb6aFivKBcZuwbMyoCGm1xBrudEIxNgvXJm-QSCZubkCCBtugJaIo57yoMpcUeCS5ZNViKA2EnSFp1Fm9HFSrf9rjpcz2b7gnbdmUYTY6hqeexIT79pUpPLd_4wW9sguzuqysRxo9uqR5ACFhCjoak-y4KGOUEOvxlI7_lGUF49fj_BVzB__kg5_nZZ24oFshx9JK7KyWTw659B4x6hv7nULpglMBz0xNu5o9bEMFZZFxcoZrjx9kE4ZeriSQReshQfjIIKyqPdW_ZZ0z28H-0NJ2L8VA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Мальчишки и девчонки, а так же их родители!&lt;br&gt;
+В эту пятницу в 20.00 новая серия подкаста &amp;ldquo;DevOps курилка&amp;rdquo;.&lt;br&gt;
+У нас есть задачка для DevOps с опытом. Представьте, что у вас на проекте Gitlab, Kubernetes и микросервисы.&lt;br&gt;
+CI часть готова, нужно быстро, просто, без боли и соплей доставляться в k8s.&lt;br&gt;
+По дороге не потерять convergence/observability/idempotence/determinism/automation&amp;hellip;&lt;br&gt;
+Что выберем?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GitOps/CIOps?&lt;/li&gt;
+&lt;li&gt;Helm/jsonnet/kustomize и т д&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Едришки-кочерыжки какой выбор,&lt;br&gt;
+так как же лучше реализовать?&lt;/p&gt;
+&lt;p&gt;Главный героин подкаста &lt;em&gt;&lt;a href=&#34;https://t.me/kvaps&#34;&gt;@kvaps&lt;/a&gt; Андрей Квапил&lt;/em&gt;  Cloud Architect фром Чехия&lt;br&gt;
+И всегда с вами:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;активный душнитель чата &lt;a href=&#34;https://t.me/Asgoret&#34;&gt;@Asgoret&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;товарищ майор &lt;a href=&#34;https://t.me/afidelina&#34;&gt;@afidelina&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>GitOps — что это такое и с чем его едят?</title>
       <link>https://kvaps.github.io/ru/2021/06/gitops-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8-%D1%81-%D1%87%D0%B5%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B5%D0%B4%D1%8F%D1%82/</link>
@@ -23,6 +61,19 @@
 &lt;li&gt;А также копнём чуть глубже и детально рассмотрим настройку прав доступа и кастомных плагинов в ArgoCD.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Наконец я расскажу про наш опыт использования ArgoCD для развёртывания Kubernetes-кластеров и управления приложениями в Bare Metal-среде.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Траблшутинг DRBD9 в LINSTOR</title>
+      <link>https://kvaps.github.io/ru/2021/05/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/05/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/getpro/habr/upload_files/1c5/449/a3d/1c5449a3d5864b48ca0d6791742cc4be.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;За последние несколько лет плотной работы с LINSTOR и DRBD9 у меня накопилось достаточное количество проблем и рецептов решения для них, что мне захотелось оформить их в небольшую статью. Не уверен что они полностью совпадут с вашими случаями, но теперь вы хотя бы сможете понять механику работы с DRBD9, а именно, самую неприятную его часть - траблшутинг.&lt;/p&gt;
+&lt;p&gt;Информации по данному поводу в интернете немного, так что если вы используете или планируете использовать LINSTOR, уверен рано-или поздно вам эта информация может пригодиться.&lt;/p&gt;
+&lt;p&gt;Когда у вас 2 собственных дата-центра, тысячи железных серверов, виртуалки и хостинг для сотен тысяч сайтов, Kubernetes может существенно упростить управление всем этим добром. Как показала практика, с помощью Kubernetes можно декларативно описывать и управлять не только приложениями, но и самой инфраструктурой. Я работаю в крупнейшем чешском хостинг-провайдере WEDOS Internet a.s и сегодня расскажу о двух своих проектах — &lt;a href=&#34;https://github.com/kvaps/kubernetes-in-kubernetes&#34;&gt;Kubernetes-in-Kubernetes&lt;/a&gt; и &lt;a href=&#34;https://github.com/kvaps/kubefarm&#34;&gt;Kubefarm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;С их помощью можно буквально за пару команд, используя Helm, развернуть полностью рабочий Kubernetes внутри другого Kubernetes-кластера. Как и зачем? Добро пожаловать под кат&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -103,24 +154,6 @@
       <guid>https://kvaps.github.io/ru/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/kMU3JAsFXQk&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp;amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE</title>
-      <link>https://kvaps.github.io/ru/2020/10/kubernetes-in-kubernetes-%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D1%81-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE-pxe/</link>
-      <pubDate>Fri, 23 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kvaps.github.io/ru/2020/10/kubernetes-in-kubernetes-%D0%B8-%D1%84%D0%B5%D1%80%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%D0%BE%D0%B2-%D1%81-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%BE%D0%B9-%D0%BF%D0%BE-pxe/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/FDdPProqE8g&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/FDdPProqE8g/sddefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;В докладе я расскажу о двух свободных проектах: Kubernetes-in-Kubernetes и Kubefarm, которые мы используем для быстрого развёртывания Kubernetes-кластеров на собственном оборудовании.&lt;/p&gt;
-&lt;p&gt;В программе дня:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Простейший способ развернуть и поддерживать в актуальном состоянии сотни серверов on-premise.&lt;/li&gt;
-&lt;li&gt;Легко спавнить и удалять физические ноды как виртуалки.&lt;/li&gt;
-&lt;li&gt;Разделять кластера и властвовать.&lt;/li&gt;
-&lt;li&gt;Cluster API? Не, не слышали&amp;hellip;&lt;/li&gt;
-&lt;li&gt;Деплоить Kubernetes Helm&amp;rsquo;ом, WAT?&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
     <item>
