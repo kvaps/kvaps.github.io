@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.84.3 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.86.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -469,7 +469,7 @@ So let’s fix it together byself.</p>
         <ul>
 <li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
 <span style="color:#75715e"># wait 1-2 minutes.</span>
 sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
 sudo docker rm -fv communityserver

@@ -398,7 +398,7 @@ The most unusual art from the web (abandoned)</description>
       <description>&lt;ul&gt;
 &lt;li&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;# wait 1-2 minutes.&lt;/span&gt;
 sudo docker exec -i -t communityserver /bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cat /etc/nginx/sites-enabled/onlyoffice&amp;#39;&lt;/span&gt; &amp;gt; onlyoffice.conf&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
 sudo docker rm -fv communityserver

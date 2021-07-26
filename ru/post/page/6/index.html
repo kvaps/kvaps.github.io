@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.84.3 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.86.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -266,6 +266,71 @@ if (!doNotTrack) {
         <section class="postShorten-group main-content-wrap">
           
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/413155/" target="_blank">
+      
+          Google&#39;s Shell Style Guide (на русском)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-06-04T19:43:00Z">
+        
+  
+  
+  
+  
+    4 Июнь 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <h1 id="предисловие">Предисловие</h1>
+<h3 id="какой-shell-использовать">Какой Shell использовать</h3>
+<p><code>Bash</code> единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.</p>
+<p>Скрипты должны начинаться с <code>#!/bin/bash</code> с минимальным набором флагов. Используйте <code>set</code> для установки опций shell, что бы вызов вашего скрипта как <code>bash &lt;script_name&gt;</code> не нарушило его функциональности.</p>
+<p>Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.</p>
+<p>Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.</p>
+<h3 id="когда-использовать-shell">Когда использовать Shell</h3>
+<p>Shell следует использовать только для небольших утилит или простых скрптов-оберток.</p>
+<p>Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/413155/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -622,65 +687,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/328048/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/400953/" target="_blank">
-      
-          Google Chrome перестал доверять сертификатам WoSign и StartCom
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2017-01-26T11:19:00Z">
-        
-  
-  
-  
-  
-    26 Январь 2017
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/1ff/c49/9de/1ffc499debe24e1989f3c1608255917c.png" alt=""></p>
-<p>Как <a href="https://habr.com/post/398161/">сообщалось ранее</a> Google Chrome заблокировал сертификаты WoSign и StartCom.</p>
-<p>Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее <code>October 21, 2016 00:00:00 UTC</code>.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/400953/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.84.3 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.86.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -487,7 +487,7 @@ CI часть готова, нужно быстро, просто, без бол
       
         <a class="link-unstyled" href="https://habr.com/ru/company/oleg-bunin/blog/558900/" target="_blank">
       
-          Траблшутинг DRBD9 в LINSTOR
+          Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE
         </a>
       </h1>
       
@@ -511,8 +511,6 @@ CI часть готова, нужно быстро, просто, без бол
     <div class="postShorten-excerpt" itemprop="articleBody">
       
         <p><img src="https://hsto.org/getpro/habr/upload_files/1c5/449/a3d/1c5449a3d5864b48ca0d6791742cc4be.png" alt=""></p>
-<p>За последние несколько лет плотной работы с LINSTOR и DRBD9 у меня накопилось достаточное количество проблем и рецептов решения для них, что мне захотелось оформить их в небольшую статью. Не уверен что они полностью совпадут с вашими случаями, но теперь вы хотя бы сможете понять механику работы с DRBD9, а именно, самую неприятную его часть - траблшутинг.</p>
-<p>Информации по данному поводу в интернете немного, так что если вы используете или планируете использовать LINSTOR, уверен рано-или поздно вам эта информация может пригодиться.</p>
 <p>Когда у вас 2 собственных дата-центра, тысячи железных серверов, виртуалки и хостинг для сотен тысяч сайтов, Kubernetes может существенно упростить управление всем этим добром. Как показала практика, с помощью Kubernetes можно декларативно описывать и управлять не только приложениями, но и самой инфраструктурой. Я работаю в крупнейшем чешском хостинг-провайдере WEDOS Internet a.s и сегодня расскажу о двух своих проектах — <a href="https://github.com/kvaps/kubernetes-in-kubernetes">Kubernetes-in-Kubernetes</a> и <a href="https://github.com/kvaps/kubefarm">Kubefarm</a>.</p>
 <p>С их помощью можно буквально за пару команд, используя Helm, развернуть полностью рабочий Kubernetes внутри другого Kubernetes-кластера. Как и зачем? Добро пожаловать под кат</p>
       
