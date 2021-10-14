@@ -6,7 +6,20 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>В поисках идеальной кластерной ФС: опыт использования LINSTOR</title>
+      <link>https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/</link>
+      <pubDate>Wed, 13 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/otr55vmKf30&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/otr55vmKf30/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.&lt;/p&gt;
+&lt;p&gt;Доклад разделён на две части:&lt;/p&gt;
+&lt;p&gt;В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.&lt;/p&gt;
+&lt;p&gt;Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Траблшутинг DRBD9 в LINSTOR</title>
       <link>https://kvaps.github.io/ru/2021/07/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/</link>
