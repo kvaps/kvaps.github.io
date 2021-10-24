@@ -6,7 +6,21 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Jul 2021 18:21:26 +0200</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Yabai] First steps after Awesome WM</title>
+      <link>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</link>
+      <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/p3zkihioqev71.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&amp;rsquo;m having fun with OSX. And I have to admit I&amp;rsquo;m starting to like it.&lt;/p&gt;
+&lt;p&gt;Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃&lt;br&gt;
+Some hardware keys are rebinded using &lt;a href=&#34;https://karabiner-elements.pqrs.org/&#34;&gt;Karabiner&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As main browser I use Firefox with &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/tree-style-tab/&#34;&gt;TreeStyleTab&lt;/a&gt; and &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/dustman/&#34;&gt;Dustman&lt;/a&gt; extensions. The last one is closing tabs automatically if I didn&amp;rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&amp;rsquo;t like to close them, why not to run a garbage collector for them?&lt;/p&gt;
+&lt;p&gt;Terminal configuration and colors moved from my previous laptop.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Resolve Split Brain in DRBD9</title>
       <link>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</link>

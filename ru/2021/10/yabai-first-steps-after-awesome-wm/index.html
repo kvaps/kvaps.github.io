@@ -9,40 +9,44 @@
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="
-Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.
-Доклад разделён на две части:
-В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.
-Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.">
+После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.
+Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃
+Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью Karabiner.
+В качестве основного браузера я использую Firefox с расширениями TreeStyleTab и Dustman Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?
+Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.">
 
 
 <meta property="og:description" content="
-Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.
-Доклад разделён на две части:
-В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.
-Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.">
+После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.
+Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃
+Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью Karabiner.
+В качестве основного браузера я использую Firefox с расширениями TreeStyleTab и Dustman Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?
+Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="В поисках идеальной кластерной ФС: опыт использования LINSTOR">
-<meta name="twitter:title" content="В поисках идеальной кластерной ФС: опыт использования LINSTOR">
-<meta property="og:url" content="https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
-<meta property="twitter:url" content="https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+<meta property="og:title" content="[Yabai] First steps after Awesome WM">
+<meta name="twitter:title" content="[Yabai] First steps after Awesome WM">
+<meta property="og:url" content="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
+<meta property="twitter:url" content="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
 <meta property="og:site_name" content="kvaps | личный блог">
 <meta property="og:description" content="
-Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.
-Доклад разделён на две части:
-В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.
-Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.">
+После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.
+Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃
+Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью Karabiner.
+В качестве основного браузера я использую Firefox с расширениями TreeStyleTab и Dustman Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?
+Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.">
 <meta name="twitter:description" content="
-Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.
-Доклад разделён на две части:
-В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.
-Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.">
+После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.
+Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃
+Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью Karabiner.
+В качестве основного браузера я использую Firefox с расширениями TreeStyleTab и Dustman Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?
+Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.">
 <meta property="og:locale" content="ru">
 
   
-    <meta property="article:published_time" content="2021-10-13T00:00:00">
+    <meta property="article:published_time" content="2021-10-24T00:00:00">
   
   
-    <meta property="article:modified_time" content="2021-10-13T00:00:00">
+    <meta property="article:modified_time" content="2021-10-24T00:00:00">
   
   
   
@@ -65,14 +69,14 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=640">
 
 
-    <title>В поисках идеальной кластерной ФС: опыт использования LINSTOR</title>
+    <title>[Yabai] First steps after Awesome WM</title>
 
     <link rel="icon" href="https://kvaps.github.io/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+    <link rel="canonical" href="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -293,21 +297,21 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 itemprop="headline"> 
-      <a class="link" href="https://youtu.be/otr55vmKf30" target="_blank" itemprop="url">
-        В поисках идеальной кластерной ФС: опыт использования LINSTOR
+      <a class="link" href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" target="_blank" itemprop="url">
+        [Yabai] First steps after Awesome WM
       </a>
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-10-13T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-10-24T00:00:00Z">
         
   
   
   
   
-    13 Октябрь 2021
+    24 Октябрь 2021
   
 
       </time>
@@ -319,11 +323,12 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><a href="https://youtu.be/otr55vmKf30"><img src="https://img.youtube.com/vi/otr55vmKf30/maxresdefault.jpg" alt=""></a></p>
-<p>Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.</p>
-<p>Доклад разделён на две части:</p>
-<p>В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.</p>
-<p>Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.</p>
+              <p><img src="https://i.redd.it/p3zkihioqev71.png" alt=""></p>
+<p>После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.</p>
+<p>Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃</p>
+<p>Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью <a href="https://karabiner-elements.pqrs.org/">Karabiner</a>.</p>
+<p>В качестве основного браузера я использую Firefox с расширениями <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">TreeStyleTab</a> и <a href="https://addons.mozilla.org/ru/firefox/addon/dustman/">Dustman</a> Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?</p>
+<p>Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.</p>
               
             </div>
           </div>
@@ -338,7 +343,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/" data-tooltip="[Yabai] First steps after Awesome WM">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">След.</span>
@@ -346,7 +351,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/07/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/" data-tooltip="Траблшутинг DRBD9 в LINSTOR">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/" data-tooltip="В поисках идеальной кластерной ФС: опыт использования LINSTOR">
               
                   <span class="hide-xs hide-sm text-small icon-mr">Пред.</span>
                   <i class="fa fa-angle-right"></i>
@@ -364,19 +369,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -424,7 +429,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/" data-tooltip="[Yabai] First steps after Awesome WM">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">След.</span>
@@ -432,7 +437,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/07/%D1%82%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3-drbd9-%D0%B2-linstor/" data-tooltip="Траблшутинг DRBD9 в LINSTOR">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/" data-tooltip="В поисках идеальной кластерной ФС: опыт использования LINSTOR">
               
                   <span class="hide-xs hide-sm text-small icon-mr">Пред.</span>
                   <i class="fa fa-angle-right"></i>
@@ -450,19 +455,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/ru/2021/10/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -492,19 +497,19 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2F%25D0%25B2-%25D0%25BF%25D0%25BE%25D0%25B8%25D1%2581%25D0%25BA%25D0%25B0%25D1%2585-%25D0%25B8%25D0%25B4%25D0%25B5%25D0%25B0%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B9-%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%25D0%25BD%25D0%25BE%25D0%25B9-%25D1%2584%25D1%2581-%25D0%25BE%25D0%25BF%25D1%258B%25D1%2582-%25D0%25B8%25D1%2581%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258C%25D0%25B7%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F-linstor%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
           <i class="fa fa-facebook-official"></i><span>Поделиться в Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2F%25D0%25B2-%25D0%25BF%25D0%25BE%25D0%25B8%25D1%2581%25D0%25BA%25D0%25B0%25D1%2585-%25D0%25B8%25D0%25B4%25D0%25B5%25D0%25B0%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B9-%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%25D0%25BD%25D0%25BE%25D0%25B9-%25D1%2584%25D1%2581-%25D0%25BE%25D0%25BF%25D1%258B%25D1%2582-%25D0%25B8%25D1%2581%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258C%25D0%25B7%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F-linstor%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
           <i class="fa fa-twitter"></i><span>Поделиться в Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2F%25D0%25B2-%25D0%25BF%25D0%25BE%25D0%25B8%25D1%2581%25D0%25BA%25D0%25B0%25D1%2585-%25D0%25B8%25D0%25B4%25D0%25B5%25D0%25B0%25D0%25BB%25D1%258C%25D0%25BD%25D0%25BE%25D0%25B9-%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2582%25D0%25B5%25D1%2580%25D0%25BD%25D0%25BE%25D0%25B9-%25D1%2584%25D1%2581-%25D0%25BE%25D0%25BF%25D1%258B%25D1%2582-%25D0%25B8%25D1%2581%25D0%25BF%25D0%25BE%25D0%25BB%25D1%258C%25D0%25B7%25D0%25BE%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25B8%25D1%258F-linstor%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2Fru%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
           <i class="fa fa-google-plus"></i><span>Поделиться в Google&#43;</span>
         </a>
       </li>
@@ -596,9 +601,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/kvaps.github.io\/ru\/2021\/10\/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor\/';
+          this.page.url = 'https:\/\/kvaps.github.io\/ru\/2021\/10\/yabai-first-steps-after-awesome-wm\/';
           
-            this.page.identifier = '\/ru\/2021\/10\/%D0%B2-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-%D1%84%D1%81-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-linstor\/'
+            this.page.identifier = '\/ru\/2021\/10\/yabai-first-steps-after-awesome-wm\/'
           
         };
         (function() {

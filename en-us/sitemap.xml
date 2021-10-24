@@ -2,11 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</loc>
-    <lastmod>2021-07-19T18:21:26+02:00</lastmod>
+    <loc>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</loc>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/"
+                />
   </url><url>
     <loc>https://kvaps.github.io/</loc>
-    <lastmod>2021-07-19T18:21:26+02:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -19,7 +29,7 @@
                 />
   </url><url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2021-07-19T18:21:26+02:00</lastmod>
+    <lastmod>2021-10-24T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -30,6 +40,9 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
+  </url><url>
+    <loc>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</loc>
+    <lastmod>2021-07-19T18:21:26+02:00</lastmod>
   </url><url>
     <loc>https://kvaps.github.io/2021/07/troubleshooting-drbd9-in-linstor/</loc>
     <lastmod>2021-07-19T18:15:55+02:00</lastmod>
