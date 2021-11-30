@@ -285,6 +285,81 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/483626/" target="_blank">
+      
+          Как описать 100 Gitlab джоб в 100 строк на Jsonnet
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-12-26T20:15:00Z">
+        
+  
+  
+  
+  
+    26 Декабрь 2019
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p>В продолжение <a href="https://habr.com/ru/post/481662/">предыдущей статьи</a> про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем <strong>.gitlab-ci.yml</strong></p>
+<p><img src="https://jsonnet.org/img/isologo.svg" alt=""></p>
+<h4 id="дано">Дано</h4>
+<p>Есть монорепа, в которой:</p>
+<ul>
+<li>10 Dockerfiles</li>
+<li>30 описанных деплоев</li>
+<li>3 окружения: <strong>devel</strong>, <strong>staging</strong> и <strong>production</strong></li>
+</ul>
+<h4 id="задача">Задача</h4>
+<p>Настроить пайплайн:</p>
+<ul>
+<li>Сборка Docker-образов должна производиться по добавлении git-тэга с версией.</li>
+<li>Каждая операция деплоя должна выполняться при пуше в ветку окружения и только по изменении файлов в конкретной директории</li>
+<li>В каждом окружении установлен свой gitlab-runner с отдельным тэгом, который выполняет деплой только в своём окружении.</li>
+<li>Не все приложения должны быть задеплоены в каждое из окружений, мы должны описать пайплайн так, чтобы иметь возможность делать исключения.</li>
+<li>Некоторые деплойменты используют git submodule и должны запускаться с установленной переменной <strong><code>GIT_SUBMODULE_STRATEGY=normal</code></strong></li>
+</ul>
+<p>Как видите, описать это всё может показаться настоящим адом, но мы не отчаиваемся и вооружившись Jsonnet сделаем это легко и непринуждённо.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/483626/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/481662/" target="_blank">
       
           Пробуем новые инструменты для сборки и автоматизации деплоя в Kubernetes
@@ -625,66 +700,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/435270/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/451186/" target="_blank">
-      
-          Хранилище LINSTOR и его интеграция с OpenNebula
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-05-13T01:18:00&#43;03:00">
-        
-  
-  
-  
-  
-    13 Май 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png" alt=""></p>
-<p>Не так давно ребята из LINBIT представили свое новое SDS-решение - Linstor. Это полностью свободное хранилище в основе которого используются проверенные технологии: DRBD, LVM, ZFS. Linstor сочетает в себе простоту и хорошо проработанную архитектуру, что позволяет добиться стабильности и достаточно внушительных результатов.</p>
-<p>Сегодня я хотел бы рассказать про него чуть подробнее и показать насколько просто его можно интегрировать с OpenNebula используя linstor_un - новый драйвер, который я разработал специально для этой цели.</p>
-<p>Linstor в сочетании с OpenNebula позволяет построить быстрое и надежное облако, которое можно без проблем развернуть на собственной инфраструктуре</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/451186/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

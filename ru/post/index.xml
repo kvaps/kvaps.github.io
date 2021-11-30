@@ -6,7 +6,22 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Андрей Квапил: «Уже Несколько Лет Мы Делаем В Kubernetes То, Что Только Сейчас Готовится К Production Ready»</title>
+      <link>https://kvaps.github.io/ru/2021/11/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB-%D1%83%D0%B6%D0%B5-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BB%D0%B5%D1%82-%D0%BC%D1%8B-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%B2-kubernetes-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%81%D1%8F-%D0%BA-production-ready/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/11/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB-%D1%83%D0%B6%D0%B5-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BB%D0%B5%D1%82-%D0%BC%D1%8B-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%B2-kubernetes-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%81%D1%8F-%D0%BA-production-ready/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/r/w1560/webt/kb/x3/9z/kbx39zqawtyo7-z798qjuwwpjqw.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Андрей Квапил (&lt;a href=&#34;https://habr.com/ru/users/kvaps/&#34;&gt;@kvaps&lt;/a&gt;) — Solutions Architect в компании Флант. Путь в ИТ он начал с подработки эникейщиком во время учебы в школе. А сейчас создает платформы для автоматического управления инфраструктурой, участвует в open-source-сообществе, пишет статьи и выступает на конференциях. Поговорили с Андреем о его карьере в ИТ, переезде в Чехию и выступлениях на конференциях.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Андрей — один из спикеров &lt;a href=&#34;https://mcs.mail.ru/events/vk-kubernetes-conf&#34;&gt;VK Kubernetes Conference&lt;/a&gt;, которая пройдет 9 декабря 2021 года.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;-начнем-издалека-ты-помнишь-когда-впервые-начал-интересоваться-ит&#34;&gt;— Начнем издалека. Ты помнишь, когда впервые начал интересоваться ИТ?&lt;/h3&gt;
+&lt;p&gt;— Первый компьютер в нашей семье появился у деда — он работал профессором в МГУ. Это был Pentium 1 133 Mhz с 32 Мбайт памяти, еще с кнопкой Turbo. Мои старшие братья часто играли на нем в Larry, а мне не разрешали. Но меня тогда интересовал не сугубо развратный подтекст игры, а то, насколько широко она использует возможности компьютера. Звуковых карт тогда еще не было, но музыка проигрывалась через спикер. Мне это показалось крутым: компьютер играет музыку, ничего себе!&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Yabai] First steps after Awesome WM</title>
       <link>https://kvaps.github.io/ru/2021/10/yabai-first-steps-after-awesome-wm/</link>
