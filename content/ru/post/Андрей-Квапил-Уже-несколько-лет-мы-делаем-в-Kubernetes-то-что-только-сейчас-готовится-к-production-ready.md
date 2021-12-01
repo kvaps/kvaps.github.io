@@ -1,6 +1,7 @@
 ---
 title: "Андрей Квапил: «Уже Несколько Лет Мы Делаем В Kubernetes То, Что Только Сейчас Готовится К Production Ready»"
 date: 2021-11-30
+link: https://habr.com/ru/company/vk/blog/590935/
 ---
 
 ![](https://habrastorage.org/r/w1560/webt/kb/x3/9z/kbx39zqawtyo7-z798qjuwwpjqw.jpeg)
