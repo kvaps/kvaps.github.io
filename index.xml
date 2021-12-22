@@ -6,7 +6,18 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm</title>
+      <link>https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/</link>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FHMnruzWYAAT_xv?format=png&#34; alt=&#34;Kubernetes-in-Kubernetes - We need to go deeper&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider &lt;strong&gt;WEDOS Internet a.s&lt;/strong&gt; and today I&amp;rsquo;ll show you two of my projects — &lt;a href=&#34;https://github.com/kvaps/kubernetes-in-kubernetes&#34;&gt;Kubernetes-in-Kubernetes&lt;/a&gt; and &lt;a href=&#34;https://github.com/kvaps/kubefarm&#34;&gt;Kubefarm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>[Yabai] First steps after Awesome WM</title>
       <link>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</link>

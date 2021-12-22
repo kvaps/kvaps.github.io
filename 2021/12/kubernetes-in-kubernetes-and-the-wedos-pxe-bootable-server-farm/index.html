@@ -9,44 +9,32 @@
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="
-After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.
-Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃
-Some hardware keys are rebinded using Karabiner.
-As main browser I use Firefox with TreeStyleTab and Dustman extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?
-Terminal configuration and colors moved from my previous laptop.">
+When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider WEDOS Internet a.s and today I&rsquo;ll show you two of my projects — Kubernetes-in-Kubernetes and Kubefarm.
+With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?">
 
 
 <meta property="og:description" content="
-After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.
-Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃
-Some hardware keys are rebinded using Karabiner.
-As main browser I use Firefox with TreeStyleTab and Dustman extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?
-Terminal configuration and colors moved from my previous laptop.">
+When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider WEDOS Internet a.s and today I&rsquo;ll show you two of my projects — Kubernetes-in-Kubernetes and Kubefarm.
+With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Yabai] First steps after Awesome WM">
-<meta name="twitter:title" content="[Yabai] First steps after Awesome WM">
-<meta property="og:url" content="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
-<meta property="twitter:url" content="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+<meta property="og:title" content="Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm">
+<meta name="twitter:title" content="Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm">
+<meta property="og:url" content="https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
+<meta property="twitter:url" content="https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
 <meta property="og:site_name" content="kvaps | personal blog">
 <meta property="og:description" content="
-After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.
-Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃
-Some hardware keys are rebinded using Karabiner.
-As main browser I use Firefox with TreeStyleTab and Dustman extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?
-Terminal configuration and colors moved from my previous laptop.">
+When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider WEDOS Internet a.s and today I&rsquo;ll show you two of my projects — Kubernetes-in-Kubernetes and Kubefarm.
+With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?">
 <meta name="twitter:description" content="
-After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.
-Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃
-Some hardware keys are rebinded using Karabiner.
-As main browser I use Firefox with TreeStyleTab and Dustman extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?
-Terminal configuration and colors moved from my previous laptop.">
+When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider WEDOS Internet a.s and today I&rsquo;ll show you two of my projects — Kubernetes-in-Kubernetes and Kubefarm.
+With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-10-24T00:00:00">
+    <meta property="article:published_time" content="2021-12-22T00:00:00">
   
   
-    <meta property="article:modified_time" content="2021-10-24T00:00:00">
+    <meta property="article:modified_time" content="2021-12-22T00:00:00">
   
   
   
@@ -69,14 +57,14 @@ Terminal configuration and colors moved from my previous laptop.">
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=640">
 
 
-    <title>[Yabai] First steps after Awesome WM</title>
+    <title>Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm</title>
 
     <link rel="icon" href="https://kvaps.github.io/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+    <link rel="canonical" href="https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -297,17 +285,17 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 itemprop="headline"> 
-      <a class="link" href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" target="_blank" itemprop="url">
-        [Yabai] First steps after Awesome WM
+      <a class="link" href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/" target="_blank" itemprop="url">
+        Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm
       </a>
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-10-24T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-12-22T00:00:00Z">
         
-  October 24, 2021
+  December 22, 2021
 
       </time>
     
@@ -318,12 +306,9 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://i.redd.it/p3zkihioqev71.png" alt=""></p>
-<p>After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.</p>
-<p>Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃<br>
-Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.org/">Karabiner</a>.</p>
-<p>As main browser I use Firefox with <a href="https://addons.mozilla.org/en/firefox/addon/tree-style-tab/">TreeStyleTab</a> and <a href="https://addons.mozilla.org/en/firefox/addon/dustman/">Dustman</a> extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?</p>
-<p>Terminal configuration and colors moved from my previous laptop.</p>
+              <p><a href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/"><img src="https://pbs.twimg.com/media/FHMnruzWYAAT_xv?format=png" alt="Kubernetes-in-Kubernetes - We need to go deeper"></a></p>
+<p>When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider <strong>WEDOS Internet a.s</strong> and today I&rsquo;ll show you two of my projects — <a href="https://github.com/kvaps/kubernetes-in-kubernetes">Kubernetes-in-Kubernetes</a> and <a href="https://github.com/kvaps/kubefarm">Kubefarm</a>.</p>
+<p>With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?</p>
               
             </div>
           </div>
@@ -338,7 +323,7 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/" data-tooltip="Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -346,7 +331,7 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/" data-tooltip="How to Resolve Split Brain in DRBD9">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/" data-tooltip="[Yabai] First steps after Awesome WM">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -364,19 +349,19 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -424,7 +409,7 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/" data-tooltip="Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -432,7 +417,7 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/" data-tooltip="How to Resolve Split Brain in DRBD9">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/" data-tooltip="[Yabai] First steps after Awesome WM">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -450,19 +435,19 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -492,19 +477,19 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2021%2F12%2Fkubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2021%2F12%2Fkubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2021%2F10%2Fyabai-first-steps-after-awesome-wm%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2021%2F12%2Fkubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -596,9 +581,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/kvaps.github.io\/2021\/10\/yabai-first-steps-after-awesome-wm\/';
+          this.page.url = 'https:\/\/kvaps.github.io\/2021\/12\/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm\/';
           
-            this.page.identifier = '\/2021\/10\/yabai-first-steps-after-awesome-wm\/'
+            this.page.identifier = '\/2021\/12\/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm\/'
           
         };
         (function() {
