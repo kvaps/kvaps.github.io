@@ -6,7 +6,24 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: меняем коней на переправе</title>
+      <link>https://kvaps.github.io/ru/2021/12/kubernetes-%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5/</link>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/12/kubernetes-%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/dIKKBj5EQrA&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/dIKKBj5EQrA/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Андрей Квапил, Solutions Architect, Флант&lt;/p&gt;
+&lt;p&gt;Эксперт делится опытом миграции между разными CNI, CSI и CRI на живой инфраструктуре, рассказывает, какие проблемы при этом возможны и как их избежать.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CSI-, CNI- и CRI-интерфейсы и логика их работы;&lt;/li&gt;
+&lt;li&gt;устройство сети в Kubernetes и способы ее диагностики;&lt;/li&gt;
+&lt;li&gt;как изменять иммутабельные объекты без прямого вмешательства в etcd;&lt;/li&gt;
+&lt;li&gt;как во Фланте распилили огромный Kubernetes-кластер на несколько маленьких без даунтайма.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>Андрей Квапил: «Уже Несколько Лет Мы Делаем В Kubernetes То, Что Только Сейчас Готовится К Production Ready»</title>
       <link>https://kvaps.github.io/ru/2021/11/%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB-%D1%83%D0%B6%D0%B5-%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BB%D0%B5%D1%82-%D0%BC%D1%8B-%D0%B4%D0%B5%D0%BB%D0%B0%D0%B5%D0%BC-%D0%B2-kubernetes-%D1%82%D0%BE-%D1%87%D1%82%D0%BE-%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81-%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%81%D1%8F-%D0%BA-production-ready/</link>
@@ -20,6 +37,27 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;-начнем-издалека-ты-помнишь-когда-впервые-начал-интересоваться-ит&#34;&gt;— Начнем издалека. Ты помнишь, когда впервые начал интересоваться ИТ?&lt;/h3&gt;
 &lt;p&gt;— Первый компьютер в нашей семье появился у деда — он работал профессором в МГУ. Это был Pentium 1 133 Mhz с 32 Мбайт памяти, еще с кнопкой Turbo. Мои старшие братья часто играли на нем в Larry, а мне не разрешали. Но меня тогда интересовал не сугубо развратный подтекст игры, а то, насколько широко она использует возможности компьютера. Звуковых карт тогда еще не было, но музыка проигрывалась через спикер. Мне это показалось крутым: компьютер играет музыку, ничего себе!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Чем платить за OpenSource?</title>
+      <link>https://kvaps.github.io/ru/2021/11/%D1%87%D0%B5%D0%BC-%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0-opensource/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2021/11/%D1%87%D0%B5%D0%BC-%D0%BF%D0%BB%D0%B0%D1%82%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0-opensource/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/Kk7OJXTwIKM&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/Kk7OJXTwIKM/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WEDOS Internet, a.s., Андрей Квапил, Облачный архитектор и инженер DevOps&lt;/p&gt;
+&lt;p&gt;Крупнейший чешский хостинг WEDOS построил свой бизнес преимущественно на свободных технологиях, таких как Kubernetes, OpenNebula, Nextcloud и LINSTOR.
+Андрей поделится опытом эксплуатации СПО и расскажет о проблемах и решениях, с которыми непременно придётся столкнуться каждому кто захочет повторить этот путь.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Чем отличается использование свободных и проприетарных решений на практике&lt;/li&gt;
+&lt;li&gt;Модели жизни свободного продукта и почему сейчас СПО стало таким популярным&lt;/li&gt;
+&lt;li&gt;Что придётся пересмотреть в вашем бизнесе для того чтобы комфортно чувствовать себя в этой среде&lt;/li&gt;
+&lt;li&gt;Когда рационально использование СПО, а когда нет?&lt;/li&gt;
+&lt;li&gt;Свобоное значит бесплатное? - или всё-таки нет?&lt;/li&gt;
+&lt;li&gt;Масштабирование до бесконечности со свободными решениями&lt;/li&gt;
+&lt;li&gt;Сила комьюнити, и почему им не стоит пренебрегать&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>

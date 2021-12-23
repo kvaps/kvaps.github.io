@@ -284,6 +284,131 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/270187/" target="_blank">
+      
+          Строим свое собственное отказоустойчивое облако на базе OpenNebula с Ceph, MariaDB Galera Cluster и OpenvSwitch
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
+        
+  
+  
+  
+  
+    16 Ноябрь 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt=""> На этот раз я бы хотел рассказать, как настроить сей сабж, в частности каждый отдельный компонент, что бы в итоге получить свое собственное, расширяемое, отказоустойчивое облако на базе OpenNebula. В данной статье я рассмотрю следующие моменты:</p>
+<ul>
+<li><strong><a href="http://habr.com/post/270187/#ceph">Установка Ceph, распределенного хранилища</a></strong>. <em>(Я буду описывать установку двухуровневого хранилища с кэширующим пулом из SSD-дисков)</em></li>
+<li><strong><a href="http://habr.com/post/270187/#galera">Установка MySQL, Galera кластера с мастер-мастер репликацией</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#openvswitch">Установка софт-свича OpenvSwitch</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#opennebula">Установка непосредственно самой OpenNebula</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#pacemaker">Настройка отказоустойчивого кластера</a></strong></li>
+<li><strong><a href="http://habr.com/post/270187/#configuration">Первоначальная конфигурация</a></strong></li>
+</ul>
+<p>Темы сами по себе очень интересные, так что даже если вас не интересует конечная цель, но интересует настройка какого-нибудь отдельного компонента. Милости прошу под кат.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/270187/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/268711/" target="_blank">
+      
+          Установка CentOS на ZFS в UEFI
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-10-13T15:37:00Z">
+        
+  
+  
+  
+  
+    13 Октябрь 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
+<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
+<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS">фишками</a>.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/268711/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/266375/" target="_blank">
       
           Настраиваем сочетания клавиш в Linux наподобие Mac OS X
@@ -555,124 +680,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/216101/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="http://www.psjailbreak.ru/2012/11/03/proshivka-rebug-421.html" target="_blank">
-      
-          Прошивка Rebug 4.21
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2012-11-03T14:39:00Z">
-        
-  
-  
-  
-  
-    3 Ноябрь 2012
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="http://www.psjailbreak.ru/uploads/posts/2012-11/thumbs/1351956551_red_scorpion_3_sml.png" alt=""></p>
-<p>Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой <a href="http://rebug.me/rebug-3-55-3-and-4-21-1-rex-editions-and-999-downgrader/">теме</a>.</p>
-      
-      <p>
-        
-          <a href="http://www.psjailbreak.ru/2012/11/03/proshivka-rebug-421.html" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/2012/09/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/">
-      
-          Установка Photoshop на Debian или Ubuntu и последующая интеграция его в систему
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2012-09-19T16:31:00Z">
-        
-  
-  
-  
-  
-    19 Сентябрь 2012
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>Сейчас я расскажу вам как установить Photoshop на debian или ubuntu, который будет вполне очень даже стабильно работать.<br>
-О том как создать кнопку запуска, и как правильно установить последнюю версию wine под debian squeeze, debian wheezy или ubuntu.<br>
-И о том как интегрировать Photoshop в систему, что бы открывались .PSD и другие файлы, непосредственно из самой системы.<br>
-Всего за десять простых шагов:</p>
-      
-      <p>
-        
-          <a href="https://kvaps.github.io/ru/2012/09/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-photoshop-%D0%BD%D0%B0-debian-%D0%B8%D0%BB%D0%B8-ubuntu-%D0%B8-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B5%D0%B3%D0%BE-%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%83/" class="postShorten-excerpt_link link">Читать далее</a>
         
         
       </p>
