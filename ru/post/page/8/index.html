@@ -285,6 +285,71 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/post/319550/" target="_blank">
+      
+          Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2017-01-25T08:52:00Z">
+        
+  
+  
+  
+  
+    25 Январь 2017
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
+<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
+Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
+<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
+<ul>
+<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.</li>
+<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
+<li><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</li>
+</ul>
+      
+      <p>
+        
+          <a href="https://habr.com/post/319550/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://habr.com/post/400137/" target="_blank">
       
           Leaf Browser Alpha — браузер с древовидными вкладками
@@ -642,67 +707,6 @@ zfs тестировался на local storage, а не на zvol, т.к. я д
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/270207/" target="_blank">
-      
-          Metronome IM и Jappix: многофункциональный Jabber, без сложностей в настройке
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-02-24T08:27:00Z">
-        
-  
-  
-  
-  
-    24 Февраль 2016
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/d27/fd5/390/d27fd53901887adb98471de642665d58.png" alt=""></p>
-<p>Что если я расскажу вам как без особых усилий поднять свой собственный jabber-сервер со всеми новомодными фичами, такими как: архивация, синхронизация сообщений между клтентами, уведомления о прочтении, публичные чаты и многое другое…
-Так же поделюсь с вами замечательным Jabber-клиентом который не менее интересен, он поддерживает аудио и видео звонки, имеет неплохой интерфейс и работает прямо из браузера.
-То и другое вы получите абсолютно бесплатно, так-как и сервер и клиент лицензируются по свободнлй лицензии.</p>
-<p>Речь пойдет об <strong>Metronome IM</strong> и <strong>Jappix</strong>.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/270207/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -732,7 +736,7 @@ zfs тестировался на local storage, а не на zvol, т.к. я д
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2021 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2022 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

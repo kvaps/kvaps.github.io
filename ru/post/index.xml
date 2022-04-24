@@ -6,7 +6,19 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 17 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Apr 2022 10:37:00 +0300</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>«Меняем коней на переправе»: опыт замены компонентов Kubernetes на работающем кластере</title>
+      <link>https://kvaps.github.io/ru/2022/04/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-kubernetes-%D0%BD%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%BC-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B5/</link>
+      <pubDate>Fri, 01 Apr 2022 10:37:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/04/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-kubernetes-%D0%BD%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%BC-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B5/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ch/gl/xn/chglxn53qb8qqo-hou3qxtcx5xc.png&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;Fix by &lt;a href=&#34;https://www.deviantart.com/macrebisz&#34;&gt;MacRebisz&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Привет, я Андрей Квапил, Solution Architect в компании «Флант». Моя специализация — архитектурные решения на базе Kubernetes, в том числе на bare metal, а также разработка и эксплуатация облачных платформ и software-defined storage.&lt;/p&gt;
+&lt;p&gt;В Kubernetes часто можно столкнуться с ограничениями, immutable-полями и прочими особенностями. Я хочу показать, что при необходимости такие ограничения можно обходить, а также познакомить вас с паттерном controller и наглядно продемонстрировать работу CNI-, CSI- и CRI-плагинов.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Kubernetes: меняем коней на переправе</title>
       <link>https://kvaps.github.io/ru/2021/12/kubernetes-%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5/</link>
