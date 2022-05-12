@@ -6,7 +6,43 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 01 Apr 2022 10:37:00 +0300</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 May 2022 08:27:00 +0300</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Исследование производительности свободных хранилищ LINSTOR, Ceph, Mayastor и Vitastor в Kubernetes</title>
+      <link>https://kvaps.github.io/ru/2022/05/%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89-linstor-ceph-mayastor-%D0%B8-vitastor-%D0%B2-kubernetes/</link>
+      <pubDate>Thu, 05 May 2022 08:27:00 +0300</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/05/%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89-linstor-ceph-mayastor-%D0%B8-vitastor-%D0%B2-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/r/w1560/getpro/habr/upload_files/20b/c44/884/20bc4488489b22e6718c4f8a4cd2b7ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Кажется это уже стало традицией: каждый раз, когда я выхожу на новое рабочее место, моя деятельность начинается с бенчмарков различных SDS-решений. Мой приход во «Флант» не стал исключением. Я попал в команду разработки Kubernetes-платформы &lt;a href=&#34;https://deckhouse.io/&#34;&gt;Deckhouse&lt;/a&gt;, где решили развивать возможность запуска виртуальных машин в Kubernetes. Но для этого сначала потребовалось найти простое и надежное хранилище блочного типа, которое можно предложить клиентам платформы.&lt;/p&gt;
+&lt;p&gt;Я взял несколько свободных решений и протестировал, как они поведут себя в тех или иных условиях. В первую очередь интересовала производительность DRBD в различных конфигурациях и сравнение с Ceph.&lt;/p&gt;
+&lt;p&gt;Но рынок программно-определяемых хранилищ не стоит на месте и постоянно растёт. Появляются новые амбициозные проекты, включая недавно релизнутый Mayastor и pet-проект моего товарища-соратника Vitastor. Результаты оказались очень интересными.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DevOps Backstage: K8S CSI с Андреем Квапилом</title>
+      <link>https://kvaps.github.io/ru/2022/04/devops-backstage-k8s-csi-%D1%81-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%BC-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB%D0%BE%D0%BC/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/04/devops-backstage-k8s-csi-%D1%81-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%BC-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB%D0%BE%D0%BC/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FHW6IDJVcAAUOII?format=jpg&amp;amp;name=small&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Сохраняем традицию пятничного подкаста
+Почувствуйте легкое намякивание на event  про тёплые беседы о сторадже в kubernetes&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://t.me/kvaps&#34;&gt;@kvaps&lt;/a&gt; Андрей Квапил&lt;/em&gt; Андрей Квапил в режиме ReadOne ListenMany сохранит для вас следующую информацию:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Зачем вообще нужен сторадж в Kubernetes&lt;/li&gt;
+&lt;li&gt;Три типа хранилищ&lt;/li&gt;
+&lt;li&gt;Вам не нужен ReadWriteMany&lt;/li&gt;
+&lt;li&gt;Local volumes или hostPath, local path provisioner в чем разница?&lt;/li&gt;
+&lt;li&gt;Как появился и что представляет собой CSI&lt;/li&gt;
+&lt;li&gt;Как работают снапшоты в Kubernetes&lt;/li&gt;
+&lt;li&gt;Data locality и кастомный шедулинг подов в кластере&lt;/li&gt;
+&lt;li&gt;Впечатления от Ceph, LINSTOR и Mayastor&lt;/li&gt;
+&lt;li&gt;Блочные тома в Kubernetes и их необычные свойства&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;В прямом эфире в пятницу 22/04 в 20:00&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>«Меняем коней на переправе»: опыт замены компонентов Kubernetes на работающем кластере</title>
       <link>https://kvaps.github.io/ru/2022/04/%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D0%BC-%D0%BA%D0%BE%D0%BD%D0%B5%D0%B9-%D0%BD%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%B0%D0%B2%D0%B5-%D0%BE%D0%BF%D1%8B%D1%82-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-kubernetes-%D0%BD%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%BC-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B5/</link>
@@ -116,7 +152,7 @@
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/ru/2021/07/#2-devops-%D0%BA%D1%83%D1%80%D0%B8%D0%BB%D0%BA%D0%B0.-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9.-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%B8-gitops.-%D0%B0%D0%BD%D0%B4%D1%80%D0%B5%D0%B9-%D0%BA%D0%B2%D0%B0%D0%BF%D0%B8%D0%BB./</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cdn4.telesco.pe/file/nAac-3IRGqjmIzc8oUQTJzp7XvZrxbpuSupZC3JO058pTV2MFdIbGmqTHLb6aFivKBcZuwbMyoCGm1xBrudEIxNgvXJm-QSCZubkCCBtugJaIo57yoMpcUeCS5ZNViKA2EnSFp1Fm9HFSrf9rjpcz2b7gnbdmUYTY6hqeexIT79pUpPLd_4wW9sguzuqysRxo9uqR5ACFhCjoak-y4KGOUEOvxlI7_lGUF49fj_BVzB__kg5_nZZ24oFshx9JK7KyWTw659B4x6hv7nULpglMBz0xNu5o9bEMFZZFxcoZrjx9kE4ZeriSQReshQfjIIKyqPdW_ZZ0z28H-0NJ2L8VA.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FHW6IDJVcAAUOII?format=jpg&amp;amp;name=small&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Мальчишки и девчонки, а так же их родители!&lt;br&gt;
 В эту пятницу в 20.00 новая серия подкаста &amp;ldquo;DevOps курилка&amp;rdquo;.&lt;br&gt;
 У нас есть задачка для DevOps с опытом. Представьте, что у вас на проекте Gitlab, Kubernetes и микросервисы.&lt;br&gt;
