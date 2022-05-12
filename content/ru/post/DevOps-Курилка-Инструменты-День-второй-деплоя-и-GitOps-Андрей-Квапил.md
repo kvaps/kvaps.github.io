@@ -4,7 +4,7 @@ date: 2021-07-09
 link: https://t.me/devops_backstage/13
 ---
 
-![](https://cdn4.telesco.pe/file/nAac-3IRGqjmIzc8oUQTJzp7XvZrxbpuSupZC3JO058pTV2MFdIbGmqTHLb6aFivKBcZuwbMyoCGm1xBrudEIxNgvXJm-QSCZubkCCBtugJaIo57yoMpcUeCS5ZNViKA2EnSFp1Fm9HFSrf9rjpcz2b7gnbdmUYTY6hqeexIT79pUpPLd_4wW9sguzuqysRxo9uqR5ACFhCjoak-y4KGOUEOvxlI7_lGUF49fj_BVzB__kg5_nZZ24oFshx9JK7KyWTw659B4x6hv7nULpglMBz0xNu5o9bEMFZZFxcoZrjx9kE4ZeriSQReshQfjIIKyqPdW_ZZ0z28H-0NJ2L8VA.jpg)
+![](https://pbs.twimg.com/media/FHW6IDJVcAAUOII?format=jpg&name=small)
 
 Мальчишки и девчонки, а так же их родители!  
 В эту пятницу в 20.00 новая серия подкаста "DevOps курилка".  
