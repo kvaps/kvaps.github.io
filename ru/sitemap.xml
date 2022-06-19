@@ -2,8 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kvaps.github.io/ru/2022/05/how-is-cloud-computing-changing-the-way-of-mind/</loc>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2022/05/how-is-cloud-computing-changing-the-way-of-mind/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2022/05/how-is-cloud-computing-changing-the-way-of-mind/"
+                />
+  </url><url>
     <loc>https://kvaps.github.io/ru/</loc>
-    <lastmod>2022-05-05T08:27:00+03:00</lastmod>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -16,7 +29,7 @@
                 />
   </url><url>
     <loc>https://kvaps.github.io/ru/post/</loc>
-    <lastmod>2022-05-05T08:27:00+03:00</lastmod>
+    <lastmod>2022-05-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"

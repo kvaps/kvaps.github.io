@@ -175,7 +175,7 @@ if (!doNotTrack) {
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=kMU3JAsFXQk&amp;list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h" target="_blank" rel="noopener">
+      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=Ubiuj7sJQ0Q&amp;list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
       
@@ -265,6 +265,113 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" target="_blank">
+      
+          Breaking down and fixing etcd cluster
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-03-05T14:05:00&#43;01:00">
+        
+  March 5, 2021
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png" alt=""></p>
+<p><strong>etcd</strong> is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.</p>
+<p>In the <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3">previous article</a>, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" target="_blank">
+      
+          Breaking down and fixing Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-02-21T12:00:00&#43;01:00">
+        
+  February 21, 2021
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png" alt=""></p>
+<p><strong>Kubernetes</strong> is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -536,119 +643,6 @@ if (!doNotTrack) {
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" target="_blank">
-      
-          Attaching an Elastic IP to EKS worker node
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-06-04T16:12:27Z">
-        
-  June 4, 2020
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png" alt=""></p>
-<p>Hi, I also faced with an interesting task to run STUN server in Kubernetes.</p>
-<p>STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes <a href="https://github.com/kubernetes/kubernetes/issues/23864">has no support for specifying port ranges in services</a>. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.</p>
-<p>The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" target="_blank">
-      
-          Backup storage for thousands of virtual machines using free tools
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-05-29T20:06:10Z">
-        
-  May 29, 2020
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png" alt=""></p>
-<p>Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.</p>
-<p>Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.</p>
-<p>Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.</p>
-<p>Let’s consider what alternatives are:</p>
-<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy <a href="https://min.io/">minio</a>.</p>
-<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -670,7 +664,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">page 2 of 6</li>
+      <li class="pagination-number">page 2 of 7</li>
     </ul>
   </div>
 

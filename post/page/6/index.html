@@ -175,7 +175,7 @@ if (!doNotTrack) {
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=kMU3JAsFXQk&amp;list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h" target="_blank" rel="noopener">
+      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=Ubiuj7sJQ0Q&amp;list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
       
@@ -266,6 +266,127 @@ if (!doNotTrack) {
         <section class="postShorten-group main-content-wrap">
           
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
+      
+          ONLYOFFICE configuration for docker-compose (and letsencrypt).
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
+        
+  December 14, 2016
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <ul>
+<li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+<span style="color:#75715e"># wait 1-2 minutes.</span>
+sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
+sudo docker rm -fv communityserver
+</code></pre></div>
+      
+      <p>
+        
+          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/270187/index.html" target="_blank">
+      
+          Build your own failover cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [machine translation]
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
+        
+  November 16, 2015
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="">
+This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p>
+<ul>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#ceph">Install Ceph, distributed storage</a></strong>. <em>(I will describe the installation of a two-tier storage with a caching pool of SSDs)</em></li>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#galera">Install MySQL, Galera Cluster with master replication</a></strong></li>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#openvswitch">Installing OpenvSwitch soft switch</a></strong></li>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#opennebula">Installing directly OpenNebula itself</a></strong></li>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#pacemaker">Configuring Failover Cluster</a></strong></li>
+<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#configuration">Initial configuration</a></strong></li>
+</ul>
+<p>The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut.</p>
+      
+      <p>
+        
+          <a href="https://weekly-geekly.github.io/articles/270187/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -541,59 +662,6 @@ This time we will install it.</p>
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/216101/index.html" target="_blank">
-      
-          We lift the VPN tunnel from the world home bypassing NAT [machine translation]
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2014-03-18T14:51:00Z">
-        
-  March 18, 2014
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
-<p>I want to tell you about how having your VPS server on the Internet, you can raise a tunnel to your home network. And do not pay at the same time for a static IP provider, and even being behind a NAT, still make your home services available on the Internet.</p>
-      
-      <p>
-        
-          <a href="https://weekly-geekly.github.io/articles/216101/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -607,8 +675,15 @@ This time we will install it.</p>
           </li>
         
         
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://kvaps.github.io/post/page/7/">
+              <span>OLDER POSTS</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
       
-      <li class="pagination-number">page 6 of 6</li>
+      <li class="pagination-number">page 6 of 7</li>
     </ul>
   </div>
 
