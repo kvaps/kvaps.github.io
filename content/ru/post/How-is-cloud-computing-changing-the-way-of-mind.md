@@ -1,7 +1,7 @@
 ---
 title: "How is cloud computing changing the way of mind"
 date: 2022-05-31
-link: https://youtu.be/Ubiuj7sJQ0Q
+link: https://youtu.be/ZUeGxBoij7c
 ---
 
 ![How is cloud computing changing the way of mind](https://pbs.twimg.com/media/FTnuV5RWYAAJzGQ?format=jpg&name=large)
