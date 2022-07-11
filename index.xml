@@ -6,7 +6,17 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Panel discussion: Current state of Open Source</title>
+      <link>https://kvaps.github.io/2022/06/panel-discussion-current-state-of-open-source/</link>
+      <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2022/06/panel-discussion-current-state-of-open-source/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://img.youtube.com/vi/SjGj9weIigo/maxresdefault.jpg&#34; alt=&#34;Panel discussion: Current state of Open Source&#34;&gt;&lt;/p&gt;
+&lt;p&gt;What has changed in the open-source communities after 2 years of lockdown? What are the threats and opportunities for open-source communities right now? We&amp;rsquo;ll discuss this and much more with the local open-source contributors and leaders.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes</title>
       <link>https://kvaps.github.io/2022/06/comparing-ceph-linstor-mayastor-and-vitastor-storage-performance-in-kubernetes/</link>
