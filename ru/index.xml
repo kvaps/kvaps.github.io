@@ -6,7 +6,39 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitOps — что это такое и с чем его едят?</title>
+      <link>https://kvaps.github.io/ru/2022/09/gitops-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8-%D1%81-%D1%87%D0%B5%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B5%D0%B4%D1%8F%D1%82/</link>
+      <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/09/gitops-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%B8-%D1%81-%D1%87%D0%B5%D0%BC-%D0%B5%D0%B3%D0%BE-%D0%B5%D0%B4%D1%8F%D1%82/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/upload_files/d73/899/d9f/d73899d9f33419b4005cc1cc4a978d25.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;На самом деле почти никто не знает, что такое GitOps. Я тоже заблуждался, пока не начал готовить доклад, а потом статью по этой теме. Самое распространенное определение GitOps — это «хранение состояния в Git», но оно не единственное и не самое главное. Это звучное словечко  придумали в Weaveworks, но его название несколько разнится с его реальным пониманием. Созвучие с DevOps — скорее, маркетинговый ход, чем реальное отражение сущности. Основная идея GitOps в том, что помимо хранения состояния в Git, у нас есть непрерывный процесс его синхронизации с реальным миром, то есть, что у вас Kubernetes-кластере или где либо ещё в вашем окружении.&lt;/p&gt;
+&lt;p&gt;Меня зовут Андрей Квапил. Я работал в чешском хостинге WEDOS. Он не сильно популярен в России, но это крупнейший хостинг на территории Чехии (просто Чехия маленькая).  Сейчас я работаю во Фланте, но именно на примере европейского хостинга WEDOS, хочу рассказать историю имплементации GitOps.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LINSTOR — это как Kubernetes, но для блочных устройств (обзор и видео доклада)</title>
+      <link>https://kvaps.github.io/ru/2022/08/linstor-%D1%8D%D1%82%D0%BE-%D0%BA%D0%B0%D0%BA-kubernetes-%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%B8-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0/</link>
+      <pubDate>Fri, 12 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/08/linstor-%D1%8D%D1%82%D0%BE-%D0%BA%D0%B0%D0%BA-kubernetes-%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%B8-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/upload_files/97a/3ab/82a/97a3ab82a41b50da48ad90a3a39e9893.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;В июне я выступил на объединенной конференции &lt;a href=&#34;https://devopsconf.io/moscow/2022/abstracts/7948&#34;&gt;DevOpsConf &amp;amp; TechLead Conf 2022&lt;/a&gt;. Доклад был посвящен LINSTOR — Open Source-хранилищу от компании LINBIT (разработчики DRBD). Основной идеей выступления было показать [на примере Kubernetes], как работает и устроен LINSTOR, какие проблемы решает, как его правильно настроить и использовать. Эта статья — основная выжимка из доклада (его полное видео см. в конце).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Снапшоты в Kubernetes: что это и как ими пользоваться</title>
+      <link>https://kvaps.github.io/ru/2022/08/%D1%81%D0%BD%D0%B0%D0%BF%D1%88%D0%BE%D1%82%D1%8B-%D0%B2-kubernetes-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D0%B8-%D0%BA%D0%B0%D0%BA-%D0%B8%D0%BC%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F/</link>
+      <pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2022/08/%D1%81%D0%BD%D0%B0%D0%BF%D1%88%D0%BE%D1%82%D1%8B-%D0%B2-kubernetes-%D1%87%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D0%B8-%D0%BA%D0%B0%D0%BA-%D0%B8%D0%BC%D0%B8-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F/</guid>
+      <description>&lt;p&gt;С появлением snapshot-controller в Kubernetes появилась возможность создавать снапшоты для совместимых с ними CSI-драйверов и облачных провайдеров.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/xq/2k/dx/xq2kdxlztck5dg38pemdttdywje.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Как и всё в Kubernetes, имплементация API является универсальной и не зависит от какого-либо вендора, что позволяет нам рассмотреть данный функционал в общем порядке. Как же устроены снапшоты и какую пользу они могут принести пользователям Kubernetes?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LINSTOR — это как Kubernetes, но для блочных устройств</title>
       <link>https://kvaps.github.io/ru/2022/06/linstor-%D1%8D%D1%82%D0%BE-%D0%BA%D0%B0%D0%BA-kubernetes-%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2/</link>
@@ -44,7 +76,7 @@
       <pubDate>Thu, 05 May 2022 08:27:00 +0300</pubDate>
       
       <guid>https://kvaps.github.io/ru/2022/05/%D0%B8%D1%81%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89-linstor-ceph-mayastor-%D0%B8-vitastor-%D0%B2-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/r/w1560/getpro/habr/upload_files/20b/c44/884/20bc4488489b22e6718c4f8a4cd2b7ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/upload_files/fba/934/43b/fba93443bb66510caf570f29e421fc88.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Кажется это уже стало традицией: каждый раз, когда я выхожу на новое рабочее место, моя деятельность начинается с бенчмарков различных SDS-решений. Мой приход во «Флант» не стал исключением. Я попал в команду разработки Kubernetes-платформы &lt;a href=&#34;https://deckhouse.io/&#34;&gt;Deckhouse&lt;/a&gt;, где решили развивать возможность запуска виртуальных машин в Kubernetes. Но для этого сначала потребовалось найти простое и надежное хранилище блочного типа, которое можно предложить клиентам платформы.&lt;/p&gt;
 &lt;p&gt;Я взял несколько свободных решений и протестировал, как они поведут себя в тех или иных условиях. В первую очередь интересовала производительность DRBD в различных конфигурациях и сравнение с Ceph.&lt;/p&gt;
 &lt;p&gt;Но рынок программно-определяемых хранилищ не стоит на месте и постоянно растёт. Появляются новые амбициозные проекты, включая недавно релизнутый Mayastor и pet-проект моего товарища-соратника Vitastor. Результаты оказались очень интересными.&lt;/p&gt;</description>

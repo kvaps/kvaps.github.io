@@ -6,7 +6,18 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes snapshots: What are they and how to use them? </title>
+      <link>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</link>
+      <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/11/kubernetes-snapshots.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;With the introduction of the snapshot-controller in Kubernetes, it is now possible to create snapshots for CSI drivers and cloud providers that support this feature.&lt;/p&gt;
+&lt;p&gt;The API is universal and vendor-independent, which is typical for Kubernetes, so we can explore it without getting into the specifics of a particular implementation. Let’s take a closer look at snapshots and see how they can benefit Kubernetes users.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Panel discussion: Current state of Open Source</title>
       <link>https://kvaps.github.io/2022/06/panel-discussion-current-state-of-open-source/</link>
@@ -23,7 +34,7 @@
       <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kvaps.github.io/2022/06/comparing-ceph-linstor-mayastor-and-vitastor-storage-performance-in-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://blog.flant.com/wp-content/uploads/sites/2/2022/06/performance_study_of_linstor_ceph_mayastor_and_vitastor_free_storage_preview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/06/performance_study_of_linstor_ceph_mayastor_and_vitastor_free_storage_preview.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the &lt;a href=&#34;https://deckhouse.io/&#34;&gt;Deckhouse Kubernetes platform&lt;/a&gt; when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.&lt;/p&gt;
 &lt;p&gt;Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device&#34;&gt;DRBD&lt;/a&gt; performance in different configurations and how they compared to &lt;a href=&#34;https://ceph.io/en/&#34;&gt;Ceph&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released &lt;a href=&#34;https://github.com/openebs/mayastor&#34;&gt;Mayastor&lt;/a&gt; and my fellow collaborator’s pet project &lt;a href=&#34;https://vitastor.io/&#34;&gt;Vitastor&lt;/a&gt;. The results were pretty exciting and surprising.&lt;/p&gt;</description>

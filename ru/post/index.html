@@ -285,6 +285,182 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/ru/company/oleg-bunin/blog/690544/" target="_blank">
+      
+          GitOps — что это такое и с чем его едят?
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-09-29T00:00:00Z">
+        
+  
+  
+  
+  
+    29 Сентябрь 2022
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/getpro/habr/upload_files/d73/899/d9f/d73899d9f33419b4005cc1cc4a978d25.jpg" alt=""></p>
+<p>На самом деле почти никто не знает, что такое GitOps. Я тоже заблуждался, пока не начал готовить доклад, а потом статью по этой теме. Самое распространенное определение GitOps — это «хранение состояния в Git», но оно не единственное и не самое главное. Это звучное словечко  придумали в Weaveworks, но его название несколько разнится с его реальным пониманием. Созвучие с DevOps — скорее, маркетинговый ход, чем реальное отражение сущности. Основная идея GitOps в том, что помимо хранения состояния в Git, у нас есть непрерывный процесс его синхронизации с реальным миром, то есть, что у вас Kubernetes-кластере или где либо ещё в вашем окружении.</p>
+<p>Меня зовут Андрей Квапил. Я работал в чешском хостинге WEDOS. Он не сильно популярен в России, но это крупнейший хостинг на территории Чехии (просто Чехия маленькая).  Сейчас я работаю во Фланте, но именно на примере европейского хостинга WEDOS, хочу рассказать историю имплементации GitOps.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/company/oleg-bunin/blog/690544/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/ru/company/flant/blog/680286/" target="_blank">
+      
+          LINSTOR — это как Kubernetes, но для блочных устройств (обзор и видео доклада)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-08-12T00:00:00Z">
+        
+  
+  
+  
+  
+    12 Август 2022
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/getpro/habr/upload_files/97a/3ab/82a/97a3ab82a41b50da48ad90a3a39e9893.png" alt=""></p>
+<p>В июне я выступил на объединенной конференции <a href="https://devopsconf.io/moscow/2022/abstracts/7948">DevOpsConf &amp; TechLead Conf 2022</a>. Доклад был посвящен LINSTOR — Open Source-хранилищу от компании LINBIT (разработчики DRBD). Основной идеей выступления было показать [на примере Kubernetes], как работает и устроен LINSTOR, какие проблемы решает, как его правильно настроить и использовать. Эта статья — основная выжимка из доклада (его полное видео см. в конце).</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/company/flant/blog/680286/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/ru/company/flant/blog/676678/" target="_blank">
+      
+          Снапшоты в Kubernetes: что это и как ими пользоваться
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-08-05T00:00:00Z">
+        
+  
+  
+  
+  
+    5 Август 2022
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p>С появлением snapshot-controller в Kubernetes появилась возможность создавать снапшоты для совместимых с ними CSI-драйверов и облачных провайдеров.</p>
+<p><img src="https://habrastorage.org/webt/xq/2k/dx/xq2kdxlztck5dg38pemdttdywje.png" alt=""></p>
+<p>Как и всё в Kubernetes, имплементация API является универсальной и не зависит от какого-либо вендора, что позволяет нам рассмотреть данный функционал в общем порядке. Как же устроены снапшоты и какую пользу они могут принести пользователям Kubernetes?</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/company/flant/blog/676678/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://youtu.be/lP81w7yr8dI" target="_blank">
       
           LINSTOR — это как Kubernetes, но для блочных устройств
@@ -437,7 +613,7 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/20b/c44/884/20bc4488489b22e6718c4f8a4cd2b7ab.png" alt=""></p>
+        <p><img src="https://habrastorage.org/getpro/habr/upload_files/fba/934/43b/fba93443bb66510caf570f29e421fc88.png" alt=""></p>
 <p>Кажется это уже стало традицией: каждый раз, когда я выхожу на новое рабочее место, моя деятельность начинается с бенчмарков различных SDS-решений. Мой приход во «Флант» не стал исключением. Я попал в команду разработки Kubernetes-платформы <a href="https://deckhouse.io/">Deckhouse</a>, где решили развивать возможность запуска виртуальных машин в Kubernetes. Но для этого сначала потребовалось найти простое и надежное хранилище блочного типа, которое можно предложить клиентам платформы.</p>
 <p>Я взял несколько свободных решений и протестировал, как они поведут себя в тех или иных условиях. В первую очередь интересовала производительность DRBD в различных конфигурациях и сравнение с Ceph.</p>
 <p>Но рынок программно-определяемых хранилищ не стоит на месте и постоянно растёт. Появляются новые амбициозные проекты, включая недавно релизнутый Mayastor и pet-проект моего товарища-соратника Vitastor. Результаты оказались очень интересными.</p>
@@ -517,194 +693,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://t.me/devops_backstage/100" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/ru/company/vk/blog/653035/" target="_blank">
-      
-          «Меняем коней на переправе»: опыт замены компонентов Kubernetes на работающем кластере
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2022-04-01T10:37:00&#43;03:00">
-        
-  
-  
-  
-  
-    1 Апрель 2022
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/webt/ch/gl/xn/chglxn53qb8qqo-hou3qxtcx5xc.png" alt="">
-<em>Fix by <a href="https://www.deviantart.com/macrebisz">MacRebisz</a></em></p>
-<p>Привет, я Андрей Квапил, Solution Architect в компании «Флант». Моя специализация — архитектурные решения на базе Kubernetes, в том числе на bare metal, а также разработка и эксплуатация облачных платформ и software-defined storage.</p>
-<p>В Kubernetes часто можно столкнуться с ограничениями, immutable-полями и прочими особенностями. Я хочу показать, что при необходимости такие ограничения можно обходить, а также познакомить вас с паттерном controller и наглядно продемонстрировать работу CNI-, CSI- и CRI-плагинов.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/ru/company/vk/blog/653035/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://youtu.be/dIKKBj5EQrA" target="_blank">
-      
-          Kubernetes: меняем коней на переправе
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-12-17T00:00:00Z">
-        
-  
-  
-  
-  
-    17 Декабрь 2021
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><a href="https://youtu.be/dIKKBj5EQrA"><img src="https://img.youtube.com/vi/dIKKBj5EQrA/maxresdefault.jpg" alt=""></a></p>
-<p>Андрей Квапил, Solutions Architect, Флант</p>
-<p>Эксперт делится опытом миграции между разными CNI, CSI и CRI на живой инфраструктуре, рассказывает, какие проблемы при этом возможны и как их избежать.</p>
-<ul>
-<li>CSI-, CNI- и CRI-интерфейсы и логика их работы;</li>
-<li>устройство сети в Kubernetes и способы ее диагностики;</li>
-<li>как изменять иммутабельные объекты без прямого вмешательства в etcd;</li>
-<li>как во Фланте распилили огромный Kubernetes-кластер на несколько маленьких без даунтайма.</li>
-</ul>
-      
-      <p>
-        
-          <a href="https://youtu.be/dIKKBj5EQrA" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/ru/company/vk/blog/590935/" target="_blank">
-      
-          Андрей Квапил: «Уже Несколько Лет Мы Делаем В Kubernetes То, Что Только Сейчас Готовится К Production Ready»
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-11-30T00:00:00Z">
-        
-  
-  
-  
-  
-    30 Ноябрь 2021
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/r/w1560/webt/kb/x3/9z/kbx39zqawtyo7-z798qjuwwpjqw.jpeg" alt=""></p>
-<p>Андрей Квапил (<a href="https://habr.com/ru/users/kvaps/">@kvaps</a>) — Solutions Architect в компании Флант. Путь в ИТ он начал с подработки эникейщиком во время учебы в школе. А сейчас создает платформы для автоматического управления инфраструктурой, участвует в open-source-сообществе, пишет статьи и выступает на конференциях. Поговорили с Андреем о его карьере в ИТ, переезде в Чехию и выступлениях на конференциях.</p>
-<blockquote>
-<p>Андрей — один из спикеров <a href="https://mcs.mail.ru/events/vk-kubernetes-conf">VK Kubernetes Conference</a>, которая пройдет 9 декабря 2021 года.</p>
-</blockquote>
-<h3 id="-начнем-издалека-ты-помнишь-когда-впервые-начал-интересоваться-ит">— Начнем издалека. Ты помнишь, когда впервые начал интересоваться ИТ?</h3>
-<p>— Первый компьютер в нашей семье появился у деда — он работал профессором в МГУ. Это был Pentium 1 133 Mhz с 32 Мбайт памяти, еще с кнопкой Turbo. Мои старшие братья часто играли на нем в Larry, а мне не разрешали. Но меня тогда интересовал не сугубо развратный подтекст игры, а то, насколько широко она использует возможности компьютера. Звуковых карт тогда еще не было, но музыка проигрывалась через спикер. Мне это показалось крутым: компьютер играет музыку, ничего себе!</p>
-      
-      <p>
-        
-          <a href="https://habr.com/ru/company/vk/blog/590935/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
