@@ -6,7 +6,18 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KubeVirt, its networking, and how we brought it to the next level</title>
+      <link>https://kvaps.github.io/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/</link>
+      <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/jp2XY-9MORM&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/jp2XY-9MORM/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Short abstract
+When choosing KubeVirt as our main virtualization solution, we were unsatisfied with the existing networking implementation. We developed and contributed some enhancements to simplify the design and get the most performance out of the network using KubeVirt.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Kubernetes snapshots: What are they and how to use them? </title>
       <link>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</link>

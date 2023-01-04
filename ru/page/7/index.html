@@ -175,7 +175,7 @@ if (!doNotTrack) {
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=ZUeGxBoij7c&amp;list=PLigW96d6EqkhiQ8a8R0q29NoPfn3jSw__" target="_blank" rel="noopener">
+      <a class="sidebar-button-link " href="https://www.youtube.com/watch?v=jp2XY-9MORM&amp;list=PLigW96d6EqkhiQ8a8R0q29NoPfn3jSw__" target="_blank" rel="noopener">
     
       <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
       
@@ -265,6 +265,64 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/441112/" target="_blank">
+      
+          Прикручиваем LDAP-авторизацию к Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-02-21T03:17:00Z">
+        
+  
+  
+  
+  
+    21 Февраль 2019
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/webt/kj/60/vi/kj60vi6ugv7bunlqdts2nlr2vja.png" alt=""></p>
+<p>Небольшая инструкция о том, как используя Keycloak можно связать Kubernetes с вашим LDAP-сервером и настроить импорт пользователей и групп. Это позволит настраивать RBAC для ваших пользователей и использовать auth-proxy чтобы защитить Kubernetes Dashboard и другие приложения, которые не умеют производить авторизацию самостоятельно.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/441112/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -629,71 +687,6 @@ if (!doNotTrack) {
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/413155/" target="_blank">
-      
-          Google&#39;s Shell Style Guide (на русском)
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-06-04T19:43:00Z">
-        
-  
-  
-  
-  
-    4 Июнь 2018
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <h1 id="предисловие">Предисловие</h1>
-<h3 id="какой-shell-использовать">Какой Shell использовать</h3>
-<p><code>Bash</code> единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.</p>
-<p>Скрипты должны начинаться с <code>#!/bin/bash</code> с минимальным набором флагов. Используйте <code>set</code> для установки опций shell, что бы вызов вашего скрипта как <code>bash &lt;script_name&gt;</code> не нарушило его функциональности.</p>
-<p>Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.</p>
-<p>Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.</p>
-<h3 id="когда-использовать-shell">Когда использовать Shell</h3>
-<p>Shell следует использовать только для небольших утилит или простых скрптов-оберток.</p>
-<p>Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/413155/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -723,7 +716,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2022 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 
