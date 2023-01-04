@@ -96,7 +96,7 @@ languages:
           identifier: youtube
           name: YouTube
           pre: <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
-          url: 'https://www.youtube.com/watch?v=ZUeGxBoij7c&list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h'
+          url: 'https://www.youtube.com/watch?v=jp2XY-9MORM&list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h'
         - weight: 4
           identifier: stackoverflow
           name: Stack Overflow
@@ -185,7 +185,7 @@ languages:
           identifier: youtube
           name: YouTube
           pre: <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
-          url: 'https://www.youtube.com/watch?v=ZUeGxBoij7c&list=PLigW96d6EqkhiQ8a8R0q29NoPfn3jSw__'
+          url: 'https://www.youtube.com/watch?v=jp2XY-9MORM&list=PLigW96d6EqkhiQ8a8R0q29NoPfn3jSw__'
       links:
         - weight: 4
           identifier: projects-archive
