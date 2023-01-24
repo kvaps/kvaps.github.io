@@ -285,6 +285,68 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://habr.com/ru/post/517966/" target="_blank">
+      
+          Разбираемся с Custom Tooling в Argo CD
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-09-06T01:04:00&#43;03:00">
+        
+  
+  
+  
+  
+    6 Сентябрь 2020
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png" alt=""></p>
+<p>Спустя некоторое время после написания <a href="https://habr.com/post/481662/">первой статьи</a>, где я ловко управлялся с jsonnet и гитлабом, я понял что пайплайны это конечно хорошо, но излишне сложно и неудобно.</p>
+<p>В большинстве случаев требуется типовая задача: &ldquo;сгенерировать YAML и положить его в Kubernetes&rdquo;. Собственно, с чем Argo CD замечательно и справляется.</p>
+<p>Argo CD позволяет подключить Git-репозиторий и синкать его состояние в Kubernetes. По умолчанию есть поддержка нескольких видов приложений: Kustomize, Helm чарты, Ksonnet, голый Jsonnet или просто директории с YAML/JSON манифестами.</p>
+<p>Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.</p>
+<p>В первую очередь интересует возможность добавления поддержки <a href="https://habr.com/ru/post/481662/">qbec</a> и <a href="https://habr.com/ru/post/481662/#git-crypt">git-crypt</a>, которые с полна были рассмотренны в предыдущей статье.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/post/517966/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://youtu.be/liNU40LECoc" target="_blank">
       
           В поисках идеального хранилища...
@@ -636,72 +698,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://habr.com/post/481662/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://www.linux.org.ru/gallery/screenshots/15403657" target="_blank">
-      
-          Моя рабочая машинка
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-12-14T05:45:07Z">
-        
-  
-  
-  
-  
-    14 Декабрь 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://www.linux.org.ru/images/18847/original.png" alt=""></p>
-<p>Вот наконец-то купил себе новый ноут. Долго выбирал из всевозможных вариантов, остановился на Lenovo ideapad 720S-13ARR с процессором AMD Ryzen 7 2700U, NVMe, Type-C и прочими прелястями жизни.</p>
-<p>На скриншоте - powerlevel10k, улучшенная и ускоренная версия powerlevel9k, лучшего powerline-шелла для zfs, ну и несколько интересных плагинов которые позволяют разукрасить консоль подобно fish.</p>
-<p>Справа выводятся модули:</p>
-<ul>
-<li>текущий контекст и неймспейс Kubernetes</li>
-<li>текущая ветка git</li>
-</ul>
-<p>В качестве рутовой файловой системы - btrfs. Каждый вызов pacman содаёт снапшот и в любой момент можно в него загрузиться прямо из меню grub.</p>
-<p>Ноут использую как дома, так и на работе. На работе подключаю его через Type-C док-станцию с двумя мониторами через displaylink, очень удобно. Очень порадовало наличие аппаратного шифрования NVMe-диска и возможность зарядки от пауэрбанка, а процессор AMD достаточно производителен и не подвержен уязвимостям Meltdown и Spectre.</p>
-      
-      <p>
-        
-          <a href="https://www.linux.org.ru/gallery/screenshots/15403657" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>

@@ -6,7 +6,17 @@
     <description>Recent content in Posts on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Шпаргалка по отладке LINSTOR в Kubernetes</title>
+      <link>https://kvaps.github.io/ru/2023/01/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B5-linstor-%D0%B2-kubernetes/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2023/01/%D1%88%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B5-linstor-%D0%B2-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://deckhouse.ru/documentation/latest/images/041-linstor/linstor-debug-cheatsheet.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(специально для платформы &lt;a href=&#34;https://deckhouse.ru&#34;&gt;Deckhouse&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>KubeVirt, its networking, and how we brought it to the next level</title>
       <link>https://kvaps.github.io/ru/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/</link>
