@@ -6,7 +6,17 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deckhouse v1.43 introduces the next-generation virtualization system</title>
+      <link>https://kvaps.github.io/2023/03/deckhouse-v1.43-introduces-the-next-generation-virtualization-system/</link>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2023/03/deckhouse-v1.43-introduces-the-next-generation-virtualization-system/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/format:webp/0*1A2KX0mHjTsez1er.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Over the past few years, we at Flant have been keeping a close eye on the technology leaders in the cloud-native space. But it’s more than merely a matter of curiosity — we have incorporated the ideas we got from them to create something new and exciting that would offer people a lot of value, which we would be pleased to share with you today. We present to you &lt;a href=&#34;https://deckhouse.io/documentation/v1.43/modules/490-virtualization/&#34;&gt;the new virtualization system&lt;/a&gt; we’ve recently introduced in the latest Deckhouse release (1.43).&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A cheatsheet for debugging LINSTOR in Kubernetes</title>
       <link>https://kvaps.github.io/2023/01/a-cheatsheet-for-debugging-linstor-in-kubernetes/</link>
