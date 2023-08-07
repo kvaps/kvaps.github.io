@@ -284,6 +284,114 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://blog.palark.com/kubernetes-storage-performance-linstor-ceph-mayastor-vitastor/" target="_blank">
+      
+          Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-06-03T00:00:00Z">
+        
+  June 3, 2022
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://blog.palark.com/wp-content/uploads/2022/06/performance_study_of_linstor_ceph_mayastor_and_vitastor_free_storage_preview.png" alt=""></p>
+<p>There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the <a href="https://deckhouse.io/">Deckhouse Kubernetes platform</a> when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.</p>
+<p>Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the <a href="https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device">DRBD</a> performance in different configurations and how they compared to <a href="https://ceph.io/en/">Ceph</a>.</p>
+<p>However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released <a href="https://github.com/openebs/mayastor">Mayastor</a> and my fellow collaborator’s pet project <a href="https://vitastor.io/">Vitastor</a>. The results were pretty exciting and surprising.</p>
+      
+      <p>
+        
+          <a href="https://blog.palark.com/kubernetes-storage-performance-linstor-ceph-mayastor-vitastor/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/ZUeGxBoij7c" target="_blank">
+      
+          How is cloud computing changing the way of mind
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-05-31T00:00:00Z">
+        
+  May 31, 2022
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://pbs.twimg.com/media/FTnuV5RWYAAJzGQ?format=jpg&amp;name=large" alt="How is cloud computing changing the way of mind"></p>
+<p>Nowadays the market offers a huge number of virtualization solutions, but in fact, they all are solving different problems, and you need to understand in which case it suits you best. In this presentation we&rsquo;ll take a look at application design approaches then and now, and will explore the difference between virtualization and cloud computing platforms, the Pets vs. Cattle approach, and the use of IaC with Kubernetes and Terraform.</p>
+      
+      <p>
+        
+          <a href="https://youtu.be/ZUeGxBoij7c" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/" target="_blank">
       
           Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm
@@ -538,113 +646,6 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" target="_blank">
-      
-          Breaking down and fixing etcd cluster
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-03-05T14:05:00&#43;01:00">
-        
-  March 5, 2021
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png" alt=""></p>
-<p><strong>etcd</strong> is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.</p>
-<p>In the <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3">previous article</a>, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" target="_blank">
-      
-          Breaking down and fixing Kubernetes
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-02-21T12:00:00&#43;01:00">
-        
-  February 21, 2021
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png" alt=""></p>
-<p><strong>Kubernetes</strong> is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -666,7 +667,7 @@ Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.o
           </li>
         
       
-      <li class="pagination-number">page 2 of 7</li>
+      <li class="pagination-number">page 2 of 8</li>
     </ul>
   </div>
 

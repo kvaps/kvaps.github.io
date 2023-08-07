@@ -285,6 +285,119 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" target="_blank">
+      
+          Attaching an Elastic IP to EKS worker node
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-06-04T16:12:27Z">
+        
+  June 4, 2020
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png" alt=""></p>
+<p>Hi, I also faced with an interesting task to run STUN server in Kubernetes.</p>
+<p>STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes <a href="https://github.com/kubernetes/kubernetes/issues/23864">has no support for specifying port ranges in services</a>. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.</p>
+<p>The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/attaching-an-elastic-ip-to-eks-worker-node-f69b9d8fa521" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" target="_blank">
+      
+          Backup storage for thousands of virtual machines using free tools
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-05-29T20:06:10Z">
+        
+  May 29, 2020
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png" alt=""></p>
+<p>Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.</p>
+<p>Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.</p>
+<p>Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.</p>
+<p>Let’s consider what alternatives are:</p>
+<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy <a href="https://min.io/">minio</a>.</p>
+<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://itnext.io/configuring-routing-for-metallb-in-l2-mode-7ea26e19219e" target="_blank">
       
           Configuring routing for MetalLB in L2 mode
@@ -557,113 +670,6 @@ For each new pullrequest the bot generates a preview version with your changes a
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://www.reddit.com/r/unixporn/comments/eabvkm/awesome_my_working_laptop/" target="_blank">
-      
-          [awesome] My work laptop
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-12-14T00:00:00Z">
-        
-  December 14, 2019
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://i.redd.it/iyqfr4rghh441.png" alt=""></p>
-      
-      <p>
-        
-          <a href="https://www.reddit.com/r/unixporn/comments/eabvkm/awesome_my_working_laptop/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://opennebula.org/linstor_un-new-storage-driver-for-opennebula/" target="_blank">
-      
-          “linstor_un” — New storage driver for OpenNebula
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-07-17T00:00:00Z">
-        
-  July 17, 2019
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png" alt=""></p>
-<p>Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.</p>
-<p>Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.</p>
-<p>Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.</p>
-      
-      <p>
-        
-          <a href="https://opennebula.org/linstor_un-new-storage-driver-for-opennebula/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -685,7 +691,7 @@ For each new pullrequest the bot generates a preview version with your changes a
           </li>
         
       
-      <li class="pagination-number">page 4 of 7</li>
+      <li class="pagination-number">page 4 of 8</li>
     </ul>
   </div>
 
