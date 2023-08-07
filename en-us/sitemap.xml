@@ -17,6 +17,16 @@
   </url><url>
     <loc>https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/</loc>
     <lastmod>2023-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2023/07/linstor-is-like-kubernetes-but-for-block-devices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/"
+                />
   </url><url>
     <loc>https://kvaps.github.io/post/</loc>
     <lastmod>2023-07-17T00:00:00+00:00</lastmod>
@@ -42,7 +52,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kvaps.github.io/ru/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/"
+                href="https://kvaps.github.io/ru/2023/03/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -52,6 +62,16 @@
   </url><url>
     <loc>https://kvaps.github.io/2022/11/linstor-is-like-kubernetes-but-for-block-devices-storage-day-kubernetes-on-aws/</loc>
     <lastmod>2022-11-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2022/11/linstor-is-like-kubernetes-but-for-block-devices-storage-day-kubernetes-on-aws/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2022/11/linstor-is-like-kubernetes-but-for-block-devices-storage-day-kubernetes-on-aws/"
+                />
   </url><url>
     <loc>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</loc>
     <lastmod>2022-11-02T00:00:00+00:00</lastmod>
