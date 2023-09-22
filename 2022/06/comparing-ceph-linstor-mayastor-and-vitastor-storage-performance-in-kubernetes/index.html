@@ -310,7 +310,7 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://blog.palark.com/wp-content/uploads/2022/06/performance_study_of_linstor_ceph_mayastor_and_vitastor_free_storage_preview.png" alt=""></p>
+              <p><img src="https://blog.palark.com/wp-content/uploads/2022/06/Comparing-Ceph-LINSTOR-Mayastor-and-Vitastor-storage-performance-in-Kubernetes.png" alt=""></p>
 <p>There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the <a href="https://deckhouse.io/">Deckhouse Kubernetes platform</a> when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.</p>
 <p>Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the <a href="https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device">DRBD</a> performance in different configurations and how they compared to <a href="https://ceph.io/en/">Ceph</a>.</p>
 <p>However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released <a href="https://github.com/openebs/mayastor">Mayastor</a> and my fellow collaborator’s pet project <a href="https://vitastor.io/">Vitastor</a>. The results were pretty exciting and surprising.</p>
