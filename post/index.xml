@@ -6,7 +6,17 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Evolution of Network Virtualization Technologies in Linux</title>
+      <link>https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/</link>
+      <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q2RZPvSUqJjgjOZx.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LINSTOR Is Like Kubernetes, But for Block Devices</title>
       <link>https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/</link>
@@ -153,9 +163,10 @@ Some hardware keys are rebinded using &lt;a href=&#34;https://karabiner-elements
       <pubDate>Thu, 20 May 2021 12:00:00 +0100</pubDate>
       
       <guid>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Andrey Kvа́pil joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;
-&lt;p&gt;Andrey breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/51dR8fmSyAL.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Andrei Kvapil  joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;
+&lt;p&gt;Andrei breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.
+Panel&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -113,7 +113,7 @@ if (!doNotTrack) {
         </a>
         <h4 class="sidebar-profile-name">Andrei Kvapil</h4>
         
-          <h5 class="sidebar-profile-bio">Solutions Architect</h5>
+          <h5 class="sidebar-profile-bio">Founder</h5>
         
       </div>
     
@@ -265,6 +265,63 @@ if (!doNotTrack) {
                ">
         <section class="postShorten-group main-content-wrap">
           
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://itnext.io/configure-custom-tooling-in-argo-cd-a4948d95626e" target="_blank">
+      
+          Configure Custom Tooling in Argo CD
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-09-06T01:04:00&#43;03:00">
+        
+  September 6, 2020
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/700/0*tcU-h452sfjDT96C.png" alt=""></p>
+<p>Some time after writing the <a href="https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580">first article</a>, where I cleverly use jsonnet and gitlab, I realized that pipelines are certainly good, but unnecessarily difficult and inconvenient.</p>
+<p>In most cases, a typical task is need: “to generate YAML and put it in Kubernetes”. Actually, this is what the Argo CD does really well.</p>
+<p>Argo CD allows you to connect a Git repository and sync its state to Kubernetes. By default several types of applications are supported: Kustomize, Helm charts, Ksonnet, raw Jsonnet or simple directories with YAML/JSON manifests.</p>
+<p>Most users will be happy for having just this tool set, but not everyone. In order to satisfy the needs of anyone, Argo CD has the ability to use custom tooling.</p>
+<p>First of all, I was interested in the opportunity to add support for <a href="https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#4c4b">qbec</a> and <a href="https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#29ed">git-crypt</a>, which were fully discussed in the previous article.</p>
+      
+      <p>
+        
+          <a href="https://itnext.io/configure-custom-tooling-in-argo-cd-a4948d95626e" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
           
             
   
@@ -611,64 +668,6 @@ if (!doNotTrack) {
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580" target="_blank">
-      
-          Trying new tools for building and automating the deployment in Kubernetes
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-01-15T00:00:00Z">
-        
-  January 15, 2020
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/3882/0*HJu_pzhe660WFJZ2" alt=""></p>
-<p>Hi!<br>
-Recently, many cool automation tools have been released both for building Docker images and for deploying to Kubernetes. In this regard, I decided to play with the Gitlab a little, study its capabilities and, of course, configure the pipeline.</p>
-<p>The source of inspiration for this work was the site <a href="https://kubernetes.io/">kubernetes.io</a>, which is automatically generated from <a href="github.com/kubernetes/website">source code</a>.<br>
-For each new pullrequest the bot generates a preview version with your changes automatically and provides a link for review.</p>
-<p>I tried to build a similar process from scratch, but entirely built on Gitlab CI and free tools that I used to use to deploy applications in Kubernetes. Today, I finally will tell you more about them.</p>
-<p>The article will consider such tools as: <strong>Hugo</strong>, <strong>qbec</strong>, <strong>kaniko</strong>, <strong>git-crypt</strong> and <strong>GitLab CI</strong> with dynamic environments feature.</p>
-      
-      <p>
-        
-          <a href="https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -715,13 +714,13 @@ For each new pullrequest the bot generates a preview version with your changes a
     
     <h4 id="about-card-name">Andrei Kvapil</h4>
     
-      <div id="about-card-bio">Solutions Architect</div>
+      <div id="about-card-bio">Founder</div>
     
     
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        Palark
+        Ænix
       </div>
     
     

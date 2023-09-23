@@ -6,7 +6,28 @@
     <description>Recent content on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Mon, 17 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LVM&#43;QCOW2, или Попытка создать идеальный CSI-драйвер для shared SAN в Kubernetes</title>
+      <link>https://kvaps.github.io/ru/2023/09/lvm-qcow2-%D0%B8%D0%BB%D0%B8-%D0%BF%D0%BE%D0%BF%D1%8B%D1%82%D0%BA%D0%B0-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-csi-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-shared-san-%D0%B2-kubernetes/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2023/09/lvm-qcow2-%D0%B8%D0%BB%D0%B8-%D0%BF%D0%BE%D0%BF%D1%8B%D1%82%D0%BA%D0%B0-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-csi-%D0%B4%D1%80%D0%B0%D0%B9%D0%B2%D0%B5%D1%80-%D0%B4%D0%BB%D1%8F-shared-san-%D0%B2-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/upload_files/a3c/872/0fb/a3c8720fb97299f358bc05778f98941f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Несколько месяцев назад у нас появилась необходимость разработать CSI-драйвер для Kubernetes, который в первую очередь использовался бы для хранения дисков виртуальных машин в &lt;a href=&#34;https://deckhouse.ru/documentation/v1/modules/490-virtualization/&#34;&gt;Deckhouse Virtualization&lt;/a&gt;, но также мог бы использоваться и со стандартными контейнерами в Kubernetes. У оборудования наших заказчиков, как правило, есть определенная специфика — чаще всего это классическая SAN (Storage Area Network) с внешним хранилищем и общим shared LUN, который выделяется на несколько узлов. На одном LUN одновременно работает несколько виртуальных машин или контейнеров.&lt;/p&gt;
+&lt;p&gt;Помимо всего прочего, от драйвера нам требовалась поддержка различных CoW-фичей, таких как снапшоты, thin provisioning и возможность выполнять live-миграцию виртуальных машин в Kubernetes. Из существующих решений можно было бы отметить некоторые свободные проекты, однако ни один из них не реализует все желаемые фичи. Кроме того, у них есть явные проблемы с масштабированием.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Эволюция технологий виртуализации сети в Linux</title>
+      <link>https://kvaps.github.io/ru/2023/08/%D1%8D%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D0%B5%D1%82%D0%B8-%D0%B2-linux/</link>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://kvaps.github.io/ru/2023/08/%D1%8D%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D1%8F-%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9-%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8-%D1%81%D0%B5%D1%82%D0%B8-%D0%B2-linux/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/upload_files/ac6/224/82d/ac622482d7e577eeb674e5d8652f715f.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Виртуализация оборудования — одна из важнейших и фундаментальных технологий в области облачных вычислений. Без нее не смогло бы работать ни одно «устройство» внутри виртуальных машин: ни сетевая карта, ни диск, ни клавиатура, ни мышь и т. п. В статье мы проследим развитие технологий виртуализации оборудования в Linux.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LINSTOR Is Like Kubernetes, But for Block Devices</title>
       <link>https://kvaps.github.io/ru/2023/07/linstor-is-like-kubernetes-but-for-block-devices/</link>
