@@ -9,28 +9,28 @@
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="
-Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.">
+Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.">
 
 
 <meta property="og:description" content="
-Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.">
+Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Evolution of Network Virtualization Technologies in Linux">
-<meta name="twitter:title" content="The Evolution of Network Virtualization Technologies in Linux">
-<meta property="og:url" content="https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
-<meta property="twitter:url" content="https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+<meta property="og:title" content="LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes">
+<meta name="twitter:title" content="LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes">
+<meta property="og:url" content="https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
+<meta property="twitter:url" content="https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
 <meta property="og:site_name" content="kvaps | personal blog">
 <meta property="og:description" content="
-Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.">
+Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.">
 <meta name="twitter:description" content="
-Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.">
+Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2023-09-23T00:00:00">
+    <meta property="article:published_time" content="2023-11-21T00:00:00">
   
   
-    <meta property="article:modified_time" content="2023-09-23T00:00:00">
+    <meta property="article:modified_time" content="2023-11-21T00:00:00">
   
   
   
@@ -53,14 +53,14 @@ Hardware virtualization is one of the most important and fundamental technologie
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/cf50b831dc94cccd11e92cfcb53f0cb2?s=640">
 
 
-    <title>The Evolution of Network Virtualization Technologies in Linux</title>
+    <title>LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes</title>
 
     <link rel="icon" href="https://kvaps.github.io/favicon.ico">
     
 
     
 
-    <link rel="canonical" href="https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+    <link rel="canonical" href="https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -281,17 +281,17 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 itemprop="headline"> 
-      <a class="link" href="https://itnext.io/the-evolution-of-network-virtualization-technologies-in-linux-6ba3a4e9f293" target="_blank" itemprop="url">
-        The Evolution of Network Virtualization Technologies in Linux
+      <a class="link" href="https://blog.deckhouse.io/lvm-qcow-csi-driver-shared-san-kubernetes-81455201590e" target="_blank" itemprop="url">
+        LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes
       </a>
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-09-23T00:00:00Z">
+      <time itemprop="datePublished" datetime="2023-11-21T00:00:00Z">
         
-  September 23, 2023
+  November 21, 2023
 
       </time>
     
@@ -302,8 +302,8 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q2RZPvSUqJjgjOZx.png" alt=""></p>
-<p>Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.</p>
+              <p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*19x5GB1vrtTD02ScSUBYSg.png" alt=""></p>
+<p>Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.</p>
               
             </div>
           </div>
@@ -318,7 +318,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/" data-tooltip="LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -326,7 +326,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/" data-tooltip="LINSTOR Is Like Kubernetes, But for Block Devices">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/" data-tooltip="The Evolution of Network Virtualization Technologies in Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -344,19 +344,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -404,7 +404,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/" data-tooltip="LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -412,7 +412,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/" data-tooltip="LINSTOR Is Like Kubernetes, But for Block Devices">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/" data-tooltip="The Evolution of Network Virtualization Technologies in Linux">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -430,19 +430,19 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -472,19 +472,19 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2023%2F09%2Fthe-evolution-of-network-virtualization-technologies-in-linux%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkvaps.github.io%2F2023%2F11%2Flvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2023%2F09%2Fthe-evolution-of-network-virtualization-technologies-in-linux%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkvaps.github.io%2F2023%2F11%2Flvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2023%2F09%2Fthe-evolution-of-network-virtualization-technologies-in-linux%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fkvaps.github.io%2F2023%2F11%2Flvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -576,9 +576,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/kvaps.github.io\/2023\/09\/the-evolution-of-network-virtualization-technologies-in-linux\/';
+          this.page.url = 'https:\/\/kvaps.github.io\/2023\/11\/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes\/';
           
-            this.page.identifier = '\/2023\/09\/the-evolution-of-network-virtualization-technologies-in-linux\/'
+            this.page.identifier = '\/2023\/11\/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes\/'
           
         };
         (function() {
