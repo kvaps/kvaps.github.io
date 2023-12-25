@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.88.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="Цель игры - создать раньше других игроков выигрышную руку (руку определенной конфигурации) и объявить выигрыш в момент, когда выигрышный тайл взят из стены или сброшен другим игроком.
@@ -110,7 +110,7 @@
 
     
       
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -448,8 +448,8 @@ if (!doNotTrack) {
 В этом примере игрок - темпай, и ВТ, которые он ждет -<br>
 <img src="https://kvaps.github.io/images/mahjong/tileset/T11.gif" alt=""> и <img src="https://kvaps.github.io/images/mahjong/tileset/T14.gif" alt=""></p>
 <p><strong>3.3 Выигрыш и ничья</strong></p>
-<p>Когда игрок темпай, и берет ВТ из стены, он объявляет &ldquo;<strong>Цумо!&quot;</strong> и открывает руку. После <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/">подсчета стоимости руки</a> победителю платят все игроки.</p>
-<p>Когда игрок темпай, и ВТ дискардит другой игрок, игрок объявляет <strong>&ldquo;Рон!&quot;</strong> и открывает руку. После <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/">подсчета стоимости руки</a> победителю платит игрок-дискардер.</p>
+<p>Когда игрок темпай, и берет ВТ из стены, он объявляет &ldquo;<strong>Цумо!&rdquo;</strong> и открывает руку. После <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/">подсчета стоимости руки</a> победителю платят все игроки.</p>
+<p>Когда игрок темпай, и ВТ дискардит другой игрок, игрок объявляет <strong>&ldquo;Рон!&rdquo;</strong> и открывает руку. После <a href="https://kvaps.github.io/ru/%D1%80%D0%B8%D0%B8%D1%87%D0%B8-%D0%BC%D0%B0%D0%B4%D0%B6%D0%BE%D0%BD%D0%B3/%D0%BF%D0%BE%D0%B4%D1%81%D1%87%D0%B5%D1%82-%D0%BE%D1%87%D0%BA%D0%BE%D0%B2/">подсчета стоимости руки</a> победителю платит игрок-дискардер.</p>
 <p>Если победитель выиграл, объявив Риичи, то в момент объявления выигрыша под всеми открытыми индикаторами Дор и Кан-Дор в Мертвой Стене открываются тайлы, которые являются индикаторами <strong>Ура-Дор</strong>. Они также указывают на Доры, и если у игрока окажутся тайлы, которые в этот момент стали Дорами - их количество также участвует в подсчете очков.</p>
 <p>Если в стене закончились тайлы, и никто не объявил выигрыш, результатом раздачи считается ничья.<br>
 При ничьей игроки, которые нотен (не темпай) платят игрокам, которые темпай, исходя из пула 3000 очков, т.е.:</p>

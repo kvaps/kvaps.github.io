@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.88.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="
@@ -102,7 +102,7 @@ sudo docker rm -fv communityserver
 
     
       
-<script type="application/javascript">
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -329,11 +329,11 @@ if (!doNotTrack) {
               <ul>
 <li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
-<span style="color:#75715e"># wait 1-2 minutes.</span>
-sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
-sudo docker rm -fv communityserver
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># wait 1-2 minutes.</span>
+</span></span><span style="display:flex;"><span>sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>sudo docker rm -fv communityserver
+</span></span></code></pre></div>
               
             </div>
           </div>

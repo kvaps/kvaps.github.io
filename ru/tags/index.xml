@@ -5,6 +5,7 @@
     <link>https://kvaps.github.io/ru/tags/</link>
     <description>Recent content in Tags on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language><atom:link href="https://kvaps.github.io/ru/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>ru</language>
+    <atom:link href="https://kvaps.github.io/ru/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

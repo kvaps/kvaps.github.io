@@ -5,6 +5,7 @@
     <link>https://kvaps.github.io/ru/archives/</link>
     <description>Recent content in Archives on kvaps | личный блог</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language><atom:link href="https://kvaps.github.io/ru/archives/index.xml" rel="self" type="application/rss+xml" />
+    <language>ru</language>
+    <atom:link href="https://kvaps.github.io/ru/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

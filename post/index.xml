@@ -6,620 +6,378 @@
     <description>Recent content in Posts on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kvaps.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restic: Effective Backup from Stdin</title>
+      <link>https://kvaps.github.io/2023/12/restic-effective-backup-from-stdin/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2023/12/restic-effective-backup-from-stdin/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:720/format:webp/0*uJ7As9uTvB-gvQLe.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I’ve previously discussed Restic in the article “&lt;a href=&#34;https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2&#34;&gt;Backup storage for thousands of virtual machines using free tools&lt;/a&gt;,” and it remains my favorite backup tool since then.&lt;/p&gt;&#xA;&lt;p&gt;Today, I will describe a ready-made recipe for setting up effective backup from Stdin, with deduplication and automatic cleaning of the repository from old copies.&lt;/p&gt;&#xA;&lt;p&gt;Despite Restic being great for saving entire data directories, this article emphasizes on-the-fly backup from Stdin, typically for virtual machine backups, databases, and other large-file data that can be sequentially read and immediately sent to the backup system.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes</title>
       <link>https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/</link>
       <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/format:webp/1*19x5GB1vrtTD02ScSUBYSg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/format:webp/1*19x5GB1vrtTD02ScSUBYSg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Evolution of Network Virtualization Technologies in Linux</title>
       <link>https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/</link>
       <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q2RZPvSUqJjgjOZx.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q2RZPvSUqJjgjOZx.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LINSTOR Is Like Kubernetes, But for Block Devices</title>
       <link>https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/</link>
       <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2023/07/linstor-is-like-kubernetes-but-for-block-devices/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/jwaqWezhugE&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/jwaqWezhugE/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;An open-source storage from LINBIT (maintainers of DRBD). It’s fast and fault-tolerant, has a lot of features. It looks like Kuberentes but for block devices. How does it work? How to configure and debug it?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/jwaqWezhugE&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/jwaqWezhugE/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An open-source storage from LINBIT (maintainers of DRBD). It’s fast and fault-tolerant, has a lot of features. It looks like Kuberentes but for block devices. How does it work? How to configure and debug it?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deckhouse v1.43 introduces the next-generation virtualization system</title>
       <link>https://kvaps.github.io/2023/03/deckhouse-v1.43-introduces-the-next-generation-virtualization-system/</link>
       <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2023/03/deckhouse-v1.43-introduces-the-next-generation-virtualization-system/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/format:webp/0*1A2KX0mHjTsez1er.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Over the past few years, we at Flant have been keeping a close eye on the technology leaders in the cloud-native space. But it’s more than merely a matter of curiosity — we have incorporated the ideas we got from them to create something new and exciting that would offer people a lot of value, which we would be pleased to share with you today. We present to you &lt;a href=&#34;https://deckhouse.io/documentation/v1.43/modules/490-virtualization/&#34;&gt;the new virtualization system&lt;/a&gt; we’ve recently introduced in the latest Deckhouse release (1.43).&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:1400/format:webp/0*1A2KX0mHjTsez1er.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Over the past few years, we at Flant have been keeping a close eye on the technology leaders in the cloud-native space. But it’s more than merely a matter of curiosity — we have incorporated the ideas we got from them to create something new and exciting that would offer people a lot of value, which we would be pleased to share with you today. We present to you &lt;a href=&#34;https://deckhouse.io/documentation/v1.43/modules/490-virtualization/&#34;&gt;the new virtualization system&lt;/a&gt; we’ve recently introduced in the latest Deckhouse release (1.43).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A cheatsheet for debugging LINSTOR in Kubernetes</title>
       <link>https://kvaps.github.io/2023/01/a-cheatsheet-for-debugging-linstor-in-kubernetes/</link>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2023/01/a-cheatsheet-for-debugging-linstor-in-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://deckhouse.ru/documentation/latest/images/041-linstor/linstor-debug-cheatsheet.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;(especially for &lt;a href=&#34;https://deckhouse.io&#34;&gt;Deckhouse&lt;/a&gt; platform)&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://deckhouse.ru/documentation/latest/images/041-linstor/linstor-debug-cheatsheet.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(especially for &lt;a href=&#34;https://deckhouse.io&#34;&gt;Deckhouse&lt;/a&gt; platform)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>KubeVirt, its networking, and how we brought it to the next level</title>
       <link>https://kvaps.github.io/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/</link>
       <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/12/kubevirt-its-networking-and-how-we-brought-it-to-the-next-level/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/jp2XY-9MORM&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/jp2XY-9MORM/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Short abstract
-When choosing KubeVirt as our main virtualization solution, we were unsatisfied with the existing networking implementation. We developed and contributed some enhancements to simplify the design and get the most performance out of the network using KubeVirt.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/jp2XY-9MORM&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/jp2XY-9MORM/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Short abstract&#xA;When choosing KubeVirt as our main virtualization solution, we were unsatisfied with the existing networking implementation. We developed and contributed some enhancements to simplify the design and get the most performance out of the network using KubeVirt.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LINSTOR Is Like Kubernetes, But for Block Devices - Storage Day Kubernetes on AWS</title>
       <link>https://kvaps.github.io/2022/11/linstor-is-like-kubernetes-but-for-block-devices-storage-day-kubernetes-on-aws/</link>
       <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/11/linstor-is-like-kubernetes-but-for-block-devices-storage-day-kubernetes-on-aws/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/yc8RiZ4jJVA&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/yc8RiZ4jJVA/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;An open-source storage from LINBIT (maintainers of DRBD). It’s fast and fault-tolerant, has a lot of features. It looks like Kuberentes but for block devices. How does it work? How to configure and debug it?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/yc8RiZ4jJVA&#34;&gt;&lt;img src=&#34;https://i3.ytimg.com/vi/yc8RiZ4jJVA/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An open-source storage from LINBIT (maintainers of DRBD). It’s fast and fault-tolerant, has a lot of features. It looks like Kuberentes but for block devices. How does it work? How to configure and debug it?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kubernetes snapshots: What are they and how to use them? </title>
       <link>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</link>
       <pubDate>Wed, 02 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/11/kubernetes-snapshots-what-are-they-and-how-to-use-them/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/11/Kubernetes-snapshots_-What-are-they-and-how-to-use-them_.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;With the introduction of the snapshot-controller in Kubernetes, it is now possible to create snapshots for CSI drivers and cloud providers that support this feature.&lt;/p&gt;
-&lt;p&gt;The API is universal and vendor-independent, which is typical for Kubernetes, so we can explore it without getting into the specifics of a particular implementation. Let’s take a closer look at snapshots and see how they can benefit Kubernetes users.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/11/Kubernetes-snapshots_-What-are-they-and-how-to-use-them_.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;With the introduction of the snapshot-controller in Kubernetes, it is now possible to create snapshots for CSI drivers and cloud providers that support this feature.&lt;/p&gt;&#xA;&lt;p&gt;The API is universal and vendor-independent, which is typical for Kubernetes, so we can explore it without getting into the specifics of a particular implementation. Let’s take a closer look at snapshots and see how they can benefit Kubernetes users.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Panel discussion: Current state of Open Source</title>
       <link>https://kvaps.github.io/2022/06/panel-discussion-current-state-of-open-source/</link>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/06/panel-discussion-current-state-of-open-source/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://img.youtube.com/vi/SjGj9weIigo/maxresdefault.jpg&#34; alt=&#34;Panel discussion: Current state of Open Source&#34;&gt;&lt;/p&gt;
-&lt;p&gt;What has changed in the open-source communities after 2 years of lockdown? What are the threats and opportunities for open-source communities right now? We&amp;rsquo;ll discuss this and much more with the local open-source contributors and leaders.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://img.youtube.com/vi/SjGj9weIigo/maxresdefault.jpg&#34; alt=&#34;Panel discussion: Current state of Open Source&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;What has changed in the open-source communities after 2 years of lockdown? What are the threats and opportunities for open-source communities right now? We&amp;rsquo;ll discuss this and much more with the local open-source contributors and leaders.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes</title>
       <link>https://kvaps.github.io/2022/06/comparing-ceph-linstor-mayastor-and-vitastor-storage-performance-in-kubernetes/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/06/comparing-ceph-linstor-mayastor-and-vitastor-storage-performance-in-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/06/Comparing-Ceph-LINSTOR-Mayastor-and-Vitastor-storage-performance-in-Kubernetes.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the &lt;a href=&#34;https://deckhouse.io/&#34;&gt;Deckhouse Kubernetes platform&lt;/a&gt; when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.&lt;/p&gt;
-&lt;p&gt;Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device&#34;&gt;DRBD&lt;/a&gt; performance in different configurations and how they compared to &lt;a href=&#34;https://ceph.io/en/&#34;&gt;Ceph&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released &lt;a href=&#34;https://github.com/openebs/mayastor&#34;&gt;Mayastor&lt;/a&gt; and my fellow collaborator’s pet project &lt;a href=&#34;https://vitastor.io/&#34;&gt;Vitastor&lt;/a&gt;. The results were pretty exciting and surprising.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://blog.palark.com/wp-content/uploads/2022/06/Comparing-Ceph-LINSTOR-Mayastor-and-Vitastor-storage-performance-in-Kubernetes.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the &lt;a href=&#34;https://deckhouse.io/&#34;&gt;Deckhouse Kubernetes platform&lt;/a&gt; when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.&lt;/p&gt;&#xA;&lt;p&gt;Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the &lt;a href=&#34;https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device&#34;&gt;DRBD&lt;/a&gt; performance in different configurations and how they compared to &lt;a href=&#34;https://ceph.io/en/&#34;&gt;Ceph&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released &lt;a href=&#34;https://github.com/openebs/mayastor&#34;&gt;Mayastor&lt;/a&gt; and my fellow collaborator’s pet project &lt;a href=&#34;https://vitastor.io/&#34;&gt;Vitastor&lt;/a&gt;. The results were pretty exciting and surprising.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How is cloud computing changing the way of mind</title>
       <link>https://kvaps.github.io/2022/05/how-is-cloud-computing-changing-the-way-of-mind/</link>
       <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2022/05/how-is-cloud-computing-changing-the-way-of-mind/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FTnuV5RWYAAJzGQ?format=jpg&amp;amp;name=large&#34; alt=&#34;How is cloud computing changing the way of mind&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Nowadays the market offers a huge number of virtualization solutions, but in fact, they all are solving different problems, and you need to understand in which case it suits you best. In this presentation we&amp;rsquo;ll take a look at application design approaches then and now, and will explore the difference between virtualization and cloud computing platforms, the Pets vs. Cattle approach, and the use of IaC with Kubernetes and Terraform.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FTnuV5RWYAAJzGQ?format=jpg&amp;amp;name=large&#34; alt=&#34;How is cloud computing changing the way of mind&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Nowadays the market offers a huge number of virtualization solutions, but in fact, they all are solving different problems, and you need to understand in which case it suits you best. In this presentation we&amp;rsquo;ll take a look at application design approaches then and now, and will explore the difference between virtualization and cloud computing platforms, the Pets vs. Cattle approach, and the use of IaC with Kubernetes and Terraform.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm</title>
       <link>https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/</link>
       <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2021/12/kubernetes-in-kubernetes-and-the-wedos-pxe-bootable-server-farm/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FHMnruzWYAAT_xv?format=png&#34; alt=&#34;Kubernetes-in-Kubernetes - We need to go deeper&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider &lt;strong&gt;WEDOS Internet a.s&lt;/strong&gt; and today I&amp;rsquo;ll show you two of my projects — &lt;a href=&#34;https://github.com/kvaps/kubernetes-in-kubernetes&#34;&gt;Kubernetes-in-Kubernetes&lt;/a&gt; and &lt;a href=&#34;https://github.com/kvaps/kubefarm&#34;&gt;Kubefarm&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/&#34;&gt;&lt;img src=&#34;https://pbs.twimg.com/media/FHMnruzWYAAT_xv?format=png&#34; alt=&#34;Kubernetes-in-Kubernetes - We need to go deeper&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider &lt;strong&gt;WEDOS Internet a.s&lt;/strong&gt; and today I&amp;rsquo;ll show you two of my projects — &lt;a href=&#34;https://github.com/kvaps/kubernetes-in-kubernetes&#34;&gt;Kubernetes-in-Kubernetes&lt;/a&gt; and &lt;a href=&#34;https://github.com/kvaps/kubefarm&#34;&gt;Kubefarm&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[Yabai] First steps after Awesome WM</title>
       <link>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</link>
       <pubDate>Sun, 24 Oct 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2021/10/yabai-first-steps-after-awesome-wm/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/p3zkihioqev71.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&amp;rsquo;m having fun with OSX. And I have to admit I&amp;rsquo;m starting to like it.&lt;/p&gt;
-&lt;p&gt;Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃&lt;br&gt;
-Some hardware keys are rebinded using &lt;a href=&#34;https://karabiner-elements.pqrs.org/&#34;&gt;Karabiner&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As main browser I use Firefox with &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/tree-style-tab/&#34;&gt;TreeStyleTab&lt;/a&gt; and &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/dustman/&#34;&gt;Dustman&lt;/a&gt; extensions. The last one is closing tabs automatically if I didn&amp;rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&amp;rsquo;t like to close them, why not to run a garbage collector for them?&lt;/p&gt;
-&lt;p&gt;Terminal configuration and colors moved from my previous laptop.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/p3zkihioqev71.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&amp;rsquo;m having fun with OSX. And I have to admit I&amp;rsquo;m starting to like it.&lt;/p&gt;&#xA;&lt;p&gt;Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃&lt;br&gt;&#xA;Some hardware keys are rebinded using &lt;a href=&#34;https://karabiner-elements.pqrs.org/&#34;&gt;Karabiner&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;As main browser I use Firefox with &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/tree-style-tab/&#34;&gt;TreeStyleTab&lt;/a&gt; and &lt;a href=&#34;https://addons.mozilla.org/en/firefox/addon/dustman/&#34;&gt;Dustman&lt;/a&gt; extensions. The last one is closing tabs automatically if I didn&amp;rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&amp;rsquo;t like to close them, why not to run a garbage collector for them?&lt;/p&gt;&#xA;&lt;p&gt;Terminal configuration and colors moved from my previous laptop.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to Resolve Split Brain in DRBD9</title>
       <link>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</link>
       <pubDate>Mon, 19 Jul 2021 18:21:26 +0200</pubDate>
-      
       <guid>https://kvaps.github.io/2021/07/how-to-resolve-split-brain-in-drbd9/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzyx2gkmcim5hgjk5dft.png&#34; alt=&#34;split-brain&#34;&gt;&lt;/p&gt;
-&lt;p&gt;First, let&amp;rsquo;s define what split-brain is. Each replica can be either connected or disconnected towards to the other. If the replica spontaneously goes to StandAlone. It means that it refuses to accept the state and don&amp;rsquo;t want to synchronize with the other. This is a classic split-brain situation.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kzyx2gkmcim5hgjk5dft.png&#34; alt=&#34;split-brain&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s define what split-brain is. Each replica can be either connected or disconnected towards to the other. If the replica spontaneously goes to StandAlone. It means that it refuses to accept the state and don&amp;rsquo;t want to synchronize with the other. This is a classic split-brain situation.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Troubleshooting DRBD9 in LINSTOR</title>
       <link>https://kvaps.github.io/2021/07/troubleshooting-drbd9-in-linstor/</link>
       <pubDate>Mon, 19 Jul 2021 18:15:55 +0200</pubDate>
-      
       <guid>https://kvaps.github.io/2021/07/troubleshooting-drbd9-in-linstor/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ft/tb/2v/fttb2vkaex5-wur6zygsbkkwj2k.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Over the past few years of tight work with LINSTOR and DRBD9, I have accumulated a some amount of problems and solutions for them. I decided to collect all of them into single article. Not sure that you will face exactly the same problems, but now you could at least understand the mechanics of managing and troubleshooting the DRBD9-devices.&lt;/p&gt;
-&lt;p&gt;There is not much information on this matter on the Internet. Hope you&amp;rsquo;ll find it useful in case if you use or plan to use LINSTOR.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/webt/ft/tb/2v/fttb2vkaex5-wur6zygsbkkwj2k.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Over the past few years of tight work with LINSTOR and DRBD9, I have accumulated a some amount of problems and solutions for them. I decided to collect all of them into single article. Not sure that you will face exactly the same problems, but now you could at least understand the mechanics of managing and troubleshooting the DRBD9-devices.&lt;/p&gt;&#xA;&lt;p&gt;There is not much information on this matter on the Internet. Hope you&amp;rsquo;ll find it useful in case if you use or plan to use LINSTOR.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil</title>
       <link>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</link>
       <pubDate>Thu, 20 May 2021 12:00:00 +0100</pubDate>
-      
       <guid>https://kvaps.github.io/2021/05/kubernetes-in-kubernetes-on-bare-metal-with-andrei-kvapil/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/51dR8fmSyAL.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Andrei Kvapil  joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;
-&lt;p&gt;Andrei breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.
-Panel&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://m.media-amazon.com/images/I/51dR8fmSyAL.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Andrei Kvapil  joins the adventure to discuss Kubernetes with Jeffrey Groman.&lt;/p&gt;&#xA;&lt;p&gt;Andrei breaks down how he and his company needed to set up Kubernetes to manage their blade server setup and how they wound up running Kubernetes in Kubernetes to gain the characteristics they needed.&#xA;Panel&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Breaking down and fixing etcd cluster</title>
       <link>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</link>
       <pubDate>Fri, 05 Mar 2021 14:05:00 +0100</pubDate>
-      
       <guid>https://kvaps.github.io/2021/03/breaking-down-and-fixing-etcd-cluster/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;etcd&lt;/strong&gt; is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.&lt;/p&gt;
-&lt;p&gt;In the &lt;a href=&#34;https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3&#34;&gt;previous article&lt;/a&gt;, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;etcd&lt;/strong&gt; is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3&#34;&gt;previous article&lt;/a&gt;, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Breaking down and fixing Kubernetes</title>
       <link>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</link>
       <pubDate>Sun, 21 Feb 2021 12:00:00 +0100</pubDate>
-      
       <guid>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Kubernetes&lt;/strong&gt; is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Kubernetes&lt;/strong&gt; is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS</title>
-      <link>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</link>
+      <link>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula--linbit-sds/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/c_TTpj5jEfI&#34;&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Learn more about LINBIT&amp;rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).&lt;/p&gt;</description>
+      <guid>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula--linbit-sds/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/c_TTpj5jEfI&#34;&gt;&lt;img src=&#34;http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Learn more about LINBIT&amp;rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[awesome] Warm and Cozy</title>
       <link>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</link>
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/q59a0324sl661.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Case-Study: 600 Nodes on DRBD &#43; LINSTOR for Kubernetes, OpenNebula and Proxmox</title>
-      <link>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</link>
+      <link>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd--linstor-for-kubernetes-opennebula-and-proxmox/</link>
       <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/kMU3JAsFXQk&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp;amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.&lt;/p&gt;</description>
+      <guid>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd--linstor-for-kubernetes-opennebula-and-proxmox/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://youtu.be/kMU3JAsFXQk&#34;&gt;&lt;img src=&#34;https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp;amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tuning CNI plugins for having better performance and advanced features</title>
       <link>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</link>
       <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/1*542zIrU1saV6nxdyQFnStA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Thanks for the &lt;a href=&#34;https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-updated-august-2020-6e1b757b9e49&#34;&gt;benchmarks&lt;/a&gt; Alexis!&lt;/p&gt;
-&lt;p&gt;Most plugins have non-optimized defaults that work in most common situations, regardless of network topology, OS and kernel version.&lt;/p&gt;
-&lt;p&gt;I have an experience of tuning some of them, and I would like to share it with you, just briefly:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/1*542zIrU1saV6nxdyQFnStA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thanks for the &lt;a href=&#34;https://itnext.io/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-updated-august-2020-6e1b757b9e49&#34;&gt;benchmarks&lt;/a&gt; Alexis!&lt;/p&gt;&#xA;&lt;p&gt;Most plugins have non-optimized defaults that work in most common situations, regardless of network topology, OS and kernel version.&lt;/p&gt;&#xA;&lt;p&gt;I have an experience of tuning some of them, and I would like to share it with you, just briefly:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Configure Custom Tooling in Argo CD</title>
       <link>https://kvaps.github.io/2020/09/configure-custom-tooling-in-argo-cd/</link>
       <pubDate>Sun, 06 Sep 2020 01:04:00 +0300</pubDate>
-      
       <guid>https://kvaps.github.io/2020/09/configure-custom-tooling-in-argo-cd/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/0*tcU-h452sfjDT96C.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Some time after writing the &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580&#34;&gt;first article&lt;/a&gt;, where I cleverly use jsonnet and gitlab, I realized that pipelines are certainly good, but unnecessarily difficult and inconvenient.&lt;/p&gt;
-&lt;p&gt;In most cases, a typical task is need: “to generate YAML and put it in Kubernetes”. Actually, this is what the Argo CD does really well.&lt;/p&gt;
-&lt;p&gt;Argo CD allows you to connect a Git repository and sync its state to Kubernetes. By default several types of applications are supported: Kustomize, Helm charts, Ksonnet, raw Jsonnet or simple directories with YAML/JSON manifests.&lt;/p&gt;
-&lt;p&gt;Most users will be happy for having just this tool set, but not everyone. In order to satisfy the needs of anyone, Argo CD has the ability to use custom tooling.&lt;/p&gt;
-&lt;p&gt;First of all, I was interested in the opportunity to add support for &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#4c4b&#34;&gt;qbec&lt;/a&gt; and &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#29ed&#34;&gt;git-crypt&lt;/a&gt;, which were fully discussed in the previous article.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/700/0*tcU-h452sfjDT96C.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Some time after writing the &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580&#34;&gt;first article&lt;/a&gt;, where I cleverly use jsonnet and gitlab, I realized that pipelines are certainly good, but unnecessarily difficult and inconvenient.&lt;/p&gt;&#xA;&lt;p&gt;In most cases, a typical task is need: “to generate YAML and put it in Kubernetes”. Actually, this is what the Argo CD does really well.&lt;/p&gt;&#xA;&lt;p&gt;Argo CD allows you to connect a Git repository and sync its state to Kubernetes. By default several types of applications are supported: Kustomize, Helm charts, Ksonnet, raw Jsonnet or simple directories with YAML/JSON manifests.&lt;/p&gt;&#xA;&lt;p&gt;Most users will be happy for having just this tool set, but not everyone. In order to satisfy the needs of anyone, Argo CD has the ability to use custom tooling.&lt;/p&gt;&#xA;&lt;p&gt;First of all, I was interested in the opportunity to add support for &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#4c4b&#34;&gt;qbec&lt;/a&gt; and &lt;a href=&#34;https://itnext.io/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e580#29ed&#34;&gt;git-crypt&lt;/a&gt;, which were fully discussed in the previous article.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Attaching an Elastic IP to EKS worker node</title>
       <link>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</link>
       <pubDate>Thu, 04 Jun 2020 16:12:27 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/06/attaching-an-elastic-ip-to-eks-worker-node/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi, I also faced with an interesting task to run STUN server in Kubernetes.&lt;/p&gt;
-&lt;p&gt;STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes &lt;a href=&#34;https://github.com/kubernetes/kubernetes/issues/23864&#34;&gt;has no support for specifying port ranges in services&lt;/a&gt;. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.&lt;/p&gt;
-&lt;p&gt;The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1020/1*ip6KYgXR1Z_lM07mb6cOGg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi, I also faced with an interesting task to run STUN server in Kubernetes.&lt;/p&gt;&#xA;&lt;p&gt;STUN Server requires passtrough whole 1024-65535 udp port range, however Kubernetes &lt;a href=&#34;https://github.com/kubernetes/kubernetes/issues/23864&#34;&gt;has no support for specifying port ranges in services&lt;/a&gt;. The solution would seem simple to run pod with hostNetwork: true and assign it to separate EC2 instance with Elastic IP.&lt;/p&gt;&#xA;&lt;p&gt;The problem is that EKS does not allow you to create separate instances, but instead directs you to use Auto Scaling Groups. Thus you have no opportunity to assign Elastic IP to specific EKS worker statically, but you can do that dynamically&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Backup storage for thousands of virtual machines using free tools</title>
       <link>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</link>
       <pubDate>Fri, 29 May 2020 20:06:10 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/05/backup-storage-for-thousands-of-virtual-machines-using-free-tools/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.&lt;/p&gt;
-&lt;p&gt;Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.&lt;/p&gt;
-&lt;p&gt;Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.&lt;/p&gt;
-&lt;p&gt;Let’s consider what alternatives are:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html&#34;&gt;Erasure Coding&lt;/a&gt;&lt;/strong&gt; — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy &lt;a href=&#34;https://min.io/&#34;&gt;minio&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html&#34;&gt;DRAID&lt;/a&gt;&lt;/strong&gt; — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*A6SRoMPAkAf-RnRB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi, recently I faced across an interesting task to setup a storage server for backup of a large number of block devices.&lt;/p&gt;&#xA;&lt;p&gt;Every week we back up all virtual machines in our cloud, so there is a need to be able handle thousands of backups and do it as fast and efficiently as possible.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, the standard RAID5, RAID6 levels are not suitable due the fact that recovery process on such large disks as ours will be painfully long and most likely never finished successfully.&lt;/p&gt;&#xA;&lt;p&gt;Let’s consider what alternatives are:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html&#34;&gt;Erasure Coding&lt;/a&gt;&lt;/strong&gt; — An analogue to RAID5, RAID6, but with a configurable parity level. Also the fault tolerance is performed not for whole block devices, but for each object separately. The easiest way to try Erasure Coding is to deploy &lt;a href=&#34;https://min.io/&#34;&gt;minio&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html&#34;&gt;DRAID&lt;/a&gt;&lt;/strong&gt; — is currently alpha feature of ZFS. Unlike RAIDZ, DRAID has a distributed parity block and uses all the disks in the array during recovery, this makes it better surviving for disk failures and provides faster recovery than standard RAID levels.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Configuring routing for MetalLB in L2 mode</title>
       <link>https://kvaps.github.io/2020/05/configuring-routing-for-metallb-in-l2-mode/</link>
       <pubDate>Thu, 14 May 2020 22:05:09 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/05/configuring-routing-for-metallb-in-l2-mode/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wI1GLh4MrCzuwiwB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Not so far ago, I was faced with a quite unusual task of configuring routing for MetalLB. All would be nothing, since MetalLB usually does not require any additional configuration from user side, but in our case there is a fairly large cluster with a quite simple network configuration.&lt;/p&gt;
-&lt;p&gt;In this article I will show you how to configure source-based and policy-based routing for the external network on your cluster.&lt;/p&gt;
-&lt;p&gt;I will not dwell on installing and configuring MetalLB in detail, as I assume you already have some experience. Let’s understand the essence and configure the routing. So we have four cases:&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/0*wI1GLh4MrCzuwiwB.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not so far ago, I was faced with a quite unusual task of configuring routing for MetalLB. All would be nothing, since MetalLB usually does not require any additional configuration from user side, but in our case there is a fairly large cluster with a quite simple network configuration.&lt;/p&gt;&#xA;&lt;p&gt;In this article I will show you how to configure source-based and policy-based routing for the external network on your cluster.&lt;/p&gt;&#xA;&lt;p&gt;I will not dwell on installing and configuring MetalLB in detail, as I assume you already have some experience. Let’s understand the essence and configure the routing. So we have four cases:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Connecting Gitlab with Harbor for automated token issuing</title>
       <link>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</link>
       <pubDate>Fri, 24 Apr 2020 23:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/04/connecting-gitlab-with-harbor-for-automated-token-issuing/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rp7sSltmrBJ0lyHCenfmrw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Gitlab CI have a nice feature to generate docker-registry tokens per each job, but this feature is working only for it’s own docker registry and does not working with an external ones, eg. Harbor, Nexus, Quay and etc.&lt;/p&gt;
-&lt;p&gt;There is an opportunity to set-up external docker registry for Gitlab, it is well described in the documentation &lt;a href=&#34;https://docs.gitlab.com/ee/administration/packages/container_registry.html#use-an-external-container-registry-with-gitlab-as-an-auth-endpoint&#34;&gt;Use an external container registry with GitLab as an auth endpoint&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Proposed to configure brand new docker-registry with token based authentication. Harbor also uses docker-registry in backend, so that we could configure it, but problem is that both Gitlab and Harbor require to set their own parameters which are actually conflicts.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/1400/1*rp7sSltmrBJ0lyHCenfmrw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Gitlab CI have a nice feature to generate docker-registry tokens per each job, but this feature is working only for it’s own docker registry and does not working with an external ones, eg. Harbor, Nexus, Quay and etc.&lt;/p&gt;&#xA;&lt;p&gt;There is an opportunity to set-up external docker registry for Gitlab, it is well described in the documentation &lt;a href=&#34;https://docs.gitlab.com/ee/administration/packages/container_registry.html#use-an-external-container-registry-with-gitlab-as-an-auth-endpoint&#34;&gt;Use an external container registry with GitLab as an auth endpoint&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Proposed to configure brand new docker-registry with token based authentication. Harbor also uses docker-registry in backend, so that we could configure it, but problem is that both Gitlab and Harbor require to set their own parameters which are actually conflicts.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[awesome] My live in console</title>
       <link>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/04/awesome-my-live-in-console/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/f6l0qbuy6rr41.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How to describe 100 Gitlab jobs in 100 lines using Jsonnet</title>
       <link>https://kvaps.github.io/2020/01/how-to-describe-100-gitlab-jobs-in-100-lines-using-jsonnet/</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/01/how-to-describe-100-gitlab-jobs-in-100-lines-using-jsonnet/</guid>
-      <description>&lt;p&gt;In addition to the &lt;a href=&#34;https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e58&#34;&gt;previous article&lt;/a&gt; about deployment tools in Kubernetes, I want to tell you about how you can use Jsonnet to simplify the description of the jobs in your &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/350/1*fVzTtRqdqlthR-kEGqbxLw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;given&#34;&gt;Given&lt;/h2&gt;
-&lt;p&gt;There is a monorepo in which:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;10 dockerfiles&lt;/li&gt;
-&lt;li&gt;30 described deployments&lt;/li&gt;
-&lt;li&gt;3 environments: devel, stage and prod&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;
-&lt;p&gt;Configure a pipeline:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Building Docker images should be done by adding a git tag with a version number.&lt;/li&gt;
-&lt;li&gt;Each deployment operation should be performed when pushing to the environment branch and only if files changed in a specific directory&lt;/li&gt;
-&lt;li&gt;Each environment has its own gitlab-runner with a different tag that performs deployment only in this environment.&lt;/li&gt;
-&lt;li&gt;Not any application should be deployed in each of the environments. We should describe the pipeline in order to be able to make exceptions.&lt;/li&gt;
-&lt;li&gt;Some deployments use git submodule and should be run with the &lt;code&gt;GIT_SUBMODULE_STRATEGY=normal&lt;/code&gt; environment variable set.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Describing all this may seem like a real hell, but do not despair, armed with Jsonnet, we can easily do it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In addition to the &lt;a href=&#34;https://medium.com/@kvaps/trying-new-tools-for-building-and-automate-the-deployment-in-kubernetes-f96f9684e58&#34;&gt;previous article&lt;/a&gt; about deployment tools in Kubernetes, I want to tell you about how you can use Jsonnet to simplify the description of the jobs in your &lt;strong&gt;.gitlab-ci.yml&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/350/1*fVzTtRqdqlthR-kEGqbxLw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;given&#34;&gt;Given&lt;/h2&gt;&#xA;&lt;p&gt;There is a monorepo in which:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;10 dockerfiles&lt;/li&gt;&#xA;&lt;li&gt;30 described deployments&lt;/li&gt;&#xA;&lt;li&gt;3 environments: devel, stage and prod&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;&#xA;&lt;p&gt;Configure a pipeline:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Building Docker images should be done by adding a git tag with a version number.&lt;/li&gt;&#xA;&lt;li&gt;Each deployment operation should be performed when pushing to the environment branch and only if files changed in a specific directory&lt;/li&gt;&#xA;&lt;li&gt;Each environment has its own gitlab-runner with a different tag that performs deployment only in this environment.&lt;/li&gt;&#xA;&lt;li&gt;Not any application should be deployed in each of the environments. We should describe the pipeline in order to be able to make exceptions.&lt;/li&gt;&#xA;&lt;li&gt;Some deployments use git submodule and should be run with the &lt;code&gt;GIT_SUBMODULE_STRATEGY=normal&lt;/code&gt; environment variable set.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Describing all this may seem like a real hell, but do not despair, armed with Jsonnet, we can easily do it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Trying new tools for building and automating the deployment in Kubernetes</title>
       <link>https://kvaps.github.io/2020/01/trying-new-tools-for-building-and-automating-the-deployment-in-kubernetes/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2020/01/trying-new-tools-for-building-and-automating-the-deployment-in-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3882/0*HJu_pzhe660WFJZ2&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi!&lt;br&gt;
-Recently, many cool automation tools have been released both for building Docker images and for deploying to Kubernetes. In this regard, I decided to play with the Gitlab a little, study its capabilities and, of course, configure the pipeline.&lt;/p&gt;
-&lt;p&gt;The source of inspiration for this work was the site &lt;a href=&#34;https://kubernetes.io/&#34;&gt;kubernetes.io&lt;/a&gt;, which is automatically generated from &lt;a href=&#34;github.com/kubernetes/website&#34;&gt;source code&lt;/a&gt;.&lt;br&gt;
-For each new pullrequest the bot generates a preview version with your changes automatically and provides a link for review.&lt;/p&gt;
-&lt;p&gt;I tried to build a similar process from scratch, but entirely built on Gitlab CI and free tools that I used to use to deploy applications in Kubernetes. Today, I finally will tell you more about them.&lt;/p&gt;
-&lt;p&gt;The article will consider such tools as: &lt;strong&gt;Hugo&lt;/strong&gt;, &lt;strong&gt;qbec&lt;/strong&gt;, &lt;strong&gt;kaniko&lt;/strong&gt;, &lt;strong&gt;git-crypt&lt;/strong&gt; and &lt;strong&gt;GitLab CI&lt;/strong&gt; with dynamic environments feature.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3882/0*HJu_pzhe660WFJZ2&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi!&lt;br&gt;&#xA;Recently, many cool automation tools have been released both for building Docker images and for deploying to Kubernetes. In this regard, I decided to play with the Gitlab a little, study its capabilities and, of course, configure the pipeline.&lt;/p&gt;&#xA;&lt;p&gt;The source of inspiration for this work was the site &lt;a href=&#34;https://kubernetes.io/&#34;&gt;kubernetes.io&lt;/a&gt;, which is automatically generated from &lt;a href=&#34;github.com/kubernetes/website&#34;&gt;source code&lt;/a&gt;.&lt;br&gt;&#xA;For each new pullrequest the bot generates a preview version with your changes automatically and provides a link for review.&lt;/p&gt;&#xA;&lt;p&gt;I tried to build a similar process from scratch, but entirely built on Gitlab CI and free tools that I used to use to deploy applications in Kubernetes. Today, I finally will tell you more about them.&lt;/p&gt;&#xA;&lt;p&gt;The article will consider such tools as: &lt;strong&gt;Hugo&lt;/strong&gt;, &lt;strong&gt;qbec&lt;/strong&gt;, &lt;strong&gt;kaniko&lt;/strong&gt;, &lt;strong&gt;git-crypt&lt;/strong&gt; and &lt;strong&gt;GitLab CI&lt;/strong&gt; with dynamic environments feature.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>[awesome] My work laptop</title>
       <link>https://kvaps.github.io/2019/12/awesome-my-work-laptop/</link>
       <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/12/awesome-my-work-laptop/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://i.redd.it/iyqfr4rghh441.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>“linstor_un” — New storage driver for OpenNebula</title>
       <link>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</link>
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/07/linstor_un-new-storage-driver-for-opennebula/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.&lt;/p&gt;
-&lt;p&gt;Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.&lt;/p&gt;
-&lt;p&gt;Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not so long ago, the guys from LINBIT presented their new SDS solution – Linstor. This is a fully free storage based on proven technologies: DRBD, LVM, ZFS. Linstor combines simplicity and well-developed architecture, which allows to achieve stability and quite impressive results.&lt;/p&gt;&#xA;&lt;p&gt;Today I would like to tell you a little about it and show how easy it can be integrated with OpenNebula using linstor_un – a new driver that I developed specifically for this purpose.&lt;/p&gt;&#xA;&lt;p&gt;Linstor in combination with OpenNebula will allow you to build a high-performance and reliable cloud, which you can easily deploy on your own infrastructure.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Store SSH Keys Securely</title>
       <link>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/05/store-ssh-keys-securely/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*JlXp6Hsyfcvk7LSi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Let me tell you how you can safely store SSH keys on a local machine, for not having a fear that some application can steal or decrypt them.
-This article will be especially useful to those who have not found an elegant solution after the &lt;a href=&#34;https://latacora.singles/2018/08/03/the-default-openssh.html&#34;&gt;paranoia&lt;/a&gt; in 2018 and continue storing keys in &lt;code&gt;$HOME/.ssh&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;To solve this problem, I suggest you using &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;, which is one of the best password managers, it is using strong encryption algorithms, and also it have an integrated SSH agent.&lt;/p&gt;
-&lt;p&gt;This allows you to safely store all the keys directly in the password database and automatically add them to the system when it is opened. Once the base is closed, the use of SSH keys will also be impossible&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/852/0*JlXp6Hsyfcvk7LSi.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let me tell you how you can safely store SSH keys on a local machine, for not having a fear that some application can steal or decrypt them.&#xA;This article will be especially useful to those who have not found an elegant solution after the &lt;a href=&#34;https://latacora.singles/2018/08/03/the-default-openssh.html&#34;&gt;paranoia&lt;/a&gt; in 2018 and continue storing keys in &lt;code&gt;$HOME/.ssh&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;To solve this problem, I suggest you using &lt;a href=&#34;https://keepassxc.org/&#34;&gt;KeePassXC&lt;/a&gt;, which is one of the best password managers, it is using strong encryption algorithms, and also it have an integrated SSH agent.&lt;/p&gt;&#xA;&lt;p&gt;This allows you to safely store all the keys directly in the password database and automatically add them to the system when it is opened. Once the base is closed, the use of SSH keys will also be impossible&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing Haproxy for Kubernetes</title>
       <link>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</link>
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/04/installing-haproxy-for-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/619/1*HPqRvvMlCyxydro6ezCpow.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If you want to make this scheme more safe you can add haproxy layer between keepalived and kube-apiserver.&lt;/p&gt;
-&lt;p&gt;Just install haproxy package into your system, and add the next configuration into &lt;code&gt;/etc/haproxy/haproxy.cfg&lt;/code&gt; file&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/619/1*HPqRvvMlCyxydro6ezCpow.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you want to make this scheme more safe you can add haproxy layer between keepalived and kube-apiserver.&lt;/p&gt;&#xA;&lt;p&gt;Just install haproxy package into your system, and add the next configuration into &lt;code&gt;/etc/haproxy/haproxy.cfg&lt;/code&gt; file&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Screen streaming to multiple devices via network</title>
       <link>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</link>
       <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/04/screen-streaming-to-multiple-devices-via-network/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3701/1*2P2MvNWAEffBGR85d8nJcQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I had a need to show dashboard with monitoring information on several screens in the office. There are several old Raspberry Pi Model B+ and a hypervisor with a virtually unlimited amount of resources.&lt;/p&gt;
-&lt;p&gt;Apparently the Raspberry Pi Model B+ does not have enough power to keep the browser running constantly and draw a large amount of graphics in it, which is why the page is partially buggy and often crashes.&lt;/p&gt;
-&lt;p&gt;I found a fairly simple and elegant solution, which I want to share with you.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/3701/1*2P2MvNWAEffBGR85d8nJcQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I had a need to show dashboard with monitoring information on several screens in the office. There are several old Raspberry Pi Model B+ and a hypervisor with a virtually unlimited amount of resources.&lt;/p&gt;&#xA;&lt;p&gt;Apparently the Raspberry Pi Model B+ does not have enough power to keep the browser running constantly and draw a large amount of graphics in it, which is why the page is partially buggy and often crashes.&lt;/p&gt;&#xA;&lt;p&gt;I found a fairly simple and elegant solution, which I want to share with you.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Adding LDAP authentication to Kubernetes</title>
       <link>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2019/02/adding-ldap-authentication-to-kubernetes/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/848/0*ZKnEqwk9W9lREHxf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Short guide how to setup Keycloak for connect Kubernetes with your LDAP-server and import users and groups. It will allow you to configure RBAC and use auth-proxy to secure Kubernetes Dasboard and another applications, which have no authentification from begining.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/848/0*ZKnEqwk9W9lREHxf.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Short guide how to setup Keycloak for connect Kubernetes with your LDAP-server and import users and groups. It will allow you to configure RBAC and use auth-proxy to secure Kubernetes Dasboard and another applications, which have no authentification from begining.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (More Simple Guide)</title>
       <link>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/12/creating-high-available-baremetal-kubernetes-cluster-with-kubeadm-and-keepalived-more-simple-guide/</guid>
-      <description>&lt;p&gt;This guide is updated version of my previous article &lt;a href=&#34;https://medium.com/@kvapss/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca&#34;&gt;Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (Simple Guide)&lt;/a&gt;
-Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and more logical. Note that this article is my personal interpretation of official Creating Highly &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt; plus few more steps for Keepalived.&lt;/p&gt;
-&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide is updated version of my previous article &lt;a href=&#34;https://medium.com/@kvapss/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca&#34;&gt;Creating High Available Baremetal Kubernetes cluster with Kubeadm and Keepalived (Simple Guide)&lt;/a&gt;&#xA;Since &lt;strong&gt;v1.13&lt;/strong&gt; deployment has become much easier and more logical. Note that this article is my personal interpretation of official Creating Highly &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt; plus few more steps for Keepalived.&lt;/p&gt;&#xA;&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating Baremethal Kubernetes HA cluster with Kubeadm and Keepalived (Simple Guide)</title>
       <link>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/10/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide/</guid>
-      <description>&lt;p&gt;This guide is a free interpretation of official &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Creating Highly Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt;. I don’t like this difficult form which used there, so I wrote this article.&lt;/p&gt;
-&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide is a free interpretation of official &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/&#34;&gt;Creating Highly Available Clusters with kubeadm&lt;/a&gt; for &lt;a href=&#34;https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes&#34;&gt;Stacked control plane nodes&lt;/a&gt;. I don’t like this difficult form which used there, so I wrote this article.&lt;/p&gt;&#xA;&lt;p&gt;If you have any questions, or something is not clear, please refer to the official documentation or ask the &lt;a href=&#34;https://www.google.com/&#34;&gt;Google&lt;/a&gt;. All steps described here in the short and simple form&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Install Kolab and integrate it with FreeIPA</title>
       <link>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/10/install-kolab-and-integrate-it-with-freeipa/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Here is written steps for install &lt;a href=&#34;https://kolab.org/&#34;&gt;Kolab Groupware&lt;/a&gt; server and integrate it with &lt;a href=&#34;https://www.freeipa.org/page/Main_Page&#34;&gt;FreeIPA&lt;/a&gt; server.&lt;/p&gt;
-&lt;p&gt;Most of actions requires basic understanding in LDAP mechanism.
-FreeIPA should be already installed before preparing Kolab installation.
-We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.&lt;/p&gt;
-&lt;p&gt;In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here is written steps for install &lt;a href=&#34;https://kolab.org/&#34;&gt;Kolab Groupware&lt;/a&gt; server and integrate it with &lt;a href=&#34;https://www.freeipa.org/page/Main_Page&#34;&gt;FreeIPA&lt;/a&gt; server.&lt;/p&gt;&#xA;&lt;p&gt;Most of actions requires basic understanding in LDAP mechanism.&#xA;FreeIPA should be already installed before preparing Kolab installation.&#xA;We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.&lt;/p&gt;&#xA;&lt;p&gt;In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Building a Network Bootable Server Farm for Kubernetes with LTSP</title>
       <link>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</link>
       <pubDate>Tue, 02 Oct 2018 21:35:07 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/10/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.&lt;/p&gt;
-&lt;p&gt;You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!&lt;/p&gt;
-&lt;p&gt;You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!&lt;/p&gt;
-&lt;p&gt;Intrigued? Let me walk you through how it works.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.&lt;/p&gt;&#xA;&lt;p&gt;You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!&lt;/p&gt;&#xA;&lt;p&gt;You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!&lt;/p&gt;&#xA;&lt;p&gt;Intrigued? Let me walk you through how it works.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deploying LINSTOR storage for Proxmox</title>
       <link>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</link>
       <pubDate>Wed, 12 Sep 2018 21:36:59 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/09/deploying-linstor-storage-for-proxmox/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.&lt;/p&gt;
-&lt;p&gt;For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.&lt;/p&gt;
-&lt;p&gt;LINSTOR supports thin-provisioning, snapshots and many other interesting things.&lt;/p&gt;
-&lt;p&gt;This solution is good suitable for virtual machines and containers.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.&lt;/p&gt;&#xA;&lt;p&gt;For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.&lt;/p&gt;&#xA;&lt;p&gt;LINSTOR supports thin-provisioning, snapshots and many other interesting things.&lt;/p&gt;&#xA;&lt;p&gt;This solution is good suitable for virtual machines and containers.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Run kubernetes inside LXC container</title>
       <link>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</link>
       <pubDate>Wed, 22 Aug 2018 21:36:47 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/08/run-kubernetes-inside-lxc-container/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.
-In this case you can have only one master, and still have all the features of multimater.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cdn-images-1.medium.com/max/800/1*YoK1cRYjSmssxRSBBHZYfg.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I can tell you how you can run kubernetes master in LXC container, I use Proxmox and it is working really fine, this manual can serve as an alternative way for the classical several masters deployment.&#xA;In this case you can have only one master, and still have all the features of multimater.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Easy way for install Mikrotik’s Cloud Hosted Router on any Cloud VM</title>
       <link>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</link>
       <pubDate>Tue, 06 Feb 2018 12:53:35 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2018/02/easy-way-for-install-mikrotiks-cloud-hosted-router-on-any-cloud-vm/</guid>
       <description>&lt;p&gt;Many cloud providers not allows uploading ISOs and not provides any option for install custom OS. This is not a problem, because I’ll show you how you can prepare Mikrotik VM on any cloud in easy 5 steps.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Zabbix: solve memory and cpu load monitoring issues inside LXC containers</title>
       <link>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</link>
       <pubDate>Wed, 29 Nov 2017 12:53:18 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2017/11/zabbix-solve-memory-and-cpu-load-monitoring-issues-inside-lxc-containers/</guid>
-      <description>&lt;p&gt;Zabbix have some problems with memory collecting from cgroups limited containers.
-If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory.
-Zabbix have &lt;a href=&#34;https://medium.com/r/?url=https%3A%2F%2Fsupport.zabbix.com%2Fbrowse%2FZBX-12164&#34;&gt;bug report&lt;/a&gt;, but it seems that no one don’t want to fix it soon.
-So let’s fix it together byself.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Zabbix have some problems with memory collecting from cgroups limited containers.&#xA;If you using Promxox, you know what I mean: The available memory collected worng without calculating buffers and cache memory.&#xA;Zabbix have &lt;a href=&#34;https://medium.com/r/?url=https%3A%2F%2Fsupport.zabbix.com%2Fbrowse%2FZBX-12164&#34;&gt;bug report&lt;/a&gt;, but it seems that no one don’t want to fix it soon.&#xA;So let’s fix it together byself.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ONLYOFFICE configuration for docker-compose (and letsencrypt).</title>
       <link>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</link>
       <pubDate>Wed, 14 Dec 2016 03:55:37 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2016/12/onlyoffice-configuration-for-docker-compose-and-letsencrypt./</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# wait 1-2 minutes.&lt;/span&gt;
-sudo docker exec -i -t communityserver /bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cat /etc/nginx/sites-enabled/onlyoffice&amp;#39;&lt;/span&gt; &amp;gt; onlyoffice.conf&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
-sudo docker rm -fv communityserver
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Run communityserver container, and get &lt;code&gt;onlyoffice.conf&lt;/code&gt; from it:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -name communityserver -i -t -d onlyoffice/communityserver&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# wait 1-2 minutes.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker exec -i -t communityserver /bin/bash -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;cat /etc/nginx/sites-enabled/onlyoffice&amp;#39;&lt;/span&gt; &amp;gt; onlyoffice.conf&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker rm -fv communityserver&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Build your own failover cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [machine translation]</title>
       <link>https://kvaps.github.io/2015/11/build-your-own-failover-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-machine-translation/</link>
       <pubDate>Mon, 16 Nov 2015 16:45:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/11/build-your-own-failover-cloud-based-on-opennebula-with-ceph-mariadb-galera-cluster-and-openvswitch-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34;&gt;
-This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#ceph&#34;&gt;Install Ceph, distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe the installation of a two-tier storage with a caching pool of SSDs)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#galera&#34;&gt;Install MySQL, Galera Cluster with master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#openvswitch&#34;&gt;Installing OpenvSwitch soft switch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#opennebula&#34;&gt;Installing directly OpenNebula itself&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#pacemaker&#34;&gt;Configuring Failover Cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png&#34; alt=&#34;&#34;&gt;&#xA;This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#ceph&#34;&gt;Install Ceph, distributed storage&lt;/a&gt;&lt;/strong&gt;. &lt;em&gt;(I will describe the installation of a two-tier storage with a caching pool of SSDs)&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#galera&#34;&gt;Install MySQL, Galera Cluster with master replication&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#openvswitch&#34;&gt;Installing OpenvSwitch soft switch&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#opennebula&#34;&gt;Installing directly OpenNebula itself&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#pacemaker&#34;&gt;Configuring Failover Cluster&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://weekly-geekly.github.io/articles/270187/index.html#configuration&#34;&gt;Initial configuration&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Installing CentOS on ZFS in UEFI [machine translation]</title>
       <link>https://kvaps.github.io/2015/10/installing-centos-on-zfs-in-uefi-machine-translation/</link>
       <pubDate>Tue, 13 Oct 2015 15:37:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/10/installing-centos-on-zfs-in-uefi-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I decided to try ZFS here the other day, but I did not find a detailed and simple manual on how to implement it on CentOS, I decided to correct the situation. In addition, I wanted to install all this in EFI mode. - not to stand still? And at the same time understand for yourself how &lt;a href=&#34;https://ru.wikipedia.org/wiki/Dynamic_Kernel_Module_Support&#34;&gt;DKMS&lt;/a&gt; works, as well as aspects of manual installation of RPM-based distributions.
-ZFS was not chosen by chance either, since it was planned to deploy a hypervisor on this machine and use zvol to store images of virtual machines. I wanted something more than a software raid + lvm or simple file storage of images, something like &lt;a href=&#34;https://ru.wikipedia.org/wiki/Ceph_File_System&#34;&gt;ceph&lt;/a&gt;, but for one host this is too bold. Looking ahead to say that I was very pleased with this file system, its performance and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS&#34;&gt;chips&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I decided to try ZFS here the other day, but I did not find a detailed and simple manual on how to implement it on CentOS, I decided to correct the situation. In addition, I wanted to install all this in EFI mode. - not to stand still? And at the same time understand for yourself how &lt;a href=&#34;https://ru.wikipedia.org/wiki/Dynamic_Kernel_Module_Support&#34;&gt;DKMS&lt;/a&gt; works, as well as aspects of manual installation of RPM-based distributions.&#xA;ZFS was not chosen by chance either, since it was planned to deploy a hypervisor on this machine and use zvol to store images of virtual machines. I wanted something more than a software raid + lvm or simple file storage of images, something like &lt;a href=&#34;https://ru.wikipedia.org/wiki/Ceph_File_System&#34;&gt;ceph&lt;/a&gt;, but for one host this is too bold. Looking ahead to say that I was very pleased with this file system, its performance and all its &lt;a href=&#34;http://xgu.ru/wiki/ZFS&#34;&gt;chips&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Customize keyboard shortcuts in Linux like Mac OS X [machine translation]</title>
       <link>https://kvaps.github.io/2015/09/customize-keyboard-shortcuts-in-linux-like-mac-os-x-machine-translation/</link>
       <pubDate>Wed, 09 Sep 2015 16:30:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/09/customize-keyboard-shortcuts-in-linux-like-mac-os-x-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Previously, I quite often had a situation where you simultaneously work in a terminal and, for example, in a browser.
-After several hours of work, you start to get confused and in the terminal instead of [Ctrl] + [Shift] + [C], press [Ctrl] + [C], and vice versa in the browser. As a result, in the terminal you get an interrupt and in the browser, instead of the expected effect, your debugger is slowly loaded.
-One fine moment it got me and I decided it was time to change something&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Previously, I quite often had a situation where you simultaneously work in a terminal and, for example, in a browser.&#xA;After several hours of work, you start to get confused and in the terminal instead of [Ctrl] + [Shift] + [C], press [Ctrl] + [C], and vice versa in the browser. As a result, in the terminal you get an interrupt and in the browser, instead of the expected effect, your debugger is slowly loaded.&#xA;One fine moment it got me and I decided it was time to change something&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Forwarding USB to a virtual network via UsbRedir and QEMU [machine translation]</title>
       <link>https://kvaps.github.io/2015/08/forwarding-usb-to-a-virtual-network-via-usbredir-and-qemu-machine-translation/</link>
       <pubDate>Thu, 20 Aug 2015 11:55:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/08/forwarding-usb-to-a-virtual-network-via-usbredir-and-qemu-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;To date, there are quite a few ways to forward a USB device to another computer or virtual machine over the network.&lt;/p&gt;
-&lt;p&gt;Of the most popular, hardware such as AnywhereUSB and purely software products, from those that I tried myself: USB Redirector and USB / IP.&lt;/p&gt;
-&lt;p&gt;I would like to tell you about another interesting method that works directly with the QEMU emulator.&lt;/p&gt;
-&lt;p&gt;It is also part of the spice project, officially supported by RedHat.&lt;/p&gt;
-&lt;p&gt;UsbRedir, is an open protocol for forwarding usb-devices via tcp to a remote virtual server, developed with the support of RedHat in the framework of the spice project. But as it turned out they can be quite successfully used without spice. The server is usbredirserver, which fumbles a usb device on a specific port, and QEMU itself as a client, which emulates the connection of an exported usb device to a specific usb controller of your virtual machine. Thanks to this approach, absolutely any OS can be used as a guest system, since it does not even know that the device is remotely forwarded, and all the logic rests on QEMU.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://hsto.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;To date, there are quite a few ways to forward a USB device to another computer or virtual machine over the network.&lt;/p&gt;&#xA;&lt;p&gt;Of the most popular, hardware such as AnywhereUSB and purely software products, from those that I tried myself: USB Redirector and USB / IP.&lt;/p&gt;&#xA;&lt;p&gt;I would like to tell you about another interesting method that works directly with the QEMU emulator.&lt;/p&gt;&#xA;&lt;p&gt;It is also part of the spice project, officially supported by RedHat.&lt;/p&gt;&#xA;&lt;p&gt;UsbRedir, is an open protocol for forwarding usb-devices via tcp to a remote virtual server, developed with the support of RedHat in the framework of the spice project. But as it turned out they can be quite successfully used without spice. The server is usbredirserver, which fumbles a usb device on a specific port, and QEMU itself as a client, which emulates the connection of an exported usb device to a specific usb controller of your virtual machine. Thanks to this approach, absolutely any OS can be used as a guest system, since it does not even know that the device is remotely forwarded, and all the logic rests on QEMU.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kolab Groupware (Part 2 - Installation) [machine translation]</title>
       <link>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</link>
       <pubDate>Sat, 18 Jul 2015 14:17:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-2-installation-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;If you still do not know what Kolab is, then you probably want to read the &lt;a href=&#34;https://weekly-geekly.github.io/articles/260469/index.html&#34;&gt;first article&lt;/a&gt;, where I did a detailed review of this rather functional and completely free mail server with a beautiful web-muzzle.
-This time we will install it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you still do not know what Kolab is, then you probably want to read the &lt;a href=&#34;https://weekly-geekly.github.io/articles/260469/index.html&#34;&gt;first article&lt;/a&gt;, where I did a detailed review of this rather functional and completely free mail server with a beautiful web-muzzle.&#xA;This time we will install it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Kolab Groupware (Part 1 - Overview) [machine translation]</title>
       <link>https://kvaps.github.io/2015/07/kolab-groupware-part-1-overview-machine-translation/</link>
       <pubDate>Fri, 17 Jul 2015 15:17:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2015/07/kolab-groupware-part-1-overview-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Hi, Habr! I want to tell you about a rather interesting and functional replacement for MS Exchange, completely free and also with a beautiful web-muzzle. The conversation will be about Kolab - a free mail server with support for collaboration, calendars, to-do lists, WebDAV, ActiveSync synchronization and other goodies that can be used both for work and for home.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Carefully, in a post a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hi, Habr! I want to tell you about a rather interesting and functional replacement for MS Exchange, completely free and also with a beautiful web-muzzle. The conversation will be about Kolab - a free mail server with support for collaboration, calendars, to-do lists, WebDAV, ActiveSync synchronization and other goodies that can be used both for work and for home.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Carefully, in a post a lot of pictures&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>We lift the VPN tunnel from the world home bypassing NAT [machine translation]</title>
       <link>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-machine-translation/</link>
       <pubDate>Tue, 18 Mar 2014 14:51:00 +0000</pubDate>
-      
       <guid>https://kvaps.github.io/2014/03/we-lift-the-vpn-tunnel-from-the-world-home-bypassing-nat-machine-translation/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I want to tell you about how having your VPS server on the Internet, you can raise a tunnel to your home network. And do not pay at the same time for a static IP provider, and even being behind a NAT, still make your home services available on the Internet.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I want to tell you about how having your VPS server on the Internet, you can raise a tunnel to your home network. And do not pay at the same time for a static IP provider, and even being behind a NAT, still make your home services available on the Internet.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

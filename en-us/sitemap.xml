@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kvaps.github.io/</loc>
-    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -15,11 +15,8 @@
                 href="https://kvaps.github.io/"
                 />
   </url><url>
-    <loc>https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/</loc>
-    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -30,6 +27,12 @@
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
                 />
+  </url><url>
+    <loc>https://kvaps.github.io/2023/12/restic-effective-backup-from-stdin/</loc>
+    <lastmod>2023-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kvaps.github.io/2023/11/lvm-qcow2-creating-a-perfect-csi-driver-for-shared-san-in-kubernetes/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kvaps.github.io/2023/09/the-evolution-of-network-virtualization-technologies-in-linux/</loc>
     <lastmod>2023-09-23T00:00:00+00:00</lastmod>
@@ -142,33 +145,33 @@
     <loc>https://kvaps.github.io/2021/02/breaking-down-and-fixing-kubernetes/</loc>
     <lastmod>2021-02-21T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/</loc>
+    <loc>https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula--linbit-sds/</loc>
     <lastmod>2021-01-29T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kvaps.github.io/ru/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/"
+                href="https://kvaps.github.io/ru/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula--linbit-sds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula-linbit-sds/"
+                href="https://kvaps.github.io/2021/01/opennebula-webinar-running-a-fully-hyper-converged-cloud-with-opennebula--linbit-sds/"
                 />
   </url><url>
     <loc>https://kvaps.github.io/2020/12/awesome-warm-and-cozy/</loc>
     <lastmod>2020-12-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/</loc>
+    <loc>https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd--linstor-for-kubernetes-opennebula-and-proxmox/</loc>
     <lastmod>2020-11-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://kvaps.github.io/ru/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/"
+                href="https://kvaps.github.io/ru/2020/11/case-study-600-nodes-on-drbd--linstor-for-kubernetes-opennebula-and-proxmox/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd-linstor-for-kubernetes-opennebula-and-proxmox/"
+                href="https://kvaps.github.io/2020/11/case-study-600-nodes-on-drbd--linstor-for-kubernetes-opennebula-and-proxmox/"
                 />
   </url><url>
     <loc>https://kvaps.github.io/2020/09/tuning-cni-plugins-for-having-better-performance-and-advanced-features/</loc>
