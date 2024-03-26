@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -285,21 +285,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/352576/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/423101/" target="_blank">
       
-          Простой способ установить Mikrotik RouterOS в любом облаке
+          Разворачиваем хранилище LINSTOR для Proxmox
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-04-01T14:57:00Z">
+      <time itemprop="datePublished" datetime="2018-09-13T00:40:00Z">
         
   
   
   
   
-    1 Апрель 2018
+    13 Сентябрь 2018
   
 
       </time>
@@ -310,12 +310,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p>Многие облачные провайдеры не позволяют загружать ISO-файлы и не предоставляют никакой возможности для установки ОС отличных от тех что предусмотрены самим облаком.</p>
-<p>В этой статье я расскажу вам как избежать данное ограничение и как просто в 5 шагов можно установить Mikrotik Cloud Hosted Router на любой облачной виртуалке.</p>
+        <p><img src="https://hsto.org/getpro/habr/post_images/e47/594/c07/e47594c0721332fb46493d20339bb1be.png" alt="image"></p>
+<p>Недавно LINBIT выпустили свое новое решение для оркестрации и управления множеством DRBD-массивов.</p>
+<p>К примеру у вас может быть несколько нод и у каждой будет собственный LVM или ZFS пул в котором LINSTOR будет автоматически создавать новые тома и реплицировать их между нодами используя DRBD-протокол.</p>
+<p>LINSTOR поддерживает thin-provisioning, снапшоты и много других интересных штук.
+Это решение хорошо подойдет для виртуальных машин и контейнеров.</p>
       
       <p>
         
-          <a href="https://habr.com/post/352576/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/423101/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -343,21 +346,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/403837/#habracut" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/417597/" target="_blank">
       
-          Ведется массовая атака криптором Wana decrypt0r 2.0
+          Надежное хранилище с DRBD9 и Proxmox (Часть 2: iSCSI&#43;LVM)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-05-11T18:32:00Z">
+      <time itemprop="datePublished" datetime="2018-08-22T18:58:00Z">
         
   
   
   
   
-    11 Май 2017
+    22 Август 2018
   
 
       </time>
@@ -368,15 +371,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p>В настоящий момент можно наблюдать масштабную атаку трояном-декриптором &ldquo;Wana decrypt0r 2.0&rdquo;
-Атака наблюдается в разных сетях совершенно никак не связанных между ссобой.</p>
-<p><img src="https://pbs.twimg.com/media/C_n2dzcW0AAsnG-.jpg:large" alt="">
-<em>A ransomware spreading in the lab at the university (<a href="https://twitter.com/dodicin/status/862991818904002565/photo/1">отсюда</a>)</em></p>
-<p>Некоторые компании советуют своим пользователям выключить свои компьютеры и ждать дальшейших инструкций.</p>
+        <p><img src="https://hsto.org/getpro/habr/post_images/101/70c/524/10170c52443d67bd757a09ef22ba39e2.jpg" alt=""></p>
+<p>В <a href="https://habr.com/post/417473/">предыдущей статье</a> я рассмотрел возможность создания отказоустойчивого NFS-сервера с помощью DRBD и Proxmox. Получилось довольно неплохо, но не будем останавливаться на достигнутом и теперь постараемся &ldquo;выжать все соки&rdquo; из нашей хранилки.</p>
+<p>В этой статье я расскажу как подобным образом создать отказоустойчивый iSCSI-таргет, который при помощи LVM мы будем нарезать на маленькие кусочки и использовать под виртуальные машины.</p>
+<p>Именно такой подход позволят снизить нагрузку и повысить скорость доступа к данным в несколько раз, это бывает особенно выгодно когда не требуется конкурентный доступ к данным, например в случае когда вам нужно организовать хранилище под виртуальные машины.</p>
       
       <p>
         
-          <a href="https://habr.com/post/403837/#habracut" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/417597/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -404,21 +406,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/328048/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/420913/" target="_blank">
       
-          All-In-One: Proxmox &#43; OpenMediaVault или ещё одна идея для домашнего NAS
+          Запускаем kubernetes внутри LXC
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-05-06T16:46:00Z">
+      <time itemprop="datePublished" datetime="2018-08-22T12:18:00Z">
         
   
   
   
   
-    6 Май 2017
+    22 Август 2018
   
 
       </time>
@@ -429,17 +431,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/web/f0a/592/3de/f0a5923dec20422e952394a6d0473355.png" alt=""></p>
-<p>Астрологи объявили месяц статей о домашних NAS на хабре, так что поделюсь и своей историей успеха&hellip;</p>
-<p>Не так давно я попробовал новый FreeNAS Coral. Понравилось мне в нем если не все, то очень многое: это и новый гипервизор bhyve, и повсеместное использование 9P для проброса файловой системы на гостя, а так же идея с docker и многое другое.
-Кроме того я ещё больше влюбился в ZFS со всеми её плюшками, такими как дедупликация и сжатие на лету.</p>
-<p>Но к сожалению не все было так гладко как хотелось бы и, к тому же, флешка с установленной системой приказала долго жить, так что настало время для новых экспериментов!
-На этот раз я задумал реализовать что-то похожее, но только лучше и целиком на Linux.</p>
-<p>В статье так же будет немного рассказано про Docker и автоматический прокси с автоматическим получением сертификатов Letsencrypt.</p>
+        <p><img src="https://habrastorage.org/webt/ku/7d/fb/ku7dfbo93q4kk2a53rvhv-9p2qy.png" alt=""></p>
+<p>В этой статье я расскажу как можно запустить kubernetes master внутри LXC-контейнера.
+Этод метод работает вполне неплохо с Proxmox и может быть рассмотрен как альтернатива классическому развертыванию kubernetes с несколькими мастерами.</p>
       
       <p>
         
-          <a href="https://habr.com/post/328048/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/420913/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -467,21 +465,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/400953/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/417473/" target="_blank">
       
-          Google Chrome перестал доверять сертификатам WoSign и StartCom
+          Надежное хранилище с DRBD9 и Proxmox (Часть 1: NFS)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-01-26T11:19:00Z">
+      <time itemprop="datePublished" datetime="2018-08-19T11:52:00Z">
         
   
   
   
   
-    26 Январь 2017
+    19 Август 2018
   
 
       </time>
@@ -492,13 +490,18 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/1ff/c49/9de/1ffc499debe24e1989f3c1608255917c.png" alt=""></p>
-<p>Как <a href="https://habr.com/post/398161/">сообщалось ранее</a> Google Chrome заблокировал сертификаты WoSign и StartCom.</p>
-<p>Сегодня вышла новая версия Google Chrome 56, и начиная с нее браузер больше не доверяет сертификатам WoSign и StartCom выпущенным позднее <code>October 21, 2016 00:00:00 UTC</code>.</p>
+        <p><img src="https://go.ahead.it/wp-content/uploads/2017/05/drbd.jpg" alt="image"></p>
+<p>Наверное каждый, кто хоть раз озадачивался поиском высокопроизводительного <strong>software-defiined хранилища</strong> рано или поздно слышал про <strong>DRBD</strong>, а может даже и имел дело с ним.</p>
+<p>Правда на пике популярности <strong>Ceph</strong> и <strong>GlusterFS</strong>, которые работают в принципе неплохо, а главное сразу и из коробки, все просто немного подзабыли про него. Тем более что предыдущая версия не поддерживала репликацию более чем на два узла, и из-за чего часто встречались проблемы со <strong>split-brain</strong>, что явно не добавило ему популярности.</p>
+<p>Решение и правда не новое, но вполне конкурентоспособное. При относительно небольших затратах на CPU и RAM, <strong>DRBD</strong> предоставляет реально быструю и безопасную синхронизацию на уровне <strong>блочного устройства</strong>. За все это время LINBIT - разработчики DRBD не стоят на месте и постоянно дорабатывают его. Начиная с версии <strong>DRBD9</strong> перестает быть просто сетевым зеркалом и становится чем-то бОльшим.</p>
+<p>Во первых, идея создания одного <strong>распределенного блочного устройства</strong> для нескольких серверов отошла на задний план, и теперь LINBIT старается предоставить инструменты оркестрации и управления множеством drbd-устройств в кластере, которые создаются поверх <strong>LVM</strong> и <strong>ZFS-разделов</strong>.</p>
+<p>Например DRBD9 поддерживает до 32 реплик, RDMA, diskless-ноды, а новые инструменты оркестрации позволяют использовать снапшоты, online-миграцию и много чего другого.</p>
+<p>Несмотря на то что <strong>DRBD9</strong> имеет инструменты интеграции с <strong>Proxmox</strong>, <strong>Kubernetes</strong>, <strong>OpenStack</strong> и <strong>OpenNebula</strong>, на данный момент они находится в некотором переходном режиме, когда новые инструменты еще не везде поддерживаются, а старые уже очень скоро будут объявлены как <em>deprecated</em>. Речь идет о <strong>DRBDmanage</strong> и <strong>Linstor</strong>.</p>
+<p>Я воспользуюсь этим моментом что бы не сильно вдаваться в подробности каждого из них, но более подробно рассмотреть настройку и принципы работы с самим <strong>DRBD9</strong>.</p>
       
       <p>
         
-          <a href="https://habr.com/post/400953/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/417473/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -526,21 +529,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/319550/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/413155/" target="_blank">
       
-          Балансировка нагрузки с Pacemaker и IPaddr (Active/Active cluster)
+          Google&#39;s Shell Style Guide (на русском)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2017-01-25T08:52:00Z">
+      <time itemprop="datePublished" datetime="2018-06-04T19:43:00Z">
         
   
   
   
   
-    25 Январь 2017
+    4 Июнь 2018
   
 
       </time>
@@ -551,19 +554,19 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/files/246/8dc/e38/2468dce38afd462fbb3ef3bf6d5e69d4.png" alt=""></p>
-<p>Хочу рассказать вам еще об одном способе балансировки нагрузки.
-Про Pacemaker и IPaddr (ресурс-агент) и настройке его для Active/Passive кластера сказано уже и так достаточно много, но информации по организации полноценного Active/Active кластера, используя этот модуль я нашел крайне мало. Постараюсь исправить эту ситуацию.</p>
-<p>Для начала расскажу подробнее чем такой метод балансировки примечателен:</p>
-<ul>
-<li><strong>Отсутсвие внешнего балансировщика</strong> - На всех нодах в кластере настраивается один общий виртуальный IP-адрес. Все запросы отправляются на него. Ноды отвечают на запросы на этот адрес случайно и по договоренности между ссобой.</li>
-<li><strong>Высокая доступность</strong> - Если одна нода падает ее обязаности подхватывает другая.</li>
-<li><strong>Простота настройки</strong> - Настройка осуществляется всего в 3-5 команд</li>
-</ul>
+        <h1 id="предисловие">Предисловие</h1>
+<h3 id="какой-shell-использовать">Какой Shell использовать</h3>
+<p><code>Bash</code> единственный язык shell скриптов, который разрешается использовать для исполняемых файлов.</p>
+<p>Скрипты должны начинаться с <code>#!/bin/bash</code> с минимальным набором флагов. Используйте <code>set</code> для установки опций shell, что бы вызов вашего скрипта как <code>bash &lt;script_name&gt;</code> не нарушило его функциональности.</p>
+<p>Ограничение всех shell скриптов до bash, дает нам согласованный shell язык, который установлен на всех наших машинах.</p>
+<p>Единственное исключение составляет если вы ограничены условиями того под что вы программируете. Одним из примеров могут стать пакеты Solaris SVR4, для которых требуется использование обычного Bourne shell для любых скриптов.</p>
+<h3 id="когда-использовать-shell">Когда использовать Shell</h3>
+<p>Shell следует использовать только для небольших утилит или простых скрптов-оберток.</p>
+<p>Хотя shell-скриптинг не является языком разработки, он используется для написания различных утилит во всем Google. Это руководство по стилю является скорее признанием его использования, а не предложением использовать его в широком применении.</p>
       
       <p>
         
-          <a href="https://habr.com/post/319550/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/413155/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -591,21 +594,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/400137/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/412825/" target="_blank">
       
-          Leaf Browser Alpha — браузер с древовидными вкладками
+          Блочные устройства QEMU
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2016-12-23T13:26:00Z">
+      <time itemprop="datePublished" datetime="2018-06-01T00:01:19Z">
         
   
   
   
   
-    23 Декабрь 2016
+    1 Июнь 2018
   
 
       </time>
@@ -616,14 +619,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/geektimes/post_images/7dd/285/afe/7dd285afe4dd3fbfa27274c5f83a8c81.png" alt="image"></p>
-<p>Поклонникам расширения <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">Tree Style Tab</a> (древовидные вкладки) для Firefox, и тем кто не может без него жить, но хотел бы найти достойную альтернативу Firefox посвящается открытый проект Leaf Browser.
-Он представляет собой браузер на базе Google Chrome, но с древовидными вкладками.</p>
-<p>Браузер реализован в качестве приложения для Google Chrome, и может быть установлен в пару кликов из <a href="https://chrome.google.com/webstore/detail/leaf-browser-alpha/nefehiekhccmedmdoilmhikhdiiijkbe">Chrome Web Store</a> прямо в ваш браузер.</p>
+        <p><img src="https://hsto.org/getpro/habr/post_images/65a/367/b43/65a367b437b3a4242250ff30063f4455.png" alt=""></p>
+<p>В QEMU есть несколько способов подключить блочное устройство для виртуальной машины. Изначально это было реализованно следующим способом:</p>
+<pre><code>-hda /dev/sda1
+</code></pre>
+<p>Таким образом виртуальные диски подключались в давние дни виртуализации. Его можно использовать и сегодня, если мы просто хотим протестировать некоторые liveCD. К сожалению, он имеет свои недостатки</p>
       
       <p>
         
-          <a href="https://habr.com/post/400137/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/412825/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -651,21 +655,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/369995/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/412739/" target="_blank">
       
-          Hugin — отличная бесплатная программа для создания панорам
+          Sheepdog
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2016-12-22T13:25:00Z">
+      <time itemprop="datePublished" datetime="2018-05-31T13:52:00Z">
         
   
   
   
   
-    22 Декабрь 2016
+    31 Май 2018
   
 
       </time>
@@ -676,15 +680,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Hugin-splash.svg/1280px-Hugin-splash.svg.png" alt=""></p>
-<p>Сегодня я расскажу вам про замечательную программу - Hugin. С ее помощью можно без усилий построить даже самые крутые и самые сложные панорамы.
-Hugin - является самой популярной программой для построения панорам и кроме того имеет полностью свободную лицензию и ее использование абсолютно бесплатно.</p>
-<p>Программа считает EXIF ваших фотографий и автоматически выровняет их относительно фокусного расстояния и угла обзора вашего объектива, разместит их в нужном порядке и без проблем склеит тени, провода, заборы, людей и другие объекты вашей панорамы.</p>
-<p>Наконец все построение панорамы, вместо сложной и муторной работы, сведется к игре найди 5 <!-- raw HTML omitted -->отличий<!-- raw HTML omitted --> схожестей, а то и вовсе к нажатию всего трех кнопок.</p>
+        <p><img src="https://hsto.org/webt/ru/g3/9i/rug39i1kkn-c4ack--isbvvzjma.jpeg" alt=""></p>
+<p><strong>Sheepdog</strong> - масштабируемая система, которая предоставляет виртуальным машинам распределенные блочные устройства. Его развитие началось в 2009 году разработчиками из японской компании <em>Nippon Telegraph and Telephone Corporation</em>. <strong>Sheepdog</strong> - это приложение с открытым исходным кодом под лицензией GPL2. Последняя версия 0.9.3, выпущенная в ноябре 2015 года станет наследиком версии 1.0, пригодной для коммерческого испрользования. <em>(уже стала — прим.пер.)</em></p>
+<blockquote>
+<p>Чисто ради интереса, первая версия (0.1.0), была выпущена разработчиками в августе 2010 года - и в то же время поддержка sheepdog сразу была включена в основную ветку разработки QEM</p>
+</blockquote>
       
       <p>
         
-          <a href="https://habr.com/post/369995/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/412739/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -715,7 +719,7 @@ Hugin - является самой популярной программой д
           </li>
         
       
-      <li class="pagination-number">Страница 10 из 13</li>
+      <li class="pagination-number">Страница 10 из 14</li>
     </ul>
   </div>
 
@@ -723,7 +727,7 @@ Hugin - является самой популярной программой д
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

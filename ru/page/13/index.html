@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,21 +284,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="http://4pda.ru/forum/index.php?s=&amp;showtopic=327297&amp;view=findpost&amp;p=12780968" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/268711/" target="_blank">
       
-          Прошивка Art Of Honeycomb для TS1004T
+          Установка CentOS на ZFS в UEFI
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2012-04-12T05:57:00Z">
+      <time itemprop="datePublished" datetime="2015-10-13T15:37:00Z">
         
   
   
   
   
-    12 Апрель 2012
+    13 Октябрь 2015
   
 
       </time>
@@ -309,12 +309,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="http://cs5-1.4pda.to/1649543.jpg" alt=""></p>
-<p>Так, добрались до релиз-кандидата, тестим, радуемся.</p>
+        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
+<p>Решил тут на днях попробовать ZFS, а подробного и простого мануала как это осуществить на CentOS не нашел, решил исправить ситуацию. К тому же хотелось установить все это в режиме EFI. — не стоять же на месте? И заодно понять для себя как работает DKMS, а так же аспекты ручной установки RPM-based дистрибутивов.</p>
+<p>ZFS был выбран тоже не случайно, так как на этой машине планировалось развернуть гипервизор и использовать zvol для хранения образов виртуальных машин. Мне хотелось нечто большего чем програмный рейд + lvm или простое файловое хранение образов, что-нибудь на подобии ceph, но для одного хоста это слишком жирно. Забегая вперед скажу, что я остался очень доволен этой файловой системой, ее производительностью и всеми ее <a href="http://xgu.ru/wiki/ZFS#.D0.A2.D0.B5.D1.85.D0.BD.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B5_.D0.B2.D0.BE.D0.B7.D0.BC.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82.D0.B8_ZFS">фишками</a>.</p>
       
       <p>
         
-          <a href="http://4pda.ru/forum/index.php?s=&amp;showtopic=327297&amp;view=findpost&amp;p=12780968" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/268711/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -342,21 +343,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/1/01/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/">
+        <a class="link-unstyled" href="https://habr.com/post/266375/" target="_blank">
       
-          Звуки Pidgin в qutIM
+          Настраиваем сочетания клавиш в Linux наподобие Mac OS X
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="0001-01-01T00:00:00Z">
+      <time itemprop="datePublished" datetime="2015-09-09T16:30:00Z">
         
   
   
   
   
-    1 Январь 0001
+    9 Сентябрь 2015
   
 
       </time>
@@ -367,11 +368,310 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p>Понравились тут звуки в Pidgin, решил их прикрутить в qutIM 0.3</p>
+        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
+<p>Раньше, у меня довольно часто возникала такая ситуация, когда одновременно работаешь в терминале и, например, в браузере.
+После нескольких часов работы начинаешь путаться и в терминале вместо [Ctrl]+[Shift]+[C] нажимаешь [Ctrl]+[C], а в браузере наоборот. В итоге в терминале вы получаете прерывание а в браузере вместо ожидаемого эффекта у вас медленно прогружается дебаггер.
+В один прекрасный момент меня это достало и я решил, что пора что-то менять…</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/1/01/%D0%B7%D0%B2%D1%83%D0%BA%D0%B8-pidgin-%D0%B2-qutim/" class="postShorten-excerpt_link link">Читать далее</a>
+          <a href="https://habr.com/post/266375/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/265065/" target="_blank">
+      
+          Проброс USB в виртуалку по сети средствами UsbRedir и QEMU
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-08-20T11:55:00Z">
+        
+  
+  
+  
+  
+    20 Август 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/e6a/1bc/05d/e6a1bc05d70c460399d3276fdec28d2c.png" alt=""></p>
+<p>На сегодняшний день существет довольно много способов пробросить USB-устройство на другой компьютер или виртуалку по сети.
+Из наиболее популярных — железячные такие как AnywhereUSB и чисто програмные продукты, из тех что я попробовал сам: USB Redirector и USB/IP.
+Я бы хотел рассказать вам еще об одном интересном способе, который работает непосредственно с эмулятором QEMU.
+Он так же является частью проекта spice, официально поддерживаемым RedHat.</p>
+<p>UsbRedir, это открытый протокол для проброса usb-устройств по tcp на удаленный виртуальный сервер, разработанный при поддержке RedHat в рамках проекта spice. Но как оказалось им можно вполне успешно пользоваться и без spice. В роли сервера выступает usbredirserver, который шарит usb-устройство на определенный порт, а в качестве клиента сам QEMU, который эмулирует подключение экспортированного usb-устройства в определенный usb-контроллер вашей виртуальной машины. Благодаря такому подходу в качестве гостевой системы может использоваться абсолютно любая ОС, так как она даже не знает, что устройство является проброшенным удаленно, а вся логика ложится на QEMU.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/265065/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/260527/" target="_blank">
+      
+          Kolab Groupware (Часть 2 — Установка)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-07-18T14:17:00Z">
+        
+  
+  
+  
+  
+    18 Июль 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/ee8/922/938/ee892293882e4e2487c48354109305bb.png" alt=""></p>
+<p>Если вы еще не знаете что такое Kolab, то вы вероятно захотите прочитать первую статью, где я делал подробный обзор на этот довольно функциональный и полностью свободной почтовый сервер с красивой веб-мордой.
+На этот раз мы будем его устанавливать.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/260527/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/260469/" target="_blank">
+      
+          Kolab Groupware (Часть 1 — Обзор)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2015-07-17T15:17:00Z">
+        
+  
+  
+  
+  
+    17 Июль 2015
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/files/3b1/7cb/b50/3b17cbb50147480da0cfab3dc4154b05.png" alt=""></p>
+<p>Привет, Хабр! Хочу рассказать тебе о довольно интересной и функциональной замене MS Exchange, полностью свободной и к тому же с красивой web-мордой. Разговор пойдет про Kolab — свободный почтовый сервер с поддержкой совместной работы, календарей, списков дел, WebDAV, ActiveSync синхронизацией и прочими плюшками, который можно использовать как для работы, так и для дома.</p>
+<p><em>Осторожно, в посте много картинок&hellip;</em></p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/260469/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://habr.com/post/216101/" target="_blank">
+      
+          Поднимаем VPN-туннель из мира домой в обход NAT
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2014-03-18T14:51:00Z">
+        
+  
+  
+  
+  
+    18 Март 2014
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://habrastorage.org/getpro/habr/post_images/427/d2e/abc/427d2eabc3adcf37fdd642660f5aa09a.png" alt=""></p>
+<p>Хочу рассказать вам про то как имея в интернете свой VPS-сервер можно поднять туннель в домашнюю сеть. И не платить при этом за статический IP провайдеру, и даже находясь за NAT, все равно сделать доступными в интернете свои домашние сервисы.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/post/216101/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="http://www.psjailbreak.ru/2012/11/03/proshivka-rebug-421.html" target="_blank">
+      
+          Прошивка Rebug 4.21
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2012-11-03T14:39:00Z">
+        
+  
+  
+  
+  
+    3 Ноябрь 2012
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="http://www.psjailbreak.ru/uploads/posts/2012-11/thumbs/1351956551_red_scorpion_3_sml.png" alt=""></p>
+<p>Сегодня команда Rebug выпустили свою 4.21 прошивку. Прошивки от команды Rebug всегда славились своей стабильностью и большим набором фунций. Почитать об изменениях и нововведениях, можно на официальном сайте Rebug в этой <a href="http://rebug.me/rebug-3-55-3-and-4-21-1-rex-editions-and-999-downgrader/">теме</a>.</p>
+      
+      <p>
+        
+          <a href="http://www.psjailbreak.ru/2012/11/03/proshivka-rebug-421.html" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -394,8 +694,15 @@ if (!doNotTrack) {
           </li>
         
         
+          <li class="pagination-next">
+            <a class="btn btn--default btn--small" href="https://kvaps.github.io/ru/page/14/">
+              <span>Старые статьи</span>
+              <i class="fa fa-angle-right text-base icon-ml"></i>
+            </a>
+          </li>
+        
       
-      <li class="pagination-number">Страница 13 из 13</li>
+      <li class="pagination-number">Страница 13 из 14</li>
     </ul>
   </div>
 
@@ -403,7 +710,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

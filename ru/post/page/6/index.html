@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -285,7 +285,7 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/FDdPProqE8g" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/company/oleg-bunin/blog/558900/" target="_blank">
       
           Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE
         </a>
@@ -293,13 +293,13 @@ if (!doNotTrack) {
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-10-23T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-05-25T00:00:00Z">
         
   
   
   
   
-    23 Октябрь 2020
+    25 Май 2021
   
 
       </time>
@@ -310,20 +310,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/FDdPProqE8g"><img src="https://img.youtube.com/vi/FDdPProqE8g/sddefault.jpg" alt=""></a></p>
-<p>В докладе я расскажу о двух свободных проектах: Kubernetes-in-Kubernetes и Kubefarm, которые мы используем для быстрого развёртывания Kubernetes-кластеров на собственном оборудовании.</p>
-<p>В программе дня:</p>
-<ul>
-<li>Простейший способ развернуть и поддерживать в актуальном состоянии сотни серверов on-premise.</li>
-<li>Легко спавнить и удалять физические ноды как виртуалки.</li>
-<li>Разделять кластера и властвовать.</li>
-<li>Cluster API? Не, не слышали&hellip;</li>
-<li>Деплоить Kubernetes Helm&rsquo;ом, WAT?</li>
-</ul>
+        <p><img src="https://hsto.org/getpro/habr/upload_files/1c5/449/a3d/1c5449a3d5864b48ca0d6791742cc4be.png" alt=""></p>
+<p>Когда у вас 2 собственных дата-центра, тысячи железных серверов, виртуалки и хостинг для сотен тысяч сайтов, Kubernetes может существенно упростить управление всем этим добром. Как показала практика, с помощью Kubernetes можно декларативно описывать и управлять не только приложениями, но и самой инфраструктурой. Я работаю в крупнейшем чешском хостинг-провайдере WEDOS Internet a.s и сегодня расскажу о двух своих проектах — <a href="https://github.com/kvaps/kubernetes-in-kubernetes">Kubernetes-in-Kubernetes</a> и <a href="https://github.com/kvaps/kubefarm">Kubefarm</a>.</p>
+<p>С их помощью можно буквально за пару команд, используя Helm, развернуть полностью рабочий Kubernetes внутри другого Kubernetes-кластера. Как и зачем? Добро пожаловать под кат</p>
       
       <p>
         
-          <a href="https://youtu.be/FDdPProqE8g" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/company/oleg-bunin/blog/558900/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -351,21 +344,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/post/519180/" target="_blank">
+        <a class="link-unstyled" href="https://devchat.tv/adventures-in-devops/kubernetes-in-kubernetes-on-bare-metal-with-andrey-kv%d0%b0pil-devops-069/" target="_blank">
       
-          Регистратор доменов Subreg/Gransy подвергся атаке, большинство его сервисов не работают
+          Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-09-15T23:06:00&#43;03:00">
+      <time itemprop="datePublished" datetime="2021-05-20T12:00:00&#43;01:00">
         
   
   
   
   
-    15 Сентябрь 2020
+    20 Май 2021
   
 
       </time>
@@ -376,17 +369,12 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/getpro/habr/post_images/d70/6be/11c/d706be11c5df8234e102753a2d7f4627.png" alt=""></p>
-<p>Регистратор доменов <a href="https://subreg.cz/">Subreg</a> (компания Gransy) подвергается атаке на свою инфраструктуру. В настоящее время веб-сайты <a href="https://subreg.cz/">subreg.cz</a> и <a href="https://gransy.com/">gransy.com</a> недоступны, как и другие сервисы компании - например клиенты не имеют доступа к доменам. Компания подтвердила наличие проблемы <a href="https://www.facebook.com/Subreg.CZ/posts/3496721943683231">на своей странице в Facebook</a>:</p>
-<blockquote>
-<p>Уважаемые клиенты, мы имеем дело со сложной крупномасштабной атакой на нашу инфраструктуру, которая затрагивает большую часть предоставляемых услуг. Наберитесь терпения, мы все усиленно работаем над этой проблемой. Нет необходимости связываться с нами, мы будем держать вас в курсе здесь, мы не будем предоставлять вам дополнительную информацию по телефону в настоящее время</p>
-</blockquote>
-<p><em>- говорится в заявлении.</em></p>
-<p>Сегодня утром <a href="https://twitter.com/subreg">в Твиттере компании</a> появился англоязычный твит, предполагающий, что это могла быть атака программы-вымогателя. Через некоторое время он исчез из этого аккаунта. Однако компания пока официально не указала конкретную причину проблемы.</p>
+        <p><img src="https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg" alt=""></p>
+<p>Поучаствовал в записи подкaста Adventures in DevOps. Поговорили про Kubernetes-in-Kubernetes, Kubefarm и про то как мы готовим куб на Bare Metal.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/post/519180/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://devchat.tv/adventures-in-devops/kubernetes-in-kubernetes-on-bare-metal-with-andrey-kv%d0%b0pil-devops-069/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -414,21 +402,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/post/517966/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/544390/" target="_blank">
       
-          Разбираемся с Custom Tooling в Argo CD
+          Ломаем и чиним etcd-кластер
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-09-06T01:04:00&#43;03:00">
+      <time itemprop="datePublished" datetime="2021-03-01T20:05:00&#43;03:00">
         
   
   
   
   
-    6 Сентябрь 2020
+    1 Март 2021
   
 
       </time>
@@ -439,16 +427,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png" alt=""></p>
-<p>Спустя некоторое время после написания <a href="https://habr.com/post/481662/">первой статьи</a>, где я ловко управлялся с jsonnet и гитлабом, я понял что пайплайны это конечно хорошо, но излишне сложно и неудобно.</p>
-<p>В большинстве случаев требуется типовая задача: &ldquo;сгенерировать YAML и положить его в Kubernetes&rdquo;. Собственно, с чем Argo CD замечательно и справляется.</p>
-<p>Argo CD позволяет подключить Git-репозиторий и синкать его состояние в Kubernetes. По умолчанию есть поддержка нескольких видов приложений: Kustomize, Helm чарты, Ksonnet, голый Jsonnet или просто директории с YAML/JSON манифестами.</p>
-<p>Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.</p>
-<p>В первую очередь интересует возможность добавления поддержки <a href="https://habr.com/ru/post/481662/">qbec</a> и <a href="https://habr.com/ru/post/481662/#git-crypt">git-crypt</a>, которые с полна были рассмотренны в предыдущей статье.</p>
+        <p><img src="https://hsto.org/webt/tf/ep/wv/tfepwvvxbyrgovnacaf1uqmhdg4.png" alt=""></p>
+<p><strong>etcd</strong> — это быстрая, надёжная и устойчивая к сбоям key-value база данных. Она лежит в основе Kubernetes и является неотъемлемой частью его control-plane, именно поэтому критически важно уметь бэкапить и восстанавливать работоспособность как отдельных нод, так и всего etcd-кластера.</p>
+<p>В <a href="https://habr.com/ru/post/541118/">предыдущей статье</a> мы подробно рассмотрели перегенерацию SSL-сертификатов и static-манифестов для Kubernetes, а также вопросы связанные c восстановлением работоспособности Kubernetes. Эта статья будет посвящена целиком и полностью восстановлению etcd-кластера.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/post/517966/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/544390/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -476,7 +461,124 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/liNU40LECoc" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/541118/" target="_blank">
+      
+          Ломаем и чиним Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-02-07T23:18:44&#43;03:00">
+        
+  
+  
+  
+  
+    7 Февраль 2021
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://hsto.org/webt/bm/sp/06/bmsp06ik_pa4dlp57vyac8ozyck.png" alt=""></p>
+<p><strong>Kubernetes</strong> отличная платформа как для оркестрации контейнеров так и для всего остального. За последнее время Kubernetes ушёл далеко вперёд как по части функциональности так и по вопросам безопасности и отказоустойчивости. Архитектура Kubernetes позволяет с лёгкостью переживать сбои различного характера и всегда оставаться на плаву.</p>
+<p>Сегодня мы будем ломать кластер, удалять сертификаты, вживую реджойнить ноды и всё это, по возможности, без даунтайма для уже запущенных сервисов.</p>
+      
+      <p>
+        
+          <a href="https://habr.com/ru/post/541118/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/c_TTpj5jEfI" target="_blank">
+      
+          OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-01-29T00:00:00Z">
+        
+  
+  
+  
+  
+    29 Январь 2021
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><a href="https://youtu.be/c_TTpj5jEfI"><img src="http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg" alt=""></a></p>
+<p>Learn more about LINBIT&rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).</p>
+      
+      <p>
+        
+          <a href="https://youtu.be/c_TTpj5jEfI" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/Lr12wXRdP24" target="_blank">
       
           В поисках идеального хранилища...
         </a>
@@ -484,13 +586,13 @@ if (!doNotTrack) {
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-06-27T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-12-17T00:00:00Z">
         
   
   
   
   
-    27 Июнь 2020
+    17 Декабрь 2020
   
 
       </time>
@@ -501,13 +603,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/liNU40LECoc"><img src="https://img.youtube.com/vi/liNU40LECoc/maxresdefault.jpg" alt=""></a></p>
-<p>Душещипательная история о том как мы выбирали кластерную файловую систему под виртуальные машины и контейнеры, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.</p>
-<p>В докладе будут рассмотрены различные свободные кластерные файловые системы и эволюция нашего выбора, а так обзор возможностей LINSTOR, хранилища построенного на свободных технологиях: ZFS, LVM, DRBD и ориентированного на максимальную производительность и высокую доступность.</p>
+        <p><a href="https://youtu.be/Lr12wXRdP24"><img src="https://img.youtube.com/vi/Lr12wXRdP24/maxresdefault.jpg" alt=""></a></p>
+<p>Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.</p>
+<p>Доклад разделён на две части:</p>
+<p>В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.</p>
+<p>Вторая часть доклада будет сосредоточена непосредственно на LINSTOR, чтобы рассказать слушателям, как именно он работает и с какими проблемами мы столкнулись при его использовании.</p>
       
       <p>
         
-          <a href="https://youtu.be/liNU40LECoc" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/Lr12wXRdP24" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -535,21 +639,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/post/504152/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/lr12wxrdp24" target="_blank">
       
-          Бэкап-хранилище для тысяч виртуальных машин свободными инструментами
+          Круглый стол по теме Stateful-приложения в 2020 году
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-05-28T00:39:00Z">
+      <time itemprop="datePublished" datetime="2020-12-17T00:00:00Z">
         
   
   
   
   
-    28 Май 2020
+    17 Декабрь 2020
   
 
       </time>
@@ -560,136 +664,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/webt/br/qy/_z/brqy_zs-d0ewx13ouawskifpqio.png" alt=""></p>
-<p>Привет, недавно мне попалась интересная задачка настроить хранилище для бэкапа большого количества блочных устройств.</p>
-<p>Каждую неделю мы выполняем резервное копирование всех виртуальных машин в нашем облаке, таким образом нужно уметь обслуживать тысячи резервных копий и делать это максимально быстро и эфективно.</p>
-<p>К сожалению стандартные конфигурации <strong>RAID5</strong>, <strong>RAID6</strong> в данном случае нам не подхотят в виду того что процесс восстановления на таких больших дисках как наши будет мучительно долгим и скорее всего не закончится никогда.</p>
-<p>Рассмотрим какие есть альтернативы :</p>
-<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> - Аналог RAID5, RAID6, но с настраиваемым уровнем четности. При этом резервирование выполняется не поблочно а для каждого объекта отдельно. Наиболее простой способ попробовать erasure coding - это развернуть <a href="https://min.io/">minio</a>.</p>
-<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> - это на данный момент ещё не выпущенная возможность ZFS. В отличие от RAIDZ DRAID имеет распределённый parity block и при восстановлении задействует сразу все диски массива, благодаря чему лучше переживает отказы дисков и быстрее восстанавливается после сбоя.</p>
+        <p><a href="https://youtu.be/mXhlL4HZDdc"><img src="https://img.youtube.com/vi/mXhlL4HZDdc/maxresdefault.jpg" alt=""></a></p>
+<p>Антон Черноусов (Developer Advocate в Yandex.Cloud)
+Марсель Ибраев (CTO Слёрм)
+Андрей Квапил (Cloud Architect и DevOps Engineer в WEDOS Internet a.s.)
+Мона Архипова (sudo.su)
+Иван Чувашов (DBA PostgreSQL в Southbridge)</p>
+<p>Stateful-приложения в 2020 году. Что меняется, какие тренды и что нас ждет в будущем.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/post/504152/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/ru/post/501842/" target="_blank">
-      
-          Тонкая настройка маршрутизации для MetalLB в режиме L2
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-05-14T02:29:00Z">
-        
-  
-  
-  
-  
-    14 Май 2020
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://hsto.org/webt/og/nl/oo/ognloookahnkbs3mwjjdogbuhq4.png" alt=""></p>
-<p>Не так давно я столкнулся с весьма нестандартной задачей настройки маршрутищации для MetalLB. Всё бы ничего, т.к. обычно для MetalLB не требуется никаких дополнительных действий, но в нашем случае имеется достаточно большой кластер с весьма нехитрой конфигурацией сети.</p>
-<p>В данной статье я расскажу как настроить source-based и policy-based routing для внешней сети вашего кластера.</p>
-<p>Я не буду подробно останавливаться на установке и настройке MetalLB, так как предполагаю вы уже имеете некоторый опыт. Предлагаю сразу перейти к делу, а именно к настройке маршрутизации. Итак мы имеем четыре кейса:</p>
-      
-      <p>
-        
-          <a href="https://habr.com/ru/post/501842/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/ru/post/493406/" target="_blank">
-      
-          Как работает дисковая подсистема в OpenNebula
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-03-21T18:17:00Z">
-        
-  
-  
-  
-  
-    21 Март 2020
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://hsto.org/webt/nr/4p/bb/nr4pbbjdpjjvghyiapezxwhgna0.png" alt=""></p>
-<p>В последнее время я получаю достаточно много вопросов по поводу организации стораджа в OpenNebula. В виду своей специфики она имеет аж три разных типа хранилища: images, system и files. Давайте разберёмся зачем нужен каждый из них и как их использовать чтобы планировать размещение данных наиболее эфективно.</p>
-<p>Этот пост — частичная расшифровка моего <a href="https://www.youtube.com/watch?v=47Mht_uoX3A&amp;feature=youtu.be">доклада про OpenNebula</a> на <a href="https://www.highload.ru/moscow/2019/abstracts/5506">HighLoad++ 2019</a> с упором на дисковую составляющую.</p>
-      
-      <p>
-        
-          <a href="https://habr.com/ru/post/493406/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/lr12wxrdp24" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -720,7 +705,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">Страница 6 из 13</li>
+      <li class="pagination-number">Страница 6 из 14</li>
     </ul>
   </div>
 
@@ -728,7 +713,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

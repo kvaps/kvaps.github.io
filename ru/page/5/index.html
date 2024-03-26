@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,21 +284,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://devchat.tv/adventures-in-devops/kubernetes-in-kubernetes-on-bare-metal-with-andrey-kv%d0%b0pil-devops-069/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/company/vk/blog/590935/" target="_blank">
       
-          Kubernetes-in-Kubernetes on Bare Metal with Andrei Kvapil
+          Андрей Квапил: «Уже Несколько Лет Мы Делаем В Kubernetes То, Что Только Сейчас Готовится К Production Ready»
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-05-20T12:00:00&#43;01:00">
+      <time itemprop="datePublished" datetime="2021-11-30T00:00:00Z">
         
   
   
   
   
-    20 Май 2021
+    30 Ноябрь 2021
   
 
       </time>
@@ -309,12 +309,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://devchat.tv/wp-content/uploads/2020/06/Adventures-in-DevOps-1-2048x2048.jpg" alt=""></p>
-<p>Поучаствовал в записи подкaста Adventures in DevOps. Поговорили про Kubernetes-in-Kubernetes, Kubefarm и про то как мы готовим куб на Bare Metal.</p>
+        <p><img src="https://habrastorage.org/r/w1560/webt/kb/x3/9z/kbx39zqawtyo7-z798qjuwwpjqw.jpeg" alt=""></p>
+<p>Андрей Квапил (<a href="https://habr.com/ru/users/kvaps/">@kvaps</a>) — Solutions Architect в компании Флант. Путь в ИТ он начал с подработки эникейщиком во время учебы в школе. А сейчас создает платформы для автоматического управления инфраструктурой, участвует в open-source-сообществе, пишет статьи и выступает на конференциях. Поговорили с Андреем о его карьере в ИТ, переезде в Чехию и выступлениях на конференциях.</p>
+<blockquote>
+<p>Андрей — один из спикеров <a href="https://mcs.mail.ru/events/vk-kubernetes-conf">VK Kubernetes Conference</a>, которая пройдет 9 декабря 2021 года.</p>
+</blockquote>
+<h3 id="-начнем-издалека-ты-помнишь-когда-впервые-начал-интересоваться-ит">— Начнем издалека. Ты помнишь, когда впервые начал интересоваться ИТ?</h3>
+<p>— Первый компьютер в нашей семье появился у деда — он работал профессором в МГУ. Это был Pentium 1 133 Mhz с 32 Мбайт памяти, еще с кнопкой Turbo. Мои старшие братья часто играли на нем в Larry, а мне не разрешали. Но меня тогда интересовал не сугубо развратный подтекст игры, а то, насколько широко она использует возможности компьютера. Звуковых карт тогда еще не было, но музыка проигрывалась через спикер. Мне это показалось крутым: компьютер играет музыку, ничего себе!</p>
       
       <p>
         
-          <a href="https://devchat.tv/adventures-in-devops/kubernetes-in-kubernetes-on-bare-metal-with-andrey-kv%d0%b0pil-devops-069/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/company/vk/blog/590935/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -342,21 +347,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/post/544390/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/Kk7OJXTwIKM" target="_blank">
       
-          Ломаем и чиним etcd-кластер
+          Чем платить за OpenSource?
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-03-01T20:05:00&#43;03:00">
+      <time itemprop="datePublished" datetime="2021-11-10T00:00:00Z">
         
   
   
   
   
-    1 Март 2021
+    10 Ноябрь 2021
   
 
       </time>
@@ -367,13 +372,23 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/webt/tf/ep/wv/tfepwvvxbyrgovnacaf1uqmhdg4.png" alt=""></p>
-<p><strong>etcd</strong> — это быстрая, надёжная и устойчивая к сбоям key-value база данных. Она лежит в основе Kubernetes и является неотъемлемой частью его control-plane, именно поэтому критически важно уметь бэкапить и восстанавливать работоспособность как отдельных нод, так и всего etcd-кластера.</p>
-<p>В <a href="https://habr.com/ru/post/541118/">предыдущей статье</a> мы подробно рассмотрели перегенерацию SSL-сертификатов и static-манифестов для Kubernetes, а также вопросы связанные c восстановлением работоспособности Kubernetes. Эта статья будет посвящена целиком и полностью восстановлению etcd-кластера.</p>
+        <p><a href="https://youtu.be/Kk7OJXTwIKM"><img src="https://img.youtube.com/vi/Kk7OJXTwIKM/maxresdefault.jpg" alt=""></a></p>
+<p>WEDOS Internet, a.s., Андрей Квапил, Облачный архитектор и инженер DevOps</p>
+<p>Крупнейший чешский хостинг WEDOS построил свой бизнес преимущественно на свободных технологиях, таких как Kubernetes, OpenNebula, Nextcloud и LINSTOR.
+Андрей поделится опытом эксплуатации СПО и расскажет о проблемах и решениях, с которыми непременно придётся столкнуться каждому кто захочет повторить этот путь.</p>
+<ul>
+<li>Чем отличается использование свободных и проприетарных решений на практике</li>
+<li>Модели жизни свободного продукта и почему сейчас СПО стало таким популярным</li>
+<li>Что придётся пересмотреть в вашем бизнесе для того чтобы комфортно чувствовать себя в этой среде</li>
+<li>Когда рационально использование СПО, а когда нет?</li>
+<li>Свобоное значит бесплатное? - или всё-таки нет?</li>
+<li>Масштабирование до бесконечности со свободными решениями</li>
+<li>Сила комьюнити, и почему им не стоит пренебрегать</li>
+</ul>
       
       <p>
         
-          <a href="https://habr.com/ru/post/544390/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/Kk7OJXTwIKM" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -401,21 +416,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/post/541118/" target="_blank">
+        <a class="link-unstyled" href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" target="_blank">
       
-          Ломаем и чиним Kubernetes
+          [Yabai] First steps after Awesome WM
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-02-07T23:18:44&#43;03:00">
+      <time itemprop="datePublished" datetime="2021-10-24T00:00:00Z">
         
   
   
   
   
-    7 Февраль 2021
+    24 Октябрь 2021
   
 
       </time>
@@ -426,13 +441,16 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/webt/bm/sp/06/bmsp06ik_pa4dlp57vyac8ozyck.png" alt=""></p>
-<p><strong>Kubernetes</strong> отличная платформа как для оркестрации контейнеров так и для всего остального. За последнее время Kubernetes ушёл далеко вперёд как по части функциональности так и по вопросам безопасности и отказоустойчивости. Архитектура Kubernetes позволяет с лёгкостью переживать сбои различного характера и всегда оставаться на плаву.</p>
-<p>Сегодня мы будем ломать кластер, удалять сертификаты, вживую реджойнить ноды и всё это, по возможности, без даунтайма для уже запущенных сервисов.</p>
+        <p><img src="https://i.redd.it/p3zkihioqev71.png" alt=""></p>
+<p>После 5 лет использования Linux я решил попробовать новый MacBook с чипом M1. Из-за невозможности установить на него полноценный Linux, я решил поразвлекаться с OSX. И, должен признать, мне она начала нравиться.</p>
+<p>Теги настроены так, чтобы они были как можно более статичными и имели одинаковую нумерацию для каждого дисплея, как в Awesome WM. По этой же причине вы можете увидеть много магии jq в моём skhd конфиге 😃</p>
+<p>Некоторые из аппаратных кнопок на клавиатуре перебиндены с помощью <a href="https://karabiner-elements.pqrs.org/">Karabiner</a>.</p>
+<p>В качестве основного браузера я использую Firefox с расширениями <a href="https://addons.mozilla.org/ru/firefox/addon/tree-style-tab/">TreeStyleTab</a> и <a href="https://addons.mozilla.org/ru/firefox/addon/dustman/">Dustman</a> Последнее автоматически закрывает вкладки, если я не вернулся на них в течение 20 минут. Я верю, что вкладки - это временная сущность, и если я ленюсь их закрывать, то почему бы не завести для них отдельный сборщик мусора?</p>
+<p>Конфигурация терминала и цвета перенесены с моего предыдущего ноутбука.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/post/541118/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -460,21 +478,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/c_TTpj5jEfI" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/otr55vmKf30" target="_blank">
       
-          OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS
+          В поисках идеальной кластерной ФС: опыт использования LINSTOR
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-01-29T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-10-13T00:00:00Z">
         
   
   
   
   
-    29 Январь 2021
+    13 Октябрь 2021
   
 
       </time>
@@ -485,65 +503,7 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/c_TTpj5jEfI"><img src="http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg" alt=""></a></p>
-<p>Learn more about LINBIT&rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).</p>
-      
-      <p>
-        
-          <a href="https://youtu.be/c_TTpj5jEfI" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://youtu.be/Lr12wXRdP24" target="_blank">
-      
-          В поисках идеального хранилища...
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-12-17T00:00:00Z">
-        
-  
-  
-  
-  
-    17 Декабрь 2020
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><a href="https://youtu.be/Lr12wXRdP24"><img src="https://img.youtube.com/vi/Lr12wXRdP24/maxresdefault.jpg" alt=""></a></p>
+        <p><a href="https://youtu.be/otr55vmKf30"><img src="https://img.youtube.com/vi/otr55vmKf30/maxresdefault.jpg" alt=""></a></p>
 <p>Душещипательная история о том как мы выбирали кластерную файловую систему для виртуальных машин и контейнеров, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.</p>
 <p>Доклад разделён на две части:</p>
 <p>В первой части будет приведён краткий обзор других OpenSource-решиний, удачных и не очень, которые мы рассматривали, а некоторые из них даже дошли до production, но впоследствии мы от них отказались.</p>
@@ -551,7 +511,7 @@ if (!doNotTrack) {
       
       <p>
         
-          <a href="https://youtu.be/Lr12wXRdP24" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/otr55vmKf30" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -579,21 +539,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/lr12wxrdp24" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/531344/" target="_blank">
       
-          Круглый стол по теме Stateful-приложения в 2020 году
+          Траблшутинг DRBD9 в LINSTOR
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-12-17T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-07-10T00:00:00Z">
         
   
   
   
   
-    17 Декабрь 2020
+    10 Июль 2021
   
 
       </time>
@@ -604,17 +564,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/mXhlL4HZDdc"><img src="https://img.youtube.com/vi/mXhlL4HZDdc/maxresdefault.jpg" alt=""></a></p>
-<p>Антон Черноусов (Developer Advocate в Yandex.Cloud)
-Марсель Ибраев (CTO Слёрм)
-Андрей Квапил (Cloud Architect и DevOps Engineer в WEDOS Internet a.s.)
-Мона Архипова (sudo.su)
-Иван Чувашов (DBA PostgreSQL в Southbridge)</p>
-<p>Stateful-приложения в 2020 году. Что меняется, какие тренды и что нас ждет в будущем.</p>
+        <p><img src="https://habrastorage.org/webt/ft/tb/2v/fttb2vkaex5-wur6zygsbkkwj2k.png" alt=""></p>
+<p>За последние несколько лет плотной работы с LINSTOR и DRBD9 у меня накопилось достаточное количество проблем и рецептов решения для них, что мне захотелось оформить их в небольшую статью. Не уверен что они полностью совпадут с вашими случаями, но теперь вы хотя бы сможете понять механику работы с DRBD9, а именно, самую неприятную его часть - траблшутинг.</p>
+<p>Информации по данному поводу в интернете немного, так что если вы используете или планируете использовать LINSTOR, уверен рано-или поздно вам эта информация может пригодиться.</p>
       
       <p>
         
-          <a href="https://youtu.be/lr12wxrdp24" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/531344/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -642,21 +598,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/kMU3JAsFXQk" target="_blank">
+        <a class="link-unstyled" href="https://t.me/devops_backstage/13" target="_blank">
       
-          Case-Study: 600 Nodes on DRBD &#43; LINSTOR for Kubernetes, OpenNebula and Proxmox
+          #2 DevOps Курилка. День второй. ”Инструменты деплоя и GitOps”. Андрей Квапил.
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-11-02T00:00:00Z">
+      <time itemprop="datePublished" datetime="2021-07-09T00:00:00Z">
         
   
   
   
   
-    2 Ноябрь 2020
+    9 Июль 2021
   
 
       </time>
@@ -667,12 +623,95 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/kMU3JAsFXQk"><img src="https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg" alt=""></a></p>
-<p>Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.</p>
+        <p><img src="https://pbs.twimg.com/media/FHW6IDJVcAAUOII?format=jpg&amp;name=small" alt=""></p>
+<p>Мальчишки и девчонки, а так же их родители!<br>
+В эту пятницу в 20.00 новая серия подкаста &ldquo;DevOps курилка&rdquo;.<br>
+У нас есть задачка для DevOps с опытом. Представьте, что у вас на проекте Gitlab, Kubernetes и микросервисы.<br>
+CI часть готова, нужно быстро, просто, без боли и соплей доставляться в k8s.<br>
+По дороге не потерять convergence/observability/idempotence/determinism/automation&hellip;<br>
+Что выберем?</p>
+<ul>
+<li>GitOps/CIOps?</li>
+<li>Helm/jsonnet/kustomize и т д</li>
+</ul>
+<p>Едришки-кочерыжки какой выбор,<br>
+так как же лучше реализовать?</p>
+<p>Главный героин подкаста <em><a href="https://t.me/kvaps">@kvaps</a> Андрей Квапил</em>  Cloud Architect фром Чехия<br>
+И всегда с вами:</p>
+<ul>
+<li>активный душнитель чата <a href="https://t.me/Asgoret">@Asgoret</a></li>
+<li>товарищ майор <a href="https://t.me/afidelina">@afidelina</a></li>
+</ul>
       
       <p>
         
-          <a href="https://youtu.be/kMU3JAsFXQk" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://t.me/devops_backstage/13" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/FpjCuslco74" target="_blank">
+      
+          GitOps — что это такое и с чем его едят?
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-06-29T00:00:00Z">
+        
+  
+  
+  
+  
+    29 Июнь 2021
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><a href="https://youtu.be/FpjCuslco74"><img src="https://img.youtube.com/vi/FpjCuslco74/maxresdefault.jpg" alt=""></a></p>
+<p>В этом докладе мы:</p>
+<ul>
+<li>Разберёмся в терминах Continuous Integration, Continuous Delivery и Continuous Deployment.</li>
+<li>Выясним наконец, что такое GitOps и какие проблемы он решает.</li>
+<li>Рассмотрим популярные утилиты: ArgoCD, FluxCD и паттерны их использования.</li>
+<li>Разберём практики организации Git-репозитория и настройки пайплайнов.</li>
+<li>А также копнём чуть глубже и детально рассмотрим настройку прав доступа и кастомных плагинов в ArgoCD.</li>
+</ul>
+<p>Наконец я расскажу про наш опыт использования ArgoCD для развёртывания Kubernetes-кластеров и управления приложениями в Bare Metal-среде.</p>
+      
+      <p>
+        
+          <a href="https://youtu.be/FpjCuslco74" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -703,7 +742,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">Страница 5 из 13</li>
+      <li class="pagination-number">Страница 5 из 14</li>
     </ul>
   </div>
 
@@ -711,7 +750,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

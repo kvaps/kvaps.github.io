@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,21 +284,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/articles/769622/" target="_blank">
+        <a class="link-unstyled" href="https://www.opennet.ru/opennews/art.shtml?num=60833" target="_blank">
       
-          Restic: эффективное резервное копирование из Stdin
+          Первый альфа-выпуск etcd-оператора для Kubernetes
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-10-24T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-03-23T00:00:00Z">
         
   
   
   
   
-    24 Октябрь 2023
+    23 Март 2024
   
 
       </time>
@@ -309,15 +309,12 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/089/e74/c08/089e74c08dad86a266fa154d5fe169a5.png" alt=""></p>
-<p>Про restic я уже рассказывал в статье <a href="https://habr.com/ru/articles/504152/">Бэкап-хранилище для тысяч виртуальных машин свободными инструментами</a>, с тех пор он остаётся моим любимым инструментом для бэкапа.</p>
-<p>Сегодня я опишу вам готовый рецепт того как настроить эффективное бэкапирование чего угодно прямо из stdin, с дедупликацией и автоматической очисткой репозитория от старых копий.</p>
-<p>Несмотря на то, что restic отлично подходит для сохранения целых каталогов с данными в этой статье мне хотелось бы сделать упор на сохранении резервных копий на лету прямо из Stdin.</p>
-<p>Как правило это бывает актуально для сохранения бэкапов виртуальных машин, баз данных и других, представленных одним большим файлом, данных, которые можно последовательно вычитывать и сразу отправлять в систему бэкапирования.</p>
+        <p><img src="https://github.com/etcd-io/etcd/raw/main/logos/etcd-horizontal-color.svg" alt=""></p>
+<p><a href="https://github.com/aenix-io/etcd-operator/releases/tag/v0.0.1">Опубликована</a> первая альфа-версия проекта <a href="https://etcd.aenix.io/">etcd-operator</a>, развивающего инструментарий для упрощения развёртывания распределённого хранилища <a href="https://github.com/etcd-io/etcd">etcd</a> в окружении Kubernetes и управления кластерами etcd. Инструментарий может решать такие задачи, как развёртывание, настройка, управление, масштабирование и восстановление в случае сбоев. Конфигурация задаётся в формате YAML. Код проекта написан на языке Go и <a href="https://github.com/aenix-io/etcd-operator">распространяется</a> под лицензией Apache 2.0.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/articles/769622/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://www.opennet.ru/opennews/art.shtml?num=60833" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -345,21 +342,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/companies/flant/articles/757864/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/companies/aenix/articles/798567/" target="_blank">
       
-          LVM&#43;QCOW2, или Попытка создать идеальный CSI-драйвер для shared SAN в Kubernetes
+          DIY: Ваше собственное облако на базе Kubernetes (часть 3)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-09-01T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-03-11T00:00:00Z">
         
   
   
   
   
-    1 Сентябрь 2023
+    11 Март 2024
   
 
       </time>
@@ -370,13 +367,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/habr/upload_files/a3c/872/0fb/a3c8720fb97299f358bc05778f98941f.png" alt=""></p>
-<p>Несколько месяцев назад у нас появилась необходимость разработать CSI-драйвер для Kubernetes, который в первую очередь использовался бы для хранения дисков виртуальных машин в <a href="https://deckhouse.ru/documentation/v1/modules/490-virtualization/">Deckhouse Virtualization</a>, но также мог бы использоваться и со стандартными контейнерами в Kubernetes. У оборудования наших заказчиков, как правило, есть определенная специфика — чаще всего это классическая SAN (Storage Area Network) с внешним хранилищем и общим shared LUN, который выделяется на несколько узлов. На одном LUN одновременно работает несколько виртуальных машин или контейнеров.</p>
-<p>Помимо всего прочего, от драйвера нам требовалась поддержка различных CoW-фичей, таких как снапшоты, thin provisioning и возможность выполнять live-миграцию виртуальных машин в Kubernetes. Из существующих решений можно было бы отметить некоторые свободные проекты, однако ни один из них не реализует все желаемые фичи. Кроме того, у них есть явные проблемы с масштабированием.</p>
+        <p><img src="https://habrastorage.org/r/w780/getpro/habr/upload_files/fb7/364/f79/fb7364f79d054dee643232f5cec7f26f.jpg" alt=""></p>
+<p>Вот мы и подобрались к самому интересному: запуску Kubernetes в Kubernetes. В этой статье мы поговорим о таких технологиях, как Kamaji и Cluster API, а также о том, как интегрировать их с KubeVirt.</p>
+<p>В прошлых статьях мы уже рассказывали, <a href="https://habr.com/ru/companies/aenix/articles/795791/">как мы готовим Kubernetes на bare metal</a>, и о том, <a href="https://habr.com/ru/companies/aenix/articles/797323/">как превратить Kubernetes в средство запуска виртуальных машин</a>. Эта статья завершает серию, объясняя, как, используя всё вышеперечисленное, можно построить полноценный managed Kubernetes service и запускать виртуальные Kubernetes-кластеры по клику.</p>
+<p>И начнём мы, пожалуй с Cluster API.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/companies/flant/articles/757864/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/companies/aenix/articles/798567/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -404,21 +402,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/companies/flant/articles/751746/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/companies/aenix/articles/797323/" target="_blank">
       
-          Эволюция технологий виртуализации сети в Linux
+          DIY: Ваше собственное облако на базе Kubernetes (часть 2)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-08-25T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-03-01T00:00:00Z">
         
   
   
   
   
-    25 Август 2023
+    1 Март 2024
   
 
       </time>
@@ -429,12 +427,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/getpro/habr/upload_files/ac6/224/82d/ac622482d7e577eeb674e5d8652f715f.png" alt=""></p>
-<p>Виртуализация оборудования — одна из важнейших и фундаментальных технологий в области облачных вычислений. Без нее не смогло бы работать ни одно «устройство» внутри виртуальных машин: ни сетевая карта, ни диск, ни клавиатура, ни мышь и т. п. В статье мы проследим развитие технологий виртуализации оборудования в Linux.</p>
+        <p><img src="https://habrastorage.org/r/w780/getpro/habr/upload_files/6a4/125/b3a/6a4125b3a900bf66216ab0ed86feba00.jpg" alt=""></p>
+<p>Продолжаем серию постов про то как построить своё собственное облако в экосистеме Kubernetes. В прошлой статье мы разобрали как можно подготовить базовый дистрибутив Kubernetes на базе Talos Linux и Flux CD. Теперь нам предстоит обсудить возможность запуска виртуальных машин и всего что для этого необходимо, а это в первую очередь хранилище и сеть.</p>
+<p>Мы поговорим про такие технологии как KubeVirt, LINSTOR и Kube-OVN</p>
+<p>Для начала мне стоит рассказать зачем вообще нужны виртуальные машины, почему бы нам не ограничиться только-лишь контейнерами?</p>
+<p>Всё дело в том, что контейнеры в ядре Linux не дают должного уровня изоляции. Несмотря на то, что с каждым годом ситуация становится всё лучше, тем не менее довольно часто мы сталкиваемся с уязвимостями, позволяющими покинуть песочницу контейнера и повысить свои привилегии в системе.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/companies/flant/articles/751746/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/companies/aenix/articles/797323/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -462,21 +463,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/jwaqWezhugE" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/companies/aenix/articles/796833/" target="_blank">
       
-          LINSTOR Is Like Kubernetes, But for Block Devices
+          Argo CD vs Flux CD
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-07-17T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-02-28T00:00:00Z">
         
   
   
   
   
-    17 Июль 2023
+    28 Февраль 2024
   
 
       </time>
@@ -487,12 +488,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/jwaqWezhugE"><img src="https://i3.ytimg.com/vi/jwaqWezhugE/maxresdefault.jpg" alt=""></a></p>
-<p>An open-source storage from LINBIT (maintainers of DRBD). It’s fast and fault-tolerant, has a lot of features. It looks like Kuberentes but for block devices. How does it work? How to configure and debug it?</p>
+        <p><img src="https://habrastorage.org/r/w780/webt/2f/20/1d/2f201dtcplnmaf7_fqziicb7m2w.jpeg" alt=""></p>
+<p>За последнее время я вижу всё больше споров на тему двух популярных GitOps инструментов: Argo CD и Flux CD.</p>
+<p>На самом деле я считаю такие споры необоснованными, потому что глубоко убеждён что внимания заслуживают оба инструмента и каждый из них хорош для решения своего круга задач.</p>
+<p>В своей профессиональной деятельности я активно использую и тот и другой. Я хочу поделиться с вами своим мнением и кейсами использования. Надеюсь эта статья поможет вам выбрать наиболее подходящий инструмент под ваши нужды.</p>
       
       <p>
         
-          <a href="https://youtu.be/jwaqWezhugE" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/companies/aenix/articles/796833/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -520,21 +523,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/companies/flant/articles/733770/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/companies/aenix/articles/795791/" target="_blank">
       
-          KubeVirt: внутреннее устройство и сеть. Как достигнуть совершенства? (обзор и видео доклада)
+          DIY: Ваше собственное облако на базе Kubernetes (часть 1)
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-07-04T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-02-23T00:00:00Z">
         
   
   
   
   
-    4 Июль 2023
+    23 Февраль 2024
   
 
       </time>
@@ -545,13 +548,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/r/w780/getpro/habr/upload_files/81e/5d1/da7/81e5d1da7ecbc467b6fa474e8c203716.jpg" alt=""></p>
-<p>Всем, привет! Я Андрей Квапил, работаю во «Фланте» над Kubernetes-платформой <a href="https://deckhouse.ru/">Deckhouse</a>. Это статья по мотивам моего доклада о разработке нашей системы виртуализации на основе KubeVirt. Я расскажу, какие альтернативы KubeVirt мы рассматривали, чем они нас не устроили, как устроен KubeVirt, как он работает с файловыми хранилищами, сетью и о том, как происходит запуск виртуальных машин внутри Kubernetes. А еще — какие изменения мы внесли в KubeVirt, чтобы он полностью соответствовал нашим задачам. Будет сложно, но интересно.</p>
-<p>Кстати, в начале 2023 года мы <a href="https://habr.com/ru/companies/flant/articles/715426/">уже рассказывали на Хабре</a> о Deckhouse Virtualization — нашей системе виртуализации нового поколения.</p>
+        <p><img src="https://habrastorage.org/r/w780/getpro/habr/upload_files/64f/fb4/044/64ffb4044c0fddbfde311422899698cc.jpg" alt=""></p>
+<p><em>Мы очень любим Kubernetes и мечтаем чтобы все современные технологии поскорее начали использовать его замечательные паттерны.</em></p>
+<p>А вы когда-нибудь задумывались о том чтобы построить своё собственное облако? Могу поспорить что да. Но можно ли это сделать используя лишь современные технологии и подходы, не покидая уютной экосистемы Kubernetes? Нам по опыту разработки Cozystack пришлось с ним как следует разобраться.</p>
+<p>Да, вы могли бы возразить что Kubernetes для этого не предназначен и почему бы не использовать OpenStack для Bare Metal-серверов а внутри него запускать Kubernetes как положено. Но поступив так, вы просто переложите ответственность с ваших рук на руки OpenStack администраторов. Что добавит как-минимум ещё одну сложную и неповоротливую систему в вашу экосистему.</p>
+<p>Зачем так всё усложнять? - ведь на данный момент Kubernetes уже имеет всё необходимое для запуска Kubernetes кластеров.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/companies/flant/articles/733770/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/companies/aenix/articles/795791/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -579,21 +584,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/ru/companies/flant/articles/733770/" target="_blank">
+        <a class="link-unstyled" href="https://www.opennet.ru/opennews/art.shtml?num=60637" target="_blank">
       
-          Внутреннее устройство DRBD: алгоритмы работы отказоустойчивого хранилища
+          Первый выпуск свободной PaaS-платформы Cozystack на базе Kubernetes
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-06-02T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-02-21T00:00:00Z">
         
   
   
   
   
-    2 Июнь 2023
+    21 Февраль 2024
   
 
       </time>
@@ -604,13 +609,12 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/gd/bo/1j/gdbo1jhxybtgvjoulpwef2fhk_k.png" alt=""></p>
-<p><em>Глубокое понимание внутреннего устройства DRBD позволяет более тонко настраивать работу системы и правильно планировать ресурсы. К счастью, у команды DRBD уже есть отличная документация, которая довольно подробно разбирает эту тему. Мы опирались на нее в своей работе, и решили перевести и выложить в открытом доступе 17-ю главу — как удобную шпаргалку по внутреннему устройству DRBD. Так что это не обычная статья, а перевод части официальной документации (исходная нумерация разделов сохранена).</em></p>
-<p>В этой главе представлена информация о внутренних алгоритмах и структурах DRBD. Она довольно подробно рассматривает внутреннюю работу DRBD, но делает это не настолько глубоко, чтобы служить справочником для разработчиков. Для этой цели рекомендуем обратиться к материалам, перечисленным в разделе <a href="https://linbit.com/drbd-user-guide/drbd-guide-9_0-en/#s-publications">Publications</a>, и, естественно, к комментариям в исходном коде DRBD.</p>
+        <p><img src="https://www.opennet.ru/opennews/pics_base/CFD0C5CECEC5D4_1708509228.png" alt=""></p>
+<p><a href="https://github.com/aenix-io/cozystack/releases/tag/v0.1.0">Опубликован</a> первый выпуск свободной PaaS-платформы <a href="https://github.com/aenix-io/cozystack">Cozystack</a> на базе Kubernetes. Проект позиционирует себя как готовую платформу для хостинг провайдеров и фреймворк для построения частных и публичных облаков. Платформа устанавливается напрямую на сервера и охватывает все аспекты подготовки инфраструктуры для предоставления управляемых сервисов. Cozystack позволяет запускать и предоставлять по требованию Kubernetes-кластеры, базы данных и виртуальные машины. Код платформы доступен на GitHub и <a href="https://github.com/aenix-io/cozystack">распространяется</a> под лицензией Apache-2.0.</p>
       
       <p>
         
-          <a href="https://habr.com/ru/companies/flant/articles/733770/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://www.opennet.ru/opennews/art.shtml?num=60637" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -638,21 +642,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/3zubPoaCdv4" target="_blank">
+        <a class="link-unstyled" href="https://t.me/devops_backstage/167" target="_blank">
       
-          KubeVirt, its networking, and how we brought it to the next level
+          Как построить платформу для managed Kubernetes и DB-as-a-Service
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2023-03-21T00:00:00Z">
+      <time itemprop="datePublished" datetime="2024-02-09T00:00:00Z">
         
   
   
   
   
-    21 Март 2023
+    9 Февраль 2024
   
 
       </time>
@@ -663,12 +667,25 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/3zubPoaCdv4"><img src="https://i3.ytimg.com/vi/3zubPoaCdv4/maxresdefault.jpg" alt=""></a></p>
-<p>Выбрав KubeVirt в качестве основного решения для виртуализации, мы были недовольны существующей реализацией сети. Мы разработали и внесли некоторые улучшения, чтобы упростить дизайн и получить максимальную производительность от сети в KubeVirt.</p>
+        <p><img src="https://pbs.twimg.com/media/FHW6IDJVcAAUOII?format=jpg&amp;name=small" alt=""></p>
+<p>Опыт построения платформы Cozystack.</p>
+<p>Почему Talos Linux - это лучший выбор для вендора.</p>
+<p>Возможна ли мультитенантность в Kubernetes?</p>
+<p>Запуск кластеров по кнопке, без OpenStack и какой-то матери.</p>
+<p>Паттерн Kubernetes-in-Kubernetes и его практическая реализация с KubeVirt и Cluster API.</p>
+<p>Технологии о которых пойдёт речь:</p>
+<ul>
+<li>Talos Linux</li>
+<li>Flux CD</li>
+<li>KubeVirt</li>
+<li>Cluster API</li>
+<li>Kube-OVN</li>
+<li>Kamaji</li>
+</ul>
       
       <p>
         
-          <a href="https://youtu.be/3zubPoaCdv4" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://t.me/devops_backstage/167" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -692,7 +709,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">Страница 1 из 13</li>
+      <li class="pagination-number">Страница 1 из 14</li>
     </ul>
   </div>
 
@@ -700,7 +717,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

@@ -6,8 +6,36 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Argo CD vs Flux CD</title>
+      <link>https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/</link>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:720/format:webp/0*XBk4bvMiSjdBCSPC.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lately, I’ve been seeing more and more debates about two popular GitOps tools: Argo CD and Flux CD.&lt;/p&gt;&#xA;&lt;p&gt;Actually, I find such debates to be unfounded because I’m deeply convinced that both tools deserve attention and each of them is good for solving its own set of problems.&lt;/p&gt;&#xA;&lt;p&gt;In my professional activities I use both. I want to share with you my opinion and use cases. I hope this article will help you choose the most suitable tool for your needs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud Native Computing Foundation’s FluxCD Project Gains New Corporate Support</title>
+      <link>https://kvaps.github.io/2024/03/cloud-native-computing-foundations-fluxcd-project-gains-new-corporate-support/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/03/cloud-native-computing-foundations-fluxcd-project-gains-new-corporate-support/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.cncf.io/wp-content/uploads/2024/03/KubeCon-CNC-Europe-2023-7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;“Ænix utilizes FluxCD as a key component in our cloud platform, Cozystack. As staunch advocates for this technology, we believe FluxCD represents the new industry standard for platform engineering. We’re committed to providing both informational and technical support to this project.” — Andrei Kvapil, CEO, Ænix&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cozystack: Free PaaS platform and framework for building clouds</title>
+      <link>https://kvaps.github.io/2024/03/cozystack-free-paas-platform-and-framework-for-building-clouds/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/03/cozystack-free-paas-platform-and-framework-for-building-clouds/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://img.youtube.com/vi/24i9wIsJHGE/maxresdefault.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;With Cozystack, you can transform your bunch of servers into an intelligent system with a simple REST API for spawning Kubernetes clusters, Database-as-a-Service, virtual machines, load balancers, HTTP caching services, and other services with ease.&lt;/p&gt;&#xA;&lt;p&gt;You can use Cozystack to build your own cloud or to provide a cost-effective development environments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introducing Cozystack: A Free PaaS Platform based on Kubernetes</title>
+      <link>https://kvaps.github.io/2024/02/introducing-cozystack-a-free-paas-platform-based-on-kubernetes/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/02/introducing-cozystack-a-free-paas-platform-based-on-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://cozystack.io/img/screenshot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/aenix-io/cozystack/releases/tag/v0.1.0&#34;&gt;Published&lt;/a&gt; the first release of the free PaaS platform &lt;a href=&#34;https://github.com/aenix-io/cozystack&#34;&gt;Cozystack&lt;/a&gt;, based on Kubernetes. The project positioned as a ready-to-use platform for hosting providers and a framework for building private and public clouds. The code is available on GitHub and is &lt;a href=&#34;https://github.com/aenix-io/cozystack&#34;&gt;distributed&lt;/a&gt; under the Apache-2.0 license.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Restic: Effective Backup from Stdin</title>
       <link>https://kvaps.github.io/2023/12/restic-effective-backup-from-stdin/</link>

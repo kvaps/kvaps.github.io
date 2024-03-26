@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,21 +284,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/483626/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/kMU3JAsFXQk" target="_blank">
       
-          Как описать 100 Gitlab джоб в 100 строк на Jsonnet
+          Case-Study: 600 Nodes on DRBD &#43; LINSTOR for Kubernetes, OpenNebula and Proxmox
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-12-26T20:15:00Z">
+      <time itemprop="datePublished" datetime="2020-11-02T00:00:00Z">
         
   
   
   
   
-    26 Декабрь 2019
+    2 Ноябрь 2020
   
 
       </time>
@@ -309,29 +309,78 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p>В продолжение <a href="https://habr.com/ru/post/481662/">предыдущей статьи</a> про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем <strong>.gitlab-ci.yml</strong></p>
-<p><img src="https://jsonnet.org/img/isologo.svg" alt=""></p>
-<h4 id="дано">Дано</h4>
-<p>Есть монорепа, в которой:</p>
+        <p><a href="https://youtu.be/kMU3JAsFXQk"><img src="https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg" alt=""></a></p>
+<p>Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD &amp; LINSTOR for Kubernetes, OpenNebula and Proxmox.</p>
+      
+      <p>
+        
+          <a href="https://youtu.be/kMU3JAsFXQk" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/FDdPProqE8g" target="_blank">
+      
+          Kubernetes-in-Kubernetes и ферма серверов с загрузкой по PXE
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-10-23T00:00:00Z">
+        
+  
+  
+  
+  
+    23 Октябрь 2020
+  
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><a href="https://youtu.be/FDdPProqE8g"><img src="https://img.youtube.com/vi/FDdPProqE8g/sddefault.jpg" alt=""></a></p>
+<p>В докладе я расскажу о двух свободных проектах: Kubernetes-in-Kubernetes и Kubefarm, которые мы используем для быстрого развёртывания Kubernetes-кластеров на собственном оборудовании.</p>
+<p>В программе дня:</p>
 <ul>
-<li>10 Dockerfiles</li>
-<li>30 описанных деплоев</li>
-<li>3 окружения: <strong>devel</strong>, <strong>staging</strong> и <strong>production</strong></li>
+<li>Простейший способ развернуть и поддерживать в актуальном состоянии сотни серверов on-premise.</li>
+<li>Легко спавнить и удалять физические ноды как виртуалки.</li>
+<li>Разделять кластера и властвовать.</li>
+<li>Cluster API? Не, не слышали&hellip;</li>
+<li>Деплоить Kubernetes Helm&rsquo;ом, WAT?</li>
 </ul>
-<h4 id="задача">Задача</h4>
-<p>Настроить пайплайн:</p>
-<ul>
-<li>Сборка Docker-образов должна производиться по добавлении git-тэга с версией.</li>
-<li>Каждая операция деплоя должна выполняться при пуше в ветку окружения и только по изменении файлов в конкретной директории</li>
-<li>В каждом окружении установлен свой gitlab-runner с отдельным тэгом, который выполняет деплой только в своём окружении.</li>
-<li>Не все приложения должны быть задеплоены в каждое из окружений, мы должны описать пайплайн так, чтобы иметь возможность делать исключения.</li>
-<li>Некоторые деплойменты используют git submodule и должны запускаться с установленной переменной <strong><code>GIT_SUBMODULE_STRATEGY=normal</code></strong></li>
-</ul>
-<p>Как видите, описать это всё может показаться настоящим адом, но мы не отчаиваемся и вооружившись Jsonnet сделаем это легко и непринуждённо.</p>
       
       <p>
         
-          <a href="https://habr.com/post/483626/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/FDdPProqE8g" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -359,21 +408,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/481662/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/519180/" target="_blank">
       
-          Пробуем новые инструменты для сборки и автоматизации деплоя в Kubernetes
+          Регистратор доменов Subreg/Gransy подвергся атаке, большинство его сервисов не работают
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-12-26T09:11:00Z">
+      <time itemprop="datePublished" datetime="2020-09-15T23:06:00&#43;03:00">
         
   
   
   
   
-    26 Декабрь 2019
+    15 Сентябрь 2020
   
 
       </time>
@@ -384,16 +433,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/fu/wy/ia/fuwyia7huxrflvry8lzz2dbl2tw.png" alt=""></p>
-<p>Привет! За последнее время вышло много классных инструментов автоматизации как для сборки Docker-образов так и для деплоя в Kubernetes. В связи с этим решил поиграться с гитлабом, как следует изучить его возможности и, конечно же, настроить пайплайн.</p>
-<p>Вдохновлением для этой работы стал сайт <a href="https://kubernetes.io/">kubernetes.io</a>, который генерируется из <a href="github.com/kubernetes/website">исходных кодов</a> автоматически, а на каждый присланный пул реквест робот автоматически генерирует preview-версию сайта с вашими изменениеми и предоставляет ссылку для просмотра.</p>
-<p>Я постарался выстроить подобный процесс с нуля, но целиком построенный на Gitlab CI и свободных инструментах, которые я привык использовать для деплоя приложений в Kubernetes. Сегодня я, наконец, расскажу вам о них подробнее.</p>
-<p>В статье будут рассмотрены такие инструменты как:
-<strong>Hugo</strong>, <strong>QBEC</strong>, <strong>Kaniko</strong>, <strong>Git-crypt</strong> и <strong>GitLab CI</strong> с созданием динамических окружений.</p>
+        <p><img src="https://hsto.org/getpro/habr/post_images/d70/6be/11c/d706be11c5df8234e102753a2d7f4627.png" alt=""></p>
+<p>Регистратор доменов <a href="https://subreg.cz/">Subreg</a> (компания Gransy) подвергается атаке на свою инфраструктуру. В настоящее время веб-сайты <a href="https://subreg.cz/">subreg.cz</a> и <a href="https://gransy.com/">gransy.com</a> недоступны, как и другие сервисы компании - например клиенты не имеют доступа к доменам. Компания подтвердила наличие проблемы <a href="https://www.facebook.com/Subreg.CZ/posts/3496721943683231">на своей странице в Facebook</a>:</p>
+<blockquote>
+<p>Уважаемые клиенты, мы имеем дело со сложной крупномасштабной атакой на нашу инфраструктуру, которая затрагивает большую часть предоставляемых услуг. Наберитесь терпения, мы все усиленно работаем над этой проблемой. Нет необходимости связываться с нами, мы будем держать вас в курсе здесь, мы не будем предоставлять вам дополнительную информацию по телефону в настоящее время</p>
+</blockquote>
+<p><em>- говорится в заявлении.</em></p>
+<p>Сегодня утром <a href="https://twitter.com/subreg">в Твиттере компании</a> появился англоязычный твит, предполагающий, что это могла быть атака программы-вымогателя. Через некоторое время он исчез из этого аккаунта. Однако компания пока официально не указала конкретную причину проблемы.</p>
       
       <p>
         
-          <a href="https://habr.com/post/481662/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/519180/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -421,21 +471,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://www.linux.org.ru/gallery/screenshots/15403657" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/517966/" target="_blank">
       
-          Моя рабочая машинка
+          Разбираемся с Custom Tooling в Argo CD
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-12-14T05:45:07Z">
+      <time itemprop="datePublished" datetime="2020-09-06T01:04:00&#43;03:00">
         
   
   
   
   
-    14 Декабрь 2019
+    6 Сентябрь 2020
   
 
       </time>
@@ -446,20 +496,16 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://www.linux.org.ru/images/18847/original.png" alt=""></p>
-<p>Вот наконец-то купил себе новый ноут. Долго выбирал из всевозможных вариантов, остановился на Lenovo ideapad 720S-13ARR с процессором AMD Ryzen 7 2700U, NVMe, Type-C и прочими прелястями жизни.</p>
-<p>На скриншоте - powerlevel10k, улучшенная и ускоренная версия powerlevel9k, лучшего powerline-шелла для zfs, ну и несколько интересных плагинов которые позволяют разукрасить консоль подобно fish.</p>
-<p>Справа выводятся модули:</p>
-<ul>
-<li>текущий контекст и неймспейс Kubernetes</li>
-<li>текущая ветка git</li>
-</ul>
-<p>В качестве рутовой файловой системы - btrfs. Каждый вызов pacman содаёт снапшот и в любой момент можно в него загрузиться прямо из меню grub.</p>
-<p>Ноут использую как дома, так и на работе. На работе подключаю его через Type-C док-станцию с двумя мониторами через displaylink, очень удобно. Очень порадовало наличие аппаратного шифрования NVMe-диска и возможность зарядки от пауэрбанка, а процессор AMD достаточно производителен и не подвержен уязвимостям Meltdown и Spectre.</p>
+        <p><img src="https://hsto.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png" alt=""></p>
+<p>Спустя некоторое время после написания <a href="https://habr.com/post/481662/">первой статьи</a>, где я ловко управлялся с jsonnet и гитлабом, я понял что пайплайны это конечно хорошо, но излишне сложно и неудобно.</p>
+<p>В большинстве случаев требуется типовая задача: &ldquo;сгенерировать YAML и положить его в Kubernetes&rdquo;. Собственно, с чем Argo CD замечательно и справляется.</p>
+<p>Argo CD позволяет подключить Git-репозиторий и синкать его состояние в Kubernetes. По умолчанию есть поддержка нескольких видов приложений: Kustomize, Helm чарты, Ksonnet, голый Jsonnet или просто директории с YAML/JSON манифестами.</p>
+<p>Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.</p>
+<p>В первую очередь интересует возможность добавления поддержки <a href="https://habr.com/ru/post/481662/">qbec</a> и <a href="https://habr.com/ru/post/481662/#git-crypt">git-crypt</a>, которые с полна были рассмотренны в предыдущей статье.</p>
       
       <p>
         
-          <a href="https://www.linux.org.ru/gallery/screenshots/15403657" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/517966/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -487,21 +533,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/47Mht_uoX3A" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/liNU40LECoc" target="_blank">
       
-          Облачная платформа OpenNebula
+          В поисках идеального хранилища...
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-11-24T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-06-27T00:00:00Z">
         
   
   
   
   
-    24 Ноябрь 2019
+    27 Июнь 2020
   
 
       </time>
@@ -512,15 +558,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/47Mht_uoX3A"><img src="https://img.youtube.com/vi/47Mht_uoX3A/maxresdefault.jpg" alt=""></a></p>
-<p>Тезисы и презентация:</p>
-<p><a href="https://www.highload.ru/moscow/2019/abstracts/5506">https://www.highload.ru/moscow/2019/a&hellip;</a></p>
-<p>Контейнерная виртуализация - это отличная технология, которая принесла в наш мир множество хороших практик, но без классической виртуализации, к сожалению, пока полностью не обойтись.</p>
-<p>OpenNebula является облачной платформой с простым дизайном и понятной архитектурой, которая без особых затрат поможет создать вам мощное, и главное гибкое облако для ваших нужд.</p>
+        <p><a href="https://youtu.be/liNU40LECoc"><img src="https://img.youtube.com/vi/liNU40LECoc/maxresdefault.jpg" alt=""></a></p>
+<p>Душещипательная история о том как мы выбирали кластерную файловую систему под виртуальные машины и контейнеры, с какими трудностями столкнулись и почему остановили свой выбор на LINSTOR.</p>
+<p>В докладе будут рассмотрены различные свободные кластерные файловые системы и эволюция нашего выбора, а так обзор возможностей LINSTOR, хранилища построенного на свободных технологиях: ZFS, LVM, DRBD и ориентированного на максимальную производительность и высокую доступность.</p>
       
       <p>
         
-          <a href="https://youtu.be/47Mht_uoX3A" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/liNU40LECoc" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -548,21 +592,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/Rmnqa5dKgDA" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/504152/" target="_blank">
       
-          Применение Техник CI/CD Для Развёртывания И Управления BareMetal Инфраструктурой
+          Бэкап-хранилище для тысяч виртуальных машин свободными инструментами
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-10-04T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-05-28T00:39:00Z">
         
   
   
   
   
-    4 Октябрь 2019
+    28 Май 2020
   
 
       </time>
@@ -573,14 +617,17 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/Rmnqa5dKgDA"><img src="https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg" alt=""></a></p>
-<p>Тезисы и презентация:</p>
-<p><a href="http://devopsconf.io/moscow/2019/abstracts/5505">http://devopsconf.io/moscow/2019/abst&hellip;</a></p>
-<p>Мы являемся крупнейшим чешским хостингом и, поскольку мы предоставляем наши услуги на собственных серверах, нам пришлось решить достаточно большое количество задач по автоматизации развёртывания как инфраструктуры, так и новых сервисов, прежде чем выработать правильную стратегию.</p>
+        <p><img src="https://hsto.org/webt/br/qy/_z/brqy_zs-d0ewx13ouawskifpqio.png" alt=""></p>
+<p>Привет, недавно мне попалась интересная задачка настроить хранилище для бэкапа большого количества блочных устройств.</p>
+<p>Каждую неделю мы выполняем резервное копирование всех виртуальных машин в нашем облаке, таким образом нужно уметь обслуживать тысячи резервных копий и делать это максимально быстро и эфективно.</p>
+<p>К сожалению стандартные конфигурации <strong>RAID5</strong>, <strong>RAID6</strong> в данном случае нам не подхотят в виду того что процесс восстановления на таких больших дисках как наши будет мучительно долгим и скорее всего не закончится никогда.</p>
+<p>Рассмотрим какие есть альтернативы :</p>
+<p><strong><a href="https://docs.min.io/docs/minio-erasure-code-quickstart-guide.html">Erasure Coding</a></strong> - Аналог RAID5, RAID6, но с настраиваемым уровнем четности. При этом резервирование выполняется не поблочно а для каждого объекта отдельно. Наиболее простой способ попробовать erasure coding - это развернуть <a href="https://min.io/">minio</a>.</p>
+<p><strong><a href="https://openzfs.github.io/openzfs-docs/Basic%20Concepts/dRAID%20Howto.html">DRAID</a></strong> - это на данный момент ещё не выпущенная возможность ZFS. В отличие от RAIDZ DRAID имеет распределённый parity block и при восстановлении задействует сразу все диски массива, благодаря чему лучше переживает отказы дисков и быстрее восстанавливается после сбоя.</p>
       
       <p>
         
-          <a href="https://youtu.be/Rmnqa5dKgDA" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/504152/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -608,21 +655,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/">
+        <a class="link-unstyled" href="https://habr.com/ru/post/501842/" target="_blank">
       
-          Про DevOps
+          Тонкая настройка маршрутизации для MetalLB в режиме L2
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-05-18T00:00:00Z">
+      <time itemprop="datePublished" datetime="2020-05-14T02:29:00Z">
         
   
   
   
   
-    18 Май 2019
+    14 Май 2020
   
 
       </time>
@@ -633,76 +680,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        Вот ядро Которое построил Линус.
-А это системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
-А это суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
-Вот контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
-Вот под, Что часто пинает контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+        <p><img src="https://hsto.org/webt/og/nl/oo/ognloookahnkbs3mwjjdogbuhq4.png" alt=""></p>
+<p>Не так давно я столкнулся с весьма нестандартной задачей настройки маршрутищации для MetalLB. Всё бы ничего, т.к. обычно для MetalLB не требуется никаких дополнительных действий, но в нашем случае имеется достаточно большой кластер с весьма нехитрой конфигурацией сети.</p>
+<p>В данной статье я расскажу как настроить source-based и policy-based routing для внешней сети вашего кластера.</p>
+<p>Я не буду подробно останавливаться на установке и настройке MetalLB, так как предполагаю вы уже имеете некоторый опыт. Предлагаю сразу перейти к делу, а именно к настройке маршрутизации. Итак мы имеем четыре кейса:</p>
       
       <p>
         
-          <a href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/" class="postShorten-excerpt_link link">Читать далее</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://habr.com/post/435270/" target="_blank">
-      
-          Храним SSH-ключи безопасно
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-05-15T09:05:00&#43;03:00">
-        
-  
-  
-  
-  
-    15 Май 2019
-  
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/webt/up/j1/kl/upj1kliwm70ton2ocnhvuf_kywm.png" alt=""></p>
-<p>Хочу рассказать как безопасно хранить SSH-ключи на локальной машине, не боясь того, что какое-то приложение может украсть или расшифровать их.</p>
-<p>Статья будет полезна тем, кто так и не нашел элегантного решения после <a href="https://www.opennet.ru/opennews/art.shtml?num=49082">паранои</a> в 2018 и продолжает хранить ключи в <code>$HOME/.ssh</code>.</p>
-<p>Для решения данной проблемы предлагаю использовать <a href="https://keepassxc.org/">KeePassXC</a>, который является одним из лучших менеджеров паролей, он использует сильные алгоритмы шифрования, а также имеет встроенный SSH-агент.</p>
-<p>Это дает возможность безопасно хранить все ключи прямо в базе паролей и автоматически добавлять их в систему при её открытии. Как только база будет закрыта, использование SSH-ключей также станет невозможным</p>
-      
-      <p>
-        
-          <a href="https://habr.com/post/435270/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/501842/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -733,7 +718,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">Страница 7 из 13</li>
+      <li class="pagination-number">Страница 7 из 14</li>
     </ul>
   </div>
 
@@ -741,7 +726,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

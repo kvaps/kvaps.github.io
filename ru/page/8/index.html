@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,21 +284,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/451186/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/ru/post/493406/" target="_blank">
       
-          Хранилище LINSTOR и его интеграция с OpenNebula
+          Как работает дисковая подсистема в OpenNebula
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-05-13T01:18:00&#43;03:00">
+      <time itemprop="datePublished" datetime="2020-03-21T18:17:00Z">
         
   
   
   
   
-    13 Май 2019
+    21 Март 2020
   
 
       </time>
@@ -309,14 +309,13 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/e-/3z/h-/e-3zh-bbwjnljyazm68edln7muw.png" alt=""></p>
-<p>Не так давно ребята из LINBIT представили свое новое SDS-решение - Linstor. Это полностью свободное хранилище в основе которого используются проверенные технологии: DRBD, LVM, ZFS. Linstor сочетает в себе простоту и хорошо проработанную архитектуру, что позволяет добиться стабильности и достаточно внушительных результатов.</p>
-<p>Сегодня я хотел бы рассказать про него чуть подробнее и показать насколько просто его можно интегрировать с OpenNebula используя linstor_un - новый драйвер, который я разработал специально для этой цели.</p>
-<p>Linstor в сочетании с OpenNebula позволяет построить быстрое и надежное облако, которое можно без проблем развернуть на собственной инфраструктуре</p>
+        <p><img src="https://hsto.org/webt/nr/4p/bb/nr4pbbjdpjjvghyiapezxwhgna0.png" alt=""></p>
+<p>В последнее время я получаю достаточно много вопросов по поводу организации стораджа в OpenNebula. В виду своей специфики она имеет аж три разных типа хранилища: images, system и files. Давайте разберёмся зачем нужен каждый из них и как их использовать чтобы планировать размещение данных наиболее эфективно.</p>
+<p>Этот пост — частичная расшифровка моего <a href="https://www.youtube.com/watch?v=47Mht_uoX3A&amp;feature=youtu.be">доклада про OpenNebula</a> на <a href="https://www.highload.ru/moscow/2019/abstracts/5506">HighLoad++ 2019</a> с упором на дисковую составляющую.</p>
       
       <p>
         
-          <a href="https://habr.com/post/451186/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/ru/post/493406/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -344,21 +343,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/450118/" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/483626/" target="_blank">
       
-          Стримим экран на несколько устройств по сети
+          Как описать 100 Gitlab джоб в 100 строк на Jsonnet
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-04-30T03:09:00&#43;15:00">
+      <time itemprop="datePublished" datetime="2019-12-26T20:15:00Z">
         
   
   
   
   
-    30 Апрель 2019
+    26 Декабрь 2019
   
 
       </time>
@@ -369,14 +368,29 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/ef/qk/de/efqkdemwmhhniofkklcjvayvmm0.png" alt=""></p>
-<p>Возникла у меня необходимость выводить дашборд с мониторингом на несколько экранов в офисе. В распоряжении имеется несколько стареньких Raspberry Pi Model B+ и гипервизор с практически неограниченным количеством ресурсов.</p>
-<p>По видимому Raspberry Pi Model B+ не обладает достаточной произвольностью чтобы держать постоянно запущенным браузер и отрисовывать большое количество графики в нем, из-за чего бывает, что страница частично глючит и часто вылетает.</p>
-<p>Нашлось достаточно простое и элегантное решение, которым я и хочу с вами поделиться</p>
+        <p>В продолжение <a href="https://habr.com/ru/post/481662/">предыдущей статьи</a> про инструменты деплоя в Kubernetes, хочу рассказать вам про то как можно использовать Jsonnet для упрощения описания джоб в вашем <strong>.gitlab-ci.yml</strong></p>
+<p><img src="https://jsonnet.org/img/isologo.svg" alt=""></p>
+<h4 id="дано">Дано</h4>
+<p>Есть монорепа, в которой:</p>
+<ul>
+<li>10 Dockerfiles</li>
+<li>30 описанных деплоев</li>
+<li>3 окружения: <strong>devel</strong>, <strong>staging</strong> и <strong>production</strong></li>
+</ul>
+<h4 id="задача">Задача</h4>
+<p>Настроить пайплайн:</p>
+<ul>
+<li>Сборка Docker-образов должна производиться по добавлении git-тэга с версией.</li>
+<li>Каждая операция деплоя должна выполняться при пуше в ветку окружения и только по изменении файлов в конкретной директории</li>
+<li>В каждом окружении установлен свой gitlab-runner с отдельным тэгом, который выполняет деплой только в своём окружении.</li>
+<li>Не все приложения должны быть задеплоены в каждое из окружений, мы должны описать пайплайн так, чтобы иметь возможность делать исключения.</li>
+<li>Некоторые деплойменты используют git submodule и должны запускаться с установленной переменной <strong><code>GIT_SUBMODULE_STRATEGY=normal</code></strong></li>
+</ul>
+<p>Как видите, описать это всё может показаться настоящим адом, но мы не отчаиваемся и вооружившись Jsonnet сделаем это легко и непринуждённо.</p>
       
       <p>
         
-          <a href="https://habr.com/post/450118/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/483626/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -404,21 +418,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://youtu.be/yGKI5JoKMUY" target="_blank">
+        <a class="link-unstyled" href="https://habr.com/post/481662/" target="_blank">
       
-          Всё о Kubernetes на Bare Metal
+          Пробуем новые инструменты для сборки и автоматизации деплоя в Kubernetes
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-02-27T00:00:00Z">
+      <time itemprop="datePublished" datetime="2019-12-26T09:11:00Z">
         
   
   
   
   
-    27 Февраль 2019
+    26 Декабрь 2019
   
 
       </time>
@@ -429,14 +443,16 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><a href="https://youtu.be/yGKI5JoKMUY"><img src="https://img.youtube.com/vi/yGKI5JoKMUY/maxresdefault.jpg" alt=""></a></p>
-<p>Видеозапись выступления «Всё, что нужно знать о Kubernetes на Bare Metal» (Андрей Квапил, WEDOS Internet a.s., Cloud Architect / DevOps)</p>
-<p>Андрей Квапил делится своим опытом архитектуры облачных решений и девопса в крупнейшем чешском хостинге WEDOS, где Kubernetes активно используется для деплоя сервисов и серверов – уже сейчас для более чем 500 нод и с планируемым расширением до нескольких тысяч.</p>
-<p>Отдельное внимание уделяется организации фермы серверов с загрузкой по сети и выбору хранилища. Докладчик протестировал большое количество свободных SDS-решений, прежде чем остановить свой выбор на Linstor – достаточно молодом проекте, который, тем не менее, уже отлично показал себя в продакшене.</p>
+        <p><img src="https://habrastorage.org/webt/fu/wy/ia/fuwyia7huxrflvry8lzz2dbl2tw.png" alt=""></p>
+<p>Привет! За последнее время вышло много классных инструментов автоматизации как для сборки Docker-образов так и для деплоя в Kubernetes. В связи с этим решил поиграться с гитлабом, как следует изучить его возможности и, конечно же, настроить пайплайн.</p>
+<p>Вдохновлением для этой работы стал сайт <a href="https://kubernetes.io/">kubernetes.io</a>, который генерируется из <a href="github.com/kubernetes/website">исходных кодов</a> автоматически, а на каждый присланный пул реквест робот автоматически генерирует preview-версию сайта с вашими изменениеми и предоставляет ссылку для просмотра.</p>
+<p>Я постарался выстроить подобный процесс с нуля, но целиком построенный на Gitlab CI и свободных инструментах, которые я привык использовать для деплоя приложений в Kubernetes. Сегодня я, наконец, расскажу вам о них подробнее.</p>
+<p>В статье будут рассмотрены такие инструменты как:
+<strong>Hugo</strong>, <strong>QBEC</strong>, <strong>Kaniko</strong>, <strong>Git-crypt</strong> и <strong>GitLab CI</strong> с созданием динамических окружений.</p>
       
       <p>
         
-          <a href="https://youtu.be/yGKI5JoKMUY" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://habr.com/post/481662/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -464,21 +480,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/441112/" target="_blank">
+        <a class="link-unstyled" href="https://www.linux.org.ru/gallery/screenshots/15403657" target="_blank">
       
-          Прикручиваем LDAP-авторизацию к Kubernetes
+          Моя рабочая машинка
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-02-21T03:17:00Z">
+      <time itemprop="datePublished" datetime="2019-12-14T05:45:07Z">
         
   
   
   
   
-    21 Февраль 2019
+    14 Декабрь 2019
   
 
       </time>
@@ -489,12 +505,20 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://habrastorage.org/webt/kj/60/vi/kj60vi6ugv7bunlqdts2nlr2vja.png" alt=""></p>
-<p>Небольшая инструкция о том, как используя Keycloak можно связать Kubernetes с вашим LDAP-сервером и настроить импорт пользователей и групп. Это позволит настраивать RBAC для ваших пользователей и использовать auth-proxy чтобы защитить Kubernetes Dashboard и другие приложения, которые не умеют производить авторизацию самостоятельно.</p>
+        <p><img src="https://www.linux.org.ru/images/18847/original.png" alt=""></p>
+<p>Вот наконец-то купил себе новый ноут. Долго выбирал из всевозможных вариантов, остановился на Lenovo ideapad 720S-13ARR с процессором AMD Ryzen 7 2700U, NVMe, Type-C и прочими прелястями жизни.</p>
+<p>На скриншоте - powerlevel10k, улучшенная и ускоренная версия powerlevel9k, лучшего powerline-шелла для zfs, ну и несколько интересных плагинов которые позволяют разукрасить консоль подобно fish.</p>
+<p>Справа выводятся модули:</p>
+<ul>
+<li>текущий контекст и неймспейс Kubernetes</li>
+<li>текущая ветка git</li>
+</ul>
+<p>В качестве рутовой файловой системы - btrfs. Каждый вызов pacman содаёт снапшот и в любой момент можно в него загрузиться прямо из меню grub.</p>
+<p>Ноут использую как дома, так и на работе. На работе подключаю его через Type-C док-станцию с двумя мониторами через displaylink, очень удобно. Очень порадовало наличие аппаратного шифрования NVMe-диска и возможность зарядки от пауэрбанка, а процессор AMD достаточно производителен и не подвержен уязвимостям Meltdown и Spectre.</p>
       
       <p>
         
-          <a href="https://habr.com/post/441112/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://www.linux.org.ru/gallery/screenshots/15403657" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -522,21 +546,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/427941/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/47Mht_uoX3A" target="_blank">
       
-          Разворачиваем Kubernetes HA-кластер на Baremetal с помощью Kubeadm и Keepalived (простое руководство)
+          Облачная платформа OpenNebula
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-10-27T14:38:00&#43;03:00">
+      <time itemprop="datePublished" datetime="2019-11-24T00:00:00Z">
         
   
   
   
   
-    27 Октябрь 2018
+    24 Ноябрь 2019
   
 
       </time>
@@ -547,12 +571,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p>Эта статья является свободной интерпретацей официального руководства <!-- raw HTML omitted -->Creating Highly Available Clusters with kubeadm<!-- raw HTML omitted --> для <!-- raw HTML omitted -->Stacked control plane nodes<!-- raw HTML omitted -->. Мне не нравятся сложный язык и примеры использованные в нем, поэтому я написал свое руководство.</p>
-<p>Если у вас появятся какие-либо вопросы или вам будет что-то неясно, обратитесь к официальной документации или спросите <!-- raw HTML omitted -->Google<!-- raw HTML omitted -->. Все этапы описаны здесь в максимально простой и сдержанной форме.</p>
+        <p><a href="https://youtu.be/47Mht_uoX3A"><img src="https://img.youtube.com/vi/47Mht_uoX3A/maxresdefault.jpg" alt=""></a></p>
+<p>Тезисы и презентация:</p>
+<p><a href="https://www.highload.ru/moscow/2019/abstracts/5506">https://www.highload.ru/moscow/2019/a&hellip;</a></p>
+<p>Контейнерная виртуализация - это отличная технология, которая принесла в наш мир множество хороших практик, но без классической виртуализации, к сожалению, пока полностью не обойтись.</p>
+<p>OpenNebula является облачной платформой с простым дизайном и понятной архитектурой, которая без особых затрат поможет создать вам мощное, и главное гибкое облако для ваших нужд.</p>
       
       <p>
         
-          <a href="https://habr.com/post/427941/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/47Mht_uoX3A" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -580,21 +607,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/423785/" target="_blank">
+        <a class="link-unstyled" href="https://youtu.be/Rmnqa5dKgDA" target="_blank">
       
-          Строим загружаемую по сети ферму серверов для Kubernetes с помощью LTSP
+          Применение Техник CI/CD Для Развёртывания И Управления BareMetal Инфраструктурой
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-10-03T22:14:00Z">
+      <time itemprop="datePublished" datetime="2019-10-04T00:00:00Z">
         
   
   
   
   
-    3 Октябрь 2018
+    4 Октябрь 2019
   
 
       </time>
@@ -605,15 +632,14 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt=""></p>
-<p>В этой статье, я хотел бы показать вам одну крутую технологию, я успешно использую ее для Kubernetes. Она может быть реально полезна для построения больших кластеров.</p>
-<p>С этого момента вам больше не придется думать об установке ОС и отдельных пакетов на каждую ноду. Зачем? Вы можете сделать все это автоматически через Dockerfile!</p>
-<p>Тот факт что вы можете купить сотню новых серверов, добавить их в рабочее окружение и почти моментально получить их готовыми к использованию - это действительно потрясающе!</p>
-<p>Заинтриговал? Теперь давайте обо всем по порядку.</p>
+        <p><a href="https://youtu.be/Rmnqa5dKgDA"><img src="https://img.youtube.com/vi/Rmnqa5dKgDA/maxresdefault.jpg" alt=""></a></p>
+<p>Тезисы и презентация:</p>
+<p><a href="http://devopsconf.io/moscow/2019/abstracts/5505">http://devopsconf.io/moscow/2019/abst&hellip;</a></p>
+<p>Мы являемся крупнейшим чешским хостингом и, поскольку мы предоставляем наши услуги на собственных серверах, нам пришлось решить достаточно большое количество задач по автоматизации развёртывания как инфраструктуры, так и новых сервисов, прежде чем выработать правильную стратегию.</p>
       
       <p>
         
-          <a href="https://habr.com/post/423785/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://youtu.be/Rmnqa5dKgDA" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
         
         
       </p>
@@ -641,21 +667,21 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
-        <a class="link-unstyled" href="https://habr.com/post/423101/" target="_blank">
+        <a class="link-unstyled" href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/">
       
-          Разворачиваем хранилище LINSTOR для Proxmox
+          Про DevOps
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-09-13T00:40:00Z">
+      <time itemprop="datePublished" datetime="2019-05-18T00:00:00Z">
         
   
   
   
   
-    13 Сентябрь 2018
+    18 Май 2019
   
 
       </time>
@@ -666,15 +692,15 @@ if (!doNotTrack) {
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       
-        <p><img src="https://hsto.org/getpro/habr/post_images/e47/594/c07/e47594c0721332fb46493d20339bb1be.png" alt="image"></p>
-<p>Недавно LINBIT выпустили свое новое решение для оркестрации и управления множеством DRBD-массивов.</p>
-<p>К примеру у вас может быть несколько нод и у каждой будет собственный LVM или ZFS пул в котором LINSTOR будет автоматически создавать новые тома и реплицировать их между нодами используя DRBD-протокол.</p>
-<p>LINSTOR поддерживает thin-provisioning, снапшоты и много других интересных штук.
-Это решение хорошо подойдет для виртуальных машин и контейнеров.</p>
+        Вот ядро Которое построил Линус.
+А это системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+А это суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
+Вот под, Что часто пинает контейнер, Который генерит суровый cgroup, Который изолирует системный процесс, Который работает без умолку, В ядре, Которое построил Линус.
       
       <p>
         
-          <a href="https://habr.com/post/423101/" class="postShorten-excerpt_link link" target="_blank">Читать далее</a>
+          <a href="https://kvaps.github.io/ru/2019/05/%D0%BF%D1%80%D0%BE-devops/" class="postShorten-excerpt_link link">Читать далее</a>
         
         
       </p>
@@ -705,7 +731,7 @@ if (!doNotTrack) {
           </li>
         
       
-      <li class="pagination-number">Страница 8 из 13</li>
+      <li class="pagination-number">Страница 8 из 14</li>
     </ul>
   </div>
 
@@ -713,7 +739,7 @@ if (!doNotTrack) {
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

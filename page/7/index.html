@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -284,6 +284,228 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://medium.com/@kvaps/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca" target="_blank">
+      
+          Creating Baremethal Kubernetes HA cluster with Kubeadm and Keepalived (Simple Guide)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-18T00:00:00Z">
+        
+  October 18, 2018
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p>This guide is a free interpretation of official <a href="https://kubernetes.io/docs/setup/independent/high-availability/">Creating Highly Available Clusters with kubeadm</a> for <a href="https://kubernetes.io/docs/setup/independent/high-availability/#stacked-control-plane-nodes">Stacked control plane nodes</a>. I don’t like this difficult form which used there, so I wrote this article.</p>
+<p>If you have any questions, or something is not clear, please refer to the official documentation or ask the <a href="https://www.google.com/">Google</a>. All steps described here in the short and simple form</p>
+      
+      <p>
+        
+          <a href="https://medium.com/@kvaps/creating-baremethal-kubernetes-ha-cluster-with-kubeadm-and-keepalived-simple-guide-c70ec4adf8ca" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://medium.com/@kvaps/install-kolab-and-integrate-it-with-freeipa-c80c3b34b7b7" target="_blank">
+      
+          Install Kolab and integrate it with FreeIPA
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-04T00:00:00Z">
+        
+  October 4, 2018
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/max/751/1*nR-RW_hUa89nBl1OmWaPuQ.png" alt=""></p>
+<p>Here is written steps for install <a href="https://kolab.org/">Kolab Groupware</a> server and integrate it with <a href="https://www.freeipa.org/page/Main_Page">FreeIPA</a> server.</p>
+<p>Most of actions requires basic understanding in LDAP mechanism.
+FreeIPA should be already installed before preparing Kolab installation.
+We will connect only users from the existing tree (which provided by FreeIPA), and we will create new tree for the rest Kolab resources, like mail groups, shared mailboxes, etc.</p>
+<p>In the end, we will can authenticate them, edit their parameters via kolab-webadmin, and manage other resources.</p>
+      
+      <p>
+        
+          <a href="https://medium.com/@kvaps/install-kolab-and-integrate-it-with-freeipa-c80c3b34b7b7" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2018/10/02/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/" target="_blank">
+      
+          Building a Network Bootable Server Farm for Kubernetes with LTSP
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-02T21:35:07Z">
+        
+  October 2, 2018
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://kubernetes.io/images/blog/2018-10-01-network-bootable-farm-with-ltsp/k8s+ltsp.svg" alt=""></p>
+<p>In this post, I’m going to introduce you to a cool technology for Kubernetes, LTSP. It is useful for large baremetal Kubernetes deployments.</p>
+<p>You don’t need to think about installing an OS and binaries on each node anymore. Why? You can do that automatically through Dockerfile!</p>
+<p>You can buy and put 100 new servers into a production environment and get them working immediately - it’s really amazing!</p>
+<p>Intrigued? Let me walk you through how it works.</p>
+      
+      <p>
+        
+          <a href="https://kubernetes.io/blog/2018/10/02/building-a-network-bootable-server-farm-for-kubernetes-with-ltsp/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://medium.com/@kvapss/deploying-linstor-with-proxmox-91c746b4035d" target="_blank">
+      
+          Deploying LINSTOR storage for Proxmox
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-09-12T21:36:59Z">
+        
+  September 12, 2018
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://cdn-images-1.medium.com/max/800/1*cnj3wxTbCBWX6N_GGbgroA.png" alt=""></p>
+<p>Few time ago LINBIT released their new solution LINSTOR which is providing orchestration tool for manage multiple DRBD-arrays.</p>
+<p>For example you can have few nodes, each one will have own LVM or ZFS pool, LINSTOR will automatically create new volumes there and replicate or distribute them using DRBD protocol.</p>
+<p>LINSTOR supports thin-provisioning, snapshots and many other interesting things.</p>
+<p>This solution is good suitable for virtual machines and containers.</p>
+      
+      <p>
+        
+          <a href="https://medium.com/@kvapss/deploying-linstor-with-proxmox-91c746b4035d" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://medium.com/@kvapss/run-kubernetes-in-lxc-container-f04aa94b6c9c" target="_blank">
       
           Run kubernetes inside LXC container
@@ -427,236 +649,6 @@ So let’s fix it together byself.</p>
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" target="_blank">
-      
-          ONLYOFFICE configuration for docker-compose (and letsencrypt).
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2016-12-14T03:55:37Z">
-        
-  December 14, 2016
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <ul>
-<li>Run communityserver container, and get <code>onlyoffice.conf</code> from it:</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -name communityserver -i -t -d onlyoffice/communityserver<span style="color:#e6db74">`</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># wait 1-2 minutes.</span>
-</span></span><span style="display:flex;"><span>sudo docker exec -i -t communityserver /bin/bash -c <span style="color:#e6db74">&#39;cat /etc/nginx/sites-enabled/onlyoffice&#39;</span> &gt; onlyoffice.conf<span style="color:#e6db74">`</span>
-</span></span><span style="display:flex;"><span>sudo docker rm -fv communityserver
-</span></span></code></pre></div>
-      
-      <p>
-        
-          <a href="https://gist.github.com/kvaps/6ac945e6c2e2e41bd536b7486a7dea4a" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/270187/index.html" target="_blank">
-      
-          Build your own failover cloud based on OpenNebula with Ceph, MariaDB Galera Cluster and OpenvSwitch [machine translation]
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2015-11-16T16:45:00Z">
-        
-  November 16, 2015
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/1b8/185/6c4/1b81856c42da42ba903e85e1653969e4.png" alt="">
-This time I would like to tell how to configure this subject, in a particular each separate component as a result to receive the own, expanded, otkazoustoycheavy cloud based on OpenNebula. In this article I will consider the next moments:</p>
-<ul>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#ceph">Install Ceph, distributed storage</a></strong>. <em>(I will describe the installation of a two-tier storage with a caching pool of SSDs)</em></li>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#galera">Install MySQL, Galera Cluster with master replication</a></strong></li>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#openvswitch">Installing OpenvSwitch soft switch</a></strong></li>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#opennebula">Installing directly OpenNebula itself</a></strong></li>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#pacemaker">Configuring Failover Cluster</a></strong></li>
-<li><strong><a href="https://weekly-geekly.github.io/articles/270187/index.html#configuration">Initial configuration</a></strong></li>
-</ul>
-<p>The topics themselves are very interesting, so even if you are not interested in the final goal, but you are interested in setting up a separate component. You are welcome under the cut.</p>
-      
-      <p>
-        
-          <a href="https://weekly-geekly.github.io/articles/270187/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/268711/index.html" target="_blank">
-      
-          Installing CentOS on ZFS in UEFI [machine translation]
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2015-10-13T15:37:00Z">
-        
-  October 13, 2015
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/fcc/619/ae4/fcc619ae4bb7418980f542ed02978583.png" alt=""></p>
-<p>I decided to try ZFS here the other day, but I did not find a detailed and simple manual on how to implement it on CentOS, I decided to correct the situation. In addition, I wanted to install all this in EFI mode. - not to stand still? And at the same time understand for yourself how <a href="https://ru.wikipedia.org/wiki/Dynamic_Kernel_Module_Support">DKMS</a> works, as well as aspects of manual installation of RPM-based distributions.
-ZFS was not chosen by chance either, since it was planned to deploy a hypervisor on this machine and use zvol to store images of virtual machines. I wanted something more than a software raid + lvm or simple file storage of images, something like <a href="https://ru.wikipedia.org/wiki/Ceph_File_System">ceph</a>, but for one host this is too bold. Looking ahead to say that I was very pleased with this file system, its performance and all its <a href="http://xgu.ru/wiki/ZFS">chips</a>.</p>
-      
-      <p>
-        
-          <a href="https://weekly-geekly.github.io/articles/268711/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://weekly-geekly.github.io/articles/266375/index.html" target="_blank">
-      
-          Customize keyboard shortcuts in Linux like Mac OS X [machine translation]
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2015-09-09T16:30:00Z">
-        
-  September 9, 2015
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://habrastorage.org/files/8f1/55e/18d/8f155e18dc4b4f1f80113941c5ad32ab.png" alt=""></p>
-<p>Previously, I quite often had a situation where you simultaneously work in a terminal and, for example, in a browser.
-After several hours of work, you start to get confused and in the terminal instead of [Ctrl] + [Shift] + [C], press [Ctrl] + [C], and vice versa in the browser. As a result, in the terminal you get an interrupt and in the browser, instead of the expected effect, your debugger is slowly loaded.
-One fine moment it got me and I decided it was time to change something&hellip;</p>
-      
-      <p>
-        
-          <a href="https://weekly-geekly.github.io/articles/266375/index.html" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -678,7 +670,7 @@ One fine moment it got me and I decided it was time to change something&hellip;<
           </li>
         
       
-      <li class="pagination-number">page 7 of 8</li>
+      <li class="pagination-number">page 7 of 9</li>
     </ul>
   </div>
 
@@ -686,7 +678,7 @@ One fine moment it got me and I decided it was time to change something&hellip;<
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 

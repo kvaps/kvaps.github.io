@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.121.1 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.122.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Andrei Kvapil">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -285,6 +285,225 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://blog.palark.com/kubernetes-storage-performance-linstor-ceph-mayastor-vitastor/" target="_blank">
+      
+          Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-06-03T00:00:00Z">
+        
+  June 3, 2022
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://blog.palark.com/wp-content/uploads/2022/06/Comparing-Ceph-LINSTOR-Mayastor-and-Vitastor-storage-performance-in-Kubernetes.png" alt=""></p>
+<p>There seems to be a new trend: every time I get a new job, the first activity I engage in is benchmarking different SDS solutions. My career at Flant is no exception. I joined the development team for the <a href="https://deckhouse.io/">Deckhouse Kubernetes platform</a> when it decided to focus on running virtual machines in Kubernetes. But first, we had to find an easy-to-use, reliable block-type storage that we could offer to the platform’s customers.</p>
+<p>Hence I decided to benchmark several Open Source solutions to see how they behave under various conditions. The focal point was the <a href="https://en.wikipedia.org/wiki/Distributed_Replicated_Block_Device">DRBD</a> performance in different configurations and how they compared to <a href="https://ceph.io/en/">Ceph</a>.</p>
+<p>However, the market for software-defined storage is constantly growing and evolving. Ambitious new projects are emerging, including the recently released <a href="https://github.com/openebs/mayastor">Mayastor</a> and my fellow collaborator’s pet project <a href="https://vitastor.io/">Vitastor</a>. The results were pretty exciting and surprising.</p>
+      
+      <p>
+        
+          <a href="https://blog.palark.com/kubernetes-storage-performance-linstor-ceph-mayastor-vitastor/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://youtu.be/ZUeGxBoij7c" target="_blank">
+      
+          How is cloud computing changing the way of mind
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2022-05-31T00:00:00Z">
+        
+  May 31, 2022
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://pbs.twimg.com/media/FTnuV5RWYAAJzGQ?format=jpg&amp;name=large" alt="How is cloud computing changing the way of mind"></p>
+<p>Nowadays the market offers a huge number of virtualization solutions, but in fact, they all are solving different problems, and you need to understand in which case it suits you best. In this presentation we&rsquo;ll take a look at application design approaches then and now, and will explore the difference between virtualization and cloud computing platforms, the Pets vs. Cattle approach, and the use of IaC with Kubernetes and Terraform.</p>
+      
+      <p>
+        
+          <a href="https://youtu.be/ZUeGxBoij7c" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/" target="_blank">
+      
+          Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-12-22T00:00:00Z">
+        
+  December 22, 2021
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><a href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/"><img src="https://pbs.twimg.com/media/FHMnruzWYAAT_xv?format=png" alt="Kubernetes-in-Kubernetes - We need to go deeper"></a></p>
+<p>When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things. As practice has shown, by using Kubernetes, you can declaratively describe and manage not only applications, but also the infrastructure itself. I work for the largest Czech hosting provider <strong>WEDOS Internet a.s</strong> and today I&rsquo;ll show you two of my projects — <a href="https://github.com/kvaps/kubernetes-in-kubernetes">Kubernetes-in-Kubernetes</a> and <a href="https://github.com/kvaps/kubefarm">Kubefarm</a>.</p>
+<p>With their help you can deploy a fully working Kubernetes cluster inside another Kubernetes using Helm in just a couple of commands. How and why?</p>
+      
+      <p>
+        
+          <a href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" target="_blank">
+      
+          [Yabai] First steps after Awesome WM
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-10-24T00:00:00Z">
+        
+  October 24, 2021
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://i.redd.it/p3zkihioqev71.png" alt=""></p>
+<p>After 5 years of using Linux, I decided to upgrade to a new MacBook with an M1 chip. Due to the inability to install a full-fledged Linux on it, I&rsquo;m having fun with OSX. And I have to admit I&rsquo;m starting to like it.</p>
+<p>Tags are set to be as static as it possible and have the same numbering for every display, just like Awesome WM do. This is why you can see so much jq-magic in my skhd config 😃<br>
+Some hardware keys are rebinded using <a href="https://karabiner-elements.pqrs.org/">Karabiner</a>.</p>
+<p>As main browser I use Firefox with <a href="https://addons.mozilla.org/en/firefox/addon/tree-style-tab/">TreeStyleTab</a> and <a href="https://addons.mozilla.org/en/firefox/addon/dustman/">Dustman</a> extensions. The last one is closing tabs automatically if I didn&rsquo;t get on them in 20 minutes. I do believe that tabs are a temporary entity and if I don&rsquo;t like to close them, why not to run a garbage collector for them?</p>
+<p>Terminal configuration and colors moved from my previous laptop.</p>
+      
+      <p>
+        
+          <a href="https://www.reddit.com/r/unixporn/comments/qet5uk/yabai_first_steps_after_awesome_wm/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://dev.to/kvaps/how-to-solve-split-brain-in-drbd9-15no" target="_blank">
       
           How to Resolve Split Brain in DRBD9
@@ -429,218 +648,6 @@ Panel</p>
 </article>
 
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" target="_blank">
-      
-          Breaking down and fixing etcd cluster
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-03-05T14:05:00&#43;01:00">
-        
-  March 5, 2021
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/2400/0*zp50MnKH708J9vYm.png" alt=""></p>
-<p><strong>etcd</strong> is a fast, reliable and fault-tolerant key-value database. It is at the heart of Kubernetes and is an integral part of its control-plane. It is quite important to have the experience to back up and restore the operability of both individual nodes and the whole entire etcd cluster.</p>
-<p>In the <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3">previous article</a>, we looked in detail at regenerating SSL-certificates and static-manifests for Kubernetes, as well as issues related to restoring the operability of its control-plane. This article will be fully devoted to restoring an etcd-cluster.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/breaking-down-and-fixing-etcd-cluster-d81e35b9260d" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" target="_blank">
-      
-          Breaking down and fixing Kubernetes
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-02-21T12:00:00&#43;01:00">
-        
-  February 21, 2021
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/max/700/0*sNzXNN7Ky0uwfhxN.png" alt=""></p>
-<p><strong>Kubernetes</strong> is a great platform both for container orchestration and everything else. Recently, Kubernetes has gone far ahead in terms of functionality, security and resilience. The Kubernetes architecture allows you to easily survive various kinds of failures and always stay afloat. Today we will break the cluster, delete certificates, rejoin nodes on live, and doing all this fancy stuff without possible downtime for already running services.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/breaking-down-and-fixing-kubernetes-4df2f22f87c3" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://youtu.be/c_TTpj5jEfI" target="_blank">
-      
-          OpenNebula Webinar - Running a fully hyper-converged cloud with OpenNebula &#43; LINBIT SDS
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2021-01-29T00:00:00Z">
-        
-  January 29, 2021
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><a href="https://youtu.be/c_TTpj5jEfI"><img src="http://i3.ytimg.com/vi/c_TTpj5jEfI/maxresdefault.jpg" alt=""></a></p>
-<p>Learn more about LINBIT&rsquo;s SDS solution, its native integration with OpenNebula, and the many benefits it provides to companies using both technologies together. Our guest speakers for this event will be Yusuf Yildiz (Solutions Architect at LINBIT) and Andrei Kvapil (Cloud Architect / DevOps Engineer at WEDOS Internet).</p>
-      
-      <p>
-        
-          <a href="https://youtu.be/c_TTpj5jEfI" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://www.reddit.com/r/unixporn/comments/khpzju/awesome_warm_and_cozy/" target="_blank">
-      
-          [awesome] Warm and Cozy
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-12-21T00:00:00Z">
-        
-  December 21, 2020
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://i.redd.it/q59a0324sl661.png" alt=""></p>
-      
-      <p>
-        
-          <a href="https://www.reddit.com/r/unixporn/comments/khpzju/awesome_warm_and_cozy/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
           
   <div class="pagination-bar">
     <ul class="pagination">
@@ -662,7 +669,7 @@ Panel</p>
           </li>
         
       
-      <li class="pagination-number">page 3 of 8</li>
+      <li class="pagination-number">page 3 of 9</li>
     </ul>
   </div>
 
@@ -670,7 +677,7 @@ Panel</p>
         </section>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2023 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
+    &copy; 2024 <a href="https://github.com/kvaps">kvaps</a>. All Rights Reserved
   </span>
 </footer>
 
