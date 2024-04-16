@@ -6,8 +6,29 @@
     <description>Recent content on kvaps | personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2024 07:40:00 +0000</lastBuildDate>
     <atom:link href="https://kvaps.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIY: Create Your Own Cloud with Kubernetes (Part 3)</title>
+      <link>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-3/</link>
+      <pubDate>Fri, 05 Apr 2024 07:40:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*0Iy0cbjm5zwVxNGW.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Approaching the most interesting phase, this article delves into running Kubernetes within&#xA;Kubernetes. Technologies such as Kamaji and Cluster API are highlighted, along with their&#xA;integration with KubeVirt.&lt;/p&gt;&#xA;&lt;p&gt;Previous discussions have covered&#xA;&lt;a href=&#34;https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/&#34;&gt;preparing Kubernetes on bare metal&lt;/a&gt;&#xA;and&#xA;&lt;a href=&#34;https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-2/&#34;&gt;how to turn Kubernetes into virtual machines management system&lt;/a&gt;.&#xA;This article concludes the series by explaining how, using all of the above, you can build a&#xA;full-fledged managed Kubernetes and run virtual Kubernetes clusters with just a click.&lt;/p&gt;&#xA;&lt;p&gt;First up, let&amp;rsquo;s dive into the Cluster API.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DIY: Create Your Own Cloud with Kubernetes (Part 2)</title>
+      <link>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-2/</link>
+      <pubDate>Fri, 05 Apr 2024 07:35:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*sIWfm_FgDavwJgK8.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Continuing our series of posts on how to build your own cloud using just the Kubernetes ecosystem.&#xA;In the &lt;a href=&#34;https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/&#34;&gt;previous article&lt;/a&gt;, we&#xA;explained how we prepare a basic Kubernetes distribution based on Talos Linux and Flux CD.&#xA;In this article, we&amp;rsquo;ll show you a few various virtualization technologies in Kubernetes and prepare&#xA;everything need to run virtual machines in Kubernetes, primarily storage and networking.&lt;/p&gt;&#xA;&lt;p&gt;We will talk about technologies such as KubeVirt, LINSTOR, and Kube-OVN.&lt;/p&gt;&#xA;&lt;p&gt;But first, let&amp;rsquo;s explain what virtual machines are needed for, and why can&amp;rsquo;t you just use docker&#xA;containers for building cloud?&#xA;The reason is that containers do not provide a sufficient level of isolation.&#xA;Although the situation improves year by year, we often encounter vulnerabilities that allow&#xA;escaping the container sandbox and elevating privileges in the system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DIY: Create Your Own Cloud with Kubernetes (Part 1)</title>
+      <link>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-1/</link>
+      <pubDate>Fri, 05 Apr 2024 07:30:00 +0000</pubDate>
+      <guid>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:4800/format:webp/0*29CNNfqCIVq4Uqfa.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;At Ænix, we have a deep affection for Kubernetes and dream that all modern technologies will soon&#xA;start utilizing its remarkable patterns.&lt;/p&gt;&#xA;&lt;p&gt;Have you ever thought about building your own cloud? I bet you have. But is it possible to do this&#xA;using only modern technologies and approaches, without leaving the cozy Kubernetes ecosystem?&#xA;Our experience in developing Cozystack required us to delve deeply into it.&lt;/p&gt;&#xA;&lt;p&gt;You might argue that Kubernetes is not intended for this purpose and why not simply use OpenStack&#xA;for bare metal servers and run Kubernetes inside it as intended. But by doing so, you would simply&#xA;shift the responsibility from your hands to the hands of OpenStack administrators.&#xA;This would add at least one more huge and complex system to your ecosystem.&lt;/p&gt;&#xA;&lt;p&gt;Why complicate things? - after all, Kubernetes already has everything needed to run tenant&#xA;Kubernetes clusters at this point.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Argo CD vs Flux CD</title>
       <link>https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/</link>

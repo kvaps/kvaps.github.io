@@ -2,21 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/</loc>
-    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="https://kvaps.github.io/ru/2024/02/argo-cd-vs-flux-cd/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/"
-                />
+    <loc>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-3/</loc>
+    <lastmod>2024-04-05T07:40:00+00:00</lastmod>
   </url><url>
     <loc>https://kvaps.github.io/</loc>
-    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-05T07:40:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -29,7 +19,7 @@
                 />
   </url><url>
     <loc>https://kvaps.github.io/post/</loc>
-    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-04-05T07:40:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -39,6 +29,25 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://kvaps.github.io/post/"
+                />
+  </url><url>
+    <loc>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-2/</loc>
+    <lastmod>2024-04-05T07:35:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kvaps.github.io/2024/04/diy-create-your-own-cloud-with-kubernetes-part-1/</loc>
+    <lastmod>2024-04-05T07:30:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/</loc>
+    <lastmod>2024-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://kvaps.github.io/ru/2024/02/argo-cd-vs-flux-cd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://kvaps.github.io/2024/03/argo-cd-vs-flux-cd/"
                 />
   </url><url>
     <loc>https://kvaps.github.io/2024/03/cloud-native-computing-foundations-fluxcd-project-gains-new-corporate-support/</loc>

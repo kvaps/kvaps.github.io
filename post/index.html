@@ -285,6 +285,194 @@ if (!doNotTrack) {
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
       
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-3/" target="_blank">
+      
+          DIY: Create Your Own Cloud with Kubernetes (Part 3)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2024-04-05T07:40:00Z">
+        
+  April 5, 2024
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*0Iy0cbjm5zwVxNGW.jpg" alt=""></p>
+<p>Approaching the most interesting phase, this article delves into running Kubernetes within
+Kubernetes. Technologies such as Kamaji and Cluster API are highlighted, along with their
+integration with KubeVirt.</p>
+<p>Previous discussions have covered
+<a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/">preparing Kubernetes on bare metal</a>
+and
+<a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-2/">how to turn Kubernetes into virtual machines management system</a>.
+This article concludes the series by explaining how, using all of the above, you can build a
+full-fledged managed Kubernetes and run virtual Kubernetes clusters with just a click.</p>
+<p>First up, let&rsquo;s dive into the Cluster API.</p>
+      
+      <p>
+        
+          <a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-3/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-2/" target="_blank">
+      
+          DIY: Create Your Own Cloud with Kubernetes (Part 2)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2024-04-05T07:35:00Z">
+        
+  April 5, 2024
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*sIWfm_FgDavwJgK8.jpg" alt=""></p>
+<p>Continuing our series of posts on how to build your own cloud using just the Kubernetes ecosystem.
+In the <a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/">previous article</a>, we
+explained how we prepare a basic Kubernetes distribution based on Talos Linux and Flux CD.
+In this article, we&rsquo;ll show you a few various virtualization technologies in Kubernetes and prepare
+everything need to run virtual machines in Kubernetes, primarily storage and networking.</p>
+<p>We will talk about technologies such as KubeVirt, LINSTOR, and Kube-OVN.</p>
+<p>But first, let&rsquo;s explain what virtual machines are needed for, and why can&rsquo;t you just use docker
+containers for building cloud?
+The reason is that containers do not provide a sufficient level of isolation.
+Although the situation improves year by year, we often encounter vulnerabilities that allow
+escaping the container sandbox and elevating privileges in the system.</p>
+      
+      <p>
+        
+          <a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-2/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
+        <a class="link-unstyled" href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/" target="_blank">
+      
+          DIY: Create Your Own Cloud with Kubernetes (Part 1)
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2024-04-05T07:30:00Z">
+        
+  April 5, 2024
+
+      </time>
+    
+    
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      
+        <p><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*29CNNfqCIVq4Uqfa.jpg" alt=""></p>
+<p>At Ænix, we have a deep affection for Kubernetes and dream that all modern technologies will soon
+start utilizing its remarkable patterns.</p>
+<p>Have you ever thought about building your own cloud? I bet you have. But is it possible to do this
+using only modern technologies and approaches, without leaving the cozy Kubernetes ecosystem?
+Our experience in developing Cozystack required us to delve deeply into it.</p>
+<p>You might argue that Kubernetes is not intended for this purpose and why not simply use OpenStack
+for bare metal servers and run Kubernetes inside it as intended. But by doing so, you would simply
+shift the responsibility from your hands to the hands of OpenStack administrators.
+This would add at least one more huge and complex system to your ecosystem.</p>
+<p>Why complicate things? - after all, Kubernetes already has everything needed to run tenant
+Kubernetes clusters at this point.</p>
+      
+      <p>
+        
+          <a href="https://kubernetes.io/blog/2024/04/05/diy-create-your-own-cloud-with-kubernetes-part-1/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+      
         <a class="link-unstyled" href="https://blog.aenix.io/argo-cd-vs-flux-cd-7b1d67a246ca" target="_blank">
       
           Argo CD vs Flux CD
@@ -473,167 +661,6 @@ if (!doNotTrack) {
       <p>
         
           <a href="https://cozystack.io/blog/2024/02/introducing-cozystack-a-free-paas-platform-based-on-kubernetes/" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/restic-effective-backup-from-stdin-4bc1e8f083c1" target="_blank">
-      
-          Restic: Effective Backup from Stdin
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2023-12-25T00:00:00Z">
-        
-  December 25, 2023
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*uJ7As9uTvB-gvQLe.png" alt=""></p>
-<p>I’ve previously discussed Restic in the article “<a href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2">Backup storage for thousands of virtual machines using free tools</a>,” and it remains my favorite backup tool since then.</p>
-<p>Today, I will describe a ready-made recipe for setting up effective backup from Stdin, with deduplication and automatic cleaning of the repository from old copies.</p>
-<p>Despite Restic being great for saving entire data directories, this article emphasizes on-the-fly backup from Stdin, typically for virtual machine backups, databases, and other large-file data that can be sequentially read and immediately sent to the backup system.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/restic-effective-backup-from-stdin-4bc1e8f083c1" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://blog.deckhouse.io/lvm-qcow-csi-driver-shared-san-kubernetes-81455201590e" target="_blank">
-      
-          LVM&#43;QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2023-11-21T00:00:00Z">
-        
-  November 21, 2023
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*19x5GB1vrtTD02ScSUBYSg.png" alt=""></p>
-<p>Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.</p>
-      
-      <p>
-        
-          <a href="https://blog.deckhouse.io/lvm-qcow-csi-driver-shared-san-kubernetes-81455201590e" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
-        
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-      
-        <a class="link-unstyled" href="https://itnext.io/the-evolution-of-network-virtualization-technologies-in-linux-6ba3a4e9f293" target="_blank">
-      
-          The Evolution of Network Virtualization Technologies in Linux
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2023-09-23T00:00:00Z">
-        
-  September 23, 2023
-
-      </time>
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p><img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q2RZPvSUqJjgjOZx.png" alt=""></p>
-<p>Hardware virtualization is one of the most important and fundamental technologies in the field of cloud computing. Without it, no “device” inside virtual machines would be able to function, including network cards, disks, keyboards, mice, and so on. In this article, we will trace the development of hardware virtualization technologies in Linux.</p>
-      
-      <p>
-        
-          <a href="https://itnext.io/the-evolution-of-network-virtualization-technologies-in-linux-6ba3a4e9f293" class="postShorten-excerpt_link link" target="_blank">Continue reading</a>
         
         
       </p>
