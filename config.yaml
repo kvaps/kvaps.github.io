@@ -17,10 +17,14 @@ defaultContentLanguage: en-us
 title: kvaps | personal blog
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
-googleAnalytics: "UA-53837210-1"
 pagination:
   pagerSize: 7
 canonifyurls: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 algolia:
   index: "kvaps.ru"
