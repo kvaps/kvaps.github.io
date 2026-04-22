@@ -81,20 +81,30 @@ languages:
           pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
           url: 'https://github.com/kvaps'
         - weight: 2
+          identifier: habr
+          name: Habr
+          pre: <i class="sidebar-button-icon fa fa-lg fa-h-square"></i>
+          url: 'https://habr.com/users/kvaps/'
+        - weight: 3
           identifier: medium
           name: Medium
           pre: <i class="sidebar-button-icon fa fa-lg fa-medium"></i>
           url: 'https://kvaps.medium.com/'
-        - weight: 3
+        - weight: 4
           identifier: youtube
           name: YouTube
           pre: <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
           url: 'https://www.youtube.com/watch?v=jp2XY-9MORM&list=PLigW96d6EqkgsShnwdb0NHTLH1sAht34h'
-        - weight: 4
+        - weight: 5
           identifier: stackoverflow
           name: Stack Overflow
           pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
           url: 'https://stackoverflow.com/users/2931267/kvaps'
+        - weight: 6
+          identifier: linkedin
+          name: LinkedIn
+          pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+          url: 'https://www.linkedin.com/in/kvaps'
       links:
         - weight: 4
           identifier: projects-archive
@@ -170,15 +180,30 @@ languages:
           pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
           url: 'https://github.com/kvaps'
         - weight: 2
-          identifier: habra
+          identifier: habr
           name: Habr
           pre: <i class="sidebar-button-icon fa fa-lg fa-h-square"></i>
           url: 'https://habr.com/users/kvaps/'
         - weight: 3
+          identifier: medium
+          name: Medium
+          pre: <i class="sidebar-button-icon fa fa-lg fa-medium"></i>
+          url: 'https://kvaps.medium.com/'
+        - weight: 4
           identifier: youtube
           name: YouTube
           pre: <i class="sidebar-button-icon fa fa-lg fa-youtube"></i>
           url: 'https://www.youtube.com/watch?v=jp2XY-9MORM&list=PLigW96d6EqkhiQ8a8R0q29NoPfn3jSw__'
+        - weight: 5
+          identifier: stackoverflow
+          name: Stack Overflow
+          pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+          url: 'https://stackoverflow.com/users/2931267/kvaps'
+        - weight: 6
+          identifier: linkedin
+          name: LinkedIn
+          pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+          url: 'https://www.linkedin.com/in/kvaps'
       links:
         - weight: 4
           identifier: projects-archive
