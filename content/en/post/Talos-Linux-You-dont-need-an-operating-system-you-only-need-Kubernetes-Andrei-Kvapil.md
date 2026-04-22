@@ -20,5 +20,3 @@ As a group of technology enthusiasts, we have combined our knowledge and experie
 
 Standardization: Despite having identical system components, the methods of deployment and support among clients vary greatly.
 ...
-
-[Watch on YouTube →](https://www.youtube.com/watch?v=9CIMTum9bTA)

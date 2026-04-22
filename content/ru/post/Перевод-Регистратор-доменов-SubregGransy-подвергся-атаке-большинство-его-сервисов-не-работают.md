@@ -14,7 +14,3 @@ source: habr
 * — говорится в заявлении.*
 
 Сегодня утром [в Твиттере компании](https://twitter.com/subreg) появился англоязычный твит, предполагающий, что это могла быть атака программы-вымогателя. Через некоторое время он исчез из этого аккаунта. Однако компания пока официально не указала конкретную причину проблемы.
-
- [Читать дальше →](https://habr.com/ru/articles/519180/?utm_campaign=519180&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/articles/519180/?utm_campaign=519180&utm_source=habrahabr&utm_medium=rss)

@@ -880,5 +880,3 @@ dd if=/dev/drbd2665 of=/dev/drbd2665 status=progress bs=65536 conv=notrunc,spars
 Here dd will read and write it back by byte the entire device, thereby correcting our changelog. Do not forget to commit our external snapshot (if you did), and now you can safely create new replicas using LINSTOR.
 
 That's all for now. Thank you for your attention. Hope it is useful to you.
-
-[Read on DEV →](https://dev.to/kvaps/troubleshooting-drbd9-in-linstor-40fn)

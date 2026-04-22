@@ -34,7 +34,3 @@ source: habr
 - Некоторые деплойменты используют git submodule и должны запускаться с установленной переменной **`GIT_SUBMODULE_STRATEGY=normal`**
 
 Описать это всё может показаться настоящим адом, но мы не отчаиваемся и вооружившись Jsonnet сделаем это легко и непринуждённо.
-
- [Читать дальше →](https://habr.com/ru/articles/483626/?utm_campaign=483626&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/articles/483626/?utm_campaign=483626&utm_source=habrahabr&utm_medium=rss)

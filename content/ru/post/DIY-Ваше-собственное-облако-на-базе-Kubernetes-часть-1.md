@@ -14,7 +14,3 @@ source: habr
 Да, вы могли бы возразить что Kubernetes для этого не предназначен и почему бы не использовать OpenStack для Bare Metal-серверов а внутри него запускать Kubernetes как положено. Но поступив так, вы просто переложите ответственность с ваших рук на руки OpenStack администраторов. Что добавит как-минимум ещё одну сложную и неповоротливую систему в вашу экосистему.
 
 Зачем так всё усложнять? - ведь на данный момент Kubernetes уже имеет всё необходимое для запуска Kubernetes кластеров.
-
- [Читать далее](https://habr.com/ru/articles/795791/?utm_campaign=795791&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/795791/?utm_campaign=795791&utm_source=habrahabr&utm_medium=rss)

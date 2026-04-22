@@ -10,5 +10,3 @@ source: medium
 When it comes to running virtual machines in Kubernetes via KubeVirt, the first question engineers ask is: “What is the overhead?” Let’s dive into the details and break it down by three key areas: compute, storage, and network.
 
 To get why there’s almost no CPU overhead, we need to look at how the Linux kernel handles containers.
-
-[Read on Medium →](https://blog.aenix.io/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes-ba1a5ec21a79?source=rss-d8a829bb74d8------2)

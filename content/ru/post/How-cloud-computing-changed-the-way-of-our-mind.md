@@ -13,5 +13,3 @@ In this presentation we'll take a look at application design approaches and expl
 Talk by Andrei Kvapil, #Flant solutions architect, for #OpenNebulaCon2022.
 
 #kubernetes #k8s #IaC #virtualization #clouds #aws #azure #googlecloud #openstack #opennebula #cloudstack #devops #deckhouse #werf #trdl #okmeter #cloudcomputing #proxmox #ovirt #docker #cloudnative
-
-[Смотреть на YouTube →](https://www.youtube.com/watch?v=ZUeGxBoij7c)

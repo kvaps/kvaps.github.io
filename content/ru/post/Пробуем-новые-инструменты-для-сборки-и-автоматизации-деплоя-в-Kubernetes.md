@@ -16,7 +16,3 @@ source: habr
 В статье будут рассмотрены такие инструменты как:
 
 **Hugo**, **qbec**, **kaniko**, **git-crypt** и **GitLab CI** с созданием динамических окружений.
-
- [Читать дальше →](https://habr.com/ru/articles/481662/?utm_campaign=481662&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/articles/481662/?utm_campaign=481662&utm_source=habrahabr&utm_medium=rss)

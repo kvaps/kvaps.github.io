@@ -16,7 +16,3 @@ Argo CD позволяет подключить Git-репозиторий и с
 Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.
 
 В первую очередь интересует возможность добавления поддержки [qbec](https://habr.com/ru/post/481662/) и [git-crypt](https://habr.com/ru/post/481662/#git-crypt), которые с полна были рассмотренны в предыдущей статье.
-
- [Читать дальше →](https://habr.com/ru/articles/517966/?utm_campaign=517966&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/articles/517966/?utm_campaign=517966&utm_source=habrahabr&utm_medium=rss)

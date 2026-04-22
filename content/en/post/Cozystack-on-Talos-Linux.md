@@ -15,5 +15,3 @@ Check out Taloscon in London on September 18th.
 https://siderolabs.com/taloscon
 
 #kubernetes #talos #linux
-
-[Watch on YouTube →](https://www.youtube.com/watch?v=s79VqXu-eG4)

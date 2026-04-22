@@ -189,18 +189,22 @@ def yaml_quote(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
-READ_MORE_LABEL = {
-    "habr":       "Читать на Хабре →",
-    "medium":     "Read on Medium →",
-    "dev.to":     "Read on DEV →",
-    "youtube-ru": "Смотреть на YouTube →",
-    "youtube-en": "Watch on YouTube →",
-}
+def strip_habracut(body: str) -> str:
+    # Habr appends a <a href="...#habracut">Читать далее</a> marker at the end
+    # of every RSS description. The theme already adds its own "read more"
+    # link from the `link:` front-matter, so drop Habr's to avoid duplication.
+    return re.sub(
+        r'<a[^>]+href="[^"]*#habracut"[^>]*>.*?</a>\s*$',
+        "",
+        body,
+        flags=re.I | re.S,
+    )
 
 
 def render_post(entry: Entry, source: Source) -> str:
     if source.kind == "rss":
-        cover, rest = extract_cover(entry.body)
+        raw = strip_habracut(entry.body)
+        cover, rest = extract_cover(raw)
         md_body = html_to_markdown(rest)
         body = ""
         if cover:
@@ -214,8 +218,7 @@ def render_post(entry: Entry, source: Source) -> str:
             parts.append(entry.body)
         body = "\n\n".join(parts)
 
-    label = READ_MORE_LABEL.get(source.name, "Read original →")
-    body = body.rstrip() + f"\n\n[{label}]({entry.link})\n"
+    body = body.rstrip() + "\n"
 
     fm = (
         "---\n"

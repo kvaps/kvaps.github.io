@@ -17,5 +17,3 @@ source: youtube-ru
 — как во Фланте распилили огромный Kubernetes-кластер на несколько маленьких без даунтайма.
 
 Полная программа VK Kubernetes Conference, которая прошла 9 декабря 2021 года: https://mcs.mail.ru/events/vk-kubernetes-conf
-
-[Смотреть на YouTube →](https://www.youtube.com/watch?v=dIKKBj5EQrA)

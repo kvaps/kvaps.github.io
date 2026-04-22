@@ -22,5 +22,3 @@ https://devopsconf.io/moscow/2020/abstracts/7110
 • Легко спавнить и удалять физические ноды как виртуалки...
 --------
 Нашли ошибку в видео? Пишите нам на support@ontico.ru
-
-[Смотреть на YouTube →](https://www.youtube.com/watch?v=FDdPProqE8g)

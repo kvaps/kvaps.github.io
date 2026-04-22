@@ -14,7 +14,3 @@ source: habr
 Специфика Cozystack заключается в том, что на каждый кластер мы деплоим внутри небольшой HTTP-сервер с Helm-чартами и другими ассетами используемыми в платформе. Flux эти чарты читает и устанавливает в систему.
 
 Но вот как организовать доступ флюксу к внутреннему HTTP-серверу, запущенному как под внутри того же кластера?
-
- [Читать далее](https://habr.com/ru/articles/975324/?utm_campaign=975324&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/975324/?utm_campaign=975324&utm_source=habrahabr&utm_medium=rss)

@@ -15,5 +15,3 @@ Learn more about LINBIT's SDS solution, its native integration with OpenNebula, 
 22:58 - Presenting LINBIT’s SDS Solution
 38:25 - Running OpenNebula + LINBIT SDS at WEDOS Internet
 53:22 - Q&A
-
-[Смотреть на YouTube →](https://www.youtube.com/watch?v=c_TTpj5jEfI)

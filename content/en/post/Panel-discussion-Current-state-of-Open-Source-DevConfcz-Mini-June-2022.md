@@ -16,5 +16,3 @@ Sched: https://sched.co/11lUe
 
 --
 Recordings of talks at DevConf are a community effort. Unfortunately, not everything works perfectly every time. If you're interested in helping us improve, let us know.
-
-[Watch on YouTube →](https://www.youtube.com/watch?v=SjGj9weIigo)

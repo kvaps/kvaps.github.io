@@ -10,7 +10,3 @@ source: habr
 Привет! Меня зовут Андрей Квапил (или kvaps). Я CEO в Ænix, и мы делаем Open Source-платформу и фреймворк Cozystack, с которым очень удобно строить облака.
 
 В этой статье я проанализировал, как современные облачные подходы повлияли на инфраструктуру, какую роль стала играть виртуализация, кто такие «питомцы» и что происходит с локальными сервис-провайдерами.
-
- [Читать далее](https://habr.com/ru/articles/914198/?utm_campaign=914198&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/914198/?utm_campaign=914198&utm_source=habrahabr&utm_medium=rss)

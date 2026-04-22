@@ -12,7 +12,3 @@ source: habr
 Сегодня я хотел бы рассказать про него чуть подробнее и показать насколько просто его можно интегрировать с OpenNebula используя linstor_un — новый драйвер, который я разработал специально для этой цели.
 
 Linstor в сочетании с OpenNebula позволяет построить быстрое и надежное облако, которое можно без проблем развернуть на собственной инфраструктуре.
-
- [Читать дальше →](https://habr.com/ru/articles/451186/?utm_campaign=451186&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/articles/451186/?utm_campaign=451186&utm_source=habrahabr&utm_medium=rss)

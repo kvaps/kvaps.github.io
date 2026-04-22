@@ -9,8 +9,4 @@ source: habr
 
 Всем, привет! Я Андрей Квапил, работаю во «Фланте» над Kubernetes-платформой [Deckhouse](https://deckhouse.ru/). Это статья по мотивам моего доклада о разработке нашей системы виртуализации на основе KubeVirt. Я расскажу, какие альтернативы KubeVirt мы рассматривали, чем они нас не устроили, как устроен KubeVirt, как он работает с файловыми хранилищами, сетью и о том, как происходит запуск виртуальных машин внутри Kubernetes. А еще — какие изменения мы внесли в KubeVirt, чтобы он полностью соответствовал нашим задачам. Будет сложно, но интересно. 
 
-Кстати, в начале 2023 года мы [уже рассказывали на Хабре](https://habr.com/ru/companies/flant/articles/715426/) о Deckhouse Virtualization — нашей системе виртуализации нового поколения. 
-
- [Читать далее](https://habr.com/ru/articles/745034/?utm_campaign=745034&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/flant/articles/745034/?utm_campaign=745034&utm_source=habrahabr&utm_medium=rss)
+Кстати, в начале 2023 года мы [уже рассказывали на Хабре](https://habr.com/ru/companies/flant/articles/715426/) о Deckhouse Virtualization — нашей системе виртуализации нового поколения.

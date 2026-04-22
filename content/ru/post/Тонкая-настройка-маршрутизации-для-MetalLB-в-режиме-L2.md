@@ -12,7 +12,3 @@ source: habr
 В данной статье я расскажу как настроить source-based и policy-based routing для внешней сети вашего кластера.
 
 Я не буду подробно останавливаться на установке и настройке MetalLB, так как предполагаю вы уже имеете некоторый опыт. Предлагаю сразу перейти к делу, а именно к настройке маршрутизации. Итак мы имеем четыре кейса:
-
- [Читать дальше →](https://habr.com/ru/articles/501842/?utm_campaign=501842&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/501842/?utm_campaign=501842&utm_source=habrahabr&utm_medium=rss)

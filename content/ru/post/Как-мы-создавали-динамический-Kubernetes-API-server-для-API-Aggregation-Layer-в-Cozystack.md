@@ -11,8 +11,4 @@ Kubernetes действительно поражает своими могучи
 
 Однако это [не единственный метод](https://kubernetes.io/docs/concepts/extend-kubernetes/#api-extensions) расширения Kubernetes API. Так, для более сложных кейсов, например реализации императивной логики, сабресурсов и формирования ответов на лету, можно рассмотреть механизм API aggregation layer, который поддерживается в Kubernetes. В рамках aggregation layer можно разработать свой собственный extension API server и бесшовно интегрировать его в общий Kubernetes API.
 
-В этой статье мы разберем, что такое API aggregation layer, для решения каких задач его стоит использовать, когда его использовать не стоит и как мы использовали эту модель для реализации собственного extension API server в платформе [Cozystack](http://cozystack.io). 
-
- [Читать далее](https://habr.com/ru/articles/832824/?utm_campaign=832824&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/832824/?utm_campaign=832824&utm_source=habrahabr&utm_medium=rss)
+В этой статье мы разберем, что такое API aggregation layer, для решения каких задач его стоит использовать, когда его использовать не стоит и как мы использовали эту модель для реализации собственного extension API server в платформе [Cozystack](http://cozystack.io).

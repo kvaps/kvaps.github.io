@@ -12,7 +12,3 @@ source: habr
 В прошлых статьях мы уже рассказывали, [как мы готовим Kubernetes на bare metal](https://habr.com/ru/companies/aenix/articles/795791/), и о том, [как превратить Kubernetes в средство запуска виртуальных машин](https://habr.com/ru/companies/aenix/articles/797323/). Эта статья завершает серию, объясняя, как, используя всё вышеперечисленное, можно построить полноценный managed Kubernetes service и запускать виртуальные Kubernetes-кластеры по клику.
 
 И начнём мы, пожалуй с Cluster API.
-
- [Читать далее](https://habr.com/ru/articles/798567/?utm_campaign=798567&utm_source=habrahabr&utm_medium=rss#habracut)
-
-[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/798567/?utm_campaign=798567&utm_source=habrahabr&utm_medium=rss)
