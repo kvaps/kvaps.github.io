@@ -115,7 +115,7 @@ languages:
         - weight: 3
           identifier: cozystack
           name: Cozystack
-          pre: <i class="sidebar-button-icon fa fa-lg fa-cloud"></i>
+          pre: <i class="sidebar-button-icon fa fa-lg fa-bars"></i>
           url: 'https://cozystack.io/'
         - weight: 4
           identifier: projects-archive
@@ -219,7 +219,7 @@ languages:
         - weight: 3
           identifier: cozystack
           name: Cozystack
-          pre: <i class="sidebar-button-icon fa fa-lg fa-cloud"></i>
+          pre: <i class="sidebar-button-icon fa fa-lg fa-bars"></i>
           url: 'https://cozystack.io/'
         - weight: 4
           identifier: projects-archive
