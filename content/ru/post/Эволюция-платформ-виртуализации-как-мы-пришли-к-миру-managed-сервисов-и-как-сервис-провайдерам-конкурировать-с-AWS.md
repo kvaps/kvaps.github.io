@@ -1,0 +1,16 @@
+---
+title: "Эволюция платформ виртуализации: как мы пришли к миру managed-сервисов и как сервис-провайдерам конкурировать с AWS"
+date: 2025-06-04T08:03:58+00:00
+link: https://habr.com/ru/companies/aenix/articles/914198/?utm_campaign=914198&utm_source=habrahabr&utm_medium=rss
+source: habr
+---
+
+![](https://habrastorage.org/getpro/habr/upload_files/0bd/6ff/e47/0bd6ffe4762fa853d6467e8b7a7847f4.png)
+
+Привет! Меня зовут Андрей Квапил (или kvaps). Я CEO в Ænix, и мы делаем Open Source-платформу и фреймворк Cozystack, с которым очень удобно строить облака.
+
+В этой статье я проанализировал, как современные облачные подходы повлияли на инфраструктуру, какую роль стала играть виртуализация, кто такие «питомцы» и что происходит с локальными сервис-провайдерами.
+
+ [Читать далее](https://habr.com/ru/articles/914198/?utm_campaign=914198&utm_source=habrahabr&utm_medium=rss#habracut)
+
+<!--more-->
