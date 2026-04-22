@@ -112,6 +112,11 @@ languages:
           pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
           url: 'https://www.linkedin.com/in/kvaps'
       links:
+        - weight: 3
+          identifier: cozystack
+          name: Cozystack
+          pre: <i class="sidebar-button-icon fa fa-lg fa-cloud"></i>
+          url: 'https://cozystack.io/'
         - weight: 4
           identifier: projects-archive
           name: Projects Archive
@@ -211,6 +216,11 @@ languages:
           pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
           url: 'https://www.linkedin.com/in/kvaps'
       links:
+        - weight: 3
+          identifier: cozystack
+          name: Cozystack
+          pre: <i class="sidebar-button-icon fa fa-lg fa-cloud"></i>
+          url: 'https://cozystack.io/'
         - weight: 4
           identifier: projects-archive
           name: Архив проектов
