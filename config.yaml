@@ -17,6 +17,7 @@ defaultContentLanguage: en-us
 title: kvaps | personal blog
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
+googleAnalytics: G-FY9FXHZXH6
 pagination:
   pagerSize: 7
 canonifyurls: true
