@@ -136,6 +136,21 @@ def html_to_markdown(h: str) -> str:
     return h.strip()
 
 
+def truncate_html(h: str, max_paragraphs: int = 2) -> str:
+    """Keep the cover <img>/<figure> plus the first N <p> blocks."""
+    parts: list[str] = []
+    first_img = re.search(r"<(?:figure[^>]*>\s*)?<img[^>]+>(?:\s*</figure>)?", h, re.I)
+    if first_img:
+        parts.append(first_img.group(0))
+    kept = 0
+    for m in re.finditer(r"<p[^>]*>.*?</p>", h, re.I | re.S):
+        parts.append(m.group(0))
+        kept += 1
+        if kept >= max_paragraphs:
+            break
+    return "\n".join(parts) if parts else h[:800]
+
+
 def parse_rss(xml_bytes: bytes) -> list[Entry]:
     root = ET.fromstring(xml_bytes)
     entries: list[Entry] = []
@@ -144,9 +159,9 @@ def parse_rss(xml_bytes: bytes) -> list[Entry]:
         link = (item.findtext("link") or "").strip()
         pub = item.findtext("pubDate") or ""
         date = parse_rss_date(pub) if pub else datetime.now(timezone.utc)
-        body = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") \
-            or item.findtext("description") \
-            or ""
+        desc = (item.findtext("description") or "").strip()
+        enc = (item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or "").strip()
+        body = desc if desc else truncate_html(enc)
         entries.append(Entry(title=title, link=link, date=date, body=body))
     return entries
 
@@ -174,6 +189,15 @@ def yaml_quote(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+READ_MORE_LABEL = {
+    "habr":       "Читать на Хабре →",
+    "medium":     "Read on Medium →",
+    "dev.to":     "Read on DEV →",
+    "youtube-ru": "Смотреть на YouTube →",
+    "youtube-en": "Watch on YouTube →",
+}
+
+
 def render_post(entry: Entry, source: Source) -> str:
     if source.kind == "rss":
         cover, rest = extract_cover(entry.body)
@@ -190,7 +214,8 @@ def render_post(entry: Entry, source: Source) -> str:
             parts.append(entry.body)
         body = "\n\n".join(parts)
 
-    body = body.rstrip() + "\n\n<!--more-->\n"
+    label = READ_MORE_LABEL.get(source.name, "Read original →")
+    body = body.rstrip() + f"\n\n[{label}]({entry.link})\n"
 
     fm = (
         "---\n"

@@ -11,4 +11,4 @@ In our previous article, we showed you how to build a platform that deploys mult
 
 [Continue reading on Ænix »](https://blog.aenix.io/platformize-it-part-2-extending-kubernetes-and-the-api-aggregation-layer-1b49265edc7f?source=rss-d8a829bb74d8------2)
 
-<!--more-->
+[Read on Medium →](https://blog.aenix.io/platformize-it-part-2-extending-kubernetes-and-the-api-aggregation-layer-1b49265edc7f?source=rss-d8a829bb74d8------2)

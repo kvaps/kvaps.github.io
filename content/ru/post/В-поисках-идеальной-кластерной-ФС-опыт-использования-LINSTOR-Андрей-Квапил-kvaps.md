@@ -24,4 +24,4 @@ https://www.highload.ru/spb/2021/abstracts/6633
 
 Нашли ошибку в видео? Пишите нам на support@ontico.ru
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=otr55vmKf30)

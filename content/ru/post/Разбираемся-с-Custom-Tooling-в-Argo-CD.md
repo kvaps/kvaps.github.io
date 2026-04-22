@@ -19,4 +19,4 @@ Argo CD позволяет подключить Git-репозиторий и с
 
  [Читать дальше →](https://habr.com/ru/articles/517966/?utm_campaign=517966&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/articles/517966/?utm_campaign=517966&utm_source=habrahabr&utm_medium=rss)

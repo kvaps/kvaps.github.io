@@ -23,4 +23,4 @@ http://devopsconf.io/moscow/2019/abstracts/5505
 --------
 Нашли ошибку в видео? Пишите нам на support@ontico.ru
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=Rmnqa5dKgDA)

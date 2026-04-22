@@ -16,4 +16,4 @@ https://siderolabs.com/taloscon
 
 #kubernetes #talos #linux
 
-<!--more-->
+[Watch on YouTube →](https://www.youtube.com/watch?v=s79VqXu-eG4)

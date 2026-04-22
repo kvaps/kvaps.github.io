@@ -13,4 +13,4 @@ source: habr
 
  [Читать далее](https://habr.com/ru/articles/757864/?utm_campaign=757864&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/companies/flant/articles/757864/?utm_campaign=757864&utm_source=habrahabr&utm_medium=rss)

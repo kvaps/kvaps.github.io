@@ -11,4 +11,4 @@ source: habr
 
  [Читать далее](https://habr.com/ru/articles/1004014/?utm_campaign=1004014&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/1004014/?utm_campaign=1004014&utm_source=habrahabr&utm_medium=rss)

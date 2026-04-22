@@ -18,4 +18,4 @@ source: youtube-ru
 
 Полная программа VK Kubernetes Conference, которая прошла 9 декабря 2021 года: https://mcs.mail.ru/events/vk-kubernetes-conf
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=dIKKBj5EQrA)

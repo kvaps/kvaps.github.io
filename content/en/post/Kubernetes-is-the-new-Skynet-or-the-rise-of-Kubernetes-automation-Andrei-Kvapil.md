@@ -11,4 +11,4 @@ Kubernetes is widely known for being the container orchestration tool, and latel
 What if we had a Platform able to operate and pilot itself, with a fraction of human-based operations?
 In this talk, Andrei and Dario's knowledge and developer experience will shed light on the tools being able to execute complex tasks such as installing Kubernetes on bare metal servers (Talos Linux), tools being able to satisfy all the complex conditions of orchestrating Virtual Machines (KubeVirt), till to operate Kubernetes clusters at large scale (Cluster API, Kamaji).
 
-<!--more-->
+[Watch on YouTube →](https://www.youtube.com/watch?v=wBKrGVWbdcI)

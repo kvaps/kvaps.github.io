@@ -32,4 +32,4 @@ https://www.devopsparadox.com/slack/
 Connect with us at:
 https://www.devopsparadox.com/contact/
 
-<!--more-->
+[Watch on YouTube →](https://www.youtube.com/watch?v=tO8OlR9NCks)

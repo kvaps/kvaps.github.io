@@ -17,4 +17,4 @@ source: habr
 
  [Читать дальше →](https://habr.com/ru/articles/435270/?utm_campaign=435270&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/articles/435270/?utm_campaign=435270&utm_source=habrahabr&utm_medium=rss)

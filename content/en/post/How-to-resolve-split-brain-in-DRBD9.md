@@ -33,4 +33,4 @@ drbdadm connect  --discard-my-data
 
 It is worth mentioning that in the latest versions of LINSTOR, the auto-tiebreaker function is enabled by default. This means, when you creating a resource in two replicas, automatically adds a third diskless replica, which is a kind of arbiter for ensuring the quorum. Thus, it is less and less usual to solve split-brain these days.
 
-<!--more-->
+[Read on DEV →](https://dev.to/kvaps/how-to-solve-split-brain-in-drbd9-15no)

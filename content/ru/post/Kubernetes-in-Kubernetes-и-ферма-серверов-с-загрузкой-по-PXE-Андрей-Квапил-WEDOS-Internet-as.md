@@ -23,4 +23,4 @@ https://devopsconf.io/moscow/2020/abstracts/7110
 --------
 Нашли ошибку в видео? Пишите нам на support@ontico.ru
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=FDdPProqE8g)

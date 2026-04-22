@@ -21,4 +21,4 @@ https://devopsconf.io/moscow/2022/abstracts/7948
 --------
 Нашли ошибку в видео? Пишите нам на support@ontico.ru
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=lP81w7yr8dI)

@@ -24,4 +24,4 @@ source: youtube-ru
 
 Полная программа ♥ Kubernetes Meetup #2, который прошел 14 февраля 2019 в офисе Mail.ru Group: https://corp.mail.ru/ru/press/events/550/
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=yGKI5JoKMUY)

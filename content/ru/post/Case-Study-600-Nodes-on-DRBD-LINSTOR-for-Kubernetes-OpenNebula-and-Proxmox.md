@@ -9,4 +9,4 @@ source: youtube-ru
 
 Find out how Andrei at WEDOS built a 600 nodes strong high availability storage environment using #DRBD & #LINSTOR for #Kubernetes, #OpenNebula and #Proxmox. #LinstorDays
 
-<!--more-->
+[Смотреть на YouTube →](https://www.youtube.com/watch?v=kMU3JAsFXQk)

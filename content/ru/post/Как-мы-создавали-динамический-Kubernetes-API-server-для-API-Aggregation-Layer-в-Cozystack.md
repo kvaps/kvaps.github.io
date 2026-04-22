@@ -15,4 +15,4 @@ Kubernetes действительно поражает своими могучи
 
  [Читать далее](https://habr.com/ru/articles/832824/?utm_campaign=832824&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/832824/?utm_campaign=832824&utm_source=habrahabr&utm_medium=rss)

@@ -15,4 +15,4 @@ source: habr
 
  [Читать далее](https://habr.com/ru/articles/798567/?utm_campaign=798567&utm_source=habrahabr&utm_medium=rss#habracut)
 
-<!--more-->
+[Читать на Хабре →](https://habr.com/ru/companies/aenix/articles/798567/?utm_campaign=798567&utm_source=habrahabr&utm_medium=rss)
