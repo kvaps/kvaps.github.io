@@ -34,13 +34,6 @@ taxonomies:
   category: categories
   archive: archives
 
-author:
-  name: Andrei Kvapil
-  bio: CEO & Founder
-  job: Ænix
-  location: Czech republic, EU
-  gravatarEmail: kvapss@gmail.com
-
 languages:
   en-us:
     contentDir: content/en
@@ -220,6 +213,12 @@ languages:
           url: ../
 
 params:
+  author:
+    name: Andrei Kvapil
+    bio: CEO & Founder
+    job: Ænix
+    location: Czech republic, EU
+    gravatarEmail: kvapss@gmail.com
   #keywords: ["development", "next-gen"]
   syntaxHighlighter: highlight.js
   clearReading: false
