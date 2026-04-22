@@ -1,0 +1,55 @@
+name: Aggregate RSS feeds
+
+on:
+  schedule:
+    # Every 6 hours at :13 (spread load off the hour boundary)
+    - cron: '13 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: aggregate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Aggregate feeds
+        run: python3 scripts/aggregate.py
+
+      - name: Commit and push
+        id: commit
+        run: |
+          if [ -z "$(git status --porcelain content/)" ]; then
+            echo "No content changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git commit --signoff -m "chore(content): sync posts from RSS feeds"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger Hugo build
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # hugo.yaml is ignored if it does not declare workflow_dispatch;
+          # the `|| true` keeps aggregation green even if the hook is absent.
+          gh workflow run hugo.yaml --ref "${GITHUB_REF_NAME}" || true

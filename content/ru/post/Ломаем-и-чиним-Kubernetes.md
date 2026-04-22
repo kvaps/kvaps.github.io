@@ -1,13 +1,12 @@
 ---
 title: "Ломаем и чиним Kubernetes"
-date: 2021-02-07T23:18:44+03:00
-link: https://habr.com/ru/post/541118/
+date: 2021-02-05T15:44:29+00:00
+link: https://habr.com/ru/companies/aenix/articles/541118/?utm_campaign=541118&utm_source=habrahabr&utm_medium=rss
+source: habr
 ---
 
-![](https://hsto.org/webt/bm/sp/06/bmsp06ik_pa4dlp57vyac8ozyck.png)
+![](https://habrastorage.org/getpro/habr/upload_files/692/bf4/952/692bf495252a8f8d154f12c6a1efa88c.jpg)
 
 **Kubernetes** отличная платформа как для оркестрации контейнеров так и для всего остального. За последнее время Kubernetes ушёл далеко вперёд как по части функциональности так и по вопросам безопасности и отказоустойчивости. Архитектура Kubernetes позволяет с лёгкостью переживать сбои различного характера и всегда оставаться на плаву.
 
 Сегодня мы будем ломать кластер, удалять сертификаты, вживую реджойнить ноды и всё это, по возможности, без даунтайма для уже запущенных сервисов.
-
-<!--more-->

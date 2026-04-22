@@ -1,11 +1,10 @@
 ---
 title: "Case-Study: 600 Nodes on DRBD + LINSTOR for Kubernetes, OpenNebula and Proxmox"
-date: 2020-11-02
-link: https://youtu.be/kMU3JAsFXQk
+date: 2020-11-01T18:56:43+00:00
+link: https://www.youtube.com/watch?v=kMU3JAsFXQk
+source: youtube-ru
 ---
 
-[![](https://img.youtube.com/vi/kMU3JAsFXQk/maxresdefault.jpg)](https://youtu.be/kMU3JAsFXQk)
+{{< youtube kMU3JAsFXQk >}}
 
-Find out how Andrei at WEDOS built a 600 nodes strong storage environment using DRBD & LINSTOR for Kubernetes, OpenNebula and Proxmox.
-
-<!--more-->
+Find out how Andrei at WEDOS built a 600 nodes strong high availability storage environment using #DRBD & #LINSTOR for #Kubernetes, #OpenNebula and #Proxmox. #LinstorDays

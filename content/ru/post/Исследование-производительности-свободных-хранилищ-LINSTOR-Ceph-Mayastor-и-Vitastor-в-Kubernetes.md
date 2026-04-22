@@ -1,7 +1,8 @@
 ---
 title: "Исследование производительности свободных хранилищ LINSTOR, Ceph, Mayastor и Vitastor в Kubernetes"
-date: 2022-05-05T08:27:00+03:00
-link: https://habr.com/ru/company/flant/blog/664150/
+date: 2022-05-05T06:27:32+00:00
+link: https://habr.com/ru/companies/flant/articles/664150/?utm_campaign=664150&utm_source=habrahabr&utm_medium=rss
+source: habr
 ---
 
 ![](https://habrastorage.org/getpro/habr/upload_files/fba/934/43b/fba93443bb66510caf570f29e421fc88.png)
@@ -11,5 +12,3 @@ link: https://habr.com/ru/company/flant/blog/664150/
 Я взял несколько свободных решений и протестировал, как они поведут себя в тех или иных условиях. В первую очередь интересовала производительность DRBD в различных конфигурациях и сравнение с Ceph.
 
 Но рынок программно-определяемых хранилищ не стоит на месте и постоянно растёт. Появляются новые амбициозные проекты, включая недавно релизнутый Mayastor и pet-проект моего товарища-соратника Vitastor. Результаты оказались очень интересными.
-
-<!--more-->

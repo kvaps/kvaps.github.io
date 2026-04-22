@@ -1,10 +1,11 @@
 ---
-title: 'DIY: Ваше собственное облако на базе Kubernetes (часть 1)'
-date: 2024-02-23
-link: https://habr.com/ru/companies/aenix/articles/795791/
+title: "DIY: Ваше собственное облако на базе Kubernetes (часть 1)"
+date: 2024-02-23T12:32:26+00:00
+link: https://habr.com/ru/companies/aenix/articles/795791/?utm_campaign=795791&utm_source=habrahabr&utm_medium=rss
+source: habr
 ---
 
-![](https://habrastorage.org/r/w780/getpro/habr/upload_files/64f/fb4/044/64ffb4044c0fddbfde311422899698cc.jpg)
+![](https://habrastorage.org/getpro/habr/upload_files/64f/fb4/044/64ffb4044c0fddbfde311422899698cc.jpg)
 
 *Мы очень любим Kubernetes и мечтаем чтобы все современные технологии поскорее начали использовать его замечательные паттерны.*
 
@@ -13,5 +14,3 @@ link: https://habr.com/ru/companies/aenix/articles/795791/
 Да, вы могли бы возразить что Kubernetes для этого не предназначен и почему бы не использовать OpenStack для Bare Metal-серверов а внутри него запускать Kubernetes как положено. Но поступив так, вы просто переложите ответственность с ваших рук на руки OpenStack администраторов. Что добавит как-минимум ещё одну сложную и неповоротливую систему в вашу экосистему.
 
 Зачем так всё усложнять? - ведь на данный момент Kubernetes уже имеет всё необходимое для запуска Kubernetes кластеров.
-
-<!--more-->

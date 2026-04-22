@@ -1,11 +1,11 @@
 ---
 title: "Разбираемся с Custom Tooling в Argo CD"
-date: 2020-09-06T01:04:00+03:00
-link: https://habr.com/ru/post/517966/
+date: 2020-09-05T22:04:36+00:00
+link: https://habr.com/ru/articles/517966/?utm_campaign=517966&utm_source=habrahabr&utm_medium=rss
+source: habr
 ---
 
-![](https://hsto.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png)
-
+![](https://habrastorage.org/webt/bl/1t/hr/bl1thr-ilao8gyl97jiqgnnln7u.png)
 
 Спустя некоторое время после написания [первой статьи](https://habr.com/post/481662/), где я ловко управлялся с jsonnet и гитлабом, я понял что пайплайны это конечно хорошо, но излишне сложно и неудобно.
 
@@ -16,5 +16,3 @@ Argo CD позволяет подключить Git-репозиторий и с
 Большинству пользователей этого набора будет достаточно, но не всем. Для того чтобы удовлетворить потребности всех и каждого в Argo CD имеется возможность использовать custom tooling.
 
 В первую очередь интересует возможность добавления поддержки [qbec](https://habr.com/ru/post/481662/) и [git-crypt](https://habr.com/ru/post/481662/#git-crypt), которые с полна были рассмотренны в предыдущей статье.
-
-<!--more-->
