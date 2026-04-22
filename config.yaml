@@ -18,7 +18,8 @@ title: kvaps | personal blog
 theme: hugo-tranquilpeak-theme
 disqusShortname: kvaps
 googleAnalytics: "UA-53837210-1"
-paginate: 7
+pagination:
+  pagerSize: 7
 canonifyurls: true
 
 algolia:
