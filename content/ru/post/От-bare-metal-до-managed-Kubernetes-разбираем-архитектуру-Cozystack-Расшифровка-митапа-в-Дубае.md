@@ -5,7 +5,7 @@ link: https://habr.com/ru/companies/aenix/articles/1090064/?utm_campaign=1090064
 source: habr
 ---
 
-![](https://habrastorage.org/getpro/habr/upload_files/d70/e87/e9d/d70e87e9d3f5f5b448f9b4e6164101e2.jpg)
+![](https://habrastorage.org/getpro/habr/upload_files/89b/69e/8e9/89b69e8e98040a8076300acffabc28ce.jpg)
 
 Как устроен Cozystack и managed Kubernetes на собственном железе
 
