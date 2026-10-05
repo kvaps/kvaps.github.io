@@ -1,11 +1,11 @@
 ---
-title: "От bare metal до managed Kubernetes: разбираем архитектуру Cozystack. Расшифровка митапа в Дубае"
+title: "От bare metal до managed Kubernetes: разбираем архитектуру Cozystack. Расшифровка митапа в Дубае"
 date: 2026-10-04T01:01:27+00:00
 link: https://habr.com/ru/companies/aenix/articles/1090064/?utm_campaign=1090064&utm_source=habrahabr&utm_medium=rss
 source: habr
 ---
 
-![](https://habrastorage.org/getpro/habr/upload_files/89b/69e/8e9/89b69e8e98040a8076300acffabc28ce.jpg)
+![](https://habrastorage.org/getpro/habr/upload_files/e34/237/ad0/e34237ad04980824d9f8bcbeb32782c4.jpg)
 
 Как устроен Cozystack и managed Kubernetes на собственном железе
 
